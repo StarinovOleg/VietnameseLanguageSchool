@@ -26,7 +26,7 @@ function LearningIndex() {
             {arr.map((number, index) => (
               <button
                 key={index}
-                className="p-4 m-4 bg-black text-white rounded-xl	 border-solid w-44 cursor-pointer"
+                className="p-4 m-4 bg-black text-white rounded-xl	 border-solid w-56 cursor-pointer"
               >
                 {number}
               </button>
