@@ -36,7 +36,7 @@ function LearningIndex() {
   );
 
   //random words
-  for (let i = arr.length; arr.length < 4; i++) {
+  for (let i = arr.length; arr.length < 10; i++) {
     const randomWord = words[Math.floor(Math.random() * words.length)];
     if (arr.indexOf(randomWord) == -1) {
       arr.push(randomWord);
@@ -71,16 +71,18 @@ function LearningIndex() {
         <center>
           <div className="myItems">
             {shuffle(
-              arr.map((number, index) => (
-                <button
-                  type="button"
-                  key={index}
-                  className="p-4 m-4 bg-blue-700	 text-white rounded-xl	 border-solid w-56 cursor-pointer"
-                  onClick={() => check(number)}
-                >
-                  {number}
-                </button>
-              ))
+              arr
+                .filter((item, index) => index < 4)
+                .map((number, index) => (
+                  <button
+                    type="button"
+                    key={index}
+                    className="p-4 m-4 bg-blue-700	 text-white rounded-xl	 border-solid w-56 cursor-pointer"
+                    onClick={() => check(number)}
+                  >
+                    {number}
+                  </button>
+                ))
             )}
           </div>
         </center>
