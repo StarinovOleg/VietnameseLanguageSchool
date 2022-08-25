@@ -1,39 +1,14 @@
-import React, { useState, useReducer, useEffect } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+
 import { unit_1 } from "../../../dictionary/unit-1/unit_1";
 import { shuffle } from "./algoritm_fisher_shuffle";
+import { GetReducer } from "../../../store/reducers/reducer-increment";
 
-const initialStateCorrectAnswer = { count: 0 };
-function reducerCorrect(state, action) {
-  switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 };
-    case "decrement":
-      return { count: state.count - 1 };
-    default:
-      throw new Error();
-  }
-}
-const initialStateNotCorrectAnswer = { countNotCorrect: 0 };
-function reducerNotCorrect(stateNotCorrect, action) {
-  switch (action.type) {
-    case "increment":
-      return { countNotCorrect: stateNotCorrect.countNotCorrect + 1 };
-    default:
-      throw new Error();
-  }
-}
 function LearningIndex() {
   const words = Object.keys(unit_1);
   const arr = [];
-  const [state, dispatch] = useReducer(
-    reducerCorrect,
-    initialStateCorrectAnswer
-  );
-  const [stateNotCorrect, dispatchNotCorrect] = useReducer(
-    reducerNotCorrect,
-    initialStateNotCorrectAnswer
-  );
+  const [state, dispatch] = GetReducer();
+  const [stateNotCorrect = state, dispatchNotCorrect] = GetReducer();
 
   //random words
   for (let i = arr.length; arr.length < 10; i++) {
@@ -58,34 +33,31 @@ function LearningIndex() {
       <div className="text-4xl my-4 ">{unit_1[arr[1]]}</div>
       <div className="flex justify-center my-4">
         <div className="text-xl text-green-500 mx-4">
-          Correct answer:<span className="text-5xl mx-4">{state.count}</span>
+          Correct answer:
+          <span className="text-5xl mx-4">{state.count}</span>
         </div>
         <div className="text-xl text-red-500 mx-4">
           Not correct answer:
-          <span className="text-5xl mx-4">
-            {stateNotCorrect.countNotCorrect}
-          </span>
+          <span className="text-5xl mx-4">{stateNotCorrect.count}</span>
         </div>
       </div>
       <div>
-        <center>
-          <div className="myItems">
-            {shuffle(
-              arr
-                .filter((item, index) => index < 4)
-                .map((number, index) => (
-                  <button
-                    type="button"
-                    key={index}
-                    className="p-4 m-4 bg-blue-700	 text-white rounded-xl	 border-solid w-56 cursor-pointer"
-                    onClick={() => check(number)}
-                  >
-                    {number}
-                  </button>
-                ))
-            )}
-          </div>
-        </center>
+        <div className="myItems">
+          {shuffle(
+            arr
+              .filter((item, index) => index < 4)
+              .map((number, index) => (
+                <button
+                  type="button"
+                  key={index}
+                  className="p-4 m-4 bg-blue-700	 text-white rounded-xl	 border-solid w-56 cursor-pointer"
+                  onClick={() => check(number)}
+                >
+                  {number}
+                </button>
+              ))
+          )}
+        </div>
         <button
           className="p-4 bg-black rounded-xl text-white cursor-pointer"
           type="button"
