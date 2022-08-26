@@ -4,12 +4,13 @@ import { unit_1 } from "../../../dictionary/unit-1/unit_1";
 import { shuffle } from "./algoritm_fisher_shuffle";
 import { GetReducer } from "../../../store/reducers/reducer-increment";
 import Button from "../../../ui-library/Button";
+import { useNavigate } from "react-router-dom";
 function LearningIndex() {
   const words = Object.keys(unit_1);
   const arr = [];
   const [state, dispatch] = GetReducer();
   const [stateNotCorrect = state, dispatchNotCorrect] = GetReducer();
-
+  const navigate = useNavigate();
   //random words
   for (let i = arr.length; arr.length < 10; i++) {
     const randomWord = words[Math.floor(Math.random() * words.length)];
@@ -22,8 +23,16 @@ function LearningIndex() {
   const check = (number) => {
     if (number === arr[1]) {
       dispatch({ type: "increment" });
+      redirectEndScreen();
     } else {
       dispatchNotCorrect({ type: "increment" });
+      redirectEndScreen();
+    }
+  };
+  //redirect on done screen
+  const redirectEndScreen = () => {
+    if (stateNotCorrect.count > 10) {
+      navigate("/endtest");
     }
   };
 
