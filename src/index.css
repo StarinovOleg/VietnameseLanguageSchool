@@ -4,3 +4,12 @@
 body {
     background-color: #5D81E3;
 }
+@layer components {
+    .btn-secondary {
+        @apply bg-black;
+    }
+
+    .btn-primary {
+        @apply bg-blue-700;
+    }
+}

@@ -3,7 +3,7 @@ import React from "react";
 import { unit_1 } from "../../../dictionary/unit-1/unit_1";
 import { shuffle } from "./algoritm_fisher_shuffle";
 import { GetReducer } from "../../../store/reducers/reducer-increment";
-
+import Button from "../../../ui-library/Button";
 function LearningIndex() {
   const words = Object.keys(unit_1);
   const arr = [];
@@ -47,23 +47,16 @@ function LearningIndex() {
             arr
               .filter((item, index) => index < 4)
               .map((number, index) => (
-                <button
-                  type="button"
+                <Button
                   key={index}
-                  className="p-4 m-4 bg-blue-700	 text-white rounded-xl	 border-solid w-56 cursor-pointer"
                   onClick={() => check(number)}
-                >
-                  {number}
-                </button>
+                  children={number}
+                  btnprimary="btn-primary"
+                />
               ))
           )}
         </div>
-        <button
-          className="p-4 bg-black rounded-xl text-white cursor-pointer"
-          type="button"
-        >
-          Continue
-        </button>
+        <Button children="Continue" btnsecondary="btn-secondary" />
       </div>
     </div>
   );
