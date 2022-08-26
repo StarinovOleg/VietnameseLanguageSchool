@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { unit_1 } from "../../../dictionary/unit-1/unit_1";
 import { shuffle } from "./algoritm_fisher_shuffle";
-import { GetReducer } from "../../../store/reducers/reducer-increment";
 import Button from "../../../ui-library/Button";
 import { useNavigate } from "react-router-dom";
+import SchoolContext from "../../../store/state";
+
 function LearningIndex() {
   const words = Object.keys(unit_1);
   const arr = [];
-  const [state, dispatch] = GetReducer();
-  const [stateNotCorrect = state, dispatchNotCorrect] = GetReducer();
   const navigate = useNavigate();
+  const context = useContext(SchoolContext);
+
   //random words
   for (let i = arr.length; arr.length < 10; i++) {
     const randomWord = words[Math.floor(Math.random() * words.length)];
@@ -22,17 +23,20 @@ function LearningIndex() {
   //checking answer
   const check = (number) => {
     if (number === arr[1]) {
-      dispatch({ type: "increment" });
       redirectEndScreen();
+      context.increment();
     } else {
-      dispatchNotCorrect({ type: "increment" });
       redirectEndScreen();
+      context.incrementNegative();
     }
   };
   //redirect on done screen
   const redirectEndScreen = () => {
-    if (stateNotCorrect.count > 10) {
-      navigate("/endtest");
+    if (context.count >= 10 || context.countNegative >= 10) {
+      navigate("/endtest", { replace: true });
+      window.onpopstate = function (event) {
+        window.location.reload();
+      };
     }
   };
 
@@ -43,11 +47,11 @@ function LearningIndex() {
       <div className="flex justify-center my-4">
         <div className="text-xl text-green-500 mx-4">
           Correct answer:
-          <span className="text-5xl mx-4">{state.count}</span>
+          <span className="text-5xl mx-4">{context.count}</span>
         </div>
         <div className="text-xl text-red-500 mx-4">
           Not correct answer:
-          <span className="text-5xl mx-4">{stateNotCorrect.count}</span>
+          <span className="text-5xl mx-4">{context.countNegative}</span>
         </div>
       </div>
       <div>
