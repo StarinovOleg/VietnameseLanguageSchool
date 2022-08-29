@@ -14,25 +14,33 @@ const GlobalState = (props: {
     | null
     | undefined;
 }) => {
-  const [state, dispatch] = useReducer(reducerIncrement, {
+  const [statePositive, dispatchCorrect] = useReducer(reducerIncrement, {
     count: 0,
   });
   const [stateNotCorrect, dispatchNotCorrect] = useReducer(reducerIncrement, {
     count: 0,
   });
+  const [stateTotal, dispatchTotal] = useReducer(reducerIncrement, {
+    count: 0,
+  });
   const addincrement = () => {
-    dispatch({ type: INCREMENT });
+    dispatchCorrect({ type: INCREMENT });
   };
   const addincrementNegative = () => {
     dispatchNotCorrect({ type: INCREMENT });
   };
+  const addincrementTotal = () => {
+    dispatchTotal({ type: INCREMENT });
+  };
   return (
     <SchoolContext.Provider
       value={{
-        count: state.count,
+        countTotal: stateTotal.count,
+        countPositive: statePositive.count,
         countNegative: stateNotCorrect.count,
-        increment: addincrement,
+        incrementPositive: addincrement,
         incrementNegative: addincrementNegative,
+        incrementTotal: addincrementTotal,
       }}
     >
       {props.children}

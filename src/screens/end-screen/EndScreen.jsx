@@ -9,7 +9,7 @@ function EndScreen() {
       <h1 className="text-5xl text-blue-700	font-semibold">
         Congratulation you done {location.state.title}
       </h1>
-      <div>Correct Answer: {context.count}</div>
+      <div>Correct Answer: {context.countPositive}</div>
       <div>Not Correct Answer: {context.countNegative}</div>
     </>
   );

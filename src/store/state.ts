@@ -1,16 +1,20 @@
 import {createContext} from 'react';
 
 interface Context {
-  count: number,
+  countTotal:number
+  countPositive: number,
   countNegative:number,
   incrementNegative: any,
-  increment:any;
+  incrementPositive:any;
+  incrementTotal:any
 }
 const SchoolContext = createContext<Context>({
-  count: 0,
+  countTotal:0,
+  countPositive: 0,
   countNegative:0,
   incrementNegative:'',
-  increment:'',
+  incrementPositive:'',
+  incrementTotal:'',
 });
 
 export default SchoolContext;
