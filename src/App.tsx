@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LearningIndex from "./components/learning/unit_1/index.jsx";
+import LearningIndex from "./components/learning/unit_1/index";
 import Home from "./components/main/home";
 import Landing from "./components/landing";
-import EndScreen from "./components/end-screen/EndScreen";
+import EndScreen from "./components/end-screen/EndScreen.jsx";
 import GlobalState from "./store/Globalstate";
 function App() {
   return (
