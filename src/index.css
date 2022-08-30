@@ -3,13 +3,17 @@
 @tailwind utilities;
 body {
     background-color: #5D81E3;
+    font-family: Open Sans, sans-serif;
 }
 @layer components {
-    .btn-secondary {
+.btn-secondary {
         @apply bg-black;
     }
 
-    .btn-primary {
-        @apply bg-blue-700;
-    }
+.btn-primary {
+    @apply bg-blue-700;
+}
+.align-primary {
+    @apply text-left;
+}
 }

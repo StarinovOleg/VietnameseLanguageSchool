@@ -1,8 +1,8 @@
 import React from "react";
 
 function Button(props: {
-  btnsecondary: string;
-  btnprimary: string;
+  btnsecondary?: string;
+  btnprimary?: string;
   onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
   children:
     | string
