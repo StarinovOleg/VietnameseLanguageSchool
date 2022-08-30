@@ -79,7 +79,7 @@ function LearningIndex() {
   }, []);
 
   return (
-    <>
+    <div className="bg-[#260105] h-screen">
       {location.state?.title ? (
         <div className="text-center bg-white p-4 border-solid rounded-xl m-4">
           <H1 children={location.state?.title} />
@@ -120,7 +120,7 @@ function LearningIndex() {
           </Button>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

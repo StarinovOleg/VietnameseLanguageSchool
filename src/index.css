@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    background-color: #5D81E3;
+    background-color: #ffffff;
     font-family: Open Sans, sans-serif;
 }
 @layer components {
@@ -11,9 +11,21 @@ body {
     }
 
 .btn-primary {
-    @apply bg-blue-700;
+    @apply bg-[#260105];
 }
 .align-primary {
     @apply text-left;
+}
+@font-face {
+    font-family: 'Mochiy';
+    src: local('Mochiy'), url(./assets/font/Mochiy.ttf) format('truetype');
+}
+
+h1 {
+    font-family: 'Mochiy';
+}
+
+h2 {
+    font-family: 'Mochiy';
 }
 }
