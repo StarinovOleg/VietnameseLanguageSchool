@@ -1,6 +1,8 @@
 import React from "react";
 
 function H2(props: {
+  fontsizesecondary?: string;
+  fontsizeprimary?: string;
   children:
     | string
     | number
@@ -12,7 +14,11 @@ function H2(props: {
     | undefined;
 }) {
   return (
-    <h2 className="text-3xl text-yellow-500 font-semibold">{props.children}</h2>
+    <h2
+      className={`${props.fontsizesecondary} ${props.fontsizeprimary} text-yellow-500 font-semibold`}
+    >
+      {props.children}
+    </h2>
   );
 }
 

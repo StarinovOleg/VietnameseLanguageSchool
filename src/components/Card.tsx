@@ -4,14 +4,12 @@ import H2 from "../ui-library/H2";
 import P from "../ui-library/P";
 const Card = (props: { picture: any; to: string; state: any; title: any }) => {
   return (
-    <div className="text-center border-solid rounded-xl cursor-pointer p-2 m-2  bg-background-item-card bg-no-repeat bg-top-bottom hover:bg-top">
-      <div className="m-10">
-        <NavLink to={props.to} state={props.state}>
-          <H2>{props.title}</H2>
-          <P align="align-primary">{props.picture}</P>
-        </NavLink>
+    <NavLink to={props.to} state={props.state}>
+      <div className=" border-solid rounded-xl cursor-pointer bg-indigo-50 m-2 p-2  md:h-28 sm:h-auto md:drop-shadow-xl sm:drop-shadow-none">
+        <H2 fontsizesecondary="h2-font-size-secondary">{props.title}</H2>
+        <P align="align-primary">{props.picture}</P>
       </div>
-    </div>
+    </NavLink>
   );
 };
 export default Card;

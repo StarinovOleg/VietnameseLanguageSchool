@@ -11,10 +11,17 @@ body {
     }
 
 .btn-primary {
-    @apply bg-[#260105];
+    @apply bg-blue-700;
 }
 .align-primary {
     @apply text-left;
+}
+.h2-font-size-secondary {
+    @apply text-xl
+}
+
+.h2-font-ize-primary {
+    @apply text-3xl
 }
 @font-face {
     font-family: 'Mochiy';

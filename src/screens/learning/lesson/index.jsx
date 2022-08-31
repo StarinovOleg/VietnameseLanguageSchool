@@ -21,12 +21,6 @@ function LearningIndex() {
 
   const context = useContext(SchoolContext);
 
-  //random words
-  /*if (location.state?.title === lessons.lesson_1.title) {
-    random(words, arr);
-  } else if (location.state?.title === lessons.lesson_2.title) {
-    random(words2, arr);
-  }*/
   //checking answer
   const check = (number) => {
     if (number === arr[1]) {
@@ -51,25 +45,15 @@ function LearningIndex() {
       };
     }
   };
-
-  //dynamic dictionary words
-  /*  const vietnameseWord = () => {
-    if (location.state?.title === lessons.lesson_1.title) {
-      random(words, arr);
-      return <div>{unit_1[arr[1]]}</div>;
-    } else if (location.state?.title === lessons.lesson_2.title) {
-      random(words2, arr);
-      return <div>{unit_2[arr[1]]}</div>;
-    }
-  };*/
+  //dynamic words display
   const displayWords = () => {
     switch (location.state?.title) {
       case lessons.lesson_1.title:
         random(words, arr);
-        return <div>{unit_1[arr[1]]}</div>;
+        return <div>{unit_1[arr[0]]}</div>;
       case lessons.lesson_2.title:
         random(words2, arr);
-        return <div>{unit_2[arr[1]]}</div>;
+        return <div>{unit_2[arr[0]]}</div>;
       default:
         return <div>Chose Test Page</div>;
     }
@@ -79,31 +63,33 @@ function LearningIndex() {
   }, []);
 
   return (
-    <div className="bg-[#260105] h-screen">
+    <div className="bg-indigo-50 h-screen">
       {location.state?.title ? (
-        <div className="text-center bg-white p-4 border-solid rounded-xl m-4">
-          <H1 children={location.state?.title} />
-          <div className="text-4xl my-4 ">{displayWords()}</div>
-          <div className="flex justify-center my-4">
-            <CorrectAnswer children={context.countPositive} />
-            <NotCorrectAnswer children={context.countNegative} />
-          </div>
+        <div className="text-center p-4 xl mx-4">
+          <div className="bg-white border-solid rounded-xl">
+            <H1 children={location.state?.title} />
+            <div className="text-4xl my-4 ">{displayWords()}</div>
+            <div className="flex justify-center my-4">
+              <CorrectAnswer children={context.countPositive} />
+              <NotCorrectAnswer children={context.countNegative} />
+            </div>
 
-          <div className="myItems">
-            {shuffle(
-              arr
-                .filter((item, index) => index < 4)
-                .map((number, index) => (
-                  <Button
-                    key={index}
-                    onClick={() => check(number)}
-                    children={number}
-                    btnprimary="btn-primary"
-                  />
-                ))
-            )}
+            <div className="myItems">
+              {shuffle(
+                arr
+                  .filter((item, index) => index < 4)
+                  .map((number, index) => (
+                    <Button
+                      key={index}
+                      onClick={() => check(number)}
+                      children={number}
+                      btnprimary="btn-primary"
+                    />
+                  ))
+              )}
+            </div>
+            <Button children="Continue" btnsecondary="btn-secondary" />
           </div>
-          <Button children="Continue" btnsecondary="btn-secondary" />
         </div>
       ) : (
         <div className="text-center bg-white p-4 border-solid rounded-xl m-4">

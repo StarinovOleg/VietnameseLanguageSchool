@@ -13,7 +13,9 @@ function H1(props: {
     | any;
 }) {
   return (
-    <h1 className="text-5xl color:#3A220C	font-semibold">{props.children}</h1>
+    <h1 className="md:text-5xl text-[#260105]	font-semibold sm:text-xl">
+      {props.children}
+    </h1>
   );
 }
 

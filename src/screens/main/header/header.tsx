@@ -9,7 +9,7 @@ function Header() {
           <div className="flex leading-12 ">
             <img src={logo} className="w-12 " alt="logo" />
             <div className="m-1">
-              <span className="text-white">P</span>
+              <span className="text-blue-700">P</span>
               <span className="text-green-500 ">i</span>
               <span className="text-yellow-500 font-semibold">o</span>
               <span className="text-teal-500">n</span>
