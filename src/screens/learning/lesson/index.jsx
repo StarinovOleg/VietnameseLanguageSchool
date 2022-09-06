@@ -1,10 +1,14 @@
 import React, { useContext, useEffect } from "react";
 
 import { unit_1 } from "../../../dictionary/unit-1/unit_1";
+import { unit_1_1 } from "../../../dictionary/unit-1/unit_1_1";
 import { unit_2 } from "../../../dictionary/unit-2/unit_2";
+import { unit_2_2 } from "../../../dictionary/unit-2/unit_2_2";
+import { unit_2_3 } from "../../../dictionary/unit-2/unit_2_3";
 import { shuffle } from "./algoritm_fisher_shuffle";
 import Button from "../../../ui-library/Button";
 import H1 from "../../../ui-library/H1";
+import H2 from "../../../ui-library/H2";
 import { useNavigate, useLocation } from "react-router-dom";
 import SchoolContext from "../../../store/state";
 import { lessons } from "../../../store/static";
@@ -14,8 +18,11 @@ import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
 
 function LearningIndex() {
-  const words = Object.keys(unit_1);
+  const words = Object.keys(unit_1); 
+  const words1_1 = Object.keys(unit_1_1);
   const words2 = Object.keys(unit_2);
+  const words2_2 = Object.keys(unit_2_2);
+  const words2_3= Object.keys(unit_2_3);
   const arr = [];
   const navigate = useNavigate();
   const location = useLocation();
@@ -51,9 +58,18 @@ function LearningIndex() {
       case lessons.lesson_1.title:
         random(words, arr);
         return <div>{unit_1[arr[0]]}</div>;
+      case lessons.lesson_1_1.title:
+        random(words1_1, arr);
+        return <div>{unit_1_1[arr[0]]}</div>;
       case lessons.lesson_2.title:
         random(words2, arr);
         return <div>{unit_2[arr[0]]}</div>;
+      case lessons.lesson_2_2.title:
+        random(words2_2, arr);
+        return <div>{unit_2_2[arr[0]]}</div>;
+      case lessons.lesson_2_3.title:
+        random(words2_3, arr);
+        return <div>{unit_2_3[arr[0]]}</div>;
       default:
         return <div>Chose Test Page</div>;
     }
@@ -65,9 +81,10 @@ function LearningIndex() {
   return (
     <div className="bg-indigo-50 h-screen">
       {location.state?.title ? (
-        <div className="text-center p-4 xl mx-4">
+        <div className="text-center p-4 xl mx-4 ">
           <div className="bg-white border-solid rounded-xl">
             <H1 children={location.state?.title} />
+            <H2 children={location.state?.subtitle} />
             <div className="text-4xl my-4 ">{displayWords()}</div>
             <div className="flex justify-center my-4">
               <CorrectAnswer children={context.countPositive} />
@@ -93,7 +110,7 @@ function LearningIndex() {
           </div>
         </div>
       ) : (
-        <div className="text-center bg-white p-4 border-solid rounded-xl m-4">
+        <div className="text-center bg-white p-4 border-solid rounded-xl p-4 xl mx-4">
           <H1 children="Chose Test Page" />
           <Button
             onClick={() =>
