@@ -22,7 +22,7 @@ function EndScreen() {
     window.location.reload();
   };
   return (
-    <div className="text-left bg-white p-4 border-solid rounded-xl m-4">
+    <div className="text-left bg-white p-4 border-solid rounded-xl m-4 h-screen">
       <H1>Congratulation you done {locationState.title}</H1>
       <CorrectAnswer children={context.countPositive} />
       <NotCorrectAnswer children={context.countNegative} />

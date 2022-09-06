@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import SchoolContext from "./state";
 import { reducerIncrement } from "./reducers/reducer-increment";
 import { INCREMENT } from "./reducers/reducer-increment";
+import { DECREMENT, reducerDecrement } from "./reducers/reducer-decrement";
 
 const GlobalState = (props: {
   children:
@@ -23,6 +24,9 @@ const GlobalState = (props: {
   const [stateTotal, dispatchTotal] = useReducer(reducerIncrement, {
     count: 0,
   });
+  const [stateTimer, dispatchTimer] = useReducer(reducerDecrement, {
+    count: 10,
+  });
   const addincrement = () => {
     dispatchCorrect({ type: INCREMENT });
   };
@@ -32,15 +36,20 @@ const GlobalState = (props: {
   const addincrementTotal = () => {
     dispatchTotal({ type: INCREMENT });
   };
+  const timerDecrement = () => {
+    dispatchTimer({ type: DECREMENT });
+  };
   return (
     <SchoolContext.Provider
       value={{
         countTotal: stateTotal.count,
+        countTimer: stateTimer.count,
         countPositive: statePositive.count,
         countNegative: stateNotCorrect.count,
         incrementPositive: addincrement,
         incrementNegative: addincrementNegative,
         incrementTotal: addincrementTotal,
+        timerDecrement: timerDecrement,
       }}
     >
       {props.children}

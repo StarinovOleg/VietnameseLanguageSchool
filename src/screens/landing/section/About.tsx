@@ -17,8 +17,8 @@ const static_data = [
 ];
 const static_data_list = static_data.map(
   (item: { title: string; body: string; id: number; img: any }) => (
-    <div className=" drop-shadow-2xl flex" key={item.id}>
-      <img src={item.img} alt="logo" className="w-12" />
+    <div className=" drop-shadow-2xl flex p-10" key={item.id}>
+      <img src={item.img} alt="logo" className="w-12 h-12 mt-10" />
       <div className="px-2 py-10">
         <p className=" font-['Mochiy'] text-xl text-yellow-500 ">
           {item.title}

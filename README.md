@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+School for practice vietnamese words.
+Include:
+-test vietnamese-english;
 
 ## Available Scripts
 

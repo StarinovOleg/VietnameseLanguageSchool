@@ -11,6 +11,7 @@ import { lessons } from "../../../store/static";
 import { random } from "./random_words";
 import CorrectAnswer from "../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
+import Timer from "../../../components/Timer";
 
 function LearningIndex() {
   const words = Object.keys(unit_1);
@@ -18,7 +19,6 @@ function LearningIndex() {
   const arr = [];
   const navigate = useNavigate();
   const location = useLocation();
-
   const context = useContext(SchoolContext);
 
   //checking answer
@@ -59,7 +59,7 @@ function LearningIndex() {
     }
   };
   useEffect(() => {
-    displayWords();
+    // displayWords();
   }, []);
 
   return (
@@ -72,6 +72,7 @@ function LearningIndex() {
             <div className="flex justify-center my-4">
               <CorrectAnswer children={context.countPositive} />
               <NotCorrectAnswer children={context.countNegative} />
+              <Timer seconds={context.countTimer} />
             </div>
 
             <div className="myItems">
