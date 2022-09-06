@@ -76,6 +76,9 @@ function LearningIndex() {
   };
   useEffect(() => {
     // displayWords();
+    if (context.countTotal !==0) {
+        window.location.reload();
+    }
   }, []);
 
   return (
