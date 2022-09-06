@@ -23,7 +23,7 @@ function LearningIndex() {
 
   //checking answer
   const check = (number) => {
-    if (number === arr[1]) {
+    if (number === arr[0]) {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
