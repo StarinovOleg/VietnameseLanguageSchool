@@ -6,7 +6,7 @@ import img from '../../../assets/icons-lessons/unit1.png'
 function Lessons() {
   return (
     <div className="h-screen">
-      <div className="md:mx-10 sm:mx-auto mt-20">
+      <div className="md:mx-10 sm:mx-auto mt-20 text-center ">
         <H2
           children="Chose group words for training"
           fontsizeprimary="h2-font-ize-primary"
