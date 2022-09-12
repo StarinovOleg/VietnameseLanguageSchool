@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 
-import { unit_1 } from "../../../dictionary/unit-1/unit_1";
+
+import { unit_1_ob } from "../../../dictionary/unit-1/unit_1_ob";
 import { unit_1_1 } from "../../../dictionary/unit-1/unit_1_1";
 import { unit_2 } from "../../../dictionary/unit-2/unit_2";
 import { unit_2_2 } from "../../../dictionary/unit-2/unit_2_2";
@@ -18,7 +19,7 @@ import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
 
 function LearningIndex() {
-  const words = Object.keys(unit_1); 
+  const words = Object.keys(unit_1_ob); 
   const words1_1 = Object.keys(unit_1_1);
   const words2 = Object.keys(unit_2);
   const words2_2 = Object.keys(unit_2_2);
@@ -57,19 +58,49 @@ function LearningIndex() {
     switch (location.state?.title) {
       case lessons.lesson_1.title:
         random(words, arr);
-        return <div>{unit_1[arr[0]]}</div>;
+        return (<>
+        <div>{unit_1_ob[arr[0]].word}</div>
+        <div className="inline-block pt-10"><img src={unit_1_ob[arr[0]].picture}/></div>
+        <div className="text-blue-500 p-10">
+          <span className="text-xl p-2">{unit_1_ob[arr[0]].example}</span>
+        </div>
+        </>);
       case lessons.lesson_1_1.title:
         random(words1_1, arr);
-        return <div>{unit_1_1[arr[0]]}</div>;
+        return (<>
+          <div>{unit_1_1[arr[0]].word}</div>
+          <div className="inline-block pt-10"><img src={unit_1_1[arr[0]].picture}/></div>
+          <div className="text-blue-500 p-10">
+            <span className="text-xl p-2">{unit_1_1[arr[0]].example}</span>
+          </div>
+          </>);
       case lessons.lesson_2.title:
         random(words2, arr);
-        return <div>{unit_2[arr[0]]}</div>;
+        return (<>
+          <div>{unit_2[arr[0]].word}</div>
+          <div className="inline-block pt-10"><img src={unit_2[arr[0]].picture}/></div>
+          <div className="text-blue-500 p-10">
+            <span className="text-xl p-2">{unit_2[arr[0]].example}</span>
+          </div>
+          </>);
       case lessons.lesson_2_2.title:
         random(words2_2, arr);
-        return <div>{unit_2_2[arr[0]]}</div>;
+        return (<>
+          <div>{unit_2_2[arr[0]].word}</div>
+          <div className="inline-block pt-10"><img src={unit_2_2[arr[0]].picture}/></div>
+          <div className="text-blue-500 p-10">
+            <span className="text-xl p-2">{unit_2_2[arr[0]].example}</span>
+          </div>
+          </>);
       case lessons.lesson_2_3.title:
         random(words2_3, arr);
-        return <div>{unit_2_3[arr[0]]}</div>;
+        return (<>
+          <div>{unit_2_3[arr[0]].word}</div>
+          <div className="inline-block pt-10"><img src={unit_2_3[arr[0]].picture}/></div>
+          <div className="text-blue-500 p-10">
+            <span className="text-xl p-2">{unit_2_3[arr[0]].example}</span>
+          </div>
+          </>);
       default:
         return <div>Chose Test Page</div>;
     }
@@ -88,7 +119,7 @@ function LearningIndex() {
           <div className="bg-white border-solid rounded-xl">
             <H1 children={location.state?.title} />
             <H2 children={location.state?.subtitle} />
-            <div className="text-4xl my-4 ">{displayWords()}</div>
+            <div className="text-4xl my-4">{displayWords()}</div>
             <div className="flex justify-center my-4">
               <CorrectAnswer children={context.countPositive} />
               <NotCorrectAnswer children={context.countNegative} />
