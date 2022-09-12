@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 
-
+import negative from '../../../assets/sounds/noncorrect.mp3'
+import positive from '../../../assets/sounds/correct.mp3'
+import { sound } from "./sound_function";
 import { unit_1_ob } from "../../../dictionary/unit-1/unit_1_ob";
 import { unit_1_1 } from "../../../dictionary/unit-1/unit_1_1";
 import { unit_2 } from "../../../dictionary/unit-2/unit_2";
@@ -17,6 +19,7 @@ import { random } from "./random_words";
 import CorrectAnswer from "../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
+
 
 function LearningIndex() {
   const words = Object.keys(unit_1_ob); 
@@ -35,10 +38,12 @@ function LearningIndex() {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
+      sound(positive)
     } else {
       redirectEndScreen();
       context.incrementNegative();
       context.incrementTotal();
+      sound(negative)
     }
   };
   //redirect on done screen
