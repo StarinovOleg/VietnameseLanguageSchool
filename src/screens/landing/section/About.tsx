@@ -30,7 +30,7 @@ const static_data_list = static_data.map(
 );
 function About() {
   return (
-    <div className=" md:bg-background-about sm:bg-none bg-no-repeat bg-contain bg-left-top  md:mt-60 sm:mt-10">
+    <div className=" md:bg-background-about sm:bg-none bg-no-repeat bg-contain bg-left-top  md:mt-60 sm:mt-10 container mx-auto">
       <div className="flex md:justify-center sm:justify-start ">
         <div>{static_data_list}</div>
       </div>
