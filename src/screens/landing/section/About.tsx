@@ -1,6 +1,7 @@
 import React from "react";
 import icon_market from "../../../assets/icon-market.png";
 import icon_game from "../../../assets/icon-game.png";
+import background from "../../../assets/background_about.png"
 const static_data = [
   {
     id: 1,
@@ -30,11 +31,11 @@ const static_data_list = static_data.map(
 );
 function About() {
   return (
-    <div className=" md:bg-background-about sm:bg-none bg-no-repeat bg-contain bg-left-top  md:mt-60 sm:mt-10 container mx-auto">
-      <div className="flex md:justify-center sm:justify-start ">
-        <div>{static_data_list}</div>
+      <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mt-60 ">
+       <img src={background} alt="logo" className=" md:mt-auto md:mb-auto w-64 ml-auto mr-auto"/>
+        <div >{static_data_list}</div>
       </div>
-    </div>
+   
   );
 }
 
