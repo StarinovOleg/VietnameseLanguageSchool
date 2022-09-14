@@ -19,7 +19,7 @@ import { random } from "./random_words";
 import CorrectAnswer from "../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
-
+import ButtonSound from "../components/ButtonSound";
 
 function LearningIndex() {
   const words = Object.keys(unit_1_ob); 
@@ -69,6 +69,7 @@ function LearningIndex() {
         <div className="text-blue-500 p-10">
           <span className="text-xl p-2">{unit_1_ob[arr[0]].example}</span>
         </div>
+        <ButtonSound onClick={()=>{sound(unit_1_ob[arr[0]].audio)}} children="sound here"/>
         </>);
       case lessons.lesson_1_1.title:
         random(words1_1, arr);
