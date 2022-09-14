@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "background-promo": "url('/src/assets/background_promo.png')",
-        "background-about": "url('/src/assets/background_about.png')",
+        "background-button": "url('/src/assets/icon-audio.png')",
       }),
     },
   },
