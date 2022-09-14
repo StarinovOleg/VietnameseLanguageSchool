@@ -19,8 +19,8 @@ import { random } from "./random_words";
 import CorrectAnswer from "../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
-import ButtonSound from "../components/ButtonSound";
-
+import DisplayWordBlock from "../components/DisplayWordBlock";
+import Error from "../../main/error/Error";
 function LearningIndex() {
   const words = Object.keys(unit_1_ob); 
   const words1_1 = Object.keys(unit_1_1);
@@ -63,50 +63,47 @@ function LearningIndex() {
     switch (location.state?.title) {
       case lessons.lesson_1.title:
         random(words, arr);
-        return (<>
-        <div>{unit_1_ob[arr[0]].word}</div>
-        <div className="inline-block pt-10"><img src={unit_1_ob[arr[0]].picture}/></div>
-        <div className="text-blue-500 p-10">
-          <span className="text-xl p-2">{unit_1_ob[arr[0]].example}</span>
-        </div>
-        <ButtonSound onClick={()=>{sound(unit_1_ob[arr[0]].audio)}} children="sound here"/>
-        </>);
+        return (
+        <DisplayWordBlock  word={unit_1_ob[arr[0]].word} 
+        picture={unit_1_ob[arr[0]].picture} 
+        example={unit_1_ob[arr[0]].example}
+        onClick={()=>{sound(unit_1_ob[arr[0]].audio)}}
+        />
+        );
       case lessons.lesson_1_1.title:
         random(words1_1, arr);
-        return (<>
-          <div>{unit_1_1[arr[0]].word}</div>
-          <div className="inline-block pt-10"><img src={unit_1_1[arr[0]].picture}/></div>
-          <div className="text-blue-500 p-10">
-            <span className="text-xl p-2">{unit_1_1[arr[0]].example}</span>
-          </div>
-          </>);
+        return (
+        <DisplayWordBlock  word={unit_1_1[arr[0]].word} 
+        picture={unit_1_1[arr[0]].picture} 
+        example={unit_1_1[arr[0]].example}
+        onClick={()=>{sound(unit_1_1[arr[0]].audio)}}
+        />
+          );
       case lessons.lesson_2.title:
         random(words2, arr);
-        return (<>
-          <div>{unit_2[arr[0]].word}</div>
-          <div className="inline-block pt-10"><img src={unit_2[arr[0]].picture}/></div>
-          <div className="text-blue-500 p-10">
-            <span className="text-xl p-2">{unit_2[arr[0]].example}</span>
-          </div>
-          </>);
+        return (
+        <DisplayWordBlock  word={unit_2[arr[0]].word} 
+        picture={unit_2[arr[0]].picture} 
+        example={unit_2[arr[0]].example}
+        onClick={()=>{sound(unit_2[arr[0]].audio)}}
+        />);
       case lessons.lesson_2_2.title:
         random(words2_2, arr);
-        return (<>
-          <div>{unit_2_2[arr[0]].word}</div>
-          <div className="inline-block pt-10"><img src={unit_2_2[arr[0]].picture}/></div>
-          <div className="text-blue-500 p-10">
-            <span className="text-xl p-2">{unit_2_2[arr[0]].example}</span>
-          </div>
-          </>);
+        return (
+        <DisplayWordBlock  word={unit_2_2[arr[0]].word} 
+        picture={unit_2_2[arr[0]].picture} 
+        example={unit_2_2[arr[0]].example}
+        onClick={()=>{sound(unit_2_2[arr[0]].audio)}}
+        />
+       );
       case lessons.lesson_2_3.title:
         random(words2_3, arr);
-        return (<>
-          <div>{unit_2_3[arr[0]].word}</div>
-          <div className="inline-block pt-10"><img src={unit_2_3[arr[0]].picture}/></div>
-          <div className="text-blue-500 p-10">
-            <span className="text-xl p-2">{unit_2_3[arr[0]].example}</span>
-          </div>
-          </>);
+        return (
+        <DisplayWordBlock  word={unit_2_3[arr[0]].word} 
+        picture={unit_2_3[arr[0]].picture} 
+        example={unit_2_3[arr[0]].example}
+        onClick={()=>{sound(unit_2_3[arr[0]].audio)}}
+        />);
       default:
         return <div>Chose Test Page</div>;
     }
@@ -150,19 +147,7 @@ function LearningIndex() {
           </div>
         </div>
       ) : (
-        <div className="text-center bg-white p-4 border-solid rounded-xl p-4 xl mx-4">
-          <H1 children="Chose Test Page" />
-          <Button
-            onClick={() =>
-              navigate("/landing", {
-                replace: true,
-              })
-            }
-            btnprimary="btn-primary"
-          >
-            Test Page
-          </Button>
-        </div>
+         <Error/>
       )}
     </div>
   );
