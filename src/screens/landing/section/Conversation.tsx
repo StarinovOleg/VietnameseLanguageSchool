@@ -46,7 +46,7 @@ function Conversation() {
   return (
     <div className="h-auto">
       <div className="md:mx-10 sm:mx-auto mt-60 text-center ">
-              <H2
+        <H2
           children="Listen to the conversation"
           fontsizeprimary="h2-font-ize-primary"
         />

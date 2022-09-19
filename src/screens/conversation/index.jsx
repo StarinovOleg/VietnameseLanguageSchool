@@ -49,7 +49,7 @@ function ConversationIndex() {
       }
     }
       return (
-    <div className="bg-indigo-50 h-screen">
+    <div className="bg-indigo-50 md:h-screen sm:h-auto">
         <div className="text-center p-4 xl mx-4 ">
           <div className="bg-white border-solid rounded-xl ">
           {location.state?.title ?  (<div className="text-4xl my-4 p-10"style={{whiteSpace: "pre-wrap"}}>{displayWords()}</div>):(
