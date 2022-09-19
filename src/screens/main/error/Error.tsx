@@ -2,9 +2,7 @@ import React from "react";
 import H1 from "../../../ui-library/H1";
 import Button from "../../../ui-library/Button";
 import { useNavigate, useLocation } from "react-router-dom";
-function Error(props: {
-  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
-  }) {
+function Error() {
   const navigate = useNavigate();
   return (
     <div className="text-center p-4 xl mx-4 ">
