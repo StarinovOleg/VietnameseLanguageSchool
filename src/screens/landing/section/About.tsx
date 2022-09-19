@@ -31,7 +31,7 @@ const static_data_list = static_data.map(
 );
 function About() {
   return (
-      <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mt-60 ">
+      <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mb-60 mt-60">
        <img src={background} alt="logo" className=" md:mt-auto md:mb-auto w-64 ml-auto mr-auto"/>
         <div >{static_data_list}</div>
       </div>

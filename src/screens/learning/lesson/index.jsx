@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 
 import negative from '../../../assets/sounds/noncorrect.mp3'
 import positive from '../../../assets/sounds/correct.mp3'
-import { sound } from "./sound_function";
+import { sound } from "../../../services/sound_function";
 import { unit_1_ob } from "../../../dictionary/unit-1/unit_1_ob";
 import { unit_1_1 } from "../../../dictionary/unit-1/unit_1_1";
 import { unit_2 } from "../../../dictionary/unit-2/unit_2";
