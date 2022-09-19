@@ -7,7 +7,8 @@ function Error(props: {
   }) {
   const navigate = useNavigate();
   return (
-    <div className="text-center bg-white p-4 border-solid rounded-xl p-4 xl mx-4">
+    <div className="text-center p-4 xl mx-4 ">
+    <div className="bg-white border-solid rounded-xl h-screen">
     <H1 children="Chose Test Page" />
     <Button
       onClick={() =>
@@ -19,6 +20,7 @@ function Error(props: {
     >
       Test Page
     </Button>
+  </div>
   </div>
   );
 }
