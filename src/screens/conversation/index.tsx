@@ -4,18 +4,21 @@ import { sound } from "../../services/sound_function";
 import { converstation_1 } from "../../dictionary/unit-1/converstation_1";
 import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
 import { useNavigate, useLocation } from "react-router-dom";
-import  {converstation}  from "../../../src/store/static";
+import  {converstation}  from "../../store/static";
 import Error from "../main/error/Error";
 
 import DisplayWordBlock from "../learning/components/DisplayWordBlock";
 
-
+interface location{
+  title:any
+}
 function ConversationIndex() {
   const navigate = useNavigate();
   const location = useLocation();
+  const state = location.state as location
   //dynamic words display
   const displayWords = () => {
-    switch (location.state?.title) {
+    switch (state?.title) {
       case converstation.hello.title:
         return (
         <DisplayWordBlock  word={converstation_1.converstation_1_1.text} 
@@ -52,9 +55,8 @@ function ConversationIndex() {
     <div className="bg-indigo-50 md:h-screen sm:h-auto">
         <div className="text-center p-4 xl mx-4 ">
           <div className="bg-white border-solid rounded-xl ">
-          {location.state?.title ?  (<div className="text-4xl my-4 p-10"style={{whiteSpace: "pre-wrap"}}>{displayWords()}</div>):(
-         <Error/>
-         )}
+          {state?.title ?  (<div className="text-4xl my-4 p-10"style={{whiteSpace: "pre-wrap"}}>{displayWords()}</div>):<Error/>
+         }
           </div>
         </div>
     </div>

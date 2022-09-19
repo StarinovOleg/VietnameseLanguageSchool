@@ -3,8 +3,8 @@ import ButtonSound from "./ButtonSound";
 function DisplayWordBlock(props: {
   onClick: MouseEventHandler<HTMLButtonElement> | undefined;
   word: string;
-  picture:string;
-  example:string
+  picture?:string;
+  example?:string
   }) {
   return (
     <>
