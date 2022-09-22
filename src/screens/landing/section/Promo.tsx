@@ -1,10 +1,10 @@
 import React from "react";
 import H1 from "../../../ui-library/H1";
 import H2 from "../../../ui-library/H2";
-
+import background_promo from '../../../assets/background_promo.png'
 function Promo() {
   return (
-    <div className="bg-background-promo bg-no-repeat  bg-bottom bg-contain md:h-screen sm:h-auto">
+    <div className=" md:h-screen sm:h-auto">
       <div className="flex justify-center">
         <div className="text-center">
           <H1 children="Be a pioneer" btn-primary />
@@ -17,6 +17,7 @@ function Promo() {
           fontsizeprimary="h2-font-ize-primary"
         />
       </div>
+      <img src={background_promo}  className="md:mt-auto md:mb-auto w-9/12 ml-auto mr-auto "/>
     </div>
   );
 }

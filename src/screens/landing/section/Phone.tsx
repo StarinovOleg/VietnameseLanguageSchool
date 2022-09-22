@@ -8,12 +8,12 @@ import P from "../../../ui-library/P";
 function Phone() {
   return <div className="m-10 grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mb-60 mt-60 ">
     <div>
-      <H2 children="2 step for first result"  fontsizeprimary="h2-font-ize-primary"/>
-      <div className=" border-solid rounded-xl  bg-slate-50 mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none">
-        <P align="align-primary">Chose first group words for training.</P>
+      <H2 children="2 step for first result:"  fontsizeprimary="h2-font-ize-primary"/>
+      <div className="  mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none">
+        <p className="text-xl text-stone-500 font-semibold">Chose first group words for training.</p>
       </div>
-      <div className=" border-solid rounded-xl  bg-slate-50 mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none">
-        <P align="align-primary">Chose dialog for listen and repeat.</P>
+      <div className=" mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none">
+        <p className="text-xl text-stone-500 font-semibold">Chose dialog for listen and repeat.</p>
       </div>
     </div>
     <div className="">
@@ -22,7 +22,7 @@ function Phone() {
         <H2 children="Practice on any device"  fontsizeprimary="h2-font-ize-primary"/>
       </div>  
       <div className="mt-10 ">
-        <img src={phone}  className="md:mt-auto md:mb-auto w-10/12 p-10  bg-slate-100 border-solid rounded-xl"/>
+        <img src={phone}  className="md:mt-auto md:mb-auto w-10/12 p-10 "/>
       </div>
       <div className="md:flex">
         <div className="md:mt-auto md:mb-auto "><img src={appstore} className="w-64 p-10" /></div>
