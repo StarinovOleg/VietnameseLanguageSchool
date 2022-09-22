@@ -22,12 +22,12 @@ const pictures=[{
   text: "Memorize new words with the help of tests in a playful way"
 }]
 const pictureItem=pictures.map((item)=>
-<div className="text-center bg-slate-100 border-solid rounded-xl mr-10 ml-10 p-10" key={item.id}>
+<div className="text-center  mr-10 ml-10 p-10" key={item.id}>
 <H2
 children={item.title}
 fontsizeprimary="h2-font-ize-primary"
 />
-<img src={item.src}  className="md:mt-auto md:mb-auto w-32 ml-auto mr-auto pt-10"/>
+<img src={item.src}  className="md:mt-auto md:mb-auto w-64 ml-auto mr-auto pt-10"/>
 <p className="text-xl text-stone-500 font-semibold  ml-auto  pt-10">{item.text}</p>
 </div>
 )

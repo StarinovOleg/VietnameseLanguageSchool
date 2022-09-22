@@ -6,7 +6,7 @@ import img from '../assets/icons-lessons/unit1.png'
 const Card = (props: { subtitle: any; to: string; state: any; title: any, src:any }) => {
   return (
     <NavLink to={props.to} state={props.state}>
-      <div className=" border-solid rounded-xl cursor-pointer bg-indigo-50 m-2 p-2 h-auto md:drop-shadow-xl sm:drop-shadow-none flex flex-wrap">
+      <div className=" border-solid rounded-xl cursor-pointer bg-gradient-to-b from-cyan-500 to-blue-500 m-2 p-2 h-auto md:drop-shadow-xl sm:drop-shadow-none flex flex-wrap">
         <div className="flex-none">
           <img src={props.src} alt='icons'/>
         </div>
