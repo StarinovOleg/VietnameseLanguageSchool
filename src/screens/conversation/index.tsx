@@ -6,7 +6,6 @@ import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
 import { useNavigate, useLocation } from "react-router-dom";
 import  {converstation}  from "../../store/static";
 import Error from "../main/error/Error";
-
 import DisplayWordBlock from "../learning/components/DisplayWordBlock";
 
 interface location{
@@ -22,31 +21,31 @@ function ConversationIndex() {
       case converstation.hello.title:
         return (
         <DisplayWordBlock  word={converstation_1.converstation_1_1.text} 
-           onClick={()=>{sound(converstation_1.converstation_1_1.audio)}}
+           audio={converstation_1.converstation_1_1.audio}
         />
         );
       case converstation.where_you_from.title:
           return (
           <DisplayWordBlock  word={converstation_1.converstation_1_2.text} 
-             onClick={()=>{sound(converstation_1.converstation_1_2.audio)}}
+             audio={converstation_1.converstation_1_2.audio}
           />
          );
          case converstation.what_is.title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_1.text} 
-             onClick={()=>{sound(converstation_2.converstation_2_1.audio)}}
+             audio={converstation_2.converstation_2_1.audio}
           />
          );
          case converstation.introduce_yourself.title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_2.text} 
-             onClick={()=>{sound(converstation_2.converstation_2_2.audio)}}
+             audio={converstation_2.converstation_2_2.audio}
           />
          );
          case converstation.start_conversation.title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_3.text} 
-             onClick={()=>{sound(converstation_2.converstation_2_3.audio)}}
+             audio={converstation_2.converstation_2_3.audio}
           />
          );
       }
