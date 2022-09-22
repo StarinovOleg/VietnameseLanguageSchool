@@ -19,9 +19,10 @@ function EndScreen() {
     navigate("/landing", {
       replace: true,
     });
-    window.location.reload();
+
   };
   return (
+    <div className="p-4 bg-indigo-50">
     <div className="text-left bg-white p-4 border-solid rounded-xl m-4 h-screen">
       <H1>Congratulation you done {locationState.title}</H1>
       <CorrectAnswer children={context.countPositive} />
@@ -29,6 +30,7 @@ function EndScreen() {
       <Button onClick={redirectEndScreen} btnprimary="btn-primary">
         Test Page
       </Button>
+    </div>
     </div>
   );
 }

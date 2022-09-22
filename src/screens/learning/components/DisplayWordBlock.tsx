@@ -1,11 +1,16 @@
 import React, { MouseEventHandler } from "react";
 import ButtonSound from "./ButtonSound";
+import ReactAudioPlayer from 'react-audio-player';
+import { useLocation } from "react-router-dom"
+
 function DisplayWordBlock(props: {
-  onClick: MouseEventHandler<HTMLButtonElement> | undefined;
+  onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
+  audio?:any,
   word: string;
   picture?:string;
   example?:string
   }) {
+  const location = useLocation();
   return (
     <>
     <div className="leading-[3rem]">{props.word}</div>
@@ -13,8 +18,17 @@ function DisplayWordBlock(props: {
     <div className="text-blue-500 p-10">
       <span className="text-xl p-2">{props.example}</span>
     </div>
-    <ButtonSound onClick={props.onClick} />
-    </>
+    {location.pathname==='/learning'?<ButtonSound onClick={props.onClick} />:
+       <ReactAudioPlayer
+          
+          className="inline-block bg-inherit"
+          src={props.audio}
+          controls
+        />
+    }
+     </>
+    
+ 
   );
 }
 
