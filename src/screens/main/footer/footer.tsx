@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-blue-700 sticky top-[100vh]">
       <div className="text-white text-xl">
-        © {new Date().getFullYear()} Vietnamese Language school for foreigner
+        © Starinov Production {new Date().getFullYear()}  Vietnamese Language school for foreigner
       </div>
     </footer>
   );
