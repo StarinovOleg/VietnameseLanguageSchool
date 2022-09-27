@@ -5,7 +5,7 @@ import P from "../ui-library/P";
 const CardListen = (props: { subtitle: any; to: string; state: any; title: any, src:any }) => {
   return (
     <NavLink to={props.to} state={props.state}>
-      <div className=" border-solid rounded-xl cursor-pointer bg-gradient-to-b from-[#a8e063]  to-[#56ab2f] m-2 p-2 h-auto md:drop-shadow-xl sm:drop-shadow-none text-center">
+      <div className=" border-solid rounded-xl cursor-pointer bg-gradient-to-b from-[#a8e063]  to-[#56ab2f] m-2 p-2 h-auto  hover:sm:drop-shadow-none text-center hover:md:shadow-lg hover:md:shadow-green-500/50">
        
           <img src={props.src} alt='icons' className="md:mt-auto md:mb-auto w-64 ml-auto mr-auto"/>
        
