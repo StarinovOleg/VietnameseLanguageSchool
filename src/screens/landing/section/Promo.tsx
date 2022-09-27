@@ -17,7 +17,7 @@ function Promo() {
           fontsizeprimary="h2-font-ize-primary"
         />
       </div>
-      <img src={background_promo}  className="md:mt-auto md:mb-auto w-9/12 ml-auto mr-auto "/>
+      <img src={background_promo}  className="md:mt-auto md:mb-auto w-8/12 ml-auto mr-auto "/>
     </div>
   );
 }
