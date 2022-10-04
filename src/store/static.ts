@@ -152,6 +152,9 @@ export const converstation={
     end_screen:{
         'title':'Congratulation you done',
         'button_name':'Test Page'
+    },
+    landing:{
+        'continue':'Continue more training >>>'
     }
 
 }
