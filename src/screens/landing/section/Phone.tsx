@@ -4,7 +4,7 @@ import H2 from "../../../ui-library/H2";
 import  {converstation}  from "../../../store/static";
 
 const cardItem=converstation.phone.group1.item.map((item)=>(
-  <div className="  mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none">
+  <div className="  mr-10 mt-10 p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none" key={item.text}>
     <p className="text-xl text-stone-500 font-semibold">{item.text}</p>
   </div>
   ))
