@@ -60,5 +60,10 @@ export const converstation={
         'title':'Start conversation.',
         'subtitle': 'Starting a casual conversation.',
         'img':start_conversation
+    },
+    six_tones:{
+        'title': 'Six tones',
+        'subtitle': 'The difference of the six tones',
+        'img':''
     }
 }
