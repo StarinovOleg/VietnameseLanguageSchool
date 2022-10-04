@@ -3,7 +3,6 @@ import { converstation } from "../../../store/static";
 import CardListen from "../../../components/CardListen";
 import H2 from "../../../ui-library/H2";
 
-
 const cardlisten=[{
   id:1,
   to: '/conversation',

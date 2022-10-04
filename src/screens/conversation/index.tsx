@@ -1,33 +1,23 @@
 import React, { useContext, useEffect } from "react";
 
-import { sound } from "../../services/sound_function";
 import { converstation_1 } from "../../dictionary/unit-1/converstation_1";
 import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import  {converstation}  from "../../store/static";
 import Error from "../main/error/Error";
 import DisplayWordBlock from "../learning/components/DisplayWordBlock";
 import Table from "../../components/Table"
 import { pronunciation } from "../../dictionary/unit-1/pronunciation";
-//import {pronunciation} from "../../dictionary/unit-1/pronunciation"
-import ReactAudioPlayer from 'react-audio-player';
+import H1 from "../../ui-library/H1";
+
 interface location{
   title:any
 }
-
-var heading = ['Name', 'City', 'Course'];
-var body =
-    [['Kapil', 'Jaipur', 'MCA'],
-    ['Aakash', 'Hisar', 'Btech'],
-    ['Mani', 'Ranchi', 'MSc'],
-    ['Yash', 'Udaipur', 'Mtech']
-    ];
-    let data = [{mykey1:23},{mykey2:24},{mykey3:34}, {mykey4:34}];
- 
-    const r = Object.entries(pronunciation).map(([k,v]) => <Table k={k} v={v}/>);
+    const tones = Object.entries(pronunciation).map(([k,v]) => (
+      <Table k={k} v={v}/>
+    ));
   
 function ConversationIndex() {
-  const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as location
   //dynamic words display
@@ -65,9 +55,12 @@ function ConversationIndex() {
          );
          case converstation.six_tones.title:
           return (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6  m-10">
-            {r}
-          </div>
+          <>
+            <H1 children={state.title} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6  m-10 flex">
+              {tones}
+            </div>
+          </>
          );
       }
     }

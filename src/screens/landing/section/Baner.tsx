@@ -34,7 +34,7 @@ fontsizeprimary="h2-font-ize-primary"
 function Baner() {
   return (
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6 mb-60 mt-60">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6 mb-40 mt-40">
         {pictureItem}
       </div>
    

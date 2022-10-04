@@ -7,6 +7,7 @@ import where_you_from from '../assets/conversation-icon/where_you_from.jpg'
 import start_conversation from '../assets/conversation-icon/conversation.jpg'
 import introduce_yourself from '../assets/conversation-icon/introduce.jpg'
 import what_is from '../assets/conversation-icon/what_is.jpg'
+import six_tones from '../assets/conversation-icon/six_tones.jpg'
 export const lessons={
     lesson_1: {
         'title':'Unit 1',
@@ -64,6 +65,6 @@ export const converstation={
     six_tones:{
         'title': 'Six tones',
         'subtitle': 'The difference of the six tones',
-        'img':''
+        'img':six_tones
     }
 }
