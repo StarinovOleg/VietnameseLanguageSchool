@@ -14,7 +14,7 @@ import H1 from "../../../ui-library/H1";
 import H2 from "../../../ui-library/H2";
 import { useNavigate, useLocation } from "react-router-dom";
 import SchoolContext from "../../../store/state";
-import { lessons } from "../../../store/static";
+import { converstation } from "../../../store/static";
 import { random } from "./random_words";
 import CorrectAnswer from "../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
@@ -61,7 +61,7 @@ function LearningIndex() {
   //dynamic words display
   const displayWords = () => {
     switch (location.state?.title) {
-      case lessons.lesson_1.title:
+      case converstation.lessons.lessons[0].title:
         random(words, arr);
         return (
         <DisplayWordBlock  word={unit_1_ob[arr[0]].word} 
@@ -70,7 +70,7 @@ function LearningIndex() {
         onClick={()=>{sound(unit_1_ob[arr[0]].audio)}}
         />
         );
-      case lessons.lesson_1_1.title:
+      case converstation.lessons.lessons[1].title:
         random(words1_1, arr);
         return (
         <DisplayWordBlock  word={unit_1_1[arr[0]].word} 
@@ -79,7 +79,7 @@ function LearningIndex() {
         onClick={()=>{sound(unit_1_1[arr[0]].audio)}}
         />
           );
-      case lessons.lesson_2.title:
+      case converstation.lessons.lessons[2].title:
         random(words2, arr);
         return (
         <DisplayWordBlock  word={unit_2[arr[0]].word} 
@@ -87,7 +87,7 @@ function LearningIndex() {
         example={unit_2[arr[0]].example}
         onClick={()=>{sound(unit_2[arr[0]].audio)}}
         />);
-      case lessons.lesson_2_2.title:
+      case converstation.lessons.lessons[3].title:
         random(words2_2, arr);
         return (
         <DisplayWordBlock  word={unit_2_2[arr[0]].word} 
@@ -96,7 +96,7 @@ function LearningIndex() {
         onClick={()=>{sound(unit_2_2[arr[0]].audio)}}
         />
        );
-      case lessons.lesson_2_3.title:
+      case converstation.lessons.lessons[4].title:
         random(words2_3, arr);
         return (
         <DisplayWordBlock  word={unit_2_3[arr[0]].word} 

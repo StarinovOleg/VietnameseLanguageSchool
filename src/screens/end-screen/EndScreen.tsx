@@ -6,6 +6,7 @@ import NotCorrectAnswer from "../../components/NotCorrectAnswer";
 import { useNavigate } from "react-router-dom";
 import H1 from "../../ui-library/H1";
 import Button from "../../ui-library/Button";
+import  {converstation}  from "../../store/static";
 interface locationStateProps {
   title: string;
 }
@@ -24,11 +25,11 @@ function EndScreen() {
   return (
     <div className="p-4 bg-indigo-50">
     <div className="text-left bg-white p-4 border-solid rounded-xl m-4 h-screen">
-      <H1>Congratulation you done {locationState.title}</H1>
+      <H1>{converstation.end_screen.title} {locationState.title}</H1>
       <CorrectAnswer children={context.countPositive} />
       <NotCorrectAnswer children={context.countNegative} />
       <Button onClick={redirectEndScreen} btnprimary="btn-primary">
-        Test Page
+        {converstation.end_screen.button_name}
       </Button>
     </div>
     </div>

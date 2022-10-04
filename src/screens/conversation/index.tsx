@@ -14,7 +14,7 @@ interface location{
   title:any
 }
     const tones = Object.entries(pronunciation).map(([k,v]) => (
-      <Table k={k} v={v}/>
+      <Table k={k} v={v} key={v}/>
     ));
   
 function ConversationIndex() {
@@ -23,37 +23,37 @@ function ConversationIndex() {
   //dynamic words display
   const displayWords = () => {
     switch (state?.title) {
-      case converstation.hello.title:
+      case converstation.conversation.item[0].title:
         return (
         <DisplayWordBlock  word={converstation_1.converstation_1_1.text} 
            audio={converstation_1.converstation_1_1.audio}
         />
         );
-      case converstation.where_you_from.title:
+      case converstation.conversation.item[1].title:
           return (
           <DisplayWordBlock  word={converstation_1.converstation_1_2.text} 
              audio={converstation_1.converstation_1_2.audio}
           />
          );
-         case converstation.what_is.title:
+         case converstation.conversation.item[2].title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_1.text} 
              audio={converstation_2.converstation_2_1.audio}
           />
          );
-         case converstation.introduce_yourself.title:
+         case converstation.conversation.item[3].title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_2.text} 
              audio={converstation_2.converstation_2_2.audio}
           />
          );
-         case converstation.start_conversation.title:
+         case converstation.conversation.item[4].title:
           return (
           <DisplayWordBlock  word={converstation_2.converstation_2_3.text} 
              audio={converstation_2.converstation_2_3.audio}
           />
          );
-         case converstation.six_tones.title:
+         case converstation.conversation.item[5].title:
           return (
           <>
             <H1 children={state.title} />
