@@ -17,7 +17,7 @@ function Error() {
       }
       btnprimary="btn-primary"
     >
-    {converstation.error.button_name}
+    {converstation.button.button_name}
     </Button>
   </div>
   </div>

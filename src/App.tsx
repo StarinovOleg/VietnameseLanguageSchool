@@ -8,6 +8,7 @@ import Landing from "./screens/landing";
 import EndScreen from "./screens/end-screen/EndScreen";
 import GlobalState from "./store/Globalstate";
 import ScrollToTop from "./services/scroll-top.service";
+import Training from "./screens/training/training";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/landing" element={<Landing />} />
             <Route path="/learning" element={<LearningIndex />} />
+            <Route path="/training" element={<Training />} />
             <Route path="/conversation" element={<ConversationIndex />} />
             <Route path="/endtest" element={<EndScreen />} />
           </Route>
