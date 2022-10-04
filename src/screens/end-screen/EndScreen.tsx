@@ -29,7 +29,7 @@ function EndScreen() {
       <CorrectAnswer children={context.countPositive} />
       <NotCorrectAnswer children={context.countNegative} />
       <Button onClick={redirectEndScreen} btnprimary="btn-primary">
-        {converstation.end_screen.button_name}
+        {converstation.button.button_name}
       </Button>
     </div>
     </div>

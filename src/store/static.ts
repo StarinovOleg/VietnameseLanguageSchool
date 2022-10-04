@@ -147,14 +147,16 @@ export const converstation={
     },
     error:{
         'title':'Chose Test Page',
-        'button_name': 'Test Page'
     },
     end_screen:{
         'title':'Congratulation you done',
-        'button_name':'Test Page'
     },
     landing:{
         'continue':'Continue more training >>>'
+    },
+    button:{
+        'button_name': 'Title Page',
+        'button_name-training':'Training Page' 
     }
 
 }
