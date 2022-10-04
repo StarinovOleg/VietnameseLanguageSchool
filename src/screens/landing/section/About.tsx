@@ -1,23 +1,7 @@
 import React from "react";
-import icon_market from "../../../assets/icon-market.png";
-import icon_game from "../../../assets/icon-game.png";
-import background from "../../../assets/background_about.png"
-const static_data = [
-  {
-    id: 1,
-    title: "Free access",
-    body: " Our mission is to make language learning accessible to everyone",
-    img: icon_market,
- 
-  },
-  {
-    id: 2,
-    title: "Learning in the game",
-    body: " Game mechanics proven effective for all ages",
-    img: icon_game,
-  },
-];
-const static_data_list = static_data.map(
+import { converstation } from "../../../store/static";
+
+const static_data_list = converstation.about.about.map(
   (item: { title: string; body: string; id: number; img: any }) => (
     <div className=" drop-shadow-2xl flex m-10 " key={item.id}>
       <img src={item.img} alt="logo" className="w-12 h-12 mt-4 " />
@@ -33,7 +17,7 @@ const static_data_list = static_data.map(
 function About() {
   return (
       <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mb-60 mt-60">
-       <img src={background} alt="logo" className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"/>
+       <img src={converstation.about.background} alt="logo" className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"/>
         <div >{static_data_list}</div>
       </div>
    
