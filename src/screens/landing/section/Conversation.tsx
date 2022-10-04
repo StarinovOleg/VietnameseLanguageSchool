@@ -3,7 +3,6 @@ import { converstation } from "../../../store/static";
 import CardListen from "../../../components/CardListen";
 import H2 from "../../../ui-library/H2";
 
-
 const cardlisten=[{
   id:1,
   to: '/conversation',
@@ -34,7 +33,13 @@ const cardlisten=[{
   title: converstation.start_conversation.title,
   subtitle:converstation.start_conversation.subtitle, 
   src:converstation.start_conversation.img,
-}]
+},{
+  id:6,
+  to:'/conversation',
+  title:converstation.six_tones.title,
+  subtitle:converstation.six_tones.subtitle,
+  src:converstation.six_tones.img,
+},]
 const cardItem=cardlisten.map((item)=>(
 <CardListen to={item.to} title={item.title} subtitle={item.subtitle} src={item.src}   key={item.id}
 state={{
