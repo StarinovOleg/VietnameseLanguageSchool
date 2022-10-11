@@ -16,9 +16,15 @@ const static_data_list = converstation.about.about.map(
 );
 function About() {
   return (
-      <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-4 content mb-60 mt-60">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 content mb-60 mt-60">
        <img src={converstation.about.background} alt="logo" className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"/>
-        <div >{static_data_list}</div>
+        <div >
+          {static_data_list}
+          <div className="md:flex">
+            <div className="md:mt-auto md:mb-auto "><img src={converstation.about.appstore} className="w-64 p-10" /></div>
+            <div className="md:mt-auto md:mb-auto "><img src={converstation.about.googlestore} className="w-64 p-4" /></div>
+           </div>
+        </div>
       </div>
    
   );
