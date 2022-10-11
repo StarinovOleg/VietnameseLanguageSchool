@@ -5,11 +5,9 @@ import { converstation } from "../../../store/static";
 function Promo() {
   return (
     <div className=" md:h-screen sm:h-auto">
-      <div className="flex justify-center">
         <div className="text-center">
           <H1 children={converstation.promo.title} btn-primary />
         </div>
-      </div>
       <div className="mt-20  text-center">
         <H2
           children={converstation.promo.subtitle}

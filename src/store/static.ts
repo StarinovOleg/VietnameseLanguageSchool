@@ -14,7 +14,8 @@ import listening from '../assets/baner-section/listening.png'
 import practice from '../assets/baner-section/practice.png'
 import icon_market from "../assets/icon-market.png";
 import icon_game from "../assets/icon-game.png";
-import background from "../assets/background_about.png"
+import icon_device from "../assets/icon-device.png";
+import background from "../assets/phone.png"
 import phone from '../assets/phone.png'
 import appstore from '../assets/app-store-badge.png'
 import googlestore from '../assets/google-play-badge.png'
@@ -76,6 +77,8 @@ export const converstation={
     },
     about:{      
         'background':background,
+        'appstore':appstore,
+        'googlestore':googlestore,
         'about':[
         {
           id: 1,
@@ -89,6 +92,12 @@ export const converstation={
           title: "Learning in the game",
           body: " Game mechanics proven effective for all ages",
           img: icon_game,
+        },
+        {
+          id: 3,
+          title: "Practice anywhere",
+          body: "Practice anywhere, with any device",
+          img: icon_device,
         },
       ]},
     conversation:{
@@ -131,19 +140,13 @@ export const converstation={
             'img':six_tones
           }]
     },
-    phone:{
+    method:{
         'group1':{
-            'title':'2 step for first result:',
+        'title':'2 step for first result:',
         'item':[{text:'Chose first group words for training.'},
                 {text:'Chose dialog for listen and repeat.'}]
         },
-        'group2':{
-            'title':'Always with you',
-            'subtitle':'Practice on any device',
-            'img': phone
-        },
-        'appstore':appstore,
-        'googlestore':googlestore
+
     },
     error:{
         'title':'Chose Test Page',
