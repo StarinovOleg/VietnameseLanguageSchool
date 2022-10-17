@@ -148,6 +148,28 @@ export const converstation={
         },
 
     },
+    practice_translate:{
+      'title':'Translate these sentences',
+      'item':[{
+        'id':1,
+        'to': '/translated',
+        'title':'Hello! My name is David',
+      },{
+        'id':2,
+        'to': '/translated',
+        'title':'Where do you come from?',
+      },
+      {
+        'id':3,
+        'to': '/translated',
+        'title':'I am a doctor',
+      },      {
+        'id':4,
+        'to': '/translated',
+        'title':'How old is she?',
+      },
+    ]
+    },
     error:{
         'title':'Chose Test Page',
     },

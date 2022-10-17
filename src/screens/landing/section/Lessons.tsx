@@ -9,12 +9,12 @@ import { cardItemLesson } from "../../learning/components/Lists";
 
 function Lessons() {
   return (
-    <Section title={converstation.lessons.title}>
+    <Section title={converstation.lessons.title} fontcolorsecondary='text-sky-800'>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6  m-10">
         {cardItemLesson.slice(0, 8)}
       </div>
       <div className="m-10 relative">
-        <Link to='/training' children={converstation.landing.continue} align='align-right-side'
+        <Link to='/training' children={converstation.landing.continue} align='align-right-side' blue_color='text-sky-800'
               state={{
                 title: `${converstation.lessons.title}`,
               }}

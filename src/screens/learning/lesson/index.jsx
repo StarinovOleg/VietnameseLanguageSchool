@@ -21,6 +21,7 @@ import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
 import Timer from "../../../components/Timer";
 import DisplayWordBlock from "../components/DisplayWordBlock";
 import Error from "../../main/error/Error";
+import BodyPractice from "../../main/body/body_practice";
 function LearningIndex() {
   const words = Object.keys(unit_1_ob); 
   const words1_1 = Object.keys(unit_1_1);
@@ -116,10 +117,9 @@ function LearningIndex() {
   }, []);
 
   return (
-    <div className="bg-indigo-50 md:h-screen sm:h-auto">
+    <>
       {location.state?.title ? (
-        <div className="text-center p-4 xl mx-4 ">
-          <div className="bg-white border-solid rounded-xl">
+     <BodyPractice>
             <H1 children={location.state?.title} />
             <H2 children={location.state?.subtitle} />
             <div className="text-4xl my-4">{displayWords()}</div>
@@ -144,12 +144,11 @@ function LearningIndex() {
               )}
             </div>
             <Button children="Continue" btnsecondary="btn-secondary" />
-          </div>
-        </div>
+        </BodyPractice>
       ) : (
          <Error/>
       )}
-    </div>
+    </>
   );
 }
 

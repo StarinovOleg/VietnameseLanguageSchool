@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LearningIndex from "./screens/learning/lesson/index.jsx";
 import ConversationIndex from "./screens/conversation";
+import PracticeTranslatedIndex from "./screens/practice_translated"
 import Home from "./screens/main/home";
 import Landing from "./screens/landing";
 import EndScreen from "./screens/end-screen/EndScreen";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/learning" element={<LearningIndex />} />
             <Route path="/training" element={<Training />} />
             <Route path="/conversation" element={<ConversationIndex />} />
+            <Route path="/translated" element={<PracticeTranslatedIndex />} />
             <Route path="/endtest" element={<EndScreen />} />
           </Route>
         </Routes>

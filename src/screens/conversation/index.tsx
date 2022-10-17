@@ -9,6 +9,7 @@ import DisplayWordBlock from "../learning/components/DisplayWordBlock";
 import Table from "../../components/Table"
 import { pronunciation } from "../../dictionary/unit-1/pronunciation";
 import H1 from "../../ui-library/H1";
+import BodyPractice from "../main/body/body_practice";
 
 interface location{
   title:any
@@ -65,14 +66,11 @@ function ConversationIndex() {
       }
     }
       return (
-    <div className="bg-indigo-50 md:h-screen sm:h-auto">
-        <div className="text-center p-4 xl mx-4 ">
-          <div className="bg-white border-solid rounded-xl ">
-          {state?.title ?  (<div className="text-4xl my-4 p-10"style={{whiteSpace: "pre-wrap"}}>{displayWords()}</div>):<Error/>
-         }
-          </div>
-        </div>
-    </div>
+    <>
+      
+          {state?.title ?  (<BodyPractice><div className="text-4xl my-4 p-10"style={{whiteSpace: "pre-wrap"}}>{displayWords()}</div></BodyPractice>):<Error/>
+         }  
+    </>
   );
 }
 

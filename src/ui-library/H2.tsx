@@ -3,6 +3,7 @@ import React from "react";
 function H2(props: {
   fontsizesecondary?: string;
   fontsizeprimary?: string;
+  fontcolorsecondary?:string;
   children:
     | string
     | number
@@ -15,7 +16,7 @@ function H2(props: {
 }) {
   return (
     <h2
-      className={`${props.fontsizesecondary} ${props.fontsizeprimary} text-yellow-500 font-semibold`}
+      className={`${props.fontsizesecondary} ${props.fontsizeprimary} ${props.fontcolorsecondary} text-yellow-500 font-semibold`}
     >
       {props.children}
     </h2>
