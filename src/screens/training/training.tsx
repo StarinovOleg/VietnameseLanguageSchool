@@ -7,6 +7,7 @@ import { cardItemLesson } from "../learning/components/Lists";
 import { cardItemConversation } from "../conversation/components/Lists";
 import H1 from "../../ui-library/H1";
 import Error from '../main/error/Error'
+import BodyPractice from "../main/body/body_practice";
 interface location{
     title:any
   }
@@ -27,18 +28,14 @@ function Training() {
       }
         }
     return (
-        <div className="bg-indigo-50 md:h-screen sm:h-auto">
-            <div className="text-center p-4 xl mx-4 ">
-            <div className="bg-white border-solid rounded-xl">
-                <H1 children={state?.title} />
-                {state?.title ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
-                   {displayWords()}
-                </div>):<Error/>
-                }
-            </div>
-            </div>
-        </div>
+        <BodyPractice>
+          <H1 children={state?.title} />
+            {state?.title ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
+                {displayWords()}
+              </div>):<Error/>
+            }
+        </BodyPractice>
     );
 }
 
