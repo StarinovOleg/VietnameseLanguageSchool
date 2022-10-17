@@ -5,6 +5,7 @@ import CardListen from "../../components/CardListen";
 import { converstation } from "../../store/static";
 import { cardItemLesson } from "../learning/components/Lists";
 import { cardItemConversation } from "../conversation/components/Lists";
+import {cardItemPracticeTranslated} from "../practice_translated/components/List"
 import H1 from "../../ui-library/H1";
 import Error from '../main/error/Error'
 import BodyPractice from "../main/body/body_practice";
@@ -24,6 +25,10 @@ function Training() {
           case converstation.conversation.title:
               return (
                 <>{cardItemConversation}</>
+             );
+             case converstation.practice_translate.title:
+              return (
+                <>{cardItemPracticeTranslated}</>
              );
       }
         }

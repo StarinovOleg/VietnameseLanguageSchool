@@ -14,7 +14,7 @@ function Lessons() {
         {cardItemLesson.slice(0, 8)}
       </div>
       <div className="m-10 relative">
-        <Link to='/training' children={converstation.landing.continue} align='align-right-side'
+        <Link to='/training' children={converstation.landing.continue} align='align-right-side' blue_color='text-sky-800'
               state={{
                 title: `${converstation.lessons.title}`,
               }}
