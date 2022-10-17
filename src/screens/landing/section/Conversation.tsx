@@ -7,7 +7,7 @@ import { cardItemConversation } from "../../conversation/components/Lists";
 
 function Conversation() {
   return (
-  <Section title={converstation.conversation.title}>
+  <Section title={converstation.conversation.title} fontcolorsecondary='text-lime-500'>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
           {cardItemConversation.slice(0, 6)}
     </div>

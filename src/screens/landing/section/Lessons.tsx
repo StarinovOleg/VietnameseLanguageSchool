@@ -9,7 +9,7 @@ import { cardItemLesson } from "../../learning/components/Lists";
 
 function Lessons() {
   return (
-    <Section title={converstation.lessons.title}>
+    <Section title={converstation.lessons.title} fontcolorsecondary='text-sky-800'>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6  m-10">
         {cardItemLesson.slice(0, 8)}
       </div>
