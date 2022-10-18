@@ -13,13 +13,48 @@ import BodyPractice from "../main/body/body_practice";
 import H2 from "../../ui-library/H2";
 
 interface location{
-  title:any
+  title:any,
+  [key: string]: string | number;
 }
 
 function PracticeTranslatedIndex() {
   const location = useLocation();
   const state = location.state as location
-  //dynamic words display
+
+
+  const checkInput=(evt: { target: { value: any; }; },)=>{
+
+    if(translated.translated_1_1_vietnamese.s1_vietnamese==evt.target.value){
+       console.log('good1')
+    }
+    if(translated.translated_1_1_vietnamese.s2_vietnamese==evt.target.value){
+        console.log('good2')
+     }
+    if(translated.translated_1_1_vietnamese.s3_vietnamese==evt.target.value){
+        console.log('good3')
+     }
+    if(translated.translated_1_1_vietnamese.s4_vietnamese==evt.target.value){
+        console.log('good4')
+     }
+    if(translated.translated_1_1_vietnamese.s5_vietnamese==evt.target.value){
+        console.log('good5')
+     }
+    if(translated.translated_1_1_vietnamese.s6_vietnamese==evt.target.value){
+        console.log('good6')
+     } 
+    if(translated.translated_1_2_english.s1_english==evt.target.value){
+        console.log('good1')
+     }
+    if(translated.translated_1_2_english.s2_english==evt.target.value){
+         console.log('good2')
+      }
+    if(translated.translated_1_2_english.s3_english==evt.target.value){
+         console.log('good3')
+      }
+    if(translated.translated_1_2_english.s4_english==evt.target.value){
+         console.log('good4')
+      }
+  }
   const displayWords = () => {
     switch (state?.title) {
         case converstation.practice_translate.item[0].title:
@@ -28,49 +63,25 @@ function PracticeTranslatedIndex() {
                 <H1 children={state?.title} />
                 <div className="m-10 text-left">    
                     <H2 children={translated.translated_1_1.title}/>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s1_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s2_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s3_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s4_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s5_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1.s6_english}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
+                    <>
+                    {Object.keys(translated.translated_1_1_english ).map((keyName, i) => (
+                        <div className="mt-10" key={i}>
+                            <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1_english[keyName as keyof location]}</label>
+                            <input onChange={checkInput} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
+                        </div>
+                    ))}
+                    </>
                 </div>
                 <div className="m-10 text-left">    
                     <H2 children={translated.translated_1_2.title}/>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2.s1_vietnamese}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2.s2_vietnamese}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2.s3_vietnamese}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
-                    <div className="mt-10">
-                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2.s4_vietnamese}</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
-                    </div>
+                    <>
+                    {Object.keys(translated.translated_1_2_vietnamese ).map((keyName, i) => (
+                        <div className="mt-10" key={i}>
+                            <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2[keyName as keyof location]}</label>
+                            <input onChange={checkInput} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
+                        </div>
+                    ))}
+                    </>
                 </div>
                 </>
             );
@@ -92,6 +103,7 @@ function PracticeTranslatedIndex() {
         );           
       }
     }
+
       return (
         <>
         {state?.title ?  (<BodyPractice><div className="text-4xl my-4 p-10">{displayWords()}</div></BodyPractice>):<Error/>
