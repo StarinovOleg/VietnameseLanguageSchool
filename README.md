@@ -1,13 +1,13 @@
 # School for study vietnamese leanguage.
-Vietnamese Learning School is an app built with React. 
-The application does not use backend technologies and databases. 
-To use it, just launch the application.
+Vietnamese Learning School is an app built with React.\
+The application does not use backend technologies and databases.\ 
+To use it, just launch the application.\
 
-# School include next modules:
+## School include next modules:
 
--test vietnamese-english words;
--audio files;
--test translated sentences;
+-test vietnamese-english words.\
+-audio files.\
+-test translated sentences.\
 
 ## Available Scripts
 

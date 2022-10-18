@@ -14,7 +14,7 @@ function Promo() {
           fontsizeprimary="h2-font-ize-primary"
         />
       </div>
-      <img src={converstation.promo.img}  className="mt-10  md:w-6/12 sm:w-auto ml-auto mr-auto "/>
+      <img src={converstation.promo.img}  className="mt-10  md:w-5/12 sm:w-auto ml-auto mr-auto "/>
     </div>
   );
 }
