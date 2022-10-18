@@ -14,7 +14,7 @@ export const translated = {
     's5_vietnamese':'Chị tôi tên lan Hoa, anh tôi tên là Hải',
     's5_english':'c. My sisters name is Hoa, my brother is name is Hai',
     's6_vietnamese':'Ông tôi là người Pháp, ông ấy tên là Alain',
-    's6_english':'c. My grandfather is French, his name is Alain',
+    's6_english':'d. My grandfather is French, his name is Alain',
     'audio': c_1_1,
   },
   translated_1_2:{
