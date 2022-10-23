@@ -8,13 +8,15 @@ import start_conversation from '../assets/conversation-icon/conversation.jpg'
 import introduce_yourself from '../assets/conversation-icon/introduce.jpg'
 import what_is from '../assets/conversation-icon/what_is.jpg'
 import six_tones from '../assets/conversation-icon/six_tones.jpg'
-import pioneers from '../assets/background_promo.jpg'
+import pioneers from '../assets/background_promo.png'
 import grammar from '../assets/baner-section/grammar.png'
 import listening from '../assets/baner-section/listening.png'
 import practice from '../assets/baner-section/practice.png'
 import icon_market from "../assets/icon-market.png";
 import icon_game from "../assets/icon-game.png";
 import icon_device from "../assets/icon-device.png";
+import icon_correct from "../assets/icon-correct.png";
+import icon_notcorrect from "../assets/icon-notcorrect.png";
 import background from "../assets/phone.png"
 import phone from '../assets/phone.png'
 import appstore from '../assets/app-store-badge.png'
@@ -150,6 +152,8 @@ export const converstation={
     },
     practice_translate:{
       'title':'Translate these sentences',
+      'icon_correct':icon_correct,
+      'icon_notcorrect':icon_notcorrect,
       'item':[{
         'id':1,
         'to': '/translated',
