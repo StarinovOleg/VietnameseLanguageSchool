@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { translated } from "../../dictionary/unit-1/translated";
 import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
@@ -19,14 +19,27 @@ interface location{
 
 function PracticeTranslatedIndex() {
   const location = useLocation();
+  const [active_correct, setActiveCorrect] = useState(false);
+  const [active_notcorrect, setActiveNotCorrect] = useState(false);
   const state = location.state as location
 
-
-  const checkInput=(evt: { target: { value: any; }; },)=>{
-
+   
+  const handleOnChange = () => {
+    setActiveCorrect(!active_correct);
+  };
+  const handleChangeActiveNotCorrect = () => {
+    setActiveNotCorrect(!active_notcorrect);
+  };
+  const check = (evt:any) => {
+    return evt.target.value
+  };
+  const checkInput=(evt: { target: { value: any; }; })=>{
     if(translated.translated_1_1_vietnamese.s1_vietnamese==evt.target.value){
        console.log('good1')
-    }
+    }else{  
+       
+    };
+   
     if(translated.translated_1_1_vietnamese.s2_vietnamese==evt.target.value){
         console.log('good2')
      }
@@ -59,15 +72,24 @@ function PracticeTranslatedIndex() {
     switch (state?.title) {
         case converstation.practice_translate.item[0].title:
             return (
-                <>  
+                <>
                 <H1 children={state?.title} />
+                   
                 <div className="m-10 text-left">    
                     <H2 children={translated.translated_1_1.title}/>
                     <>
                     {Object.keys(translated.translated_1_1_english ).map((keyName, i) => (
-                        <div className="mt-10" key={i}>
-                            <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1_english[keyName as keyof location]}</label>
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-6  mt-10" key={i}>
+                            <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_1_english[keyName]}</label>
                             <input onChange={checkInput} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
+                            <div className="">
+                                {active_correct ?(
+                                    <img src={converstation.practice_translate.icon_correct}  className="inactive mt-10  md:w-8 sm:w-auto ml-auto mr-auto "/>
+                                ):null}
+                                {active_notcorrect?(
+                                <img src={converstation.practice_translate.icon_notcorrect}  className="inactive mt-10  md:w-8 sm:w-auto ml-auto mr-auto "/>
+                                ):null}
+                            </div>
                         </div>
                     ))}
                     </>
@@ -76,9 +98,17 @@ function PracticeTranslatedIndex() {
                     <H2 children={translated.translated_1_2.title}/>
                     <>
                     {Object.keys(translated.translated_1_2_vietnamese ).map((keyName, i) => (
-                        <div className="mt-10" key={i}>
-                            <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2_vietnamese[keyName as keyof location]}</label>
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-6  mt-10" key={i}>
+                        <label  htmlFor="first_name" className="block mb-2">{translated.translated_1_2_vietnamese[keyName]}</label>
                             <input onChange={checkInput} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Here your answer" required/>
+                            <div className="">
+                                {active_correct ?(
+                                    <img src={converstation.practice_translate.icon_correct}  className="inactive mt-10  md:w-8 sm:w-auto ml-auto mr-auto "/>
+                                ):null}
+                                {active_notcorrect?(
+                                <img src={converstation.practice_translate.icon_notcorrect}  className="inactive mt-10  md:w-8 sm:w-auto ml-auto mr-auto "/>
+                                ):null}
+                            </div>
                         </div>
                     ))}
                     </>
