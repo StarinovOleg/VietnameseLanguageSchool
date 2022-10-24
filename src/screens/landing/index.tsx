@@ -11,12 +11,11 @@ function Landing() {
     <>
       <Promo />
       <Method />
-      <Baner/>
-      <Lessons />
-      <Conversation/>
-      <PracticeTranslated/>
+      <Baner />
+      <Lessons id='words'/>
+      <Conversation id='audio'/>
+      <PracticeTranslated id='translate'/>
       <About />
-      
     </>
   );
 }

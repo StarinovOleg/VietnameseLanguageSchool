@@ -5,10 +5,10 @@ import Section from "../../../components/Section";
 import Link from "../../../ui-library/Link";
 import { cardItemConversation } from "../../conversation/components/Lists";
 
-function Conversation() {
+function Conversation(props:{id?:string;}) {
   return (
-  <Section title={converstation.conversation.title} fontcolorsecondary='text-lime-500'>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
+  <Section title={converstation.conversation.title} fontcolorsecondary='text-lime-500'id = {props.id}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10" >   
           {cardItemConversation.slice(0, 6)}
     </div>
     <div className="m-10 relative">
