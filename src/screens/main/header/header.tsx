@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 function Header() {
   return (
-    <header className="p-2 text-4xl  ">
-      <div className="first-letter:text-blue-700 second-letter:text-blue-700">
+    <header className="p-2 text-4xl sticky top-0 w-full bg-white z-50">
+      <div className="flex sm:justify-between md:justify-between justify-center flex-wrap">
         <NavLink to="/landing">
           <div className="flex leading-12 ">
          
@@ -18,7 +19,14 @@ function Header() {
             </div>
           </div>
         </NavLink>
+        <div className="sm:text-center">
+          <Link to="/landing#words" className="pr-4 text-2xl text-[#1572E0]">words</Link>
+          <Link to="/landing#audio" className="pr-4 text-2xl text-[#529312]">audio</Link>
+          <Link to="/landing#translate" className="pr-4 text-2xl text-[#DA0C0C]">translate</Link>
+        </div> 
+
       </div>
+      
     </header>
   );
 }

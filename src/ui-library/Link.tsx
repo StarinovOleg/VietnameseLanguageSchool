@@ -20,7 +20,7 @@ function Link(props: {
 }) {
   return (
     <NavLink to={props.to} state={props.state}>
-      <p className={`text-2xl text-lime-500 font-semibold absolute  ${props.align} ${props.blue_color} ${props.green_color} ${props.red_color}`}>{props.children}</p>
+      <p className={`text-2xl text-lime-500 font-semibold absolute underline decoration-2 hover:text-stone-500 ${props.align} ${props.blue_color} ${props.green_color} ${props.red_color}`}>{props.children}</p>
     </NavLink>
   );
 }
