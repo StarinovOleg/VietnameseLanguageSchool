@@ -15,6 +15,7 @@ import practice from '../assets/baner-section/practice.png'
 import icon_market from "../assets/icon-market.png";
 import icon_game from "../assets/icon-game.png";
 import icon_device from "../assets/icon-device.png";
+import icon_foot from "../assets/icon-foot.png";
 import icon_correct from "../assets/icon-correct.png";
 import icon_notcorrect from "../assets/icon-notcorrect.png";
 import background from "../assets/phone.png"
@@ -144,6 +145,7 @@ export const converstation={
           }]
     },
     method:{
+        'img':icon_foot,
         'group1':{
         'title':'2 step for first result:',
         'item':[{text:'Chose first group words for training.'},

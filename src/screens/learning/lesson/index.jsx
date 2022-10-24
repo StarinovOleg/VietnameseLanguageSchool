@@ -143,7 +143,7 @@ function LearningIndex() {
                   ))
               )}
             </div>
-            <Button children="Continue" btnsecondary="btn-secondary" />
+
         </BodyPractice>
       ) : (
          <Error/>
