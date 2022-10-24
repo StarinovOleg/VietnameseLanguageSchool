@@ -24,6 +24,7 @@ import googlestore from '../assets/google-play-badge.png'
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: #529312;"> Vietnamese language </span>fun and accessible!',
+        'title_vietnamese':'Hãy làm cho việc học <span style="color: #529312;">Tiếng Việt</span> trở nên thú vị và dễ tiếp cận!',
         'subtitle':'PioneerS is an effective service for learning language in any place - all  for FREE!',
         'img': pioneers
     },

@@ -10,7 +10,7 @@ function Promo() {
         <div className="lg:h-3/6 sm:h-auto  sm:mt-0 sm:mt-auto">
           <H1 children={<Typewriter
             options={{
-              strings: [`${converstation.promo.title}`],
+              strings: [`${converstation.promo.title}`,`${converstation.promo.title_vietnamese}`],
               autoStart: true,
               loop: true,
             }}
