@@ -23,8 +23,8 @@ import appstore from '../assets/app-store-badge.png'
 import googlestore from '../assets/google-play-badge.png'
 export const converstation={
     promo:{
-        'title':'Be a pioneer witch a new language!',
-        'subtitle':'Pioneers is an effective service for learning Vietnamese',
+        'title':'Let’s make learning <span style="color: #529312;"> Vietnamese language </span>fun and accessible!',
+        'subtitle':'PioneerS is an effective service for learning language in any place - all  for FREE!',
         'img': pioneers
     },
     baner:[{
