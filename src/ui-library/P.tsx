@@ -10,10 +10,11 @@ function P(props: {
     | React.ReactPortal
     | null
     | undefined;
-  align: string;
+  align?: string;
+  color?:string
 }) {
   return (
-    <p className={`text-xl text-fuchsia-800 font-semibold ${props.align}`}>
+    <p className={`text-xl font-semibold ${props.align} ${props.color}`}>
       {props.children}
     </p>
   );

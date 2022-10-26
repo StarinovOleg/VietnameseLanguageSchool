@@ -23,7 +23,7 @@ body {
 .align-right-side{
     @apply md:right-0 sm:right-auto
 }
-.h2-font-ize-primary {
+.h2-font-size-primary {
     @apply text-3xl
 }
 @font-face {

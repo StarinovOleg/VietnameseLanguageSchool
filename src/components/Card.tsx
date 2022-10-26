@@ -12,7 +12,7 @@ const Card = (props: { subtitle: any; to: string; state: any; title: any, src:an
         </div>
         <div className="flex-1">
           <H2 fontsizesecondary="h2-font-size-secondary">{props.title}</H2>
-          <P align="align-primary">{props.subtitle}</P>
+          <P align="align-primary" color={'text-fuchsia-800'}>{props.subtitle}</P>
         </div>
       </div>
     </NavLink>
