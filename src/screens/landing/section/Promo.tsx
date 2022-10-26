@@ -19,7 +19,7 @@ function Promo() {
         <div className="h-3/6 lg:mt-20 sm:mt-0">    
               <H2
             children={converstation.promo.subtitle}
-            fontsizeprimary="h2-font-ize-primary"
+            fontsizeprimary="h2-font-size-primary"
             fontfamilysecondary='font-sans'
             fontcolorsecondary='text-stone-500'
           />

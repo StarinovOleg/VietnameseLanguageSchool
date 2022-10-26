@@ -8,7 +8,7 @@ const CardListen = (props: { subtitle: any; to: any; state: any; title: any, src
       <div className=" border-solid rounded-xl cursor-pointer bg-gradient-to-b from-[#a8e063]  to-[#56ab2f] m-2 p-2 h-auto  hover:sm:drop-shadow-none text-center hover:md:shadow-lg hover:md:shadow-green-500/50"> 
           <img src={props.src} alt='icons' className="md:mt-auto md:mb-auto w-64 ml-auto mr-auto"/>
           <H2 fontsizesecondary="h2-font-size-secondary">{props.title}</H2>
-          <P align="align-primary">{props.subtitle}</P>
+          <P align="align-primary" color={'text-fuchsia-800'}>{props.subtitle}</P>
         
       </div>
     </NavLink>

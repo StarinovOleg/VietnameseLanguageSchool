@@ -18,6 +18,12 @@ import icon_device from "../assets/icon-device.png";
 import icon_foot from "../assets/icon-foot.png";
 import icon_correct from "../assets/icon-correct.png";
 import icon_notcorrect from "../assets/icon-notcorrect.png";
+import support_words from "../assets/support-words.png";
+import support_audio from "../assets/support-audio.png";
+import support_translate from "../assets/support-translate.png";
+import window_word from "../assets/supports/word.png";
+import window_audio from "../assets/supports/audio.png";
+import window_translate from "../assets/supports/translate.png";
 import background from "../assets/phone.png"
 import phone from '../assets/phone.png'
 import appstore from '../assets/app-store-badge.png'
@@ -47,6 +53,7 @@ export const converstation={
       }],
     lessons:{
         'title':'Chose group words for training',
+        'section_img':support_words,
         'lessons':[{
             'id':1,
             'to': '/learning',
@@ -106,6 +113,7 @@ export const converstation={
       ]},
     conversation:{
         'title':'Listen to the conversation',
+        'section_img':support_audio,
         'item':[{
             'id':1,
             'to': '/conversation',
@@ -155,6 +163,7 @@ export const converstation={
     },
     practice_translate:{
       'title':'Translate these sentences',
+      'section_img':support_translate,
       'icon_correct':icon_correct,
       'icon_notcorrect':icon_notcorrect,
       'item':[{
@@ -189,6 +198,13 @@ export const converstation={
     button:{
         'button_name': 'Title Page',
         'button_name-training':'Training Page' 
+    },
+    support_window:{
+      'img_word': window_word,
+      'img_audio':window_audio,
+      'img_translate':window_translate,
+      'text_word': 'Each  card includes 10 Vietnamese words.The choice is given 4 words in English. You need to choose the right one.You can start training with any set of words.',
+      'text_audio':'Audio exercises that you can listen to in a comfortable environment and learn to perceive the Vietnamese language by ear.',
+      'text_translate':'Translation exercises. Each learning card contains two types of task: translate from English to Vietnamese and from Vietnamese to English.'
     }
-
 }
