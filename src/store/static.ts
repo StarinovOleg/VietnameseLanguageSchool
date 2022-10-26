@@ -24,32 +24,38 @@ import support_translate from "../assets/support-translate.png";
 import window_word from "../assets/supports/word.png";
 import window_audio from "../assets/supports/audio.png";
 import window_translate from "../assets/supports/translate.png";
-import background from "../assets/phone.png"
-import phone from '../assets/phone.png'
-import appstore from '../assets/app-store-badge.png'
-import googlestore from '../assets/google-play-badge.png'
+import background from "../assets/phone.png";
+import phone from '../assets/phone.png';
+import appstore from '../assets/app-store-badge.png';
+import googlestore from '../assets/google-play-badge.png';
+import b2 from "../assets/sounds/pronunciation/Bà.mp3";
+import b3 from "../assets/sounds/pronunciation/Bá.mp3";
+import b4 from "../assets/sounds/pronunciation/Bã.mp3";
 export const converstation={
     promo:{
-        'title':'Let’s make learning <span style="color: #529312;"> Vietnamese language </span>fun and accessible!',
-        'title_vietnamese':'Hãy làm cho việc học <span style="color: #529312;">Tiếng Việt</span> trở nên thú vị và dễ tiếp cận!',
-        'subtitle':'PioneerS is an effective service for learning language in any place - all  for FREE!',
+        'title':'Let’s make learning <span style="color: #529312;" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
+        'title_vietnamese':'Hãy làm cho việc học <span style="color: #529312" >Tiếng Việt</span> trở nên <span style="color:#ba4e4a" class="span_promo">thú vị</span> và <span style="color:#ba4e4a" class="span_promo">dễ tiếp cận</span>!',
+        'subtitle':'PioneerS is an effective service for learning Vietnamese language  in any place - all  for FREE!',
         'img': pioneers
     },
     baner:[{
         id:1,
         src:listening,
-        title:"Listening",
-        text: "Practice pronunciation by listening to dialogues and texts"
+        title:"Listen",
+        text: "Practice pronunciation by listening to dialogues and texts",
+        color:'text-[#FBE754]'
       },{
         id:2,
         src:grammar,
-        title:"Grammar",
-        text: "Learn about the features of a language by studying its grammar and doing grammar exercises"
+        title:"Translate",
+        text: "Learn about the features of a language by studying its grammar and doing grammar exercises",
+        color:'text-[#4695FA]'
       },{
         id:3,
         src:practice,
         title:"Practice",
-        text: "Memorize new words with the help of tests in a playful way"
+        text: "Memorize new words with the help of tests in a playful way",
+        color:'text-[#B018C8]'
       }],
     lessons:{
         'title':'Chose group words for training',
@@ -206,5 +212,28 @@ export const converstation={
       'text_word': 'Each  card includes 10 Vietnamese words.The choice is given 4 words in English. You need to choose the right one.You can start training with any set of words.',
       'text_audio':'Audio exercises that you can listen to in a comfortable environment and learn to perceive the Vietnamese language by ear.',
       'text_translate':'Translation exercises. Each learning card contains two types of task: translate from English to Vietnamese and from Vietnamese to English.'
+    },
+    demo_audio:{
+      'title':'Listen and learn your ',
+      'subtitle':'Letter Sounds',
+      'audio': [ {
+          id:1, 
+          name: 'Bà',
+          color:'text-[#276f74]',
+          audio:b2
+      },
+      {
+          id:2, 
+          name:'Bá',
+          color:'text-[#ba4e4a]',
+          audio:b3
+      },   
+      {
+          id:3, 
+          name:'Bã',
+          color:'text-[#7fa73e]',
+          audio:b4
+      }
+  ]
     }
 }

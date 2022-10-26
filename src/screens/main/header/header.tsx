@@ -20,9 +20,10 @@ function Header() {
           </div>
         </NavLink>
         <div className="sm:text-center">
-          <Link to="/landing#words" className="pr-4 text-2xl text-[#1572E0]">words</Link>
-          <Link to="/landing#audio" className="pr-4 text-2xl text-[#529312]">audio</Link>
-          <Link to="/landing#translate" className="pr-4 text-2xl text-[#DA0C0C]">translate</Link>
+
+          <Link to="/landing#words" className="mr-4  text-2xl text-[#1572E0] hover:text-blue-800 ">words</Link>
+          <Link to="/landing#audio" className="pr-4 text-2xl text-[#529312] hover:text-lime-800 ">audio</Link>
+          <Link to="/landing#translate" className="pr-4 text-2xl text-[#DA0C0C] hover:text-rose-800 ">translate</Link>
         </div> 
 
       </div>

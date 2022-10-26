@@ -6,10 +6,12 @@ import Lessons from "./section/Lessons";
 import Conversation from "./section/Conversation";
 import Baner from "./section/Baner";
 import PracticeTranslated from "./section/PracticeTranslated";
+import DemoAudio from "../../components/demo-audio";
 function Landing() {
   return (
     <>
       <Promo />
+      <DemoAudio/>
       <Method />
       <Baner />
       <Lessons id='words'/>
