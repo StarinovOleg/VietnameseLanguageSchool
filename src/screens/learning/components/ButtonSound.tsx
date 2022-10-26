@@ -6,7 +6,7 @@ function ButtonSound(props: {
   return (
     <button
       type="button"
-      className="p-4 text-black rounded-xl border-solid w-56 cursor-pointer bg-background-button bg-no-repeat  bg-bottom bg-contain"
+      className="p-4 text-black rounded-xl border-solid  cursor-pointer bg-background-button bg-no-repeat  bg-bottom bg-contain"
       onClick={props.onClick}
     >
     </button>

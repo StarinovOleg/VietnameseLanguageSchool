@@ -8,7 +8,7 @@ import SupportWindow from "../../../components/SupportWindow";
 
 const children_header=(<img src={converstation.practice_translate.section_img} alt="logo" className="w-24 h-24 ml-4 mr-4" />)
 function Conversation(props:{id?:string;}) {
-  const[hover, setHover]=useState(true)
+  const[hover, setHover]=useState(false)
   const onClick=()=>{
     if(!hover) setHover(true);
     else setHover(false);
@@ -20,7 +20,7 @@ function Conversation(props:{id?:string;}) {
           <SupportWindow position={'absolute'} 
           text={converstation.support_window.text_translate} color='text-rose-700' 
           img={converstation.support_window.img_translate}
-          shadowcolor='text-rose-700'
+          shadowcolor='shadow-rose-700'
           onClick={onClick}
           />
         )}       
