@@ -4,7 +4,7 @@ import H2 from "../ui-library/H2";
 const Section = (props: { children: any;title: any , fontcolorsecondary?:any, id?:string, children_header?:any, onClick?:any }) => {
   return (
 
-<div className="grid grid-rows-2 gap-4 h-auto  mt-20 " id={props.id} >
+<div className="grid grid-rows-2 gap-4 h-auto  mt-40" id={props.id} >
   <div className="row-span-2 mt-20">  
   <div className="flex justify-center flex-wrap ml-4 mr-4">
     <div onClick={props.onClick}>{props.children_header}</div>

@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from "react";
-import ButtonSound from "./ButtonSound";
+import ButtonSound from "../screens/learning/components/ButtonSound";
 import ReactAudioPlayer from 'react-audio-player';
 import { useLocation } from "react-router-dom"
 
@@ -19,8 +19,7 @@ function DisplayWordBlock(props: {
       <span className="text-xl p-2">{props.example}</span>
     </div>
     {location.pathname==='/learning'?<ButtonSound onClick={props.onClick} />:
-       <ReactAudioPlayer
-          
+       <ReactAudioPlayer    
           className="inline-block bg-inherit"
           src={props.audio}
           controls

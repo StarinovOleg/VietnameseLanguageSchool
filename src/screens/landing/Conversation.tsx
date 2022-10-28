@@ -1,10 +1,9 @@
 import React, {useState} from "react";
-import { converstation } from "../../../store/static";
-import CardListen from "../../../components/CardListen";
-import Section from "../../../components/Section";
-import Link from "../../../ui-library/Link";
-import { cardItemConversation } from "../../conversation/components/Lists";
-import SupportWindow from "../../../components/SupportWindow";
+import { converstation } from "../../store/static";
+import Section from "../../components/Section";
+import Link from "../../ui-library/Link";
+import { cardItemConversation } from "../conversation/components/Lists";
+import SupportWindow from "../../components/SupportWindow";
 
 const children_header=(<img src={converstation.conversation.section_img} alt="logo" className="w-24 h-24 ml-4 mr-4" />)
 function Conversation(props:{id?:string;}) {
