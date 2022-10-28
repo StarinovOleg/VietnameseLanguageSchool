@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 function Header() {
   return (
-    <header className="p-2 text-4xl sticky top-0 w-full bg-white z-50">
+    <header className="p-2 text-4xl sticky top-0 w-full bg-white z-[51]">
       <div className="flex sm:justify-between md:justify-between justify-center flex-wrap">
         <NavLink to="/landing">
           <div className="flex leading-12 ">

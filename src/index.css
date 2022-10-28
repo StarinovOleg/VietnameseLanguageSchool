@@ -38,6 +38,10 @@ body {
     font-family: 'KGLifeisMessy';
     src: local('KGLifeisMessy'), url(./assets/font/KGLifeisMessy.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'DancingScript';
+    src: local('DancingScript-VariableFont_wght'), url(./assets/font/DancingScript-VariableFont_wght.ttf) format('truetype');
+}
 h1 {
     font-family: 'Mochiy';
 }
