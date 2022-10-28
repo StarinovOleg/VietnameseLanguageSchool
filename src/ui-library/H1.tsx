@@ -13,7 +13,7 @@ function H1(props: {
     | any;
 }) {
   return (
-    <h1 className="lg:text-[48px] md:text-[20px] sm:text-[20px] text-[#260105]	font-semibold  lg:leading-[6rem] md:leading-[2rem] sm:leading-[1rem]">
+    <h1 className="lg:text-[48px] md:text-[20px] sm:text-[20px] text-[#260105]	font-semibold  lg:leading-[6rem] md:leading-[2rem] sm:leading-[4rem]">
       {props.children}
     </h1>
   );
