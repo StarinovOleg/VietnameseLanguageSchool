@@ -16,7 +16,7 @@ const static_data_list = converstation.about.about.map(
 );
 function About() {
   return (
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 content mb-60 mt-60">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 content mb-40 mt-40">
        <img src={converstation.about.background} alt="logo" className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"/>
         <div className="m-12">
           {static_data_list}

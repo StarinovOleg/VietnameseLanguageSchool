@@ -5,7 +5,7 @@ import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
 import { useLocation } from "react-router-dom";
 import  {converstation}  from "../../store/static";
 import Error from "../main/error/Error";
-import DisplayWordBlock from "../learning/components/DisplayWordBlock";
+import DisplayWordBlock from "../../components/DisplayWordBlock";
 import Table from "../../components/Table"
 import { pronunciation } from "../../dictionary/unit-1/pronunciation";
 import H1 from "../../ui-library/H1";

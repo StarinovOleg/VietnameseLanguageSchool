@@ -10,6 +10,7 @@ import EndScreen from "./screens/end-screen/EndScreen";
 import GlobalState from "./store/Globalstate";
 import ScrollToTop from "./services/scroll-top.service";
 import Training from "./screens/training/training";
+import Error from "./screens/main/error/Error";
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
             <Route path="/conversation" element={<ConversationIndex />} />
             <Route path="/translated" element={<PracticeTranslatedIndex />} />
             <Route path="/endtest" element={<EndScreen />} />
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </GlobalState>

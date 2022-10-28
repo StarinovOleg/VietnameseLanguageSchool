@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { converstation } from "../../../store/static";
-import CardListen from "../../../components/CardListen";
 import Section from "../../../components/Section";
 import Link from "../../../ui-library/Link";
 import { cardItemPracticeTranslated } from "../../practice_translated/components/List";

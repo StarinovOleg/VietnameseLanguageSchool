@@ -15,7 +15,7 @@ const pictureItem=converstation.baner.map((item)=>
   )
 function Baner() {
   return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6 mb-40 mt-40">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6 mt-40">
         {pictureItem}
       </div>
    
