@@ -7,11 +7,11 @@ import Link from "../../../../ui-library/Link";
 const DemoTest = (props:{id?:string;}) => {
            
   return (
-    <div className=" text-center lg:p-20 p-4" id={props.id}>
+    <div className="text-center" id={props.id}>
         <H2
           children={converstation.demo_test.title}
           fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
-          fontcolorsecondary=''
+          fontcolorsecondary='text-yellow-500'
         />
         <H2
           children={converstation.demo_test.subtitle}

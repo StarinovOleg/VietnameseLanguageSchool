@@ -17,7 +17,7 @@ function H2(props: {
 }) {
   return (
     <h2
-      className={`${props.fontsizesecondary} ${props.fontsizeprimary} ${props.fontcolorsecondary} ${props.fontfamilysecondary} text-yellow-500 font-semibold`}
+      className={`${props.fontsizesecondary} ${props.fontsizeprimary} ${props.fontcolorsecondary} ${props.fontfamilysecondary} font-semibold`}
     >
       {props.children}
     </h2>

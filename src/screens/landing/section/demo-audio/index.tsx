@@ -4,6 +4,7 @@ import  {converstation}  from "../../../../store/static";
 import CardDemoAudio from "./CardDemoAudio";
 import AudioAnimation from "./AudioAnimation";
 import Link from "../../../../ui-library/Link";
+import Section from "../../../main/section/Section";
 
 const DemoAudio = (props:{id?:string;}) => {
     
@@ -19,11 +20,12 @@ const DemoAudio = (props:{id?:string;}) => {
         ))
         
   return (
-    <div className=" text-center lg:p-20 p-4" id={props.id}>
+    <Section>
+    <div className="text-center" id={props.id}>
         <H2
           children={converstation.demo_audio.title}
           fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
-          fontcolorsecondary=''
+          fontcolorsecondary='text-yellow-500'
         />
         <H2
           children={converstation.demo_audio.subtitle}
@@ -36,14 +38,14 @@ const DemoAudio = (props:{id?:string;}) => {
         <div className="flex flex-wrap justify-center">
             {cardItem}
         </div>
-        <div className="m-10">
-        <Link to='/training' children={converstation.landing.continue} align='align-right-side mr-10' secondary_color='text-[#800000]'
+        
+        <Link to='/training' children={converstation.landing.continue} align='text-right' secondary_color='text-[#800000]'
               state={{
                 title: `${converstation.conversation.title}`,
               }}
         />
        </div>
-    </div>
+    </Section>
   );
 };
 export default DemoAudio;
