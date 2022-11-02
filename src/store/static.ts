@@ -49,7 +49,7 @@ export const converstation={
         id:2,
         src:grammar,
         title:"Translate",
-        text: "Learn about the features of a language by studying its grammar and doing grammar exercises",
+        text: "Learn about grammar and doing grammar exercises",
         color:'text-[#4695FA]'
       },{
         id:3,
@@ -119,7 +119,7 @@ export const converstation={
         },
       ]},
     conversation:{
-        'title':'Listen to the conversation',
+        'title':'Chose listen to the conversation',
         'section_img':support_audio,
         'item':[{
             'id':1,
@@ -171,7 +171,7 @@ export const converstation={
 
     },
     practice_translate:{
-      'title':'Translate these sentences',
+      'title':'Chose translate these sentences',
       'section_img':support_translate,
       'icon_correct':icon_correct,
       'icon_notcorrect':icon_notcorrect,
@@ -242,7 +242,7 @@ export const converstation={
   ]
     },
     demo_test:{
-      'title':'Chose correct word ',
-      'subtitle':'Memorization of words'
+      'title':'Memorization your',
+      'subtitle':'words'
     }
 }

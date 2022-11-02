@@ -29,7 +29,7 @@ function Conversation(props:{id?:string;}) {
           {cardItemConversation.slice(0, 6)}
         </div>
         
-        <Link to='/training' children={converstation.landing.continue} align='text-right'
+        <Link to='/training' children={converstation.landing.continue} align='text-right' secondary_color='text-lime-800'
             state={{
               title: `${converstation.conversation.title}`,
             }}

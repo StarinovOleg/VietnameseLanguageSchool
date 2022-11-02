@@ -11,9 +11,9 @@ import DemoTest from "./section/demo-test";
 function Landing() {
   return (
     <>
-      <Promo />    
+      <Promo />   
+      <Baner />       
       <DemoAudio id='demo_audio'/>
-      <Baner />
       <Method />
       <Lessons id='words'/>
       <Conversation id='audio'/>
