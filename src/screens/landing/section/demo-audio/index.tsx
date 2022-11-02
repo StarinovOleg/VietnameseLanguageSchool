@@ -25,12 +25,12 @@ const DemoAudio = (props:{id?:string;}) => {
         <H2
           children={converstation.demo_audio.title}
           fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
-          fontcolorsecondary='text-yellow-500'
+          fontcolorsecondary='text-[#FBE754]'
         />
         <H2
           children={converstation.demo_audio.subtitle}
           fontsizeprimary="lg:leading-[10rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
-          fontcolorsecondary='text-[#529312]'
+          fontcolorsecondary='text-lime-800'
           fontfamilysecondary="font-['KGLifeisMessy']"
         />
  
