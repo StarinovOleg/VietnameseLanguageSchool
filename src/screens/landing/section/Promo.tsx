@@ -4,21 +4,24 @@ import H2 from "../../../ui-library/H2";
 import { converstation } from "../../../store/static";
 import Typewriter from 'typewriter-effect';
 import { HashLink as Link } from 'react-router-hash-link';
+import Section from "../../main/section/Section";
 
 function Promo() {
   return (
-    <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:h-screen sm:h-auto text-center ml-10 mr-10 " >
-      <div className="text-center sm:text-left lg:mt-[20%] sm:mt-0">
-        <div className="lg:h-3/6 md:h-3/6 sm:h-auto  sm:mt-0 sm:mt-auto">
+    <Section>
+    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 " >
+      <div>
+        <div className="h-24 md:h-20 lg:h-96">
           <H1 children={<Typewriter
             options={{
               strings: [`${converstation.promo.title}`,`${converstation.promo.title_vietnamese}`],
               autoStart: true,
               loop: true,
             }}
-          />} btn-primary  />
+          />} btn-primary  
+          />          
         </div>
-        <div className="h-3/6 lg:mt-20 sm:mt-0">    
+
           <H2
            
             fontsizeprimary="h2-font-size-primary"
@@ -35,15 +38,16 @@ function Promo() {
             </span>
           {converstation.promo.subtitle.slice(56,converstation.promo.subtitle.length)}
           </H2>
-        <div className="flex justify-center">
-          <Link to="/landing#demo_audio" className="border-2 border-[#529312]  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-[#529312] hover:text-lime-800 font-['KGLifeisMessy'] ">listen sound</Link>
-          <Link to="/landing#demo_test" className="border-2 border-[#1572E0] hover:border-blue-800 rounded-lg m-5 p-2 text-xl text-[#1572E0]  hover:text-blue-800 font-['KGLifeisMessy']">start learning</Link>
-        </div>
-        </div>
+          <div className="flex justify-center">
+            <Link to="/landing#demo_audio" className="border-2 border-[#529312]  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-[#529312] hover:text-lime-800 font-['KGLifeisMessy'] ">listen sound</Link>
+            <Link to="/landing#demo_test" className="border-2 border-[#1572E0] hover:border-blue-800 rounded-lg m-5 p-2 text-xl text-[#1572E0]  hover:text-blue-800 font-['KGLifeisMessy']">start learning</Link>
+          </div>
+        
 
       </div>
       <img src={converstation.promo.img}   className="mt-[20%] w-10/12 ml-auto mr-auto mb-auto mt-auto"/>
     </div>
+    </Section>
   )
 }
 

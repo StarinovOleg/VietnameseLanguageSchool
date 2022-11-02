@@ -2,9 +2,9 @@ import React from "react";
 import H1 from "../../../ui-library/H1";
 import H2 from "../../../ui-library/H2";
 import  {converstation}  from "../../../store/static";
-import Section from "../../../components/Section";
+import Section from "../../main/section/Section";
 const cardItem=converstation.method.group1.item.map((item, index)=>(
-  <div className="p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none flex lg:flex-nowrap flex-wrap" key={index}>
+  <div className="p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none flex lg:flex-nowrap flex-wrap justify-center" key={index}>
     <img src={converstation.method.img} alt="logo" className="w-12 h-12 mt-4 " />
     {index==1?(<img src={converstation.method.img} alt="logo" className="w-12 h-12 mt-4 " />):
     null}
@@ -20,10 +20,17 @@ const cardItem=converstation.method.group1.item.map((item, index)=>(
   ))
 function Method() {
   return (
-    <Section title={converstation.method.group1.title}  >
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6">
-      {cardItem}
-    </div>
+    <Section>
+      <div className="text-center">
+        <H2
+          children={converstation.method.group1.title}
+          fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
+          fontcolorsecondary='text-yellow-500'
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6">
+          {cardItem}
+        </div>
+      </div>
     </Section>
   )
 

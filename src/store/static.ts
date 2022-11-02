@@ -65,7 +65,7 @@ export const converstation={
             'id':1,
             'to': '/learning',
             'title':'Unit 1',
-            'subtitle': 'Hello! My name is David',
+            'subtitle': 'Hello! I am David',
             'img':img
           },{
             'id':2,
@@ -163,8 +163,8 @@ export const converstation={
         'img':icon_foot,
         'group1':{
         'title':'3 step for first result:',
-        'item':[{text:'Chose first group words for training.'},
-                {text:'Chose dialog for listen and repeat.'},
+        'item':[{text:'Chose first group words for training'},
+                {text:'Chose dialog for listen and repeat'},
                 {text:'Chose sentenses for translate'},
               ]
         },
