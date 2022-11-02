@@ -9,11 +9,11 @@ const DemoTest = (props:{id?:string;}) => {
            
   return (
     <Section>
-      <div className="text-center" id={props.id}>
+      <div className="text-center pt-20" id={props.id}>
           <H2
             children={converstation.demo_test.title}
             fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
-            fontcolorsecondary='text-yellow-500'
+            fontcolorsecondary='text-sky-500'
           />
           <H2
             children={converstation.demo_test.subtitle}

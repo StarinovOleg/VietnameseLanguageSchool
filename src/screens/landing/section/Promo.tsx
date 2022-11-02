@@ -29,7 +29,7 @@ function Promo() {
             fontcolorsecondary='text-stone-500'
           > 
           {converstation.promo.subtitle.slice(0,6)}
-            <span className="font-['Mochiy'] text-[#529312]">
+            <span className="font-['Mochiy'] text-lime-800">
             {converstation.promo.subtitle.slice(6,27)}
             </span>
           {converstation.promo.subtitle.slice(27,52)}
@@ -39,8 +39,8 @@ function Promo() {
           {converstation.promo.subtitle.slice(56,converstation.promo.subtitle.length)}
           </H2>
           <div className="flex justify-center">
-            <Link to="/landing#demo_audio" className="border-2 border-[#529312]  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-[#529312] hover:text-lime-800 font-['KGLifeisMessy'] ">listen sound</Link>
-            <Link to="/landing#demo_test" className="border-2 border-[#1572E0] hover:border-blue-800 rounded-lg m-5 p-2 text-xl text-[#1572E0]  hover:text-blue-800 font-['KGLifeisMessy']">start learning</Link>
+            <Link to="/landing#demo_audio" className="border-2 border-lime-500  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-lime-500 hover:text-lime-800 font-['KGLifeisMessy'] ">listen sound</Link>
+            <Link to="/landing#demo_test" className="border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy']">start learning</Link>
           </div>
         
 

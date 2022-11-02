@@ -34,8 +34,8 @@ import b3 from "../assets/sounds/pronunciation/Bá.mp3";
 import b4 from "../assets/sounds/pronunciation/Bã.mp3";
 export const converstation={
     promo:{
-        'title':'Let’s make learning <span style="color: #529312;" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
-        'title_vietnamese':'Hãy làm cho việc học <span style="color: #529312" >Tiếng Việt</span> trở nên <span style="color:#ba4e4a" class="span_promo">thú vị</span> và <span style="color:#ba4e4a" class="span_promo">dễ tiếp cận</span>!',
+        'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
+        'title_vietnamese':'Hãy làm cho việc học <span style="color: rgb(63 98 18)" >Tiếng Việt</span> trở nên <span style="color:#ba4e4a" class="span_promo">thú vị</span> và <span style="color:#ba4e4a" class="span_promo">dễ tiếp cận</span>!',
         "subtitle":"Online Vietnamese language  in any place - all  for FREE! ...",
         'img': pioneers
     },
@@ -47,15 +47,15 @@ export const converstation={
         color:'text-[#FBE754]'
       },{
         id:2,
-        src:grammar,
-        title:"Translate",
-        text: "Learn about grammar and doing grammar exercises",
-        color:'text-[#4695FA]'
-      },{
-        id:3,
         src:practice,
         title:"Practice",
         text: "Memorize new words with the help of tests in a playful way",
+        color:'text-sky-500'
+      },{
+        id:3,
+        src:grammar,
+        title:"Understand",
+        text: "Learn about grammar and doing grammar exercises",
         color:'text-[#B018C8]'
       }],
     lessons:{
@@ -242,7 +242,7 @@ export const converstation={
   ]
     },
     demo_test:{
-      'title':'Memorization your',
+      'title':'Practice and memorise your',
       'subtitle':'words'
     }
 }
