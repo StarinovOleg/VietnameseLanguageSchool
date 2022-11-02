@@ -26,7 +26,7 @@ function Conversation(props:{id?:string;}) {
         {cardItemPracticeTranslated.slice(0, 8)}
       </div>
     <div className="m-10 relative">
-      <Link to='/training' children={converstation.landing.continue} align='align-right-side' red_color='text-rose-700'
+      <Link to='/training' children={converstation.landing.continue} align='align-right-side' secondary_color='text-rose-700'
         state={{
           title: `${converstation.practice_translate.title}`,
         }}

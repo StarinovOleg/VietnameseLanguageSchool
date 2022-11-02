@@ -28,6 +28,7 @@ import background from "../assets/phone.png";
 import phone from '../assets/phone.png';
 import appstore from '../assets/app-store-badge.png';
 import googlestore from '../assets/google-play-badge.png';
+import img_error from '../assets/error/error.png';
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
 import b3 from "../assets/sounds/pronunciation/Bá.mp3";
 import b4 from "../assets/sounds/pronunciation/Bã.mp3";
@@ -35,7 +36,7 @@ export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: #529312;" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
         'title_vietnamese':'Hãy làm cho việc học <span style="color: #529312" >Tiếng Việt</span> trở nên <span style="color:#ba4e4a" class="span_promo">thú vị</span> và <span style="color:#ba4e4a" class="span_promo">dễ tiếp cận</span>!',
-        'subtitle':'PioneerS is an effective service for learning Vietnamese language  in any place - all  for FREE!',
+        "subtitle":"Online Vietnamese language  in any place - all  for FREE! ...",
         'img': pioneers
     },
     baner:[{
@@ -161,9 +162,11 @@ export const converstation={
     method:{
         'img':icon_foot,
         'group1':{
-        'title':'2 step for first result:',
+        'title':'3 step for first result:',
         'item':[{text:'Chose first group words for training.'},
-                {text:'Chose dialog for listen and repeat.'}]
+                {text:'Chose dialog for listen and repeat.'},
+                {text:'Chose sentenses for translate'},
+              ]
         },
 
     },
@@ -179,7 +182,7 @@ export const converstation={
       },{
         'id':2,
         'to': '/translated',
-        'title':'Where do you come from?',
+        'title':'Your Nationality?',
       },
       {
         'id':3,
@@ -193,10 +196,12 @@ export const converstation={
     ]
     },
     error:{
-        'title':'Chose Test Page',
+        'title':'404: Chose Main Page',
+        'subtitle':'This page does not exist. Go back to main page.',
+        'img':img_error
     },
     end_screen:{
-        'title':'Congratulation you done',
+        'title':'Congratulation you done training. Chose new test.',
     },
     landing:{
         'continue':'Continue more training >>>'
@@ -235,5 +240,9 @@ export const converstation={
           audio:b4
       }
   ]
+    },
+    demo_test:{
+      'title':'Chose correct word ',
+      'subtitle':'Memorization of words'
     }
 }

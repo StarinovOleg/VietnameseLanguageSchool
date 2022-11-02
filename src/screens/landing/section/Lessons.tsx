@@ -31,7 +31,7 @@ function Lessons(props:{id?:string;}) {
         {cardItemLesson.slice(0, 8)}
       </div>
       <div className="m-10 relative">
-        <Link to='/training' children={converstation.landing.continue} align='align-right-side' blue_color='text-sky-800'
+        <Link to='/training' children={converstation.landing.continue} align='align-right-side' secondary_color='text-sky-800'
               state={{
                 title: `${converstation.lessons.title}`,
               }}
