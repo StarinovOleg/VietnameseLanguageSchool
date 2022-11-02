@@ -4,7 +4,7 @@ import H2 from "../../../ui-library/H2";
 import  {converstation}  from "../../../store/static";
 import Section from "../../main/section/Section";
 const cardItem=converstation.method.group1.item.map((item, index)=>(
-  <div className="p-10 h-auto md:drop-shadow-xl sm:drop-shadow-none flex lg:flex-nowrap flex-wrap justify-center" key={index}>
+  <div className="p-10 h-auto  flex lg:flex-nowrap flex-wrap justify-center" key={index}>
     <img src={converstation.method.img} alt="logo" className="w-12 h-12 mt-4 " />
     {index==1?(<img src={converstation.method.img} alt="logo" className="w-12 h-12 mt-4 " />):
     null}
