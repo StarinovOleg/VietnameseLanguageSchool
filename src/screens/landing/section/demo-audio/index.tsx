@@ -11,7 +11,6 @@ const DemoAudio = (props:{id?:string;}) => {
     const cardItem=converstation.demo_audio.audio.map((item, index)=>(
        <CardDemoAudio
         text={item.name} 
-        shadowcolor='shadow-[#529312]'
         color={item.color}
         key={index}
         item={item.audio}

@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom"
 function DisplayWordBlock(props: {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   audio?:any,
-  word: string;
+  word?: string;
   picture?:string;
   example?:string
   }) {
