@@ -91,7 +91,7 @@ const DemoTest = (props:{id?:string;}) => {
                       key={index}
                       onClick={()=>displayWords(item,index)}
                       children={item.english}
-                      btnprimary="cursor-pointer border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-5xl text-sky-500  hover:text-sky-800 "
+                      btnprimary="cursor-pointer border-2 border-sky-500 hover:border-sky-800 rounded-lg  lg:text-5xl md:text-5xl text-xl text-sky-500  hover:text-sky-800 "
                     />
                   
                   ))

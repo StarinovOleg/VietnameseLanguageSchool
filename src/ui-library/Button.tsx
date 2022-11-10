@@ -17,7 +17,7 @@ function Button(props: {
   return (
     <button
       type="button"
-      className={`p-4 m-4  text-white rounded-xl	 border-solid w-56 cursor-pointer ${props.btnsecondary} ${props.btnprimary}`}
+      className={`lg:p-4 md:m-4 m-1 text-white rounded-xl	 border-solid w-56   cursor-pointer ${props.btnsecondary} ${props.btnprimary}`}
       onClick={props.onClick}
     >
       {props.children}
