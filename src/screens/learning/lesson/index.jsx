@@ -54,9 +54,7 @@ function LearningIndex() {
         replace: true,
         state: { title: `${location.state.title}` },
       });
-      window.onpopstate = function (event) {
-        window.location.reload();
-      };
+
     }
   };
   //dynamic words display
