@@ -1,4 +1,5 @@
 export const INCREMENT = "INCREMENT";
+export const RESET = "RESET";
 export const reducerIncrement = (
   state: { count: any },
   action: { type: any }
@@ -6,7 +7,12 @@ export const reducerIncrement = (
   switch (action.type) {
     case INCREMENT:
       return { count: state.count + 1 };
+    case RESET:
+      return { count: state.count = 0};
     default:
-      throw new Error();
+      return { count: state.count};
   }
 };
+
+
+

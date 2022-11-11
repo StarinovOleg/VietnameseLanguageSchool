@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import SchoolContext from "../../../../store/state";
 import H2 from "../../../../ui-library/H2";
 import { common_10_words } from "../../../../dictionary/common-words/common-10-words";
@@ -11,9 +11,7 @@ import NotCorrectAnswer from "../../../../components/NotCorrectAnswer";
 import Link from "../../../../ui-library/Link";
 import H1 from "../../../../ui-library/H1";
 
-const refreshPage=()=>{ 
-  window.location.reload(); 
-}
+
 /*
 const display_vietnamese_word=(step:any)=>common_10_words.slice(step - 1, step).map((step, index) => {
   return(<H1
@@ -22,19 +20,28 @@ const display_vietnamese_word=(step:any)=>common_10_words.slice(step - 1, step).
   />)
   
 })*/
+
 const DemoTest = (props:{id?:string;}) => { 
   const [step, setStep] = useState(1)
   const context = useContext(SchoolContext);
+  //refresh page
+  const refreshPage=()=>{ 
+    setStep(1);
+    context.reset()
+  }
+
   //display words
   const displayWords=(item:any,index:number)=>{
     setStep(step + 1)
     if(item.id===step){
-      context.incrementPositive();
-      context.incrementTotal();
+      context.incrementTestPositive();
+      context.incrementTestTotal();
+      
     }else{
-      context.incrementNegative();
-      context.incrementTotal();
-    }
+      context.incrementTestNegative();
+      context.incrementTestTotal();
+      
+    };
   }
 
   return (
@@ -64,11 +71,11 @@ const DemoTest = (props:{id?:string;}) => {
               ))}
             </div>
             <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
-              <CorrectAnswer children={context.countPositive} />
-              <NotCorrectAnswer children={context.countNegative} />
+              <CorrectAnswer children={context.countTestPositive} />
+              <NotCorrectAnswer children={context.countTestNegative} />
             </div>
             <div>
-            {step > common_10_words.length || context.countTotal >= 10? (  
+            {step > common_10_words.length || context.countTestTotal >= 10? (  
               <>     
                 <Link to='/training' children={converstation.landing.continue} align='text-center p-10' secondary_color='text-sky-800'
                     state={{
@@ -91,7 +98,7 @@ const DemoTest = (props:{id?:string;}) => {
                       key={index}
                       onClick={()=>displayWords(item,index)}
                       children={item.english}
-                      btnprimary="cursor-pointer border-2 border-sky-500 hover:border-sky-800 rounded-lg  lg:text-5xl md:text-5xl text-xl text-sky-500  hover:text-sky-800 "
+                      btnprimary="cursor-pointer border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg  lg:text-5xl md:text-5xl text-xl text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
                     />
                   
                   ))
@@ -107,3 +114,4 @@ const DemoTest = (props:{id?:string;}) => {
   );
 };
 export default DemoTest;
+
