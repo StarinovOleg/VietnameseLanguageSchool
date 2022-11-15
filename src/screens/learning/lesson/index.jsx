@@ -136,7 +136,7 @@ function LearningIndex() {
                       key={index}
                       onClick={() => check(number)}
                       children={number}
-                      btnprimary="btn-primary"
+                      btnprimary="cursor-pointer border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
                     />
                   ))
               )}
