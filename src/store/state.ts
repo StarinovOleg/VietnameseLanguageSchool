@@ -15,7 +15,8 @@ interface Context {
   incrementTestPositive:any,
   incrementTestNegative:any,
   timerDecrement:any,
-  reset:any
+  reset:any,
+  resetLesson:any
 }
 const SchoolContext = createContext<Context>({
   countTotal:0,
@@ -32,7 +33,8 @@ const SchoolContext = createContext<Context>({
   incrementTestTotal:'',
   incrementTestNegative:'',
   timerDecrement:10,
-  reset:''
+  reset:'',
+  resetLesson:''
 });
 
 export default SchoolContext;

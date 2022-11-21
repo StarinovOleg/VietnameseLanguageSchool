@@ -1,9 +1,9 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LearningIndex from "./screens/learning/lesson/index.jsx";
+import LearningIndex from "./screens/learning/lesson/index";
 import ConversationIndex from "./screens/conversation";
-import PracticeTranslatedIndex from "./screens/practice_translated"
+import PracticeTranslatedIndex from "./screens/practice_translated";
 import Home from "./screens/main/home";
 import Landing from "./screens/landing";
 import EndScreen from "./screens/end-screen/EndScreen";

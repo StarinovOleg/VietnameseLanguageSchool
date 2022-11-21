@@ -1,17 +1,28 @@
-import img from '../assets/icons-lessons/unit1.png'
-import img1_1 from '../assets/icons-lessons/unit1_1.png'
-import img2 from '../assets/icons-lessons/unit2.png'
-import vocabulary from '../assets/icons-lessons/vocabulary.png'
-import hello from '../assets/conversation-icon/hello.jpg'
-import where_you_from from '../assets/conversation-icon/where_you_from.jpg'
-import start_conversation from '../assets/conversation-icon/conversation.jpg'
-import introduce_yourself from '../assets/conversation-icon/introduce.jpg'
-import what_is from '../assets/conversation-icon/what_is.jpg'
-import six_tones from '../assets/conversation-icon/six_tones.jpg'
-import pioneers from '../assets/background_promo.png'
-import grammar from '../assets/baner-section/grammar.png'
-import listening from '../assets/baner-section/listening.png'
-import practice from '../assets/baner-section/practice.png'
+import img from '../assets/icons-lessons/unit1.png';
+import img2 from '../assets/icons-lessons/unit2.png';
+import img3 from '../assets/icons-lessons/unit3.png';
+import img4 from '../assets/icons-lessons/unit4.png';
+import img5 from '../assets/icons-lessons/unit5.png';
+import img6 from '../assets/icons-lessons/unit6.png';
+import img7 from '../assets/icons-lessons/unit7.png';
+import img8 from '../assets/icons-lessons/unit8.png';
+import img9 from '../assets/icons-lessons/unit9.png';
+import img10 from '../assets/icons-lessons/unit10.png';
+import img11 from '../assets/icons-lessons/unit11.png';
+import img12 from '../assets/icons-lessons/unit12.png';
+import img13 from '../assets/icons-lessons/unit13.png';
+import img14 from '../assets/icons-lessons/unit14.png';
+import img15 from '../assets/icons-lessons/unit15.png';
+import hello from '../assets/conversation-icon/hello.jpg';
+import where_you_from from '../assets/conversation-icon/where_you_from.jpg';
+import start_conversation from '../assets/conversation-icon/conversation.jpg';
+import introduce_yourself from '../assets/conversation-icon/introduce.jpg';
+import what_is from '../assets/conversation-icon/what_is.jpg';
+import six_tones from '../assets/conversation-icon/six_tones.jpg';
+import pioneers from '../assets/background_promo.png';
+import grammar from '../assets/baner-section/grammar.png';
+import listening from '../assets/baner-section/listening.png';
+import practice from '../assets/baner-section/practice.png';
 import icon_market from "../assets/icon-market.png";
 import icon_game from "../assets/icon-game.png";
 import icon_device from "../assets/icon-device.png";
@@ -62,36 +73,98 @@ export const converstation={
         'title':'Chose group words for training',
         'section_img':support_words,
         'lessons':[{
-            'id':1,
+            'id':0,
             'to': '/learning',
             'title':'Unit 1',
             'subtitle': 'Hello! I am David',
             'img':img
           },{
-            'id':2,
+            'id':1,
             'to': '/learning',
-            'title':'Unit 1.1',
+            'title':'Unit 2',
             'subtitle': 'Where you from?',
-            'img':img1_1
+            'img':img2
           },{
             'id':3,
             'to': '/learning',
-            'title':'Unit 2',
-            'subtitle': 'What is THAT/THIS',
-            'img':img2
-          },{
+            'title':'Unit 3',
+            'subtitle': 'I am a doctor',
+            'img':img3
+           },{
             'id':4,
             'to': '/learning',
-            'title':'Unit 2.2',
-            'subtitle': 'Vocabulary words',
-            'img':vocabulary
-          },{
+            'title':'Unit 4',
+            'subtitle': 'How old is she?',
+            'img':img4
+           },{
             'id':5,
             'to': '/learning',
-            'title':'Unit 2.3',
-            'subtitle': 'Vocabulary words',
-            'img':vocabulary
-          }]
+            'title':'Unit 5',
+            'subtitle': 'How much is it?',
+            'img':img5
+           },{
+            'id':6,
+            'to': '/learning',
+            'title':'Unit 6',
+            'subtitle': 'We meet',
+            'img':img6
+           },{
+            'id':7,
+            'to': '/learning',
+            'title':'Unit 7',
+            'subtitle': 'Where were you born?',
+            'img':img7
+           },{
+            'id':8,
+            'to': '/learning',
+            'title':'Unit 8',
+            'subtitle': 'Do you like food?',
+            'img':img8
+           }
+           ,{
+            'id':9,
+            'to': '/learning',
+            'title':'Unit 9',
+            'subtitle': 'Weather today',
+            'img':img9
+           },{
+            'id':10,
+            'to': '/learning',
+            'title':'Unit 10',
+            'subtitle': 'What is Vietnam like?',
+            'img':img10
+           },{
+            'id':11,
+            'to': '/learning',
+            'title':'Unit 11',
+            'subtitle': 'Winter in Dalat and Hanoi',
+            'img':img11
+           },{
+            'id':12,
+            'to': '/learning',
+            'title':'Unit 12',
+            'subtitle': 'You live in Vietnam',
+            'img':img12
+           },{
+            'id':13,
+            'to': '/learning',
+            'title':'Unit 13',
+            'subtitle': 'Get to Hoan Kiem',
+            'img':img13
+           },{
+            'id':14,
+            'to': '/learning',
+            'title':'Unit 14',
+            'subtitle': 'You can sit here',
+            'img':img14
+           },{
+            'id':15,
+            'to': '/learning',
+            'title':'Unit 15',
+            'subtitle': 'You study vietnamese',
+            'img':img15
+           }
+  ]
     },
     about:{      
         'background':background,
@@ -157,7 +230,8 @@ export const converstation={
             'title': 'Six tones',
             'subtitle': 'The difference of the six tones',
             'img':six_tones
-          }]
+          }
+        ]
     },
     method:{
         'img':icon_foot,
