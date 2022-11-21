@@ -34,18 +34,4 @@ export const unit_15=[
    
     {id: 13, english: "State", vietnamese: " ", excample:"", audio:"", picture:""},
     {id: 14, english: "Branch", vietnamese: " thậ", excample:"", audio:"", picture:""},
-    {id: 15, english: "", vietnamese: "  ", excample:"", audio:"", picture:""},
-    {id: 16, english: " ", vietnamese: " ", excample:"", audio:"", picture:""},
-    {id: 17, english: "  ", vietnamese: "   ", excample:"", audio:"", picture:""},
-    {id: 18, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 19, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 20, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 21, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 22, english: "  ", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 23, english: "", vietnamese: " ", excample:"", audio:"", picture:""},
-    {id: 24, english: " ", vietnamese: " ", excample:"", audio:"", picture:""},
-    {id: 25, english: " ", vietnamese: " ", excample:"", audio:"", picture:""},
-    {id: 26, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 27, english: "", vietnamese: "", excample:"", audio:"", picture:""},
-    {id: 28, english: " ", vietnamese: " ", excample:"", audio:"", picture:""},
 ]
