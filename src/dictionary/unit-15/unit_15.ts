@@ -31,7 +31,6 @@ export const unit_15=[
     {id: 29, english: "Spirit", vietnamese: "Thiêng liêng", excample:"", audio:"", picture:""},
     {id: 30, english: "Firework", vietnamese: "Pháo hoà", excample:"", audio:"", picture:""},
     {id: 31, english: "Exciting", vietnamese: "Thú vị", excample:"", audio:"", picture:""},
-   
-    {id: 13, english: "State", vietnamese: " ", excample:"", audio:"", picture:""},
-    {id: 14, english: "Branch", vietnamese: " thậ", excample:"", audio:"", picture:""},
+    {id: 32, english: "State", vietnamese: " ", excample:"", audio:"", picture:""},
+    {id: 33, english: "Branch", vietnamese: " thậ", excample:"", audio:"", picture:""},
 ]
