@@ -18,15 +18,21 @@ const GlobalState = (props: {
   const [statePositive, dispatchCorrect] = useReducer(reducerIncrement, {
     count: 0,
   });
-  const [stateTestPositive, dispatchTestCorrect] = useReducer(reducerIncrement, {
-    count: 0,
-  });
+  const [stateTestPositive, dispatchTestCorrect] = useReducer(
+    reducerIncrement,
+    {
+      count: 0,
+    }
+  );
   const [stateNotCorrect, dispatchNotCorrect] = useReducer(reducerIncrement, {
     count: 0,
   });
-  const [stateTestNotCorrect, dispatchTestNotCorrect] = useReducer(reducerIncrement, {
-    count: 0,
-  });
+  const [stateTestNotCorrect, dispatchTestNotCorrect] = useReducer(
+    reducerIncrement,
+    {
+      count: 0,
+    }
+  );
   const [stateTotal, dispatchTotal] = useReducer(reducerIncrement, {
     count: 0,
   });
@@ -62,6 +68,11 @@ const GlobalState = (props: {
     dispatchTestNotCorrect({ type: RESET });
     dispatchTestTotal({ type: RESET });
   };
+  const resetLesson = () => {
+    dispatchCorrect({ type: RESET });
+    dispatchNotCorrect({ type: RESET });
+    dispatchTotal({ type: RESET });
+  };
   return (
     <SchoolContext.Provider
       value={{
@@ -69,18 +80,19 @@ const GlobalState = (props: {
         countTestTotal: stateTestTotal.count,
         countTimer: stateTimer.count,
         countPositive: statePositive.count,
-        countTestPositive:stateTestPositive.count,
+        countTestPositive: stateTestPositive.count,
         countNegative: stateNotCorrect.count,
-        countTestNegative:stateTestNotCorrect.count,
+        countTestNegative: stateTestNotCorrect.count,
         incrementPositive: addincrement,
         incrementTestPositive: addincrementTest,
         incrementNegative: addincrementNegative,
-        incrementTestNegative:addincrementTestNegative,
+        incrementTestNegative: addincrementTestNegative,
         incrementTotal: addincrementTotal,
         incrementTestTotal: addincrementTestTotal,
 
         timerDecrement: timerDecrement,
-        reset:reset,
+        reset: reset,
+        resetLesson: resetLesson,
       }}
     >
       {props.children}
