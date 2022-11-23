@@ -22,7 +22,14 @@ function Header() {
             <Logo />
           </Link>
         ) : (
-          <NavLink to="/landing" onClick={() => window.scrollTo(0, 0)}>
+          <NavLink
+            to="/landing"
+            onClick={() =>
+              setTimeout(() => {
+                window.scrollTo({ top: 1, behavior: "smooth" });
+              }, 0)
+            }
+          >
             <Logo />
           </NavLink>
         )}
