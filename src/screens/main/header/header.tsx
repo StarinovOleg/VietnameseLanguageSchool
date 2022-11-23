@@ -4,6 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useNavigate, useLocation } from "react-router-dom";
 import { converstation } from "../../../store/static";
 import Logo from "./logo";
+import ScrollToTop from "../../../services/scroll-top.service";
 function Header() {
   const location = useLocation();
   return (
@@ -22,14 +23,7 @@ function Header() {
             <Logo />
           </Link>
         ) : (
-          <NavLink
-            to="/landing"
-            onClick={() =>
-              setTimeout(() => {
-                window.scrollTo({ top: 1, behavior: "smooth" });
-              }, 0)
-            }
-          >
+          <NavLink to="/landing" onClick={() => ScrollToTop}>
             <Logo />
           </NavLink>
         )}
