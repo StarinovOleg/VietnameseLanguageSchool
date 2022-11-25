@@ -1,5 +1,5 @@
 import React from "react";
-import icon_timer from "../assets/icon-timer.png";
+import icon_timer from "../assets/icon-dictionary.png";
 function Timer(props: { seconds: any }) {
   return (
     <div className=" drop-shadow-2xl flex ">

@@ -72,6 +72,7 @@ const GlobalState = (props: {
     dispatchCorrect({ type: RESET });
     dispatchNotCorrect({ type: RESET });
     dispatchTotal({ type: RESET });
+    dispatchTimer({ type: RESET });
   };
   return (
     <SchoolContext.Provider
