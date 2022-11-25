@@ -39,7 +39,6 @@ interface location {
 
 function LearningIndex() {
   const [step, setStep] = useState(1);
-
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as location;
@@ -63,11 +62,13 @@ function LearningIndex() {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
+      context.timerDecrement();
       sound(positive);
     } else {
       redirectEndScreen();
       context.incrementNegative();
       context.incrementTotal();
+      context.timerDecrement();
       sound(negative);
     }
   };
