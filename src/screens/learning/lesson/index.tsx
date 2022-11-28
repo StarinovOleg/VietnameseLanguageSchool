@@ -58,17 +58,17 @@ function LearningIndex() {
   //checking answer
   const check = (item: string, index: number) => {
     index = index + 1;
+    context.timerDecrement();
+    console.log(context.countTimer);
     if (index === step) {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
-      context.timerDecrement();
       sound(positive);
     } else {
       redirectEndScreen();
       context.incrementNegative();
       context.incrementTotal();
-      context.timerDecrement();
       sound(negative);
     }
   };
