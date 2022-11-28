@@ -6,7 +6,7 @@ export const reducerDecrement = (
 ) => {
   switch (action.type) {
     case DECREMENT:
-      return { count: state.count-- };
+      return { count: state.count - 1 };
     case RESET:
       return { count: (state.count = 10) };
     default:
