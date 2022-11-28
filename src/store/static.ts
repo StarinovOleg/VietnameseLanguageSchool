@@ -13,12 +13,10 @@ import img12 from '../assets/icons-lessons/unit12.png';
 import img13 from '../assets/icons-lessons/unit13.png';
 import img14 from '../assets/icons-lessons/unit14.png';
 import img15 from '../assets/icons-lessons/unit15.png';
-import hello from '../assets/conversation-icon/hello.webp';
-import where_you_from from '../assets/conversation-icon/where_you_from.webp';
-import start_conversation from '../assets/conversation-icon/conversation.webp';
-import introduce_yourself from '../assets/conversation-icon/introduce.webp';
-import what_is from '../assets/conversation-icon/what_is.webp';
-import six_tones from '../assets/conversation-icon/six_tones.webp';
+import start_conversation from '../assets/lesson_2/meet.png';
+import introduce_yourself from '../assets/lesson_2/who.png';
+import what_is from '../assets/lesson_2/andyou.png';
+import six_tones from '../assets/conversation-icon/six_tones.png';
 import pioneers from '../assets/background_promo.png';
 import grammar from '../assets/baner-section/grammar.png';
 import listening from '../assets/baner-section/listening.png';
@@ -199,13 +197,13 @@ export const converstation={
             'to': '/conversation',
             'title':'My name is Dung',
             'subtitle': 'Introduce yourself. Say "Hello" people!',
-            'img':hello
+            'img':img
           },{
             'id':2,
             'to': '/conversation',
             'title':'Where do you come from?',
             'subtitle': 'Introduce yourself. Say where you from and your nationality.',
-            'img':where_you_from
+            'img':img2
           },{
             'id':3,
             'to': '/conversation',

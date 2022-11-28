@@ -2,14 +2,30 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import H2 from "../ui-library/H2";
 import P from "../ui-library/P";
-const CardListen = (props: { subtitle: any; to: any; state: any; title: any, src:any }) => {
+const CardListen = (props: {
+  subtitle: any;
+  to: any;
+  state: any;
+  title: any;
+  src: any;
+}) => {
   return (
     <NavLink to={props.to} state={props.state}>
-      <div className=" border-solid rounded-xl cursor-pointer bg-lime-500 m-2 p-2 h-auto  hover:sm:drop-shadow-none text-center hover:md:shadow-lg hover:md:shadow-lime-800"> 
-          <img src={props.src} alt='icons' className="md:mt-auto md:mb-auto w-64 ml-auto mr-auto"/>
-          <H2 fontsizesecondary="h2-font-size-secondary" fontcolorsecondary="text-white">{props.title}</H2>
-          <P align="align-primary" color={'text-fuchsia-800'}>{props.subtitle}</P>
-        
+      <div className=" border-solid rounded-xl cursor-pointer bg-lime-500 m-2 p-2 h-auto  hover:sm:drop-shadow-none text-center hover:md:shadow-lg hover:md:shadow-lime-800">
+        <img
+          src={props.src}
+          alt="icons"
+          className="md:mt-auto md:mb-auto ml-auto mr-auto"
+        />
+        <H2
+          fontsizesecondary="h2-font-size-secondary"
+          fontcolorsecondary="text-white"
+        >
+          {props.title}
+        </H2>
+        <P align="align-primary" color={"text-fuchsia-800"}>
+          {props.subtitle}
+        </P>
       </div>
     </NavLink>
   );
