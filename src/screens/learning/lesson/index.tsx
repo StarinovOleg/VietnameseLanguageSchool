@@ -36,6 +36,21 @@ interface location {
   title: any;
   subtitle: any;
 }
+const u_1 = chooseRandom(unit_1, 10);
+const u_2 = chooseRandom(unit_2, 10);
+const u_3 = chooseRandom(unit_3, 10);
+const u_4 = chooseRandom(unit_4, 10);
+const u_5 = chooseRandom(unit_5, 10);
+const u_6 = chooseRandom(unit_6, 10);
+const u_7 = chooseRandom(unit_7, 10);
+const u_8 = chooseRandom(unit_8, 10);
+const u_9 = chooseRandom(unit_9, 10);
+const u_10 = chooseRandom(unit_10, 10);
+const u_11 = chooseRandom(unit_11, 10);
+const u_12 = chooseRandom(unit_12, 10);
+const u_13 = chooseRandom(unit_13, 10);
+const u_14 = chooseRandom(unit_14, 10);
+const u_15 = chooseRandom(unit_15, 10);
 
 function LearningIndex() {
   const [step, setStep] = useState(1);
@@ -54,13 +69,16 @@ function LearningIndex() {
       });
     }
   };
-  console.log(context.countTimer);
-  //checking answer
-  const check = (item: string, index: number) => {
-    index = index + 1;
-    context.timerDecrement();
 
-    if (index === step) {
+  //checking answer
+  const check = (item: any, display: any) => {
+    setStep(step + 1);
+
+    context.timerDecrement();
+    console.log(step);
+    console.log(item.vietnamese);
+    console.log(display.vietnamese);
+    if (item.vietnamese === display.vietnamese) {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
@@ -76,49 +94,49 @@ function LearningIndex() {
   const displayWords = () => {
     switch (state?.title) {
       case converstation.lessons.lessons[0].title:
-        arr = chooseRandom(unit_1, 4);
+        arr = u_1;
         return arr;
       case converstation.lessons.lessons[1].title:
-        arr = chooseRandom(unit_2, 4);
+        arr = u_2;
         return arr;
       case converstation.lessons.lessons[2].title:
-        arr = chooseRandom(unit_3, 4);
+        arr = u_3;
         return arr;
       case converstation.lessons.lessons[3].title:
-        arr = chooseRandom(unit_4, 4);
+        arr = u_4;
         return arr;
       case converstation.lessons.lessons[4].title:
-        arr = chooseRandom(unit_5, 4);
+        arr = u_5;
         return arr;
       case converstation.lessons.lessons[5].title:
-        arr = chooseRandom(unit_6, 4);
+        arr = u_6;
         return arr;
       case converstation.lessons.lessons[6].title:
-        arr = chooseRandom(unit_7, 4);
+        arr = u_7;
         return arr;
       case converstation.lessons.lessons[7].title:
-        arr = chooseRandom(unit_8, 4);
+        arr = u_8;
         return arr;
       case converstation.lessons.lessons[8].title:
-        arr = chooseRandom(unit_9, 4);
+        arr = u_9;
         return arr;
       case converstation.lessons.lessons[9].title:
-        arr = chooseRandom(unit_10, 4);
+        arr = u_10;
         return arr;
       case converstation.lessons.lessons[10].title:
-        arr = chooseRandom(unit_11, 4);
+        arr = u_11;
         return arr;
       case converstation.lessons.lessons[11].title:
-        arr = chooseRandom(unit_12, 4);
+        arr = u_12;
         return arr;
       case converstation.lessons.lessons[12].title:
         arr = chooseRandom(unit_13, 4);
         return arr;
       case converstation.lessons.lessons[13].title:
-        arr = chooseRandom(unit_14, 4);
+        arr = u_13;
         return arr;
       case converstation.lessons.lessons[14].title:
-        arr = chooseRandom(unit_15, 4);
+        arr = u_14;
         return arr;
       default:
         return arr;
@@ -139,38 +157,42 @@ function LearningIndex() {
           <H2 children={state?.subtitle} />
 
           <div className="text-4xl my-4">
-            {arr.slice(step - 1, step).map((step, index) => (
-              <DisplayWordBlock
-                word={step.vietnamese}
-                key={index}
-                picture={step.picture}
-                example={step.example}
-                onClick={() => {
-                  sound(step.audio);
-                }}
-              />
+            {arr.slice(step - 1, step).map((display, index) => (
+              <Fragment key={display.id}>
+                <DisplayWordBlock
+                  word={display.vietnamese}
+                  key={index}
+                  picture={display.picture}
+                  example={display.example}
+                  onClick={() => {
+                    sound(display.audio);
+                  }}
+                />
+
+                <div className="flex justify-center my-4 flex-wrap">
+                  <CorrectAnswer children={context.countPositive} />
+                  <NotCorrectAnswer children={context.countNegative} />
+                  <Timer seconds={context.countTimer} />
+                </div>
+
+                <div className="myItems">
+                  {shuffle(
+                    arr
+                      .slice(step - 1, step + 3)
+                      .concat(arr)
+                      .filter((item, index) => index < 4)
+                      .map((item, index) => (
+                        <Button
+                          key={index}
+                          onClick={() => check(item, display)}
+                          children={item.english}
+                          btnprimary="cursor-pointer text-xl border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
+                        />
+                      ))
+                  )}
+                </div>
+              </Fragment>
             ))}
-          </div>
-          <div className="flex justify-center my-4 flex-wrap">
-            <CorrectAnswer children={context.countPositive} />
-            <NotCorrectAnswer children={context.countNegative} />
-            <Timer seconds={context.countTimer} />
-          </div>
-          <div className="myItems">
-            {shuffle(
-              arr
-                .slice(step - 1, step + 3)
-                .concat(arr)
-                .filter((item, index) => index < 4)
-                .map((item, index) => (
-                  <Button
-                    key={index}
-                    onClick={() => check(item, index)}
-                    children={item.english}
-                    btnprimary="cursor-pointer text-xl border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
-                  />
-                ))
-            )}
           </div>
         </BodyPractice>
       ) : (
