@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Card from "../../components/Card";
 import { converstation } from "../../store/static";
-import { cardItemLesson } from "../landing/section/lessons/Lists";
+import { cardItemLesson } from "../landing/section/lessons/components/Lists";
 import { cardItemConversation } from "../conversation/components/Lists";
 import { cardItemPracticeTranslated } from "../practice_translated/components/List";
 import H1 from "../../ui-library/H1";
