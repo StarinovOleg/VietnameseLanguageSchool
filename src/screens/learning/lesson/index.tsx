@@ -54,12 +54,12 @@ function LearningIndex() {
       });
     }
   };
-
+  console.log(context.countTimer);
   //checking answer
   const check = (item: string, index: number) => {
     index = index + 1;
     context.timerDecrement();
-    console.log(context.countTimer);
+
     if (index === step) {
       redirectEndScreen();
       context.incrementPositive();
