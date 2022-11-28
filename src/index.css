@@ -32,15 +32,18 @@ body {
 @font-face {
     font-family: 'Mochiy';
     src: local('Mochiy'), url(./assets/font/Mochiy.ttf) format('truetype');
+    font-display: swap;
 
 }
 @font-face {
     font-family: 'KGLifeisMessy';
     src: local('KGLifeisMessy'), url(./assets/font/KGLifeisMessy.ttf) format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'DancingScript';
     src: local('DancingScript-VariableFont_wght'), url(./assets/font/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-display: swap;
 }
 h1 {
     font-family: 'Mochiy';
