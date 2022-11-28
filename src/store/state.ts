@@ -21,7 +21,7 @@ interface Context {
 const SchoolContext = createContext<Context>({
   countTotal:0,
   countTestTotal:0,
-  countTimer:0,
+  countTimer:10,
   countPositive: 0,
   countTestPositive:0,
   countNegative:0,
