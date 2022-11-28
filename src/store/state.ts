@@ -32,7 +32,7 @@ const SchoolContext = createContext<Context>({
   incrementTotal:'',
   incrementTestTotal:'',
   incrementTestNegative:'',
-  timerDecrement:10,
+  timerDecrement:'',
   reset:'',
   resetLesson:''
 });
