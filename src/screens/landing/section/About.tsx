@@ -19,16 +19,32 @@ function About() {
   return (
     <Section>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 content ">
-       <img src={converstation.about.background} alt="logo" className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"/>
+        <img
+          src={converstation.about.background}
+          alt="logo"
+          className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"
+        />
         <div className="">
           {static_data_list}
           <div className="md:flex">
-            <div className="md:mt-auto md:mb-auto "><img src={converstation.about.appstore} className="w-64 p-10" /></div>
-            <div className="md:mt-auto md:mb-auto "><img src={converstation.about.googlestore} className="w-64 p-4" /></div>
-           </div>
+            <div className="md:mt-auto md:mb-auto ">
+              <img
+                src={converstation.about.appstore}
+                className="w-64 p-10"
+                alt="button appstore"
+              />
+            </div>
+            <div className="md:mt-auto md:mb-auto ">
+              <img
+                src={converstation.about.googlestore}
+                className="w-64 p-4"
+                alt="button googlestore"
+              />
+            </div>
+          </div>
         </div>
       </div>
-   </Section>
+    </Section>
   );
 }
 
