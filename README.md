@@ -1,13 +1,18 @@
-# School for study vietnamese leanguage.
+# School for learning Vietnamese.
+
 Vietnamese Learning School is an app built with React.\
-The application does not use backend technologies and databases.\ 
-To use it, just launch the application.\
+The application does not use backend technologies and databases.\
+To use it, just launch the application.
 
 ## School include next modules:
 
 -test vietnamese-english words.\
 -audio files.\
--test translated sentences.\
+-test translated sentences.
+
+## Demo version:
+
+https://whimsical-scone-b507a9.netlify.app
 
 ## Available Scripts
 
@@ -20,7 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
 
 ### `npm run build`
 
