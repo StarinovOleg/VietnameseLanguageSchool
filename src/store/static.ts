@@ -30,6 +30,7 @@ import icon_notcorrect from "../assets/icon-notcorrect.png";
 import support_words from "../assets/support-words.png";
 import support_audio from "../assets/support-audio.png";
 import support_translate from "../assets/support-translate.png";
+import window_translate_gif from "../assets/supports/gif-translate.gif";
 import window_word from "../assets/supports/word.png";
 import window_word_gif from "../assets/supports/gif-words.gif";
 import window_audio from "../assets/supports/audio.png";
@@ -291,7 +292,7 @@ export const converstation={
       'img_translate':window_translate,
       'text_word': window_word_gif,
       'text_audio':window_audio_gif,
-      'text_translate':'Translation exercises. Each learning card contains two types of task: translate from English to Vietnamese and from Vietnamese to English.'
+      'text_translate':window_translate_gif
     },
     demo_audio:{
       'title':'Listen and learn your ',
