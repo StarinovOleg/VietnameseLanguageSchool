@@ -31,6 +31,7 @@ import support_words from "../assets/support-words.png";
 import support_audio from "../assets/support-audio.png";
 import support_translate from "../assets/support-translate.png";
 import window_word from "../assets/supports/word.png";
+import window_word_gif from "../assets/supports/gif-words.gif";
 import window_audio from "../assets/supports/audio.png";
 import window_translate from "../assets/supports/translate.png";
 import background from "../assets/phone.png";
@@ -286,7 +287,7 @@ export const converstation={
       'img_word': window_word,
       'img_audio':window_audio,
       'img_translate':window_translate,
-      'text_word': 'Each  card includes 10 Vietnamese words.The choice is given 4 words in English. You need to choose the right one.You can start training with any set of words.',
+      'text_word': window_word_gif,
       'text_audio':'Audio exercises that you can listen to in a comfortable environment and learn to perceive the Vietnamese language by ear.',
       'text_translate':'Translation exercises. Each learning card contains two types of task: translate from English to Vietnamese and from Vietnamese to English.'
     },
