@@ -33,6 +33,8 @@ import support_translate from "../assets/support-translate.png";
 import window_word from "../assets/supports/word.png";
 import window_word_gif from "../assets/supports/gif-words.gif";
 import window_audio from "../assets/supports/audio.png";
+import window_audio_gif from "../assets/supports/gif-audio.gif";
+
 import window_translate from "../assets/supports/translate.png";
 import background from "../assets/phone.png";
 import phone from '../assets/phone.png';
@@ -288,7 +290,7 @@ export const converstation={
       'img_audio':window_audio,
       'img_translate':window_translate,
       'text_word': window_word_gif,
-      'text_audio':'Audio exercises that you can listen to in a comfortable environment and learn to perceive the Vietnamese language by ear.',
+      'text_audio':window_audio_gif,
       'text_translate':'Translation exercises. Each learning card contains two types of task: translate from English to Vietnamese and from Vietnamese to English.'
     },
     demo_audio:{
