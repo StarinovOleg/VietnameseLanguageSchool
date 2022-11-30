@@ -76,92 +76,92 @@ export const converstation={
         'section_img':support_words,
         'lessons':[{
             'id':0,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 1',
             'subtitle': 'Hello! I am David',
             'img':img
           },{
             'id':1,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 2',
             'subtitle': 'Where you from?',
             'img':img2
           },{
             'id':3,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 3',
             'subtitle': 'I am a doctor',
             'img':img3
            },{
             'id':4,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 4',
             'subtitle': 'How old is she?',
             'img':img4
            },{
             'id':5,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 5',
             'subtitle': 'How much is it?',
             'img':img5
            },{
             'id':6,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 6',
             'subtitle': 'We meet',
             'img':img6
            },{
             'id':7,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 7',
             'subtitle': 'Where were you born?',
             'img':img7
            },{
             'id':8,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 8',
             'subtitle': 'Do you like food?',
             'img':img8
            }
            ,{
             'id':9,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 9',
             'subtitle': 'Weather today',
             'img':img9
            },{
             'id':10,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 10',
             'subtitle': 'What is Vietnam like?',
             'img':img10
            },{
             'id':11,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 11',
             'subtitle': 'Winter in Dalat and Hanoi',
             'img':img11
            },{
             'id':12,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 12',
             'subtitle': 'You live in Vietnam',
             'img':img12
            },{
             'id':13,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 13',
             'subtitle': 'Get to Hoan Kiem',
             'img':img13
            },{
             'id':14,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 14',
             'subtitle': 'You can sit here',
             'img':img14
            },{
             'id':15,
-            'to': '/learning',
+            'to': '/words',
             'title':'Unit 15',
             'subtitle': 'You study vietnamese',
             'img':img15
@@ -198,37 +198,37 @@ export const converstation={
         'section_img':support_audio,
         'item':[{
             'id':1,
-            'to': '/conversation',
+            'to': '/audio',
             'title':'My name is Dung',
             'subtitle': 'Introduce yourself. Say "Hello" people!',
             'img':img
           },{
             'id':2,
-            'to': '/conversation',
+            'to': '/audio',
             'title':'Where do you come from?',
             'subtitle': 'Introduce yourself. Say where you from and your nationality.',
             'img':img2
           },{
             'id':3,
-            'to': '/conversation',
+            'to': '/audio',
             'title':'What is?',
             'subtitle': 'Ansk and answer on common question.',
             'img':what_is
           },{
             'id':4,
-            'to': '/conversation',
+            'to': '/audio',
             'title':'Introduce yourself',
             'subtitle': 'Say people about you and start converstation easy.',
             'img':introduce_yourself
           },{
             'id':5,
-            'to': '/conversation',
+            'to': '/audio',
             'title':'Start conversation.',
             'subtitle': 'Starting a casual conversation.',
             'img':start_conversation
           },{
             'id':6,
-            'to': '/conversation',
+            'to': '/audio',
             'title': 'Six tones',
             'subtitle': 'The difference of the six tones',
             'img':six_tones

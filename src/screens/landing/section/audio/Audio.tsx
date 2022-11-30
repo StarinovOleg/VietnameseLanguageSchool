@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { converstation } from "../../../store/static";
-import GridSection from "../../main/section/GridSection";
-import Link from "../../../ui-library/Link";
-import { cardItemConversation } from "../../conversation/components/Lists";
-import SupportWindow from "../../../components/SupportWindow";
-import Section from "../../main/section/Section";
+import { converstation } from "../../../../store/static";
+import GridSection from "../../../main/section/GridSection";
+import Link from "../../../../ui-library/Link";
+import { cardItemConversation } from "./components/Lists";
+import SupportWindow from "../../../../components/SupportWindow";
+import Section from "../../../main/section/Section";
 
 const children_header = (
   <img
@@ -43,7 +43,6 @@ function Audio(props: { id?: string }) {
         </div>
 
         <Link
-          to="/training"
           children={converstation.landing.continue}
           align="text-right"
           secondary_color="text-lime-800"
