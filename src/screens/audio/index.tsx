@@ -5,7 +5,7 @@ import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
 import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
 import Error from "../main/error/Error";
-import DisplayWordBlock from "../../components/DisplayWordBlock";
+import DisplayBlock from "./components/DisplayBlock";
 import Table from "./components/Table";
 import { pronunciation } from "../../dictionary/unit-1/pronunciation";
 import H1 from "../../ui-library/H1";
@@ -26,48 +26,38 @@ function AudioIndex() {
     switch (state?.title) {
       case converstation.conversation.item[0].title:
         return (
-          <div className="text-left">
-            <DisplayWordBlock
-              word={converstation_1.converstation_1_1.text}
-              audio={converstation_1.converstation_1_1.audio}
-            />
-          </div>
+          <DisplayBlock
+            word={converstation_1.converstation_1_1.text}
+            audio={converstation_1.converstation_1_1.audio}
+          />
         );
       case converstation.conversation.item[1].title:
         return (
-          <div className="text-left">
-            <DisplayWordBlock
-              word={converstation_1.converstation_1_2.text}
-              audio={converstation_1.converstation_1_2.audio}
-            />
-          </div>
+          <DisplayBlock
+            word={converstation_1.converstation_1_2.text}
+            audio={converstation_1.converstation_1_2.audio}
+          />
         );
       case converstation.conversation.item[2].title:
         return (
-          <div className="text-left">
-            <DisplayWordBlock
-              word={converstation_2.converstation_2_1.text}
-              audio={converstation_2.converstation_2_1.audio}
-            />
-          </div>
+          <DisplayBlock
+            word={converstation_2.converstation_2_1.text}
+            audio={converstation_2.converstation_2_1.audio}
+          />
         );
       case converstation.conversation.item[3].title:
         return (
-          <div className="text-left">
-            <DisplayWordBlock
-              word={converstation_2.converstation_2_2.text}
-              audio={converstation_2.converstation_2_2.audio}
-            />
-          </div>
+          <DisplayBlock
+            word={converstation_2.converstation_2_2.text}
+            audio={converstation_2.converstation_2_2.audio}
+          />
         );
       case converstation.conversation.item[4].title:
         return (
-          <div className="text-left">
-            <DisplayWordBlock
-              word={converstation_2.converstation_2_3.text}
-              audio={converstation_2.converstation_2_3.audio}
-            />
-          </div>
+          <DisplayBlock
+            word={converstation_2.converstation_2_3.text}
+            audio={converstation_2.converstation_2_3.audio}
+          />
         );
       case converstation.conversation.item[5].title:
         return (
