@@ -1,7 +1,7 @@
 import Card from "./Card";
 import { converstation } from "../../../../../store/static";
 
-export const cardItemLesson = converstation.lessons.lessons.map((item) => (
+export const cardItemLesson = converstation.words.lessons.map((item) => (
   <Card
     to={item.to}
     title={item.title}
