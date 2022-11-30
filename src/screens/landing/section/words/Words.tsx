@@ -8,7 +8,7 @@ import Section from "../../../main/section/Section";
 
 const children_header = (
   <img
-    src={converstation.lessons.section_img}
+    src={converstation.words.section_img}
     alt="logo"
     className="w-12 h-12 ml-4 mr-4 mt-4 mb-4"
   />
@@ -23,7 +23,7 @@ function Words(props: { id?: string }) {
   return (
     <Section>
       <GridSection
-        title={converstation.lessons.title}
+        title={converstation.words.title}
         fontcolorsecondary="text-sky-800"
         id={props.id}
         children_header={children_header}
@@ -48,7 +48,7 @@ function Words(props: { id?: string }) {
           align="text-right"
           secondary_color="text-sky-800"
           state={{
-            title: `${converstation.lessons.title}`,
+            title: `${converstation.words.title}`,
           }}
         />
       </GridSection>

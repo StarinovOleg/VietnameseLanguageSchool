@@ -16,7 +16,7 @@ function ListLessons() {
   const state = location.state as location;
   const displayWords = () => {
     switch (state.title) {
-      case converstation.lessons.title:
+      case converstation.words.title:
         return <>{cardItemLesson}</>;
       case converstation.conversation.title:
         return <>{cardItemConversation}</>;

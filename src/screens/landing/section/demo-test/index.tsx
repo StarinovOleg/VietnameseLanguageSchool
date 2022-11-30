@@ -81,7 +81,7 @@ const DemoTest = (props: { id?: string }) => {
                     align="text-center p-10"
                     secondary_color="text-sky-800"
                     state={{
-                      title: `${converstation.lessons.title}`,
+                      title: `${converstation.words.title}`,
                     }}
                   />
 
