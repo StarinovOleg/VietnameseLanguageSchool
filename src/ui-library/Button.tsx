@@ -3,7 +3,7 @@ import React from "react";
 function Button(props: {
   btnsecondary?: string;
   btnprimary?: string;
-  disabled?:any;
+  disabled?: any;
   onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
   children:
     | string
@@ -18,7 +18,7 @@ function Button(props: {
   return (
     <button
       type="button"
-      className={`p-4 lg:m-4 md:m-4 m-1  text-white rounded-xl	 border-solid lg:w-56 md:w-56 w-48 cursor-pointer ${props.btnsecondary} ${props.btnprimary}`}
+      className={`p-4 lg:m-4 md:m-4 m-1 rounded-xl	 border-solid lg:w-56 md:w-56 w-48 cursor-pointer ${props.btnsecondary} ${props.btnprimary}`}
       onClick={props.onClick}
       disabled={props.disabled}
     >

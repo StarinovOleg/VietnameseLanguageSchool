@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import H2 from "../ui-library/H2";
-import P from "../ui-library/P";
-const CardListen = (props: {
+import H2 from "../../../../../ui-library/H2";
+import P from "../../../../../ui-library/P";
+const CardAudio = (props: {
   subtitle: any;
   to: any;
   state: any;
@@ -30,4 +30,4 @@ const CardListen = (props: {
     </NavLink>
   );
 };
-export default CardListen;
+export default CardAudio;

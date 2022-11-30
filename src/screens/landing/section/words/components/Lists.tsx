@@ -1,4 +1,4 @@
-import Card from "../../../../../components/Card";
+import Card from "./Card";
 import { converstation } from "../../../../../store/static";
 
 export const cardItemLesson = converstation.lessons.lessons.map((item) => (

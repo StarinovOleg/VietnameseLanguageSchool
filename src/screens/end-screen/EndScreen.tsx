@@ -6,7 +6,7 @@ import NotCorrectAnswer from "../../components/NotCorrectAnswer";
 import { useNavigate } from "react-router-dom";
 import H1 from "../../ui-library/H1";
 import Button from "../../ui-library/Button";
-import  {converstation}  from "../../store/static";
+import { converstation } from "../../store/static";
 import BodyPractice from "../main/body/body_practice";
 interface locationStateProps {
   title: string;
@@ -21,15 +21,16 @@ function EndScreen() {
     navigate("/landing", {
       replace: true,
     });
-
   };
   return (
     <BodyPractice>
       <div className="text-left">
-        <H1>{converstation.end_screen.title} {locationState.title}</H1>
+        <H1>
+          {converstation.end_screen.title} {locationState.title}
+        </H1>
         <CorrectAnswer children={context.countPositive} />
         <NotCorrectAnswer children={context.countNegative} />
-        <Button onClick={redirectEndScreen} btnprimary="btn-primary">
+        <Button onClick={redirectEndScreen} btnprimary="btn-primary text-white">
           {converstation.button.button_name}
         </Button>
       </div>

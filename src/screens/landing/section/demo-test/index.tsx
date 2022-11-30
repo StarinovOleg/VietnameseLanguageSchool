@@ -3,7 +3,7 @@ import SchoolContext from "../../../../store/state";
 import H2 from "../../../../ui-library/H2";
 import { common_10_words } from "../../../../dictionary/common-words/common-10-words";
 import Section from "../../../main/section/Section";
-import { shuffle } from "../../../learning/lesson/algoritm_fisher_shuffle";
+import { shuffle } from "../../../../services/algoritm_fisher_shuffle";
 import Button from "../../../../ui-library/Button";
 import { converstation } from "../../../../store/static";
 import CorrectAnswer from "../../../../components/CorrectAnswer";
@@ -77,7 +77,6 @@ const DemoTest = (props: { id?: string }) => {
               {step > common_10_words.length || context.countTestTotal >= 10 ? (
                 <>
                   <Link
-                    to="/training"
                     children={converstation.landing.continue}
                     align="text-center p-10"
                     secondary_color="text-sky-800"

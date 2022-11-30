@@ -2,10 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Link(props: {
-  to: string;
   state?: any;
-  align?:string;
-  secondary_color?:string,
+  align?: string;
+  secondary_color?: string;
 
   children:
     | string
@@ -18,8 +17,12 @@ function Link(props: {
     | undefined;
 }) {
   return (
-    <NavLink to={props.to} state={props.state}>
-      <p className={`lg:text-2xl md:text-2xl text-xl text-lime-500 font-semibold underline decoration-2 hover:text-stone-500 ${props.align} ${props.secondary_color}`}>{props.children}</p>
+    <NavLink to="/listlessons" state={props.state}>
+      <p
+        className={`lg:text-2xl md:text-2xl text-xl text-lime-500 font-semibold underline decoration-2 hover:text-stone-500 ${props.align} ${props.secondary_color}`}
+      >
+        {props.children}
+      </p>
     </NavLink>
   );
 }

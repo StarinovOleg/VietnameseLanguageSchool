@@ -1,37 +1,37 @@
 import React, { useContext, useEffect, useState, Fragment } from "react";
 
-import negative from "../../../assets/sounds/noncorrect.mp3";
-import positive from "../../../assets/sounds/correct.mp3";
-import { sound } from "../../../services/sound_function";
-import { unit_15 } from "../../../dictionary/unit-15/unit_15";
-import { unit_14 } from "../../../dictionary/unit-14/unit_14";
-import { unit_13 } from "../../../dictionary/unit-13/unit_13";
-import { unit_12 } from "../../../dictionary/unit-12/unit_12";
-import { unit_11 } from "../../../dictionary/unit-11/unit_11";
-import { unit_10 } from "../../../dictionary/unit-10/unit_10";
-import { unit_9 } from "../../../dictionary/unit-9/unit_9";
-import { unit_8 } from "../../../dictionary/unit-8/unit_8";
-import { unit_7 } from "../../../dictionary/unit-7/unit_7";
-import { unit_6 } from "../../../dictionary/unit-6/unit_6";
-import { unit_5 } from "../../../dictionary/unit-5/unit_5";
-import { unit_4 } from "../../../dictionary/unit-4/unit_4";
-import { unit_3 } from "../../../dictionary/unit-3/unit_3";
-import { unit_2 } from "../../../dictionary/unit-2/unit_2";
-import { unit_1 } from "../../../dictionary/unit-1/unit_1";
-import { shuffle } from "./algoritm_fisher_shuffle";
-import Button from "../../../ui-library/Button";
-import H1 from "../../../ui-library/H1";
-import H2 from "../../../ui-library/H2";
+import negative from "../../assets/sounds/noncorrect.mp3";
+import positive from "../../assets/sounds/correct.mp3";
+import { sound } from "../../services/sound_function";
+import { unit_15 } from "../../dictionary/unit-15/unit_15";
+import { unit_14 } from "../../dictionary/unit-14/unit_14";
+import { unit_13 } from "../../dictionary/unit-13/unit_13";
+import { unit_12 } from "../../dictionary/unit-12/unit_12";
+import { unit_11 } from "../../dictionary/unit-11/unit_11";
+import { unit_10 } from "../../dictionary/unit-10/unit_10";
+import { unit_9 } from "../../dictionary/unit-9/unit_9";
+import { unit_8 } from "../../dictionary/unit-8/unit_8";
+import { unit_7 } from "../../dictionary/unit-7/unit_7";
+import { unit_6 } from "../../dictionary/unit-6/unit_6";
+import { unit_5 } from "../../dictionary/unit-5/unit_5";
+import { unit_4 } from "../../dictionary/unit-4/unit_4";
+import { unit_3 } from "../../dictionary/unit-3/unit_3";
+import { unit_2 } from "../../dictionary/unit-2/unit_2";
+import { unit_1 } from "../../dictionary/unit-1/unit_1";
+import { shuffle } from "../../services/algoritm_fisher_shuffle";
+import Button from "../../ui-library/Button";
+import H1 from "../../ui-library/H1";
+import H2 from "../../ui-library/H2";
 import { useNavigate, useLocation } from "react-router-dom";
-import SchoolContext from "../../../store/state";
-import { converstation } from "../../../store/static";
-import { chooseRandom } from "./random_words";
-import CorrectAnswer from "../../../components/CorrectAnswer";
-import NotCorrectAnswer from "../../../components/NotCorrectAnswer";
-import Timer from "../../../components/Timer";
-import DisplayWordBlock from "../../../components/DisplayWordBlock";
-import Error from "../../main/error/Error";
-import BodyPractice from "../../main/body/body_practice";
+import SchoolContext from "../../store/state";
+import { converstation } from "../../store/static";
+import { chooseRandom } from "./components/random_words";
+import CorrectAnswer from "../../components/CorrectAnswer";
+import NotCorrectAnswer from "../../components/NotCorrectAnswer";
+import Timer from "../../components/Timer";
+import DisplayWordBlock from "../../components/DisplayWordBlock";
+import Error from "../main/error/Error";
+import BodyPractice from "../main/body/body_practice";
 interface location {
   title: any;
   subtitle: any;
@@ -52,7 +52,7 @@ const u_13 = chooseRandom(unit_13, 10);
 const u_14 = chooseRandom(unit_14, 10);
 const u_15 = chooseRandom(unit_15, 10);
 
-function LearningIndex() {
+function WordsIndex() {
   const [step, setStep] = useState(1);
   const navigate = useNavigate();
   const location = useLocation();
@@ -202,4 +202,4 @@ function LearningIndex() {
   );
 }
 
-export default LearningIndex;
+export default WordsIndex;

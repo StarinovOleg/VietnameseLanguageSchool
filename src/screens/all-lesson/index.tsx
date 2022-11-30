@@ -1,10 +1,9 @@
-import React, { useContext, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import Card from "../../components/Card";
+import React from "react";
+import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
-import { cardItemLesson } from "../landing/section/lessons/components/Lists";
-import { cardItemConversation } from "../conversation/components/Lists";
-import { cardItemPracticeTranslated } from "../practice_translated/components/List";
+import { cardItemLesson } from "../landing/section/words/components/Lists";
+import { cardItemConversation } from "../landing/section/audio/components/Lists";
+import { cardItemPracticeTranslated } from "../landing/section/translate/components/List";
 import H1 from "../../ui-library/H1";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
@@ -12,7 +11,7 @@ interface location {
   title: any;
 }
 
-function Training() {
+function ListLessons() {
   const location = useLocation();
   const state = location.state as location;
   const displayWords = () => {
@@ -39,4 +38,4 @@ function Training() {
   );
 }
 
-export default Training;
+export default ListLessons;
