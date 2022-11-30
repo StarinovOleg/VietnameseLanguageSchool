@@ -15,7 +15,7 @@ import { chooseRandom } from "./components/random_words";
 import CorrectAnswer from "../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../components/NotCorrectAnswer";
 import Timer from "../../components/Timer";
-import DisplayWordBlock from "../../components/DisplayWordBlock";
+import DisplayWordBlock from "./components/DisplayWordBlock";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 interface location {
