@@ -155,7 +155,7 @@ function WordsIndex() {
                   }}
                 />
 
-                <div className="flex justify-center my-4 flex-wrap">
+                <div className="justify-center my-4 flex-wrap hidden lg:flex md:flex">
                   <CorrectAnswer children={context.countPositive} />
                   <NotCorrectAnswer children={context.countNegative} />
                   <Timer seconds={context.countTimer} />
