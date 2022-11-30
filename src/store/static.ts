@@ -42,6 +42,7 @@ import phone from '../assets/phone.png';
 import appstore from '../assets/app-store-badge.png';
 import googlestore from '../assets/google-play-badge.png';
 import img_error from '../assets/error/error.png';
+import end_screen from '../assets/end-screen/end-screen.png';
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
 import b3 from "../assets/sounds/pronunciation/Bá.mp3";
 import b4 from "../assets/sounds/pronunciation/Bã.mp3";
@@ -61,6 +62,7 @@ import { unit_4 } from "../dictionary/unit-4/unit_4";
 import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
+
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
@@ -309,6 +311,7 @@ export const converstation={
     },
     end_screen:{
         'title':'Congratulation you done training. Chose new test.',
+        'picture':end_screen
     },
     landing:{
         'continue':'Continue more training >>>'
