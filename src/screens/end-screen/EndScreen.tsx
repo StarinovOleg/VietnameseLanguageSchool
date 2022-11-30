@@ -24,7 +24,7 @@ function EndScreen() {
   };
   return (
     <BodyPractice>
-      <div className="text-left">
+      <div className="text-left h-screen md:h-auto lg:h-auto">
         <H1>
           {converstation.end_screen.title} {locationState.title}
         </H1>
@@ -33,6 +33,10 @@ function EndScreen() {
         <Button onClick={redirectEndScreen} btnprimary="btn-primary text-white">
           {converstation.button.button_name}
         </Button>
+        <img
+          src={converstation.end_screen.picture}
+          className="mr-auto ml-auto w-6/12"
+        />
       </div>
     </BodyPractice>
   );
