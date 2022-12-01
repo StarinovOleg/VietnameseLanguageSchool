@@ -1,5 +1,7 @@
 import Card from "./Card";
 import { converstation } from "../../../../../store/static";
+import { chooseRandom } from "../../../../words/components/random_words";
+import { shuffle } from "../../../../../services/algoritm_fisher_shuffle";
 
 export const cardItemLesson = converstation.words.lessons.map((item) => (
   <Card
@@ -11,6 +13,7 @@ export const cardItemLesson = converstation.words.lessons.map((item) => (
     state={{
       title: `${item.title}`,
       subtitle: `${item.subtitle}`,
+      array_data: `${JSON.stringify(chooseRandom(item.array_data, 10))}`,
     }}
   />
 ));
