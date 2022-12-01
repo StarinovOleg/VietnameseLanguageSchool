@@ -63,57 +63,10 @@ function WordsIndex() {
   };
   //dynamic words display
   const displayWords = () => {
-    switch (state?.title) {
-      case converstation.words.lessons[0].title:
-        arr = JSON.parse(state?.array_data);
-
-        console.log(arr);
-
-        return arr;
-      case converstation.words.lessons[1].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[2].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[3].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[4].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[5].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[6].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[7].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[8].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[9].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[10].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[11].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[12].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[13].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[14].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      default:
-        return arr;
+    if (state?.title) {
+      arr = JSON.parse(state?.array_data);
+      console.log(arr);
+      return arr;
     }
   };
   displayWords();
