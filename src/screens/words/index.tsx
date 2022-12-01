@@ -19,24 +19,10 @@ import DisplayWordBlock from "./components/DisplayWordBlock";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 interface location {
+  array_data: any;
   title: any;
   subtitle: any;
 }
-const u_1 = chooseRandom(converstation.words.lessons[0].array_data, 10);
-const u_2 = chooseRandom(converstation.words.lessons[1].array_data, 10);
-const u_3 = chooseRandom(converstation.words.lessons[2].array_data, 10);
-const u_4 = chooseRandom(converstation.words.lessons[3].array_data, 10);
-const u_5 = chooseRandom(converstation.words.lessons[4].array_data, 10);
-const u_6 = chooseRandom(converstation.words.lessons[5].array_data, 10);
-const u_7 = chooseRandom(converstation.words.lessons[6].array_data, 10);
-const u_8 = chooseRandom(converstation.words.lessons[7].array_data, 10);
-const u_9 = chooseRandom(converstation.words.lessons[8].array_data, 10);
-const u_10 = chooseRandom(converstation.words.lessons[9].array_data, 10);
-const u_11 = chooseRandom(converstation.words.lessons[10].array_data, 10);
-const u_12 = chooseRandom(converstation.words.lessons[11].array_data, 10);
-const u_13 = chooseRandom(converstation.words.lessons[12].array_data, 10);
-const u_14 = chooseRandom(converstation.words.lessons[13].array_data, 10);
-const u_15 = chooseRandom(converstation.words.lessons[14].array_data, 10);
 
 function WordsIndex() {
   const [step, setStep] = useState(1);
@@ -44,7 +30,7 @@ function WordsIndex() {
   const location = useLocation();
   const state = location.state as location;
   const context = useContext(SchoolContext);
-  let arr: ConcatArray<any> = [];
+  let arr: Array<any> = [];
 
   //redirect on done screen
   const redirectEndScreen = () => {
@@ -80,49 +66,50 @@ function WordsIndex() {
   const displayWords = () => {
     switch (state?.title) {
       case converstation.words.lessons[0].title:
-        arr = u_1;
+        arr = JSON.parse(state?.array_data);
+        console.log(arr);
         return arr;
       case converstation.words.lessons[1].title:
-        arr = u_2;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[2].title:
-        arr = u_3;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[3].title:
-        arr = u_4;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[4].title:
-        arr = u_5;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[5].title:
-        arr = u_6;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[6].title:
-        arr = u_7;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[7].title:
-        arr = u_8;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[8].title:
-        arr = u_9;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[9].title:
-        arr = u_10;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[10].title:
-        arr = u_11;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[11].title:
-        arr = u_12;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[12].title:
-        arr = u_13;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[13].title:
-        arr = u_13;
+        arr = JSON.parse(state?.array_data);
         return arr;
       case converstation.words.lessons[14].title:
-        arr = u_14;
+        arr = JSON.parse(state?.array_data);
         return arr;
       default:
         return arr;
@@ -132,6 +119,7 @@ function WordsIndex() {
   useEffect(() => {
     if (context.countTotal !== 0) {
       context.resetLesson();
+      window.location.reload();
     }
   }, []);
 
