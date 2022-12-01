@@ -23,15 +23,21 @@ interface location {
   title: any;
   subtitle: any;
 }
-
+//dynamic words display
+const displayWords = (state: any) => {
+  let arr: Array<any> = [];
+  if (state?.title) {
+    arr = JSON.parse(state?.array_data);
+    return arr;
+  }
+};
 function WordsIndex() {
   const [step, setStep] = useState(1);
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as location;
   const context = useContext(SchoolContext);
-  let arr: Array<any> = [];
-
+  const arr = displayWords(state);
   //redirect on done screen
   const redirectEndScreen = () => {
     if (context.countTotal >= 9) {
@@ -45,7 +51,6 @@ function WordsIndex() {
   //checking answer
   const check = (item: any, display: any) => {
     setStep(step + 1);
-
     context.timerDecrement();
     console.log(step);
     console.log(item.vietnamese);
@@ -62,60 +67,7 @@ function WordsIndex() {
       sound(negative);
     }
   };
-  //dynamic words display
-  const displayWords = () => {
-    switch (state?.title) {
-      case converstation.words.lessons[0].title:
-        arr = JSON.parse(state?.array_data);
-        console.log(arr);
-        return arr;
-      case converstation.words.lessons[1].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[2].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[3].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[4].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[5].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[6].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[7].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[8].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[9].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[10].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[11].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[12].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[13].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      case converstation.words.lessons[14].title:
-        arr = JSON.parse(state?.array_data);
-        return arr;
-      default:
-        return arr;
-    }
-  };
-  displayWords();
+
   useEffect(() => {
     if (context.countTotal !== 0) {
       context.resetLesson();
@@ -125,13 +77,13 @@ function WordsIndex() {
 
   return (
     <>
-      {arr.length != 0 && state?.title ? (
+      {state?.title ? (
         <BodyPractice>
           <H1 children={state?.title} />
           <H2 children={state?.subtitle} />
 
           <div className="text-4xl my-4">
-            {arr.slice(step - 1, step).map((display, index) => (
+            {arr?.slice(step - 1, step).map((display, index) => (
               <Fragment key={display.id}>
                 <DisplayWordBlock
                   word={display.vietnamese}
