@@ -23,21 +23,15 @@ interface location {
   title: any;
   subtitle: any;
 }
-//dynamic words display
-const displayWords = (state: any) => {
-  let arr: Array<any> = [];
-  if (state?.title) {
-    arr = JSON.parse(state?.array_data);
-    return arr;
-  }
-};
+
 function WordsIndex() {
   const [step, setStep] = useState(1);
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as location;
   const context = useContext(SchoolContext);
-  const arr = displayWords(state);
+  let arr: Array<any> = [];
+
   //redirect on done screen
   const redirectEndScreen = () => {
     if (context.countTotal >= 9) {
@@ -67,7 +61,15 @@ function WordsIndex() {
       sound(negative);
     }
   };
-
+  //dynamic words display
+  const displayWords = () => {
+    if (state?.title) {
+      arr = JSON.parse(state?.array_data);
+      console.log(arr);
+      return arr;
+    }
+  };
+  displayWords();
   useEffect(() => {
     if (context.countTotal !== 0) {
       context.resetLesson();
@@ -77,13 +79,13 @@ function WordsIndex() {
 
   return (
     <>
-      {state?.title ? (
+      {arr.length != 0 && state?.title ? (
         <BodyPractice>
           <H1 children={state?.title} />
           <H2 children={state?.subtitle} />
 
           <div className="text-4xl my-4">
-            {arr?.slice(step - 1, step).map((display, index) => (
+            {arr.slice(step - 1, step).map((display, index) => (
               <Fragment key={display.id}>
                 <DisplayWordBlock
                   word={display.vietnamese}
