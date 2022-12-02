@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import H2 from "../../../../../ui-library/H2";
-import P from "../../../../../ui-library/P";
 
 const CardpracticeTranslated = (props: {
   to: string;
