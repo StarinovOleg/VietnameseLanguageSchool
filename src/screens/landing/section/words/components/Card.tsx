@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import H2 from "../../../../../ui-library/H2";
 import P from "../../../../../ui-library/P";
-import img from "../assets/icons-lessons/unit1.png";
 const Card = (props: {
   subtitle: any;
   to: string;

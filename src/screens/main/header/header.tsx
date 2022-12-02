@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { converstation } from "../../../store/static";
 import Logo from "./logo";
 import ScrollToTop from "../../../services/scroll-top.service";
@@ -33,19 +33,19 @@ function Header() {
             to="/landing#words"
             className="mr-4  text-2xl text-sky-500 hover:text-sky-800 "
           >
-            words
+            {converstation.header.words_training}
           </Link>
           <Link
             to="/landing#audio"
             className="pr-4 text-2xl text-lime-500 hover:text-lime-800 "
           >
-            audio
+            {converstation.header.audio_training}
           </Link>
           <Link
             to="/landing#translate"
             className="pr-4 text-2xl text-[#DA0C0C] hover:text-rose-800 "
           >
-            translate
+            {converstation.header.translate_training}
           </Link>
         </div>
       </div>

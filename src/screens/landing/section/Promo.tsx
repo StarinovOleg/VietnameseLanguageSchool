@@ -52,13 +52,13 @@ function Promo() {
               to="/landing#demo_audio"
               className="border-2 border-lime-500  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-lime-500 hover:text-lime-800 font-['KGLifeisMessy'] "
             >
-              listen sound
+              {converstation.promo.button_listen_sound}
             </Link>
             <Link
               to="/landing#demo_test"
               className="border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy']"
             >
-              start learning
+              {converstation.promo.button_start_learning}
             </Link>
           </div>
         </div>

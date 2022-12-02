@@ -63,12 +63,21 @@ import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
 
+import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
+import audio_animation_note1 from '../assets/demo-audio/note1.png'
+import audio_animation_note2 from '../assets/demo-audio/note2.png'
+import audio_animation_terminal from '../assets/demo-audio/terminal.png'
+
+import negative from "../assets/sounds/noncorrect.mp3";
+import positive from "../assets/sounds/correct.mp3";
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
         'title_vietnamese':'Hãy làm cho việc học <span style="color: rgb(63 98 18)" >Tiếng Việt</span> trở nên <span style="color:#ba4e4a" class="span_promo">thú vị</span> và <span style="color:#ba4e4a" class="span_promo">dễ tiếp cận</span>!',
         "subtitle":"Online Vietnamese language  in any place - all  for FREE! ...",
-        'img': pioneers
+        'img': pioneers,
+        'button_listen_sound':'listen sound',
+        'button_start_learning':'start learning'
     },
     baner:[{
         id:1,
@@ -331,6 +340,10 @@ export const converstation={
     demo_audio:{
       'title':'Listen and learn your ',
       'subtitle':'Letter Sounds',
+      'audio_animation_note1':audio_animation_note1,
+      'audio_animation_note2':audio_animation_note2,
+      'audio_animation_magnitola':audio_animation_magnitola,
+      'audio_animation_terminal':audio_animation_terminal,
       'audio': [ {
           id:1, 
           name: 'Bà',
@@ -354,5 +367,18 @@ export const converstation={
     demo_test:{
       'title':'Practice and memorise your',
       'subtitle':'words'
+    },
+    footer:{
+      'company_name':'© Starinov Production',
+      'web_app_name':'Vietnamese Language school for foreigner'
+    },
+    header:{
+      'words_training':'words',
+      'audio_training':'audio',
+      'translate_training':'translate'
+    },
+    words_sounds:{
+      'negative':negative,
+      'positive':positive,
     }
 }

@@ -1,8 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import ButtonSound from "../../../../ui-library/ButtonSound";
 import useSound from "use-sound";
-import img from "../assets/icons-lessons/unit1.png";
 const CardDemoAudio = (props: {
   item?: any;
   text?: any;

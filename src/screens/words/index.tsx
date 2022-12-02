@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState, Fragment } from "react";
 
-import negative from "../../assets/sounds/noncorrect.mp3";
-import positive from "../../assets/sounds/correct.mp3";
 import { sound } from "../../services/sound_function";
 
 import { shuffle } from "../../services/algoritm_fisher_shuffle";
@@ -53,12 +51,12 @@ function WordsIndex() {
       redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
-      sound(positive);
+      sound(converstation.words_sounds.positive);
     } else {
       redirectEndScreen();
       context.incrementNegative();
       context.incrementTotal();
-      sound(negative);
+      sound(converstation.words_sounds.negative);
     }
   };
   //dynamic words display

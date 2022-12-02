@@ -1,7 +1,6 @@
 import Card from "./Card";
 import { converstation } from "../../../../../store/static";
 import { chooseRandom } from "../../../../words/components/random_words";
-import { shuffle } from "../../../../../services/algoritm_fisher_shuffle";
 
 export const cardItemLesson = converstation.words.lessons.map((item) => (
   <Card
