@@ -370,7 +370,7 @@ export const converstation={
     },
     footer:{
       'company_name':'© Starinov Production',
-      'web_app_name':'Vietnamese Language school for foreigner'
+      'web_app_name':'VinLingua(Vietnamese lingua) - Vietnamese Language school for foreigner'
     },
     header:{
       'words_training':'words',
