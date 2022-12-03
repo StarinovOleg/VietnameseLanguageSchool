@@ -63,15 +63,18 @@ function WordsIndex() {
   const displayWords = () => {
     if (state?.title) {
       arr = JSON.parse(state?.array_data);
-      console.log(arr);
-      return arr;
+      if (context.countTotal === 0) {
+        arr = shuffle(arr);
+      } else {
+        return arr;
+      }
     }
   };
+
   displayWords();
   useEffect(() => {
     if (context.countTotal !== 0) {
       context.resetLesson();
-      window.location.reload();
     }
   }, []);
 
