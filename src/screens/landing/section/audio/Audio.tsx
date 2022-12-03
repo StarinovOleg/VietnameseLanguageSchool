@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
@@ -14,11 +15,8 @@ const children_header = (
   />
 );
 function Audio(props: { id?: string }) {
-  const [hover, setHover] = useState(false);
-  const onClick = () => {
-    if (!hover) setHover(true);
-    else setHover(false);
-  };
+  const [hover, setHover] = useToggle(false);
+
   return (
     <Section>
       <GridSection
@@ -26,7 +24,7 @@ function Audio(props: { id?: string }) {
         fontcolorsecondary="text-lime-800"
         id={props.id}
         children_header={children_header}
-        onClick={onClick}
+        onClick={setHover}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6">
           {hover && (
@@ -36,7 +34,7 @@ function Audio(props: { id?: string }) {
               color="text-lime-800"
               img={converstation.support_window.img_audio}
               shadowcolor="shadow-lime-500"
-              onClick={onClick}
+              onClick={setHover}
             />
           )}
           {cardItemConversation.slice(0, 6)}
