@@ -21,7 +21,6 @@ function EndScreen() {
     navigate("/landing", {
       replace: true,
     });
-    window.location.reload();
   };
   return (
     <BodyPractice>
