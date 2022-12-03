@@ -66,7 +66,6 @@ function WordsIndex() {
       if (context.countTotal === 0) {
         arr = shuffle(arr);
       }
-      console.log(arr);
       return arr;
     }
   };
