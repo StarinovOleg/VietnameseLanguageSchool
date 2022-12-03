@@ -65,9 +65,9 @@ function WordsIndex() {
       arr = JSON.parse(state?.array_data);
       if (context.countTotal === 0) {
         arr = shuffle(arr);
-      } else {
-        return arr;
       }
+      console.log(arr);
+      return arr;
     }
   };
 
