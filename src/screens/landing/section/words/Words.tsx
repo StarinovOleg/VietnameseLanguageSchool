@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
@@ -14,12 +15,8 @@ const children_header = (
   />
 );
 function Words(props: { id?: string }) {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useToggle(false);
 
-  const onClick = () => {
-    if (!hover) setHover(true);
-    else setHover(false);
-  };
   return (
     <Section>
       <GridSection
@@ -27,7 +24,7 @@ function Words(props: { id?: string }) {
         fontcolorsecondary="text-sky-800"
         id={props.id}
         children_header={children_header}
-        onClick={onClick}
+        onClick={setHover}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 ">
           {hover && (
@@ -37,7 +34,7 @@ function Words(props: { id?: string }) {
               color="text-[#075985]"
               img={converstation.support_window.img_word}
               shadowcolor="shadow-cyan-500/50"
-              onClick={onClick}
+              onClick={setHover}
             />
           )}
           {cardItemLesson.slice(0, 8)}

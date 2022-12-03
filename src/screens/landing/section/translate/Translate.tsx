@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
@@ -14,11 +15,7 @@ const children_header = (
   />
 );
 function Translate(props: { id?: string }) {
-  const [hover, setHover] = useState(false);
-  const onClick = () => {
-    if (!hover) setHover(true);
-    else setHover(false);
-  };
+  const [hover, setHover] = useToggle(false);
   return (
     <Section>
       <GridSection
@@ -26,7 +23,7 @@ function Translate(props: { id?: string }) {
         fontcolorsecondary="text-rose-700"
         id={props.id}
         children_header={children_header}
-        onClick={onClick}
+        onClick={setHover}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6">
           {hover && (
@@ -36,7 +33,7 @@ function Translate(props: { id?: string }) {
               color="text-rose-700"
               img={converstation.support_window.img_translate}
               shadowcolor="shadow-rose-700"
-              onClick={onClick}
+              onClick={setHover}
             />
           )}
           {cardItemPracticeTranslated.slice(0, 8)}
