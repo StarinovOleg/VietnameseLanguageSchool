@@ -11,7 +11,7 @@ function Promo() {
     <Section>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 ">
         <div>
-          <div className="h-24 md:h-20 lg:h-96">
+          <div className="h-24 md:h-28 lg:h-96">
             <H1
               children={
                 <Typewriter
