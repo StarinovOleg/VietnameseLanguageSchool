@@ -1,15 +1,12 @@
 import React, { useContext, useEffect, useState, Fragment } from "react";
 
 import { sound } from "../../services/sound_function";
-
 import { shuffle } from "../../services/algoritm_fisher_shuffle";
 import Button from "../../ui-library/Button";
 import H1 from "../../ui-library/H1";
 import H2 from "../../ui-library/H2";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import SchoolContext from "../../store/state";
-import { converstation } from "../../store/static";
-import { chooseRandom } from "./components/random_words";
 import CorrectAnswer from "../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../components/NotCorrectAnswer";
 import Timer from "../../components/Timer";
@@ -24,21 +21,10 @@ interface location {
 
 function WordsIndex() {
   const [step, setStep] = useState(1);
-  const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as location;
   const context = useContext(SchoolContext);
   let arr: Array<any> = [];
-
-  //redirect on done screen
-  const redirectEndScreen = () => {
-    if (context.countTotal >= 9) {
-      navigate("/endtest", {
-        replace: true,
-        state: { title: `${state.title}` },
-      });
-    }
-  };
 
   //checking answer
   const check = (item: any, display: any) => {
@@ -48,15 +34,11 @@ function WordsIndex() {
     console.log(item.vietnamese);
     console.log(display.vietnamese);
     if (item.vietnamese === display.vietnamese) {
-      redirectEndScreen();
       context.incrementPositive();
       context.incrementTotal();
-      sound(converstation.words_sounds.positive);
     } else {
-      redirectEndScreen();
       context.incrementNegative();
       context.incrementTotal();
-      sound(converstation.words_sounds.negative);
     }
   };
   //dynamic words display
@@ -66,6 +48,7 @@ function WordsIndex() {
       if (context.countTotal === 0) {
         arr = shuffle(arr);
       }
+      console.log(arr);
       return arr;
     }
   };
