@@ -30,7 +30,7 @@ function Promo() {
           </div>
 
           <H2
-            fontsizeprimary="h2-font-size-primary"
+            fontsizeprimary="h2-font-size-primary mt-[7rem]"
             fontfamilysecondary="font-sans"
             fontcolorsecondary="text-stone-500"
           >
