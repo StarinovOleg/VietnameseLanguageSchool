@@ -30,7 +30,7 @@ function Promo() {
           </div>
 
           <H2
-            fontsizeprimary="h2-font-size-primary mt-[7rem]"
+            fontsizeprimary="h2-font-size-primary "
             fontfamilysecondary="font-sans"
             fontcolorsecondary="text-stone-500"
           >
@@ -50,13 +50,13 @@ function Promo() {
           <div className="flex justify-center">
             <Link
               to="/landing#demo_audio"
-              className="border-2 border-lime-500  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-lime-500 hover:text-lime-800 font-['KGLifeisMessy'] "
+              className="border-2 border-lime-500  hover:border-lime-800 rounded-lg  m-5 p-2 text-xl  text-lime-500 hover:text-lime-800 font-['KGLifeisMessy'] text-center"
             >
               {converstation.promo.button_listen_sound}
             </Link>
             <Link
               to="/landing#demo_test"
-              className="border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy']"
+              className="border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy'] text-center"
             >
               {converstation.promo.button_start_learning}
             </Link>
