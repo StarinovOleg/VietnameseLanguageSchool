@@ -19,8 +19,8 @@ import this_year from "../../../src/assets/sounds/lesson4/this_year.mp3"
 import year_old from "../../../src/assets/sounds/lesson4/year_old.mp3"
 export const unit_4=[
     {id: 0, english: "How old", vietnamese: "Bao nhiêu tuổi?", example:"Bao nhiêu tuổi?", audio:how_old, picture:""},
-    {id: 1, english: "When a student talks to teachers warmly they use ...", vietnamese: "Con", example:"Con chào cô ạ", audio:'', picture:""},
-    {id: 2, english: "User at the end of sentences to show good & respectfull attitude", vietnamese: "Ạ", example:"Con chào cô ạ", audio:respect, picture:""},
+    {id: 1, english: "Polite talk", vietnamese: "Con", example:"Con chào cô ạ", audio:'', picture:""},
+    {id: 2, english: "Respectfull attitude", vietnamese: "Ạ", example:"Con chào cô ạ", audio:respect, picture:""},
     {id: 3, english: "New", vietnamese: "Mới", example:"Chúc mừng năm mới!", audio:new_new, picture:""},
     {id: 4, english: "This year", vietnamese: "Năm nay", example:"Chúng tôi sẽ đi nghỉ trong năm nay", audio:this_year, picture:""},
     {id: 5, english: "My son/boy", vietnamese: "Con trai", example:"Con trai tôi thích thể thao", audio:my_son, picture:""},
