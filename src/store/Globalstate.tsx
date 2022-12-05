@@ -1,9 +1,17 @@
 import React, { useReducer } from "react";
 import SchoolContext from "./state";
 import { reducerIncrement } from "./reducers/reducer-increment";
+import { reducerSound } from "./reducers/reducer-sound";
 import { INCREMENT, RESET } from "./reducers/reducer-increment";
 import { DECREMENT, reducerDecrement } from "./reducers/reducer-decrement";
+import { SOUND_NEGATIVE, SOUND_POSITIVE } from "./reducers/reducer-sound";
+import { useLocation, useNavigate } from "react-router-dom";
 
+interface location {
+  array_data: any;
+  title: any;
+  subtitle: any;
+}
 const GlobalState = (props: {
   children:
     | string
@@ -15,6 +23,9 @@ const GlobalState = (props: {
     | null
     | undefined;
 }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const state = location.state as location;
   const [statePositive, dispatchCorrect] = useReducer(reducerIncrement, {
     count: 0,
   });
@@ -42,20 +53,32 @@ const GlobalState = (props: {
   const [stateTestTotal, dispatchTestTotal] = useReducer(reducerIncrement, {
     count: 0,
   });
+  const [stateSoundNegative, dispatchSoundNegative] = useReducer(reducerSound, {
+    sound: "",
+  });
   const addincrement = () => {
     dispatchCorrect({ type: INCREMENT });
+    dispatchSoundNegative({ type: SOUND_POSITIVE });
   };
   const addincrementTest = () => {
     dispatchTestCorrect({ type: INCREMENT });
   };
   const addincrementNegative = () => {
     dispatchNotCorrect({ type: INCREMENT });
+    dispatchSoundNegative({ type: SOUND_NEGATIVE });
   };
   const addincrementTestNegative = () => {
     dispatchTestNotCorrect({ type: INCREMENT });
   };
   const addincrementTotal = () => {
     dispatchTotal({ type: INCREMENT });
+    //redirect on done screen
+    if (stateTotal.count >= 9) {
+      navigate("/endtest", {
+        replace: true,
+        state: { title: `${state.title}` },
+      });
+    }
   };
   const addincrementTestTotal = () => {
     dispatchTestTotal({ type: INCREMENT });
