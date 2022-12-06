@@ -8,9 +8,7 @@ import { SOUND_NEGATIVE, SOUND_POSITIVE } from "./reducers/reducer-sound";
 import { useLocation, useNavigate } from "react-router-dom";
 
 interface location {
-  array_data: any;
-  title: any;
-  subtitle: any;
+  title: string;
 }
 const GlobalState = (props: {
   children:

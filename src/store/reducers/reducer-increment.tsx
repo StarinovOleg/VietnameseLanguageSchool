@@ -2,7 +2,7 @@ export const INCREMENT = "INCREMENT";
 export const RESET = "RESET";
 export const reducerIncrement = (
   state: { count: number },
-  action: { type: any }
+  action: { type: string }
 ) => {
   switch (action.type) {
     case INCREMENT:

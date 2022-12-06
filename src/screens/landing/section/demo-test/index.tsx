@@ -11,15 +11,6 @@ import NotCorrectAnswer from "../../../../components/NotCorrectAnswer";
 import Link from "../../../../ui-library/Link";
 import H1 from "../../../../ui-library/H1";
 
-/*
-const display_vietnamese_word=(step:any)=>common_10_words.slice(step - 1, step).map((step, index) => {
-  return(<H1
-    children={step.vietnamese}
-    key={index}
-  />)
-  
-})*/
-
 const DemoTest = (props: { id?: string }) => {
   const [step, setStep] = useState(1);
   const context = useContext(SchoolContext);

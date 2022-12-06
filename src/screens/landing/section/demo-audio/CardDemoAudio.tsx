@@ -2,12 +2,11 @@ import React from "react";
 import ButtonSound from "../../../../ui-library/ButtonSound";
 import useSound from "use-sound";
 const CardDemoAudio = (props: {
-  item?: any;
-  text?: any;
+  item: string | string[];
+  text?: string;
   color?: string;
-  img?: any;
-  shadowcolor?: any;
-  onClick?: any;
+  img?: string;
+  shadowcolor?: string;
 }) => {
   const [play] = useSound(props.item);
   return (
@@ -21,7 +20,7 @@ const CardDemoAudio = (props: {
       </div>
       <div className="bg-[#800000] border-solid rounded-b-lg p-10 relative">
         <ButtonSound
-          onClick={play}
+          onClick={() => play}
           hover="group-hover:p-6"
           position="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />

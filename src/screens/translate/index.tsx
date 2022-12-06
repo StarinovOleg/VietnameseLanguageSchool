@@ -14,7 +14,7 @@ import Input from "./components/Input";
 import Button from "../../ui-library/Button";
 
 interface location {
-  title: any;
+  title: string;
   [key: string]: string | number;
 }
 function TranslateIndex() {
@@ -22,13 +22,13 @@ function TranslateIndex() {
   const state = location.state as location;
   //submit button-------------
   const [loading, setLoading] = useState(false);
-  const handleClick = (event: any) => {
+  const handleClick = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     setLoading(true);
     //block-1
     if (trans_1[0].vietnamese === message) {
       setActiveCorrect(!active_correct);
-    } else if (trans_1[0].vietnamese != message || message.length <= 0) {
+    } else if (trans_1[0].vietnamese !== message || message.length <= 0) {
       console.log("wrong1");
       setActiveNotCorrect(!active_notcorrect);
       setActiveNotCorrect1(!active_notcorrect1);
@@ -38,7 +38,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect1(!active_correct1);
     } else if (
-      trans_1[1].vietnamese != inputMessage1 ||
+      trans_1[1].vietnamese !== inputMessage1 ||
       inputMessage1.length <= 0
     ) {
       console.log("wrong1");
@@ -49,7 +49,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect2(!active_correct2);
     } else if (
-      trans_1[2].vietnamese != inputMessage2 ||
+      trans_1[2].vietnamese !== inputMessage2 ||
       inputMessage2.length <= 0
     ) {
       console.log("wrong1");
@@ -60,7 +60,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect3(!active_correct3);
     } else if (
-      trans_1[3].vietnamese != inputMessage3 ||
+      trans_1[3].vietnamese !== inputMessage3 ||
       inputMessage3.length <= 0
     ) {
       console.log("wrong1");
@@ -71,7 +71,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect4(!active_correct4);
     } else if (
-      trans_1[4].vietnamese != inputMessage4 ||
+      trans_1[4].vietnamese !== inputMessage4 ||
       inputMessage4.length <= 0
     ) {
       console.log("wrong1");
@@ -82,7 +82,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect5(!active_correct5);
     } else if (
-      trans_1[5].vietnamese != inputMessage5 ||
+      trans_1[5].vietnamese !== inputMessage5 ||
       inputMessage5.length <= 0
     ) {
       console.log("wrong1");
@@ -93,7 +93,7 @@ function TranslateIndex() {
       console.log("her");
       setActiveCorrect6(!active_correct6);
     } else if (
-      trans_2[0].english != inputMessage6 ||
+      trans_2[0].english !== inputMessage6 ||
       inputMessage6.length <= 0
     ) {
       console.log(inputMessage6);
@@ -104,7 +104,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect7(!active_correct7);
     } else if (
-      trans_2[1].english != inputMessage7 ||
+      trans_2[1].english !== inputMessage7 ||
       inputMessage7.length <= 0
     ) {
       console.log("wrong1");
@@ -115,7 +115,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect8(!active_correct8);
     } else if (
-      trans_2[2].english != inputMessage8 ||
+      trans_2[2].english !== inputMessage8 ||
       inputMessage8.length <= 0
     ) {
       console.log("wrong1");
@@ -126,7 +126,7 @@ function TranslateIndex() {
       console.log("good1");
       setActiveCorrect9(!active_correct9);
     } else if (
-      trans_2[3].english != inputMessage9 ||
+      trans_2[3].english !== inputMessage9 ||
       inputMessage9.length <= 0
     ) {
       console.log(trans_2[3].english);

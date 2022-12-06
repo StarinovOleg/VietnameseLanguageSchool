@@ -2,7 +2,7 @@ export const DECREMENT = "DECREMENT";
 export const RESET = "RESET";
 export const reducerDecrement = (
   state: { count: any },
-  action: { type: any }
+  action: { type: string }
 ) => {
   switch (action.type) {
     case DECREMENT:

@@ -14,9 +14,9 @@ import DisplayWordBlock from "./components/DisplayWordBlock";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 interface location {
-  array_data: any;
-  title: any;
-  subtitle: any;
+  array_data: string;
+  title: string;
+  subtitle: string;
 }
 
 function WordsIndex() {
@@ -27,7 +27,10 @@ function WordsIndex() {
   let arr: Array<any> = [];
 
   //checking answer
-  const check = (item: any, display: any) => {
+  const check = (
+    item: { [key: string]: string },
+    display: { [key: string]: string }
+  ) => {
     setStep(step + 1);
     context.timerDecrement();
     console.log(step);
@@ -62,7 +65,7 @@ function WordsIndex() {
 
   return (
     <>
-      {arr.length != 0 && state?.title ? (
+      {arr.length !== 0 && state?.title ? (
         <BodyPractice>
           <H1 children={state?.title} />
           <H2 children={state?.subtitle} />

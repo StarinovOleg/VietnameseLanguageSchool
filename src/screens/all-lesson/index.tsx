@@ -8,7 +8,7 @@ import H1 from "../../ui-library/H1";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 interface location {
-  title: any;
+  title: string;
 }
 
 function ListLessons() {
