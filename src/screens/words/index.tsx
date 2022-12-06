@@ -48,11 +48,7 @@ function WordsIndex() {
   const displayWords = () => {
     if (state?.title) {
       arr = JSON.parse(state?.array_data);
-      if (context.countTotal === 0) {
-        arr = shuffle(arr);
-      }
       console.log(arr);
-      return arr;
     }
   };
 
