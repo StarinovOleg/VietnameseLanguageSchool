@@ -4,7 +4,7 @@ import H2 from "../../../../ui-library/H2";
 import { common_10_words } from "../../../../dictionary/common-words/common-10-words";
 import Section from "../../../main/section/Section";
 import { shuffle } from "../../../../services/algoritm_fisher_shuffle";
-import Button from "../../../../ui-library/Button";
+import ButtonTraining from "../../../../ui-library/buttons/ButtonTraining";
 import { converstation } from "../../../../store/static";
 import CorrectAnswer from "../../../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../../../components/NotCorrectAnswer";
@@ -92,11 +92,10 @@ const DemoTest = (props: { id?: string }) => {
                       .concat(common_10_words)
                       .filter((item, index) => index < 4)
                       .map((item, index) => (
-                        <Button
+                        <ButtonTraining
                           key={index}
                           onClick={() => displayWords(item, index)}
                           children={item.english}
-                          btnprimary="cursor-pointer border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg  lg:text-5xl md:text-5xl text-xl text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
                         />
                       ))
                   )}

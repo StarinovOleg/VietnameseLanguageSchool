@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, Fragment } from "react";
 
 import { sound } from "../../services/sound_function";
 import { shuffle } from "../../services/algoritm_fisher_shuffle";
-import Button from "../../ui-library/Button";
+import ButtonTraining from "../../ui-library/buttons/ButtonTraining";
 import H1 from "../../ui-library/H1";
 import H2 from "../../ui-library/H2";
 import { useLocation } from "react-router-dom";
@@ -92,11 +92,10 @@ function WordsIndex() {
                       .concat(arr)
                       .filter((item, index) => index < 4)
                       .map((item, index) => (
-                        <Button
+                        <ButtonTraining
                           key={index}
                           onClick={() => check(item, display)}
                           children={item.english}
-                          btnprimary="cursor-pointer text-xl border-2 border-sky-500 md:hover:border-sky-800 lg:hover:border-sky-800 rounded-lg text-sky-500  lg:hover:text-sky-800 md:hover:text-sky-800"
                         />
                       ))
                   )}

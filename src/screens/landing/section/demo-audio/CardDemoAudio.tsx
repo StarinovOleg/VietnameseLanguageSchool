@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonSound from "../../../../ui-library/ButtonSound";
+import ButtonSound from "../../../../ui-library/buttons/ButtonSound";
 import useSound from "use-sound";
 const CardDemoAudio = (props: {
   item: string | string[];

@@ -11,7 +11,7 @@ import H1 from "../../ui-library/H1";
 import BodyPractice from "../main/body/body_practice";
 import H2 from "../../ui-library/H2";
 import Input from "./components/Input";
-import Button from "../../ui-library/Button";
+import ButtonTraining from "../../ui-library/buttons/ButtonTraining";
 
 interface location {
   title: string;
@@ -245,14 +245,14 @@ function TranslateIndex() {
         return (
           <>
             <H1 children={state?.title} />
-            <Button
+            <ButtonTraining
               onClick={handleClick}
               children="CHECK WORDS"
-              btnprimary={`${
+              btndisabledclass={`${
                 loading
-                  ? "cursor-no-drop border-stone-500 text-stone-500"
-                  : "cursor-pointer md:hover:border-sky-800 lg:hover:border-sky-800 lg:hover:text-sky-800 md:hover:text-sky-800"
-              } border-2 border-sky-500  rounded-lg  lg:text-5xl md:text-5xl text-xl text-sky-500 `}
+                  ? "cursor-no-drop border-stone-500 text-stone-500 "
+                  : null
+              } `}
               disabled={loading}
             />
             <div className="text-left  ">

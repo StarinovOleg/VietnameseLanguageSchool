@@ -5,7 +5,7 @@ import CorrectAnswer from "../../components/CorrectAnswer";
 import NotCorrectAnswer from "../../components/NotCorrectAnswer";
 import { useNavigate } from "react-router-dom";
 import H1 from "../../ui-library/H1";
-import Button from "../../ui-library/Button";
+import Button from "../../ui-library/buttons/Button";
 import { converstation } from "../../store/static";
 import BodyPractice from "../main/body/body_practice";
 interface locationStateProps {
@@ -30,7 +30,7 @@ function EndScreen() {
         </H1>
         <CorrectAnswer children={context.countPositive} />
         <NotCorrectAnswer children={context.countNegative} />
-        <Button onClick={redirectEndScreen} btnprimary="btn-primary text-white">
+        <Button onClick={redirectEndScreen}>
           {converstation.button.button_name}
         </Button>
         <img
