@@ -9,7 +9,7 @@ const Table = (props: { k?: any; v?: any }) => {
     <div className="flex">
       <div className="mt-2 flex-1">{props.k}</div>
       <div>
-        <ButtonSound onClick={play} />
+        <ButtonSound onClick={() => play} />
       </div>
     </div>
   );

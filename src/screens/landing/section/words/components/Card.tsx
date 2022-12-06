@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import H2 from "../../../../../ui-library/H2";
 import P from "../../../../../ui-library/P";
 const Card = (props: {
-  subtitle: any;
+  subtitle: string;
   to: string;
-  state: any;
-  title: any;
-  src: any;
+  state: { [key: string]: string };
+  title: string;
+  src: string;
 }) => {
   return (
     <NavLink to={props.to} state={props.state}>

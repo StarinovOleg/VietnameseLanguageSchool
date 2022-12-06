@@ -3,7 +3,7 @@ import React from "react";
 function Button(props: {
   btnsecondary?: string;
   btnprimary?: string;
-  disabled?: any;
+  disabled?: boolean;
   onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
   children:
     | string

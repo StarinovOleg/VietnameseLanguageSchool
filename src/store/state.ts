@@ -8,15 +8,15 @@ interface Context {
   countTestPositive:number,
   countNegative:number,
   countTestNegative:number,
-  incrementNegative: any,
-  incrementPositive:any,
-  incrementTotal:any,
-  incrementTestTotal:any,
-  incrementTestPositive:any,
-  incrementTestNegative:any,
-  timerDecrement:any,
-  reset:any,
-  resetLesson:any
+  incrementNegative: () => void |null,
+  incrementPositive:() => void | null,
+  incrementTotal:() => void | null,
+  incrementTestTotal:() => void | null,
+  incrementTestPositive:() => void | null,
+  incrementTestNegative:() => void | null,
+  timerDecrement:() => void | null,
+  reset:() => void | null,
+  resetLesson:() => void | null
 }
 const SchoolContext = createContext<Context>({
   countTotal:0,
@@ -26,15 +26,15 @@ const SchoolContext = createContext<Context>({
   countTestPositive:0,
   countNegative:0,
   countTestNegative:0,
-  incrementNegative:'',
-  incrementPositive:'',
-  incrementTestPositive:'',
-  incrementTotal:'',
-  incrementTestTotal:'',
-  incrementTestNegative:'',
-  timerDecrement:'',
-  reset:'',
-  resetLesson:''
+  incrementNegative:() => {},
+  incrementPositive:()=>{},
+  incrementTestPositive:()=>{},
+  incrementTotal:()=>{},
+  incrementTestTotal:()=>{},
+  incrementTestNegative:()=>{},
+  timerDecrement:()=>{},
+  reset:()=>{},
+  resetLesson:()=>{}
 });
 
 export default SchoolContext;

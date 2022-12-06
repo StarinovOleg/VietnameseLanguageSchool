@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 
 import { converstation_1 } from "../../dictionary/unit-1/converstation_1";
 import { converstation_2 } from "../../dictionary/unit-2/converstation_2";
@@ -12,7 +12,7 @@ import H1 from "../../ui-library/H1";
 import BodyPractice from "../main/body/body_practice";
 
 interface location {
-  title: any;
+  title: string;
 }
 const tones = Object.entries(pronunciation).map(([k, v]) => (
   <Table k={k} v={v} key={v} />

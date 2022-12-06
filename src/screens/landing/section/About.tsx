@@ -3,7 +3,7 @@ import { converstation } from "../../../store/static";
 import Section from "../../main/section/Section";
 
 const static_data_list = converstation.about.about.map(
-  (item: { title: string; body: string; id: number; img: any }) => (
+  (item: { title: string; body: string; id: number; img: string }) => (
     <div className="flex m-10 " key={item.id}>
       <img src={item.img} alt="logo" className="w-12 h-12 mt-4 " />
       <div className="px-2 py-4 ">

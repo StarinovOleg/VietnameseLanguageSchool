@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Link(props: {
-  state?: any;
+  state?: { [key: string]: string };
   align?: string;
   secondary_color?: string;
 

@@ -4,8 +4,8 @@ import H2 from "../../../../../ui-library/H2";
 
 const CardpracticeTranslated = (props: {
   to: string;
-  state: any;
-  title: any;
+  state: { [key: string]: string };
+  title: string;
 }) => {
   return (
     <NavLink to={props.to} state={props.state}>
