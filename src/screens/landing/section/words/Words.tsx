@@ -3,7 +3,7 @@ import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
-import { cardItemLesson } from "./components/Lists";
+import Lists from "./components/Lists";
 import SupportWindow from "../../../../components/SupportWindow";
 import Section from "../../../main/section/Section";
 
@@ -37,7 +37,7 @@ function Words(props: { id?: string }) {
               onClick={setHover}
             />
           )}
-          {cardItemLesson.slice(0, 8)}
+          <Lists />
         </div>
 
         <Link

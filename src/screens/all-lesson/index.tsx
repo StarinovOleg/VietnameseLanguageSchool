@@ -1,12 +1,13 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
-import { cardItemLesson } from "../landing/section/words/components/Lists";
+//import { cardItemLesson } from "../landing/section/words/components/Lists";
 import { cardItemConversation } from "../landing/section/audio/components/Lists";
 import { cardItemPracticeTranslated } from "../landing/section/translate/components/List";
 import H1 from "../../ui-library/H1";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
+import Lists from "../landing/section/words/components/Lists";
 interface location {
   title: string;
 }
@@ -17,7 +18,7 @@ function ListLessons() {
   const displayWords = () => {
     switch (state.title) {
       case converstation.words.title:
-        return <>{cardItemLesson}</>;
+        return <Lists />;
       case converstation.conversation.title:
         return <>{cardItemConversation}</>;
       case converstation.practice_translate.title:
