@@ -10,15 +10,15 @@ function Header() {
   return (
     <header className="p-2 text-4xl sticky top-0 w-full bg-white z-[51]">
       <div className="flex sm:justify-between md:justify-between justify-center flex-wrap">
-        {location.pathname === "/learning" ? (
+        {location.pathname === "/words" ? (
           <Link to="/landing#words">
             <Logo />
           </Link>
-        ) : location.pathname === "/conversation" ? (
+        ) : location.pathname === "/audio" ? (
           <Link to="/landing#audio">
             <Logo />
           </Link>
-        ) : location.pathname === "/translated" ? (
+        ) : location.pathname === "/translate" ? (
           <Link to="/landing#translate">
             <Logo />
           </Link>
