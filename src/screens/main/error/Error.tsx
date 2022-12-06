@@ -1,6 +1,6 @@
 import React from "react";
 import H1 from "../../../ui-library/H1";
-import Button from "../../../ui-library/Button";
+import Button from "../../../ui-library/buttons/Button";
 import { useNavigate } from "react-router-dom";
 import { converstation } from "../../../store/static";
 import BodyPractice from "../body/body_practice";
@@ -26,7 +26,6 @@ function Error() {
                 replace: true,
               })
             }
-            btnprimary="btn-primary text-white"
           >
             {converstation.button.button_name}
           </Button>

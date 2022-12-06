@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from "react";
-import ButtonSound from "../../../ui-library/ButtonSound";
+import ButtonSound from "../../../ui-library/buttons/ButtonSound";
 
 function DisplayWordBlock(props: {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
