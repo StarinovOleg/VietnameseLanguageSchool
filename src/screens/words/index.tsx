@@ -66,7 +66,7 @@ function WordsIndex() {
           <H1 children={state?.title} />
           <H2 children={state?.subtitle} />
 
-          <div className="text-4xl my-4">
+          <>
             {arr.slice(step - 1, step).map((display, index) => (
               <Fragment key={display.id}>
                 <DisplayWordBlock
@@ -102,7 +102,7 @@ function WordsIndex() {
                 </div>
               </Fragment>
             ))}
-          </div>
+          </>
         </BodyPractice>
       ) : (
         <Error />
