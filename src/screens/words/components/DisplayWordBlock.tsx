@@ -9,7 +9,7 @@ function DisplayWordBlock(props: {
 }) {
   return (
     <>
-      <div className="leading-[3rem]">{props.word}</div>
+      <div className="leading-[3rem] text-4xl">{props.word}</div>
       <div className="inline-block pt-10 hidden lg:block md:block">
         <img
           src={props.picture}
