@@ -58,49 +58,12 @@ import takecareaudio  from "../../../src/assets/sounds/lesson_2_3/takecare.mp3"
 import yesaudio  from "../../../src/assets/sounds/lesson_2_3/yes.mp3"
 import youaudio  from "../../../src/assets/sounds/lesson_2_3/you.mp3"
 import howareyouaudio  from "../../../src/assets/sounds/lesson_2_3/howareyou.mp3"
-export const unit_2_1 = {
-"This is":{"word":"Đây là","audio":thisisaudio,"example":"Đây là cái gì?", "picture":thisis},
-"That is":{"word":"Kia là","audio":thatisaudio,"example":"Kia là anh Tony", "picture":that},
-"Who":{"word":"Ai","audio":whoaudio,"example":"Kia là ai", "picture":who},
-"Come from/ to be from":{"word":"Đến từ","audio":comefromaudio,"example":"Đến từ Moscow", "picture":come},
-"And you":{"word":"Thế còn bạn","audio":andyouaudio,"example":"Tôi và tình yêu và bạn", "picture":andyou},
-"Meet":{"word":"Gặp gỡ","audio":meetaudio,"example":"Hôm nay gặp", "picture":meet},
-"What":{"word":"Cái gì","audio":whataudio,"example":"Là gì", "picture":what},
-"Animal":{"word":"Con gi","audio":animalaudio,"example":"Kia là con gì", "picture":animal},
-"Pen":{"word":"Cái bút bi","audio":penaudio,"example":"Đây là một cây bút", "picture":pen},
-"Umbrella":{"word":"Ô dù","audio":umbewllaaudio,"example":"Tôi đã cầm một chiếc ô", "picture":umbrella},
-};
-export const unit_2_3 = {
-    "Long time not see": {"word":"Lâu rồi không gặp","audio":longtimeaudio,"example":"Đã được một thời gian dài", "picture":longtime},
-    "Recently": {"word":"Dạo này","audio":recentlyaudio,"example":"", "picture":recently},
-    "How are you": {"word":"Có khỏe không?","audio":howareyouaudio,"example":"", "picture":you},
-    "Fine/ok": {"word":"Khỏe/tốt","audio":okaudio,"example":"Mọi thứ đều ổn?", "picture":ok},
-    "Not bad/ not fine a bit": {"word":"Không được khỏe lắm","audio":notbadaudio,"example":"Không tệ", "picture":notbad},
-    "Are you": {"word":"Thế a","audio":youaudio,"example":"Bạn ổn chứ? bạn tôi", "picture":you},
-    "Please take care of yourself": {"word":"Giữ gìn sức khỏe nhé/ nha","audio":takecareaudio,"example":"", "picture":takecare},
-    "Yes": {"word":"Vàng","audio":yesaudio,"example":"Vâng, tôi đến hôm nay", "picture":yes},
-    "Sick": {"word":"Ốm","audio":sickaudio,"example":"Tôi bị ốm", "picture":sick},
-    "Headache": {"word":"Đau đầu","audio":headacheaudio,"example":"Tôi bị đau đầu", "picture":headache},
-
-  };
-  export const unit_2_2 = {
-    "Male teacher": {"word":"Thầy giáo","audio":maleteacheraudio,"example":"Anh ấy làm giáo viên", "picture":maleteacher},
-    "Female teacher": {"word":"Cô giáo","audio":femaleteacheraudio,"example":"Cô ấy làm việc như một giáo viên", "picture":femaleteacher},
-    "Meet": {"word":"Gặp","audio":gap,"example":"Chúng ta gặp nhau hôm nay", "picture":meet},
-    "Happy": {"word":"Vue ve","audio":happyaudio,"example":"Vui mừng", "picture":happy},
-    "England": {"word":"Nước Anh","audio":englandaudio,"example":"Chúng tôi sẽ đến Anh", "picture":england},
-    "Vietnamese": {"word":"Tiếng Việt","audio":vietnameseaudio,"example":"Học tiếng việt", "picture":vietnamese},
-    "My": {"word":"Của tôi","audio":myaudio,"example":"Tình yêu của tô", "picture":my},
-    "Youger brother": {"word":"Em trai","audio":youngbrotheraudio,"example":"Em trai tôi thích chơi", "picture":youngbrother},
-    "Thank you": {"word":"Cảm ơn","audio":thankyouaudio,"example":"Cám ơn vì đã mua hàng", "picture":thankyou},
-    "Sir": {"word":"Thưa thầy","audio":siraudio,"example":"Cố lên thưa ngài", "picture":sir},
-  };
 
   export const unit_2=[
     {id: 0 , english:"This is", vietnamese:"Đây là","audio":thisisaudio,"example":"Đây là cái gì?", "picture":thisis},
     {id: 1, english:"That is", vietnamese:"Kia là","audio":thatisaudio,"example":"Kia là anh Tony", "picture":that},
     {id: 2, english:"Who", vietnamese:"Ai","audio":whoaudio,"example":"Kia là ai", "picture":who},
-    {id: 3, english:"Come from/ to be from", vietnamese:"Đến từ","audio":comefromaudio,"example":"Đến từ Moscow", "picture":come},
+    {id: 3, english:"Come from", vietnamese:"Đến từ","audio":comefromaudio,"example":"Đến từ Moscow", "picture":come},
     {id: 4, english:"And you", vietnamese:"Thế còn bạn","audio":andyouaudio,"example":"Tôi và tình yêu và bạn", "picture":andyou},
     {id: 5, english:"Meet", vietnamese:"Gặp gỡ","audio":meetaudio,"example":"Hôm nay gặp", "picture":meet},
     {id: 6, english:"What", vietnamese:"Cái gì","audio":whataudio,"example":"Là gì", "picture":what},
@@ -121,7 +84,7 @@ export const unit_2_3 = {
     {id: 21, english: "Recently", vietnamese:"Dạo này","audio":recentlyaudio,"example":"", "picture":recently},
     {id: 22, english: "How are you", vietnamese:"Có khỏe không?","audio":howareyouaudio,"example":"", "picture":you},
     {id: 23, english: "Fine/ok", vietnamese:"Khỏe/tốt","audio":okaudio,"example":"Mọi thứ đều ổn?", "picture":ok},
-    {id: 24, english: "Not bad/ not fine a bit", vietnamese:"Không được khỏe lắm","audio":notbadaudio,"example":"Không tệ", "picture":notbad},
+    {id: 24, english: "Not bad", vietnamese:"Không được khỏe lắm","audio":notbadaudio,"example":"Không tệ", "picture":notbad},
     {id: 25, english: "Are you", vietnamese:"Thế a","audio":youaudio,"example":"Bạn ổn chứ? bạn tôi", "picture":you},
     {id: 26, english: "Please take care of yourself", vietnamese:"Giữ gìn sức khỏe nhé/ nha","audio":takecareaudio,"example":"", "picture":takecare},
     {id: 27, english: "Yes", vietnamese:"Vàng","audio":yesaudio,"example":"Vâng, tôi đến hôm nay", "picture":yes},

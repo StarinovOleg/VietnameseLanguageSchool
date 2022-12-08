@@ -151,14 +151,14 @@ export const unit_3 = [
     },
     {id:16,
     english:'Businessman',
-    vietnamese:'Nam doanh nhân/ kinh doanh',
+    vietnamese:'Nam doanh nhân',
     audio:businessman,
     example:'Doanh nhân có nhiều cuộc họp kinh doanh',
     picture:businessman_pic
     },
     {id:17,
     english:'Businesswoman',
-    vietnamese:'Nữ doanh nhân / kinh doanh',
+    vietnamese:'Nữ doanh nhân',
     audio:businesswoman,
     example:'Doanh nhân có nhiều cuộc họp kinh doanh',
     picture:businesswoman_pic

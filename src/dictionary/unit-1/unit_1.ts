@@ -39,30 +39,6 @@ import glad from "../../../src/assets/sounds/lesson_1/glad.mp3"
 import gladmeetyou from "../../../src/assets/sounds/lesson_1/gladmeetyou.mp3"
 import whatis from "../../../src/assets/sounds/lesson_1/whatis.mp3"
 import youraudio from "../../../src/assets/sounds/lesson_1/your.mp3"
-export const unit_1_1 = {
-    "What is your nationality": {"word":"Người nước nào", "audio":nationalityaudio,"example":"Chị là người nước nào", "picture":nationality},
-    "American": {"word":"Người Mỹ", "audio":americanaudio,"example":"Tôi là người Mỹ", "picture":american},
-    "English": {"word":"Người Anh", "audio":englishaudio,"example":"Tôi là người Anh", "picture":english},
-    "Korean": {"word":"Người Hàn Quốc", "audio":koreanaudio,"example":"Tôi là người Hàn Quốc", "picture":korea},
-    "French": {"word":"Người Pháp", "audio":frenchaudio,"example":"Tôi là người Pháp", "picture":france},
-    "Chinese": {"word":"Người Trung Quốc", "audio":chineseaudio,"example":"Tôi là người Trung Quố", "picture":china},
-    "Japanese": {"word":"Người Nhật", "audio":japaneseaudio,"example":"Tôi là người Nhật", "picture":japan},
-    "German": {"word":"Người Đức", "audio":germanaudio,"example":"Tôi là người Đức", "picture":german},
-    "Russian": {"word":"Người Nga", "audio":russianaudio,"example":"Tôi là người Nga", "picture":russia},
-    "Vietnamese": {"word":"Người Việt Nam", "audio":vietnameseaudio,"example":"Tôi là người Việt Nam", "picture":vietnam},
-  };
-  export const unit_1_ob = {
-    "Hello, hi": {"word":"Xin chào", "audio":hi,"example":"Chào Anh!", "picture":hello},
-    "Sorry/ excuse me": {"word":"Xin lỗi/ xin mạn phép", "audio":sorryaudio,"example":"Xin lỗi anh tên là gì?", "picture":sorry},
-    "Name": {"word":"Tên", "audio":nameaudio,"example":"Tên tôi là David", "picture": name},
-    "To be(am/is/are)": {"word":"Là", "audio":tobeaudio,"example":"Tên em là Lính", "picture":tobe},
-    "Too":{"word":"Cũng", "audio":too,"example":"Cũng tôi (We)", "picture":we},
-    "Very":{"word":"Rất", "audio":veryaudio,"example":"Rất vui", "picture":very},
-    "Glad/nice/happy": {"word":"Vui", "audio":glad,"example":"Rất vui", "picture":happy},
-    "Glad to meet you":{"word":"Rất vui được gặp", "audio":gladmeetyou,"example":"Em cũng rất vui được gặp anh", "picture":meet},
-    "What is":{"word":"Là gì", "audio":whatis,"example":"Chủ Ngữ tên là gì?", "picture":what},
-    "Your":{"word":"Của bạn", "audio":youraudio,"example":"Em cũng rất vui được gặp anh", "picture":your}
-  };
 
   export const unit_1=[
     {id:'0',english:'What is your nationality',vietnamese:'Người nước nào',audio:nationalityaudio,example:'Chị là người nước nào',picture:nationality},
