@@ -38,45 +38,85 @@ import with_us from "../../../src/assets/sounds/lesson12/with.mp3"
 import yeasterday from "../../../src/assets/sounds/lesson12/yeasterday.mp3"
 import more from "../../../src/assets/sounds/lesson12/more.mp3"
 
+import about_pic from "../../../src/assets/lesson12/about_pic.png"
+import accept_pic from "../../../src/assets/lesson12/accept_pic.png"
+import according_to_pic from "../../../src/assets/lesson12/according_to_pic.png"
+import after_that_pic from "../../../src/assets/lesson12/after_that_pic.png"
+import ago_pic from "../../../src/assets/lesson12/ago_pic.png"
+import already_finished_pic from "../../../src/assets/lesson12/already_finished_pic.png"
+import already_pic from "../../../src/assets/lesson12/already_pic.png"
+import ask_for_pic from "../../../src/assets/lesson12/ask_for_pic.png"
+import back_pic from "../../../src/assets/lesson12/back_pic.png"
+import center_pic from "../../../src/assets/lesson12/center_pic.png"
+import contract_pic from "../../../src/assets/lesson12/contract_pic.png"
+import fall_pic from "../../../src/assets/lesson12/fall_pic.png"
+import graduate_pic from "../../../src/assets/lesson12/graduate_pic.png"
+import great_pic from "../../../src/assets/lesson12/great_pic.png"
+import however_pic from "../../../src/assets/lesson12/however_pic.png"
+import intention_pic from "../../../src/assets/lesson12/intention_pic.png"
+import interesting_pic from "../../../src/assets/lesson12/interesting_pic.png"
+import join_pic from "../../../src/assets/lesson12/join_pic.png"
+import know_pic from "../../../src/assets/lesson12/know_pic.png"
+import last_holiday_pic from "../../../src/assets/lesson12/last_holiday_pic.png"
+import last_spring_pic from "../../../src/assets/lesson12/last_spring_pic.png"
+import last_summer_pic from "../../../src/assets/lesson12/last_summer_pic.png"
+import last_week_pic from "../../../src/assets/lesson12/last_week_pic.png"
+import last_winter_pic from "../../../src/assets/lesson12/last_winter_pic.png"
+import last_year_pic from "../../../src/assets/lesson12/last_year_pic.png"
+import last_pic from "../../../src/assets/lesson12/last_pic.png"
+import maybe_pic from "../../../src/assets/lesson12/maybe_pic.png"
+import mountainous_region_pic from "../../../src/assets/lesson12/mountainous_region_pic.png"
+import resign_pic from "../../../src/assets/lesson12/resign_pic.png"
+import some_regions_pic from "../../../src/assets/lesson12/some_regions_pic.png"
+import stay_pic from "../../../src/assets/lesson12/stay_pic.png"
+import study_pic from "../../../src/assets/lesson12/study_pic.png"
+import support_pic from "../../../src/assets/lesson12/support_pic.png"
+import therefore_pic from "../../../src/assets/lesson12/therefore_pic.png"
+import upon_pic from "../../../src/assets/lesson12/upon_pic.png"
+import volunteer_pic from "../../../src/assets/lesson12/volunteer_pic.png"
+import with_us_pic from "../../../src/assets/lesson12/with_us_pic.png"
+import yeasterday_pic from "../../../src/assets/lesson12/yeasterday_pic.png"
+import more_pic from "../../../src/assets/lesson12/more_pic.png"
+
 export const unit_12=[
-    {id: 0, english: "Know", vietnamese: "Biết", example:"Tôi biết", audio:know, picture:""},
-    {id: 1, english: "About", vietnamese: "Khoảng", example:"Mọi thư vê bạn", audio:about, picture:""},
-    {id: 2, english: "Contract", vietnamese: "Hợp đồng", example:"Tôi đã ký hợp đồng", audio:contract, picture:""},
-    {id: 3, english: "Last", vietnamese: "Kéo dài", example:"Cuối cùng của chúng tôi", audio:last, picture:""},
-    {id: 4, english: "After that", vietnamese: "Sau đó/ sau khi", example:"Sau đó", audio:after_that, picture:""},
-    {id: 5, english: "Resign", vietnamese: "Kỳ tiếp", example:"Kỳ tiếp", audio:resign, picture:""},
-    {id: 6, english: "Stay", vietnamese: "Ở lại", example:"Đứng đây", audio:stay, picture:""},
-    {id: 7, english: "However", vietnamese: "Tuy nhiên", example:"Tuy nhiên xin chào", audio:however, picture:""},
-    {id: 8, english: "According to", vietnamese: "Theo như / theo ai đó", example:"Theo bạn", audio:according_to, picture:""},
-    {id: 9, english: "Center", vietnamese: "Trung tâm", example:"Trung tâm Hà nội", audio:center, picture:""},
-    {id: 10, english: "On/ask for", vietnamese: "Nhờ cậy", example:"Hỏi cho bạn", audio:ask_for, picture:""},
-    {id: 11, english: "Support", vietnamese: "Hỗ trợ", example:"Hỗ trợ bạn", audio:support, picture:""},
-    {id: 12, english: "Turn back/come back", vietnamese: "Quay lại", example:"Hãy trở lại với tôi", audio:back, picture:""},
-    {id: 13, english: "More", vietnamese: "Nữa", example:"", audio:more, picture:""},
-    {id: 14, english: "Learn/study", vietnamese: "Học / nghiên cứu", example:"Hơn bạn", audio:study, picture:""},
-    {id: 15, english: "Accept", vietnamese: "Chấp nhận", example:"Chấp nhận", audio:accept, picture:""},
-    {id: 16, english: "Last summer", vietnamese: "Mùa hè năm ngoái", example:"Mùa hè năm ngoái", audio:last_summer, picture:""},
-    {id: 17, english: "Last winter", vietnamese: "Mùa đông năm ngoái", example:"Mùa đông năm ngoái", audio:last_winter, picture:""},
-    {id: 18, english: "Last fall/autumn", vietnamese: "Mùa Thu năm ngoái", example:"Mùa Thu năm ngoái", audio:fall, picture:""},
-    {id: 19, english: "Last spring", vietnamese: "Màu Xuân năm ngoái", example:"Màu Xuân năm ngoái", audio:last_spring, picture:""},
-    {id: 20, english: "Last year", vietnamese: "Năm ngoái", example:"Năm ngoái", audio:last_year, picture:""},
-    {id: 21, english: "Last week", vietnamese: "Tuần trước", example:"Tuần trước", audio:last_week, picture:""},
-    {id: 22, english: "Last holiday /vocation", vietnamese: "Kỳ nghỉ trước", example:"Kỳ nghỉ trước", audio:last_holiday, picture:""},
-    {id: 23, english: "Ago", vietnamese: "Cách đây /trước đây", example:"", audio:ago, picture:""},
-    {id: 24, english: "Once upon a time", vietnamese: "Ngày xửa ngày xưa", example:"Ngày xửa ngày xưa", audio:upon, picture:""},
-    {id: 25, english: "Already", vietnamese: "Đã", example:"Xong rồi", audio:already, picture:""},
-    {id: 26, english: "Already finished", vietnamese: "Đã-rồi", example:"Đã-rồi", audio:already_finished, picture:""},
-    {id: 27, english: "Yeasterday", vietnamese: "Ngày hôm qua", example:"Hôm qua trời mưa", audio:yeasterday, picture:""},
-    {id: 28, english: "Intention /plan", vietnamese: "Dự địng / kế hoạch", example:"Kế hoạch", audio:intention, picture:""},
-    {id: 29, english: "Graduate from", vietnamese: "Tốt nghiệp", example:"Tốt nghiệp Hà Nội", audio:graduate, picture:""},
-    {id: 30, english: "Volunteer", vietnamese: "Tình nguyện", example:"Tình nguyện", audio:volunteer, picture:""},
-    {id: 31, english: "Take part in /join", vietnamese: "Tham gia", example:"Tham gia với chúng tôi", audio:join, picture:""},
-    {id: 32, english: "Poor mountainous region", vietnamese: "Vùng núi nghèo", example:"Vùng núi nghèo", audio:mountainous_region, picture:""},
-    {id: 33, english: "Maybe", vietnamese: "Có lẽ", example:"Có lẽ ngày mai", audio:maybe, picture:""},
-    {id: 34, english: "Sounds interesting", vietnamese: "Có vẻ thú vị đấy", example:"Có vẻ thú vị đấy", audio:interesting, picture:""},
-    {id: 35, english: "With", vietnamese: "Cùng", example:"Cùng", audio:with_us, picture:""},
-    {id: 36, english: "It is great", vietnamese: "Thật tuyệt", example:"Thật tuyệt", audio:great, picture:""},
-    {id: 37, english: "Therefore", vietnamese: "Chíng vì vậy", example:"Vì vậy ngày mai", audio:therefore, picture:""},
-    {id: 38, english: "Some regions", vietnamese: "Một số vùng", example:"Một số vùng", audio:some_regions, picture:""},
+    {id: 0, english: "Know", vietnamese: "Biết", example:"Tôi biết", audio:know, picture:know_pic},
+    {id: 1, english: "About", vietnamese: "Khoảng", example:"Mọi thư vê bạn", audio:about, picture:about_pic},
+    {id: 2, english: "Contract", vietnamese: "Hợp đồng", example:"Tôi đã ký hợp đồng", audio:contract, picture:contract_pic},
+    {id: 3, english: "Last", vietnamese: "Kéo dài", example:"Cuối cùng của chúng tôi", audio:last, picture:last_pic},
+    {id: 4, english: "After that", vietnamese: "Sau đó/ sau khi", example:"Sau đó", audio:after_that, picture:after_that_pic},
+    {id: 5, english: "Resign", vietnamese: "Kỳ tiếp", example:"Kỳ tiếp", audio:resign, picture:resign_pic},
+    {id: 6, english: "Stay", vietnamese: "Ở lại", example:"Đứng đây", audio:stay, picture:stay_pic},
+    {id: 7, english: "However", vietnamese: "Tuy nhiên", example:"Tuy nhiên xin chào", audio:however, picture:however_pic},
+    {id: 8, english: "According to", vietnamese: "Theo như / theo ai đó", example:"Theo bạn", audio:according_to, picture:according_to_pic},
+    {id: 9, english: "Center", vietnamese: "Trung tâm", example:"Trung tâm Hà nội", audio:center, picture:center_pic},
+    {id: 10, english: "On/ask for", vietnamese: "Nhờ cậy", example:"Hỏi cho bạn", audio:ask_for, picture:ask_for_pic},
+    {id: 11, english: "Support", vietnamese: "Hỗ trợ", example:"Hỗ trợ bạn", audio:support, picture:support_pic},
+    {id: 12, english: "Turn back/come back", vietnamese: "Quay lại", example:"Hãy trở lại với tôi", audio:back, picture:back_pic},
+    {id: 13, english: "More", vietnamese: "Nữa", example:"", audio:more, picture:more_pic},
+    {id: 14, english: "Learn/study", vietnamese: "Học / nghiên cứu", example:"Hơn bạn", audio:study, picture:study_pic},
+    {id: 15, english: "Accept", vietnamese: "Chấp nhận", example:"Chấp nhận", audio:accept, picture:accept_pic},
+    {id: 16, english: "Last summer", vietnamese: "Mùa hè năm ngoái", example:"Mùa hè năm ngoái", audio:last_summer, picture:last_summer_pic},
+    {id: 17, english: "Last winter", vietnamese: "Mùa đông năm ngoái", example:"Mùa đông năm ngoái", audio:last_winter, picture:last_winter_pic},
+    {id: 18, english: "Last fall/autumn", vietnamese: "Mùa Thu năm ngoái", example:"Mùa Thu năm ngoái", audio:fall, picture:fall_pic},
+    {id: 19, english: "Last spring", vietnamese: "Màu Xuân năm ngoái", example:"Màu Xuân năm ngoái", audio:last_spring, picture:last_spring_pic},
+    {id: 20, english: "Last year", vietnamese: "Năm ngoái", example:"Năm ngoái", audio:last_year, picture:last_year_pic},
+    {id: 21, english: "Last week", vietnamese: "Tuần trước", example:"Tuần trước", audio:last_week, picture:last_week_pic},
+    {id: 22, english: "Last holiday /vocation", vietnamese: "Kỳ nghỉ trước", example:"Kỳ nghỉ trước", audio:last_holiday, picture:last_holiday_pic},
+    {id: 23, english: "Ago", vietnamese: "Cách đây /trước đây", example:"", audio:ago, picture:ago_pic},
+    {id: 24, english: "Once upon a time", vietnamese: "Ngày xửa ngày xưa", example:"Ngày xửa ngày xưa", audio:upon, picture:upon_pic},
+    {id: 25, english: "Already", vietnamese: "Đã", example:"Xong rồi", audio:already, picture:already_pic},
+    {id: 26, english: "Already finished", vietnamese: "Đã-rồi", example:"Đã-rồi", audio:already_finished, picture:already_finished_pic},
+    {id: 27, english: "Yeasterday", vietnamese: "Ngày hôm qua", example:"Hôm qua trời mưa", audio:yeasterday, picture:yeasterday_pic},
+    {id: 28, english: "Intention /plan", vietnamese: "Dự địng / kế hoạch", example:"Kế hoạch", audio:intention, picture:intention_pic},
+    {id: 29, english: "Graduate from", vietnamese: "Tốt nghiệp", example:"Tốt nghiệp Hà Nội", audio:graduate, picture:graduate_pic},
+    {id: 30, english: "Volunteer", vietnamese: "Tình nguyện", example:"Tình nguyện", audio:volunteer, picture:volunteer_pic},
+    {id: 31, english: "Join", vietnamese: "Tham gia", example:"Tham gia với chúng tôi", audio:join, picture:join_pic},
+    {id: 32, english: "Poor mountainous region", vietnamese: "Vùng núi nghèo", example:"Vùng núi nghèo", audio:mountainous_region, picture:mountainous_region_pic},
+    {id: 33, english: "Maybe", vietnamese: "Có lẽ", example:"Có lẽ ngày mai", audio:maybe, picture:maybe_pic},
+    {id: 34, english: "Sounds interesting", vietnamese: "Có vẻ thú vị đấy", example:"Có vẻ thú vị đấy", audio:interesting, picture:interesting_pic},
+    {id: 35, english: "With", vietnamese: "Cùng", example:"Cùng", audio:with_us, picture:with_us_pic},
+    {id: 36, english: "It is great", vietnamese: "Thật tuyệt", example:"Thật tuyệt", audio:great, picture:great_pic},
+    {id: 37, english: "Therefore", vietnamese: "Chíng vì vậy", example:"Vì vậy ngày mai", audio:therefore, picture:therefore_pic},
+    {id: 38, english: "Some regions", vietnamese: "Một số vùng", example:"Một số vùng", audio:some_regions, picture:some_regions_pic},
 
 ]
