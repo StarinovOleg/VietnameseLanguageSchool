@@ -7,7 +7,7 @@ import Link from "../../../../ui-library/Link";
 import Section from "../../../main/section/Section";
 
 const DemoAudio = (props: { id?: string }) => {
-  const cardItem = converstation.demo_audio.audio.map((item, index) => (
+  const cardItem = converstation.demo_audio.item.map((item, index) => (
     <CardDemoAudio
       text={item.name}
       color={item.color}

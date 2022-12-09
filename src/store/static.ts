@@ -344,7 +344,7 @@ export const converstation={
       'audio_animation_note2':audio_animation_note2,
       'audio_animation_magnitola':audio_animation_magnitola,
       'audio_animation_terminal':audio_animation_terminal,
-      'audio': [ {
+      'item': [ {
           id:1, 
           name: 'Bà',
           color:'text-[#276f74]',
