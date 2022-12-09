@@ -63,8 +63,11 @@ import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
 
-import { converstation_1 } from "../dictionary/unit-1/converstation_1";
-import { converstation_2 } from "../dictionary/unit-2/converstation_2";
+import { audio1_1} from "../dictionary/unit-1/audio1_1";
+import { audio1 } from "../dictionary/unit-1/audio1";
+import { audio2 } from '../dictionary/unit-2/audio2';
+import { audio2_1 } from '../dictionary/unit-2/audio2_1';
+import { audio2_2 } from "../dictionary/unit-2/audio2_2";
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
@@ -74,6 +77,7 @@ import audio_animation_terminal from '../assets/demo-audio/terminal.png'
 
 import negative from "../assets/sounds/noncorrect.mp3";
 import positive from "../assets/sounds/correct.mp3";
+
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
@@ -248,35 +252,35 @@ export const converstation={
             'title':'My name is Dung',
             'subtitle': 'Introduce yourself. Say "Hello" people!',
             'img':img,
-            'array_data':converstation_1
+            'array_data':audio1
           },{
             'id':2,
             'to': '/audio',
             'title':'Where do you come from?',
             'subtitle': 'Introduce yourself. Say where you from and your nationality.',
             'img':img2,
-            'array_data':converstation_1
+            'array_data':audio1_1
           },{
             'id':3,
             'to': '/audio',
             'title':'What is?',
             'subtitle': 'Ansk and answer on common question.',
             'img':what_is,
-            'array_data':converstation_2
+            'array_data':audio2
           },{
             'id':4,
             'to': '/audio',
             'title':'Introduce yourself',
             'subtitle': 'Say people about you and start converstation easy.',
             'img':introduce_yourself,
-            'array_data':converstation_2
+            'array_data':audio2_1
           },{
             'id':5,
             'to': '/audio',
             'title':'Start conversation.',
             'subtitle': 'Starting a casual conversation.',
             'img':start_conversation,
-            'array_data':converstation_2
+            'array_data':audio2_2
           },{
             'id':6,
             'to': '/audio',
