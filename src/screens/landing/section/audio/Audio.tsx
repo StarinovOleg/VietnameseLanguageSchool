@@ -3,7 +3,7 @@ import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
-import { cardItemConversation } from "./components/Lists";
+import List from "./components/Lists";
 import SupportWindow from "../../../../components/SupportWindow";
 import Section from "../../../main/section/Section";
 
@@ -37,7 +37,7 @@ function Audio(props: { id?: string }) {
               onClick={setHover}
             />
           )}
-          {cardItemConversation.slice(0, 6)}
+          <List />
         </div>
 
         <Link

@@ -63,6 +63,10 @@ import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
 
+import { converstation_1 } from "../dictionary/unit-1/converstation_1";
+import { converstation_2 } from "../dictionary/unit-2/converstation_2";
+import { pronunciation } from "../dictionary/unit-1/pronunciation";
+
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
 import audio_animation_note1 from '../assets/demo-audio/note1.png'
 import audio_animation_note2 from '../assets/demo-audio/note2.png'
@@ -243,37 +247,43 @@ export const converstation={
             'to': '/audio',
             'title':'My name is Dung',
             'subtitle': 'Introduce yourself. Say "Hello" people!',
-            'img':img
+            'img':img,
+            'array_data':converstation_1
           },{
             'id':2,
             'to': '/audio',
             'title':'Where do you come from?',
             'subtitle': 'Introduce yourself. Say where you from and your nationality.',
-            'img':img2
+            'img':img2,
+            'array_data':converstation_1
           },{
             'id':3,
             'to': '/audio',
             'title':'What is?',
             'subtitle': 'Ansk and answer on common question.',
-            'img':what_is
+            'img':what_is,
+            'array_data':converstation_2
           },{
             'id':4,
             'to': '/audio',
             'title':'Introduce yourself',
             'subtitle': 'Say people about you and start converstation easy.',
-            'img':introduce_yourself
+            'img':introduce_yourself,
+            'array_data':converstation_2
           },{
             'id':5,
             'to': '/audio',
             'title':'Start conversation.',
             'subtitle': 'Starting a casual conversation.',
-            'img':start_conversation
+            'img':start_conversation,
+            'array_data':converstation_2
           },{
             'id':6,
             'to': '/audio',
             'title': 'Six tones',
             'subtitle': 'The difference of the six tones',
-            'img':six_tones
+            'img':six_tones,
+            'array_data':pronunciation
           }
         ]
     },
