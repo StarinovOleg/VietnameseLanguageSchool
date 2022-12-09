@@ -1,7 +1,7 @@
 import React from "react";
 
 function ButtonSound(props: {
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler | (() => void);
   hover?: string;
   position?: string;
 }) {

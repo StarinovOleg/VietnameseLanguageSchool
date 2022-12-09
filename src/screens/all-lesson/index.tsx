@@ -19,7 +19,7 @@ function ListLessons() {
     switch (state.title) {
       case converstation.words.title:
         return <Lists />;
-      case converstation.conversation.title:
+      case converstation.audio.title:
         return <>{cardItemConversation}</>;
       case converstation.practice_translate.title:
         return <>{cardItemPracticeTranslated}</>;

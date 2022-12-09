@@ -5,9 +5,9 @@ import P from "../../../../../ui-library/P";
 const CardAudio = (props: {
   subtitle: string;
   to: string;
-  state: { [key: string]: string };
+  state: any;
   title: string;
-  src: string;
+  src: any;
 }) => {
   return (
     <NavLink to={props.to} state={props.state}>

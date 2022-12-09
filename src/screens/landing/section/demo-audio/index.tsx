@@ -39,7 +39,7 @@ const DemoAudio = (props: { id?: string }) => {
           align="text-right"
           secondary_color="text-[#800000]"
           state={{
-            title: `${converstation.conversation.title}`,
+            title: `${converstation.audio.title}`,
           }}
         />
       </div>

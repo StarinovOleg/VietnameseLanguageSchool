@@ -24,42 +24,42 @@ function AudioIndex() {
   //dynamic words display
   const displayWords = () => {
     switch (state?.title) {
-      case converstation.conversation.item[0].title:
+      case converstation.audio.lessons[0].title:
         return (
           <DisplayBlock
             word={converstation_1.converstation_1_1.text}
             audio={converstation_1.converstation_1_1.audio}
           />
         );
-      case converstation.conversation.item[1].title:
+      case converstation.audio.lessons[1].title:
         return (
           <DisplayBlock
             word={converstation_1.converstation_1_2.text}
             audio={converstation_1.converstation_1_2.audio}
           />
         );
-      case converstation.conversation.item[2].title:
+      case converstation.audio.lessons[2].title:
         return (
           <DisplayBlock
             word={converstation_2.converstation_2_1.text}
             audio={converstation_2.converstation_2_1.audio}
           />
         );
-      case converstation.conversation.item[3].title:
+      case converstation.audio.lessons[3].title:
         return (
           <DisplayBlock
             word={converstation_2.converstation_2_2.text}
             audio={converstation_2.converstation_2_2.audio}
           />
         );
-      case converstation.conversation.item[4].title:
+      case converstation.audio.lessons[4].title:
         return (
           <DisplayBlock
             word={converstation_2.converstation_2_3.text}
             audio={converstation_2.converstation_2_3.audio}
           />
         );
-      case converstation.conversation.item[5].title:
+      case converstation.audio.lessons[5].title:
         return (
           <>
             <H1 children={state.title} />
