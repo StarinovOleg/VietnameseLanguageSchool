@@ -235,10 +235,10 @@ export const converstation={
           img: icon_device,
         },
       ]},
-    conversation:{
+    audio:{
         'title':'Chose listen to the conversation',
         'section_img':support_audio,
-        'item':[{
+        'lessons':[{
             'id':1,
             'to': '/audio',
             'title':'My name is Dung',

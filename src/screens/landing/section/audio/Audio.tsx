@@ -9,7 +9,7 @@ import Section from "../../../main/section/Section";
 
 const children_header = (
   <img
-    src={converstation.conversation.section_img}
+    src={converstation.audio.section_img}
     alt="logo"
     className="w-12 h-12 ml-4 mr-4 mt-4 mb-4"
   />
@@ -20,7 +20,7 @@ function Audio(props: { id?: string }) {
   return (
     <Section>
       <GridSection
-        title={converstation.conversation.title}
+        title={converstation.audio.title}
         fontcolorsecondary="text-lime-800"
         id={props.id}
         children_header={children_header}
@@ -45,7 +45,7 @@ function Audio(props: { id?: string }) {
           align="text-right"
           secondary_color="text-lime-800"
           state={{
-            title: `${converstation.conversation.title}`,
+            title: `${converstation.audio.title}`,
           }}
         />
       </GridSection>
