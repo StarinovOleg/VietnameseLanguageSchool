@@ -16,8 +16,9 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Suspense fallback={<div>Loading...</div>}>
-        <GlobalState>
+
+      <GlobalState>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route element={<Home />}>
               <Route path="/" element={<Landing />} />
@@ -30,8 +31,8 @@ function App() {
               <Route path="*" element={<Error />} />
             </Route>
           </Routes>
-        </GlobalState>
-      </Suspense>
+        </Suspense>
+      </GlobalState>
     </BrowserRouter>
   );
 }

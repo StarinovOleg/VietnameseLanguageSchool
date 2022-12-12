@@ -13,6 +13,9 @@ import img12 from '../assets/icons-lessons/unit12.png';
 import img13 from '../assets/icons-lessons/unit13.png';
 import img14 from '../assets/icons-lessons/unit14.png';
 import img15 from '../assets/icons-lessons/unit15.png';
+
+import company_audio_icon from '../assets/lesson3/company.png';
+
 import start_conversation from '../assets/lesson_2/meet.png';
 import introduce_yourself from '../assets/lesson_2/who.png';
 import what_is from '../assets/lesson_2/andyou.png';
@@ -65,6 +68,7 @@ import { unit_1 } from "../dictionary/unit-1/unit_1";
 
 import { audio1, audio1_1} from "../dictionary/unit-1/audio1";
 import { audio2,audio2_1,audio2_2 } from '../dictionary/unit-2/audio2';
+import { audio3, audio3_1 } from '../dictionary/unit-3/audio3';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
@@ -264,6 +268,18 @@ export const converstation={
             'subtitle': 'The difference of the six tones',
             'img':six_tones,
             'array_data':pronunciation
+          },{
+            'id':7,
+            'title': 'I am a doctor',
+            'subtitle': 'What is your job?',
+            'img':img3,
+            'array_data':audio3
+          },{
+            'id':8,
+            'title': 'My company',
+            'subtitle': 'What company do you work for?',
+            'img':company_audio_icon,
+            'array_data':audio3_1
           }
         ]
     },
