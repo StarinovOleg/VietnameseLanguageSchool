@@ -5,9 +5,9 @@ import Home from "./screens/main/home";
 import Landing from "./screens/landing";
 import GlobalState from "./store/Globalstate";
 import ScrollToTop from "./services/scroll-top.service";
+import AudioIndex from "./screens/audio/index";
 
 const WordsIndex = lazy(() => import("./screens/words/index"));
-const AudioIndex = lazy(() => import("./screens/audio/index"));
 const TranslateIndex = lazy(() => import("./screens/translate/index"));
 const Error = lazy(() => import("./screens/main/error/Error"));
 const EndScreen = lazy(() => import("./screens/end-screen/EndScreen"));
