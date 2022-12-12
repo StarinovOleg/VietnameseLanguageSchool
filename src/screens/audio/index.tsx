@@ -1,12 +1,13 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
-import Error from "../main/error/Error";
-import DisplayBlock from "./components/DisplayBlock";
-import Table from "./components/Table";
 import H1 from "../../ui-library/H1";
 import BodyPractice from "../main/body/body_practice";
+
+const DisplayBlock = lazy(() => import("./components/DisplayBlock"));
+const Table = lazy(() => import("./components/Table"));
+const Error = lazy(() => import("../main/error/Error"));
 
 interface location {
   title: string;
