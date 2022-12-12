@@ -63,11 +63,8 @@ import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
 
-import { audio1_1} from "../dictionary/unit-1/audio1_1";
-import { audio1 } from "../dictionary/unit-1/audio1";
-import { audio2 } from '../dictionary/unit-2/audio2';
-import { audio2_1 } from '../dictionary/unit-2/audio2_1';
-import { audio2_2 } from "../dictionary/unit-2/audio2_2";
+import { audio1, audio1_1} from "../dictionary/unit-1/audio1";
+import { audio2,audio2_1,audio2_2 } from '../dictionary/unit-2/audio2';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
