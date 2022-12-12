@@ -7,7 +7,6 @@ const Lists = () => {
 
   const cardItemLesson = converstation.audio.lessons.map((item) => (
     <CardAudio
-      to={item.to}
       title={item.title}
       subtitle={item.subtitle}
       src={item.img}

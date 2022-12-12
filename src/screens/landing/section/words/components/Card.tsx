@@ -4,13 +4,12 @@ import H2 from "../../../../../ui-library/H2";
 import P from "../../../../../ui-library/P";
 const Card = (props: {
   subtitle: string;
-  to: string;
   state: { [key: string]: string };
   title: string;
   src: string;
 }) => {
   return (
-    <NavLink to={props.to} state={props.state}>
+    <NavLink to="/words" state={props.state}>
       <div className="border-solid rounded-xl cursor-pointer bg-sky-500 m-2 p-2 h-auto  hover:md:shadow-lg hover:md:shadow-sky-800  hover:sm:drop-shadow-none flex flex-wrap">
         <div className="flex-none">
           <img src={props.src} alt="icons" />
