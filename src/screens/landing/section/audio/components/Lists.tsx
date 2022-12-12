@@ -20,7 +20,7 @@ const Lists = () => {
   ));
   return (
     <>
-      {location.pathname === "/landing"
+      {location.pathname === "/landing" || location.pathname === "/"
         ? cardItemLesson.slice(0, 6)
         : cardItemLesson}
     </>
