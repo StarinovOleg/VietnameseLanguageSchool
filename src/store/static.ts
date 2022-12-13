@@ -1,3 +1,4 @@
+/**WORDS SCREEN CARDS ICONS */
 import img from '../assets/icons-lessons/unit1.png';
 import img2 from '../assets/icons-lessons/unit2.png';
 import img3 from '../assets/icons-lessons/unit3.png';
@@ -14,10 +15,12 @@ import img13 from '../assets/icons-lessons/unit13.png';
 import img14 from '../assets/icons-lessons/unit14.png';
 import img15 from '../assets/icons-lessons/unit15.png';
 
+/**AUDIO SCREEN ICON FOR SECONDARY CONVERSTATION TO LESSON */
 import company_audio_icon from '../assets/lesson3/company.png';
 import meet_audio_icon from '../assets/lesson4/meet.png';
 import rice_noodle_audio_icon from '../assets/lesson5/rice_noodle.png';
 import watch_movie_icon from '../assets/lesson6/watch_movie_pic.png';
+import enroll_pic_icon from '../assets/lesson7/enroll_pic.png';
 
 import start_conversation from '../assets/lesson_2/meet.png';
 import introduce_yourself from '../assets/lesson_2/who.png';
@@ -42,17 +45,20 @@ import window_word_gif from "../assets/supports/gif-words.gif";
 import window_audio from "../assets/supports/audio.png";
 import window_audio_gif from "../assets/supports/gif-audio.gif";
 
+/** PICTURES FOR LANDING, END and ERROR PAGES */
 import window_translate from "../assets/supports/translate.png";
 import background from "../assets/phone.png";
-import phone from '../assets/phone.png';
 import appstore from '../assets/app-store-badge.png';
 import googlestore from '../assets/google-play-badge.png';
 import img_error from '../assets/error/error.png';
 import end_screen from '../assets/end-screen/end-screen.png';
+
+/**SOUND FOR AUDIO TEST LANDING PAGE */
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
 import b3 from "../assets/sounds/pronunciation/Bá.mp3";
 import b4 from "../assets/sounds/pronunciation/Bã.mp3";
 
+/**WORDS SCREEN LESSONS */
 import { unit_15 } from "../dictionary/unit-15/unit_15";
 import { unit_14 } from "../dictionary/unit-14/unit_14";
 import { unit_13 } from "../dictionary/unit-13/unit_13";
@@ -69,19 +75,23 @@ import { unit_3 } from "../dictionary/unit-3/unit_3";
 import { unit_2 } from "../dictionary/unit-2/unit_2";
 import { unit_1 } from "../dictionary/unit-1/unit_1";
 
+/**AUDIO SCREEN LESSONS */
 import { audio1, audio1_1} from "../dictionary/unit-1/audio1";
 import { audio2,audio2_1,audio2_2 } from '../dictionary/unit-2/audio2';
 import { audio3, audio3_1 } from '../dictionary/unit-3/audio3';
 import { audio4, audio4_1 } from '../dictionary/unit-4/audio4';
 import { audio5, audio5_1 } from '../dictionary/unit-5/audio5';
 import { audio6, audio6_1 } from '../dictionary/unit-6/audio6';
+import { audio7, audio7_1 } from '../dictionary/unit-7/audio7';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
+/**ANIMATE FOR AUDIO-TEST LANDING PAGE */
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
 import audio_animation_note1 from '../assets/demo-audio/note1.png'
 import audio_animation_note2 from '../assets/demo-audio/note2.png'
 import audio_animation_terminal from '../assets/demo-audio/terminal.png'
 
+/**SOUND FOR WORDS SCREEN */
 import negative from "../assets/sounds/noncorrect.mp3";
 import positive from "../assets/sounds/correct.mp3";
 
@@ -322,6 +332,18 @@ export const converstation={
             'subtitle': 'Invite for a date',
             'img':watch_movie_icon,
             'array_data':audio6_1
+          },{
+            'id':15,
+            'title': 'Where were you born?',
+            'subtitle': 'Ask about age and where are you living',
+            'img':img7,
+            'array_data':audio7
+          },{
+            'id':16,
+            'title': 'Register',
+            'subtitle': 'Register yourself',
+            'img':enroll_pic_icon,
+            'array_data':audio7_1
           }
         ]
     },
