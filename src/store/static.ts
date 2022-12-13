@@ -23,6 +23,7 @@ import watch_movie_icon from '../assets/lesson6/watch_movie_pic.png';
 import enroll_pic_icon from '../assets/lesson7/enroll_pic.png';
 import this_morning_pic_icon from '../assets/lesson8/this_morning_pic.png';
 import temperature_pic_icon from '../assets/lesson9/temperature_pic.png';
+import can_you_let_me_know_pic_icon from '../assets/lesson10/can_you_let_me_know_pic.png';
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -88,6 +89,7 @@ import { audio6, audio6_1 } from '../dictionary/unit-6/audio6';
 import { audio7, audio7_1 } from '../dictionary/unit-7/audio7';
 import { audio8, audio8_1 } from '../dictionary/unit-8/audio8';
 import { audio9, audio9_1 } from '../dictionary/unit-9/audio9';
+import { audio10, audio10_1 } from '../dictionary/unit-10/audio10';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -373,6 +375,18 @@ export const converstation={
             'subtitle': 'Weather in the North and South of Vietnam',
             'img':temperature_pic_icon,
             'array_data':audio9_1
+          },{
+            'id':21,
+            'title': 'What is Vietnam like?',
+            'subtitle': 'Tourism',
+            'img':img10,
+            'array_data':audio10
+          },{
+            'id':22,
+            'title': 'To work in Vietnam',
+            'subtitle': 'Common question about Vietnam',
+            'img':can_you_let_me_know_pic_icon,
+            'array_data':audio10_1
           }
         ]
     },
