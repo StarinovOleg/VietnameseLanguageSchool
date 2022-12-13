@@ -17,6 +17,7 @@ import img15 from '../assets/icons-lessons/unit15.png';
 import company_audio_icon from '../assets/lesson3/company.png';
 import meet_audio_icon from '../assets/lesson4/meet.png';
 import rice_noodle_audio_icon from '../assets/lesson5/rice_noodle.png';
+import watch_movie_icon from '../assets/lesson6/watch_movie_pic.png';
 
 import start_conversation from '../assets/lesson_2/meet.png';
 import introduce_yourself from '../assets/lesson_2/who.png';
@@ -73,6 +74,7 @@ import { audio2,audio2_1,audio2_2 } from '../dictionary/unit-2/audio2';
 import { audio3, audio3_1 } from '../dictionary/unit-3/audio3';
 import { audio4, audio4_1 } from '../dictionary/unit-4/audio4';
 import { audio5, audio5_1 } from '../dictionary/unit-5/audio5';
+import { audio6, audio6_1 } from '../dictionary/unit-6/audio6';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
@@ -308,6 +310,18 @@ export const converstation={
             'subtitle': 'Order food',
             'img':rice_noodle_audio_icon,
             'array_data':audio5_1
+          },{
+            'id':13,
+            'title': 'We meet',
+            'subtitle': 'Business',
+            'img':img6,
+            'array_data':audio6
+          },{
+            'id':14,
+            'title': 'Are we going to the cinema?',
+            'subtitle': 'Invite for a date',
+            'img':watch_movie_icon,
+            'array_data':audio6_1
           }
         ]
     },
