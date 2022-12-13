@@ -22,6 +22,7 @@ import rice_noodle_audio_icon from '../assets/lesson5/rice_noodle.png';
 import watch_movie_icon from '../assets/lesson6/watch_movie_pic.png';
 import enroll_pic_icon from '../assets/lesson7/enroll_pic.png';
 import this_morning_pic_icon from '../assets/lesson8/this_morning_pic.png';
+import temperature_pic_icon from '../assets/lesson9/temperature_pic.png';
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -86,6 +87,7 @@ import { audio5, audio5_1 } from '../dictionary/unit-5/audio5';
 import { audio6, audio6_1 } from '../dictionary/unit-6/audio6';
 import { audio7, audio7_1 } from '../dictionary/unit-7/audio7';
 import { audio8, audio8_1 } from '../dictionary/unit-8/audio8';
+import { audio9, audio9_1 } from '../dictionary/unit-9/audio9';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -359,6 +361,18 @@ export const converstation={
             'subtitle': 'Mom and daughter have breakfast',
             'img':this_morning_pic_icon,
             'array_data':audio8_1
+          },{
+            'id':19,
+            'title': 'Weather today',
+            'subtitle': 'Talk about the weather',
+            'img':img9,
+            'array_data':audio9
+          },{
+            'id':20,
+            'title': 'Tell me about the weather',
+            'subtitle': 'Weather in the North and South of Vietnam',
+            'img':temperature_pic_icon,
+            'array_data':audio9_1
           }
         ]
     },
