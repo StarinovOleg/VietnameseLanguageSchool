@@ -16,6 +16,8 @@ import img15 from '../assets/icons-lessons/unit15.png';
 
 import company_audio_icon from '../assets/lesson3/company.png';
 import meet_audio_icon from '../assets/lesson4/meet.png';
+import rice_noodle_audio_icon from '../assets/lesson5/rice_noodle.png';
+
 import start_conversation from '../assets/lesson_2/meet.png';
 import introduce_yourself from '../assets/lesson_2/who.png';
 import what_is from '../assets/lesson_2/andyou.png';
@@ -70,6 +72,7 @@ import { audio1, audio1_1} from "../dictionary/unit-1/audio1";
 import { audio2,audio2_1,audio2_2 } from '../dictionary/unit-2/audio2';
 import { audio3, audio3_1 } from '../dictionary/unit-3/audio3';
 import { audio4, audio4_1 } from '../dictionary/unit-4/audio4';
+import { audio5, audio5_1 } from '../dictionary/unit-5/audio5';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 import audio_animation_magnitola from '../assets/demo-audio/magnitola.png'
@@ -293,6 +296,18 @@ export const converstation={
             'subtitle': 'Speak about meeting',
             'img':meet_audio_icon,
             'array_data':audio4_1
+          },{
+            'id':11,
+            'title': 'How much is it?',
+            'subtitle': 'Ask about price',
+            'img':img5,
+            'array_data':audio5
+          },{
+            'id':12,
+            'title': 'We want to eat bun cha!',
+            'subtitle': 'Order food',
+            'img':rice_noodle_audio_icon,
+            'array_data':audio5_1
           }
         ]
     },
