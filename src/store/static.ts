@@ -21,7 +21,9 @@ import meet_audio_icon from '../assets/lesson4/meet.png';
 import rice_noodle_audio_icon from '../assets/lesson5/rice_noodle.png';
 import watch_movie_icon from '../assets/lesson6/watch_movie_pic.png';
 import enroll_pic_icon from '../assets/lesson7/enroll_pic.png';
+import this_morning_pic_icon from '../assets/lesson8/this_morning_pic.png';
 
+/** */
 import start_conversation from '../assets/lesson_2/meet.png';
 import introduce_yourself from '../assets/lesson_2/who.png';
 import what_is from '../assets/lesson_2/andyou.png';
@@ -83,6 +85,7 @@ import { audio4, audio4_1 } from '../dictionary/unit-4/audio4';
 import { audio5, audio5_1 } from '../dictionary/unit-5/audio5';
 import { audio6, audio6_1 } from '../dictionary/unit-6/audio6';
 import { audio7, audio7_1 } from '../dictionary/unit-7/audio7';
+import { audio8, audio8_1 } from '../dictionary/unit-8/audio8';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -344,6 +347,18 @@ export const converstation={
             'subtitle': 'Register yourself',
             'img':enroll_pic_icon,
             'array_data':audio7_1
+          },{
+            'id':17,
+            'title': 'Do you like food?',
+            'subtitle': 'Food',
+            'img':img8,
+            'array_data':audio8
+          },{
+            'id':18,
+            'title': 'This morning',
+            'subtitle': 'Mom and daughter have breakfast',
+            'img':this_morning_pic_icon,
+            'array_data':audio8_1
           }
         ]
     },
