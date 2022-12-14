@@ -25,7 +25,7 @@ import this_morning_pic_icon from '../assets/lesson8/this_morning_pic.png';
 import temperature_pic_icon from '../assets/lesson9/temperature_pic.png';
 import can_you_let_me_know_pic_icon from '../assets/lesson10/can_you_let_me_know_pic.png';
 import mango_pic_audio_icon from '../assets/lesson11/mango_pic.png';
-
+import volunteer_pic_audio_icon from '../assets/lesson12/volunteer_pic.png';
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -93,6 +93,7 @@ import { audio8, audio8_1 } from '../dictionary/unit-8/audio8';
 import { audio9, audio9_1 } from '../dictionary/unit-9/audio9';
 import { audio10, audio10_1 } from '../dictionary/unit-10/audio10';
 import { audio11, audio11_1 } from '../dictionary/unit-11/audio11';
+import { audio12, audio12_1 } from '../dictionary/unit-12/audio12';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -402,6 +403,18 @@ export const converstation={
             'subtitle': 'Which mango is cheaper?',
             'img':mango_pic_audio_icon,
             'array_data':audio11_1
+          },{
+            'id':25,
+            'title': 'You live in Vietnam',
+            'subtitle': 'Make contract and study vietnamese',
+            'img':img12,
+            'array_data':audio12
+          },{
+            'id':26,
+            'title': 'Volunteers',
+            'subtitle': 'Be a volunteer in vietnam',
+            'img':volunteer_pic_audio_icon,
+            'array_data':audio12_1
           }
         ]
     },
