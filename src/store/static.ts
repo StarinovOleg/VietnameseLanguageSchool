@@ -27,6 +27,7 @@ import can_you_let_me_know_pic_icon from '../assets/lesson10/can_you_let_me_know
 import mango_pic_audio_icon from '../assets/lesson11/mango_pic.png';
 import volunteer_pic_audio_icon from '../assets/lesson12/volunteer_pic.png';
 import homework_pic_audio_icon from '../assets/lesson13/homework_pic.png';
+import landing_pic_audio_icon from '../assets/lesson14/landing_pic.png';
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -96,6 +97,7 @@ import { audio10, audio10_1 } from '../dictionary/unit-10/audio10';
 import { audio11, audio11_1 } from '../dictionary/unit-11/audio11';
 import { audio12, audio12_1 } from '../dictionary/unit-12/audio12';
 import { audio13, audio13_1 } from '../dictionary/unit-13/audio13';
+import { audio14, audio14_1 } from '../dictionary/unit-14/audio14';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -429,6 +431,18 @@ export const converstation={
             'subtitle': 'School',
             'img':homework_pic_audio_icon,
             'array_data':audio13_1
+          },{
+            'id':29,
+            'title': 'You can sit here',
+            'subtitle': 'Business',
+            'img':img14,
+            'array_data':audio14
+          },{
+            'id':30,
+            'title': 'Airport',
+            'subtitle': 'Meet friends',
+            'img':landing_pic_audio_icon,
+            'array_data':audio14_1
           }
         ]
         
