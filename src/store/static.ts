@@ -98,6 +98,7 @@ import { audio11, audio11_1 } from '../dictionary/unit-11/audio11';
 import { audio12, audio12_1 } from '../dictionary/unit-12/audio12';
 import { audio13, audio13_1 } from '../dictionary/unit-13/audio13';
 import { audio14, audio14_1 } from '../dictionary/unit-14/audio14';
+import { audio15} from '../dictionary/unit-15/audio15';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -443,6 +444,12 @@ export const converstation={
             'subtitle': 'Meet friends',
             'img':landing_pic_audio_icon,
             'array_data':audio14_1
+          },{
+            'id':31,
+            'title': 'You study vietnamese',
+            'subtitle': 'School',
+            'img':img15,
+            'array_data':audio15
           }
         ]
         
