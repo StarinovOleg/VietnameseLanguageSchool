@@ -26,6 +26,7 @@ import temperature_pic_icon from '../assets/lesson9/temperature_pic.png';
 import can_you_let_me_know_pic_icon from '../assets/lesson10/can_you_let_me_know_pic.png';
 import mango_pic_audio_icon from '../assets/lesson11/mango_pic.png';
 import volunteer_pic_audio_icon from '../assets/lesson12/volunteer_pic.png';
+import homework_pic_audio_icon from '../assets/lesson13/homework_pic.png';
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -94,6 +95,7 @@ import { audio9, audio9_1 } from '../dictionary/unit-9/audio9';
 import { audio10, audio10_1 } from '../dictionary/unit-10/audio10';
 import { audio11, audio11_1 } from '../dictionary/unit-11/audio11';
 import { audio12, audio12_1 } from '../dictionary/unit-12/audio12';
+import { audio13, audio13_1 } from '../dictionary/unit-13/audio13';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -415,8 +417,21 @@ export const converstation={
             'subtitle': 'Be a volunteer in vietnam',
             'img':volunteer_pic_audio_icon,
             'array_data':audio12_1
+          },{
+            'id':27,
+            'title': 'Get to Hoan Kiem',
+            'subtitle': 'Asking how to get there',
+            'img':img13,
+            'array_data':audio13
+          },{
+            'id':28,
+            'title': 'School homework',
+            'subtitle': 'School',
+            'img':homework_pic_audio_icon,
+            'array_data':audio13_1
           }
         ]
+        
     },
     method:{
         'img':icon_foot,
