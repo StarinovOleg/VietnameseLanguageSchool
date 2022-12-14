@@ -24,6 +24,8 @@ import enroll_pic_icon from '../assets/lesson7/enroll_pic.png';
 import this_morning_pic_icon from '../assets/lesson8/this_morning_pic.png';
 import temperature_pic_icon from '../assets/lesson9/temperature_pic.png';
 import can_you_let_me_know_pic_icon from '../assets/lesson10/can_you_let_me_know_pic.png';
+import mango_pic_audio_icon from '../assets/lesson11/mango_pic.png';
+
 
 /** */
 import start_conversation from '../assets/lesson_2/meet.png';
@@ -90,6 +92,7 @@ import { audio7, audio7_1 } from '../dictionary/unit-7/audio7';
 import { audio8, audio8_1 } from '../dictionary/unit-8/audio8';
 import { audio9, audio9_1 } from '../dictionary/unit-9/audio9';
 import { audio10, audio10_1 } from '../dictionary/unit-10/audio10';
+import { audio11, audio11_1 } from '../dictionary/unit-11/audio11';
 import { pronunciation } from "../dictionary/unit-1/pronunciation";
 
 /**ANIMATE FOR AUDIO-TEST LANDING PAGE */
@@ -387,6 +390,18 @@ export const converstation={
             'subtitle': 'Common question about Vietnam',
             'img':can_you_let_me_know_pic_icon,
             'array_data':audio10_1
+          },{
+            'id':23,
+            'title': 'Winter in Dalat and Hanoi',
+            'subtitle': 'Compare the weather in Vietnam',
+            'img':img11,
+            'array_data':audio11
+          },{
+            'id':24,
+            'title': 'Buying mango',
+            'subtitle': 'Which mango is cheaper?',
+            'img':mango_pic_audio_icon,
+            'array_data':audio11_1
           }
         ]
     },
