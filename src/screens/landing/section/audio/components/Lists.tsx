@@ -1,10 +1,8 @@
 import CardAudio from "./CardAudio";
 import { converstation } from "../../../../../store/static";
-import { useLocation } from "react-router-dom";
+import { useLocationDisplayList } from "../../../../../hooks/useLocationDisplayList";
 
 const Lists = () => {
-  const location = useLocation();
-
   const cardItemLesson = converstation.audio.lessons.map((item) => (
     <CardAudio
       title={item.title}
@@ -18,13 +16,8 @@ const Lists = () => {
       }}
     />
   ));
-  return (
-    <>
-      {location.pathname === "/landing" || location.pathname === "/"
-        ? cardItemLesson.slice(0, 6)
-        : cardItemLesson}
-    </>
-  );
+  const listItems = useLocationDisplayList(cardItemLesson, 6);
+  return <>{listItems}</>;
 };
 
 export default Lists;
