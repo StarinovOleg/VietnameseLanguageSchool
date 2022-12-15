@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
 import Error from "../main/error/Error";
@@ -7,7 +5,7 @@ import DisplayBlock from "./components/DisplayBlock";
 import Table from "./components/Table";
 import H1 from "../../ui-library/H1";
 import BodyPractice from "../main/body/body_practice";
-
+import { useDisplayWords } from "../../hooks/useDisplayWords";
 interface location {
   title: string;
   array_data: string;
@@ -19,19 +17,11 @@ const tones = Object.entries(converstation.audio.lessons[5].array_data).map(
 function AudioIndex() {
   const location = useLocation();
   const state = location.state as location;
-  let arr: Array<any> = [];
+  const arr = useDisplayWords(state);
 
-  //dynamic words display
-  const displayWords = () => {
-    if (state?.title) {
-      arr = JSON.parse(state.array_data);
-      console.log(arr);
-    }
-  };
-  displayWords();
   return (
     <>
-      {arr.length !== 0 && state?.title ? (
+      {arr?.length !== 0 && state?.title ? (
         <BodyPractice>
           <div
             className="text-4xl my-4 p-10"
@@ -40,7 +30,7 @@ function AudioIndex() {
             <>
               {state.title !== converstation.audio.lessons[5].title ? (
                 <>
-                  {arr.map((display, index) => (
+                  {arr?.map((display, index) => (
                     <DisplayBlock
                       key={index}
                       word={display.text}

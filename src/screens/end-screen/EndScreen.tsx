@@ -36,6 +36,7 @@ function EndScreen() {
         <img
           src={converstation.end_screen.picture}
           className="mr-auto ml-auto w-6/12"
+          alt="birds with error 404"
         />
       </div>
     </BodyPractice>

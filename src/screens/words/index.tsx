@@ -13,6 +13,7 @@ import Timer from "../../components/Timer";
 import DisplayWordBlock from "./components/DisplayWordBlock";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
+import { useDisplayWords } from "../../hooks/useDisplayWords";
 interface location {
   array_data: string;
   title: string;
@@ -24,7 +25,7 @@ function WordsIndex() {
   const location = useLocation();
   const state = location.state as location;
   const context = useContext(SchoolContext);
-  let arr: Array<any> = [];
+  const arr = useDisplayWords(state);
 
   //checking answer
   const check = (
@@ -44,15 +45,7 @@ function WordsIndex() {
       context.incrementTotal();
     }
   };
-  //dynamic words display
-  const displayWords = () => {
-    if (state?.title) {
-      arr = JSON.parse(state?.array_data);
-      console.log(arr);
-    }
-  };
 
-  displayWords();
   useEffect(() => {
     if (context.countTotal !== 0) {
       context.resetLesson();
@@ -61,13 +54,13 @@ function WordsIndex() {
 
   return (
     <>
-      {arr.length !== 0 && state?.title ? (
+      {arr?.length !== 0 && state?.title ? (
         <BodyPractice>
           <H1 children={state?.title} />
           <H2 children={state?.subtitle} />
 
           <>
-            {arr.slice(step - 1, step).map((display, index) => (
+            {arr?.slice(step - 1, step).map((display, index) => (
               <Fragment key={display.id}>
                 <DisplayWordBlock
                   word={display.vietnamese}
