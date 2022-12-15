@@ -557,5 +557,9 @@ export const converstation={
     words_sounds:{
       'negative':negative,
       'positive':positive,
+    },
+    answer:{
+      'negative': 'Not Correct answer:',
+      'positive':'Correct answer:'
     }
 }

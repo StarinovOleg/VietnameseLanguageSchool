@@ -1,11 +1,9 @@
 import Card from "./Card";
 import { converstation } from "../../../../../store/static";
 import { chooseRandom } from "../../../../words/components/random_words";
-import { useLocation } from "react-router-dom";
+import { useLocationDisplayList } from "../../../../../hooks/useLocationDisplayList";
 
 const Lists = () => {
-  const location = useLocation();
-
   const cardItemLesson = converstation.words.lessons.map((item) => (
     <Card
       title={item.title}
@@ -19,13 +17,9 @@ const Lists = () => {
       }}
     />
   ));
-  return (
-    <>
-      {location.pathname === "/landing" || location.pathname === "/"
-        ? cardItemLesson.slice(0, 8)
-        : cardItemLesson}
-    </>
-  );
+  const listItems = useLocationDisplayList(cardItemLesson, 8);
+
+  return <>{listItems}</>;
 };
 
 export default Lists;
