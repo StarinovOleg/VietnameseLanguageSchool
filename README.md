@@ -8,7 +8,7 @@ To use it, just launch the application.
 
 ## Idea:
 
-Free resource for learning Vietnamese.\ 
+Free resource for learning Vietnamese.
 VinLingua believe that a foreign language can be learned in an informal setting, anywhere, spending as much time as possible, relying on modern materials and current life situations.\
 The first iteration of the application includes the study of the elementary level of Vietnamese language proficiency.\
 When writing the application, VinLingua were guided by the idea of minimal use of third-party libraries and the application should not interact with third-party Internet resources.\
@@ -20,7 +20,7 @@ In a playful way, learning and repeating new words.\
 -audio files.\
 Listening to short modern texts to correct pronunciation.\
 -test translated sentences.\
-Translation and spelling practice in Vietnamese.\
+Translation and spelling practice in Vietnamese.
 
 ## Demo version:
 
