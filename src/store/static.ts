@@ -125,7 +125,7 @@ export const converstation={
         src:listening,
         title:"Listen",
         text: "Practice pronunciation by listening to dialogues and texts",
-        color:'text-[#FBE754]'
+        color:'text-yellow-500'
       },{
         id:2,
         src:practice,
@@ -500,7 +500,7 @@ export const converstation={
         'picture':end_screen
     },
     landing:{
-        'continue':'Continue more training >>>'
+        'continue':'Continue more >>>'
     },
     button:{
         'button_name': 'Title Page',
@@ -552,7 +552,7 @@ export const converstation={
     header:{
       'words_training':'words',
       'audio_training':'audio',
-      'translate_training':'translate'
+      'translate_training':'translations'
     },
     words_sounds:{
       'negative':negative,

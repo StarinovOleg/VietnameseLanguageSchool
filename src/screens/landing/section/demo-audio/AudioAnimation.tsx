@@ -11,10 +11,12 @@ const AudioAnimation = () => {
           src={converstation.demo_audio.audio_animation_magnitola}
           alt="icons-magnitola"
           className="lg:w-[17%] md:w-[19%] sm:w-[25%] w-[30%] absolute z-50 top-0 bottom-0 m-auto"
+          loading="lazy"
         />
         <img
           src={converstation.demo_audio.audio_animation_terminal}
           alt="icons-terminal"
+          loading="lazy"
           className="animate-ping lg:w-[4%] md:w-[4%] sm:w-[7%] w-[7%] absolute z-50 top-[62%] lg:top-[62%] md:top-[60%] left-[17%] sm:left-[17%] md:left-[31%] lg:left-[30%] m-auto"
         />
 

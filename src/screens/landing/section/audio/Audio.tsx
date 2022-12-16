@@ -9,7 +9,7 @@ import Section from "../../../main/section/Section";
 const children_header = (
   <img
     src={converstation.audio.section_img}
-    alt="logo"
+    alt="icon support"
     className="w-12 h-12 ml-4 mr-4 mt-4 mb-4"
   />
 );

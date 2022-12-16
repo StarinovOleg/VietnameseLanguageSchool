@@ -12,7 +12,7 @@ const Card = (props: {
     <NavLink to="/words" state={props.state}>
       <div className="border-solid rounded-xl cursor-pointer bg-sky-500 m-2 p-2 h-auto  hover:md:shadow-lg hover:md:shadow-sky-800  hover:sm:drop-shadow-none flex flex-wrap">
         <div className="flex-none">
-          <img src={props.src} alt="icons" />
+          <img src={props.src} alt="icons" loading="lazy" />
         </div>
         <div className="flex-1">
           <H2

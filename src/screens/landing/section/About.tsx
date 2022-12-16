@@ -21,8 +21,9 @@ function About() {
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 content ">
         <img
           src={converstation.about.background}
-          alt="logo"
+          alt="picture with display on PC, phone and table"
           className=" md:mt-auto md:mb-auto w-10/12 ml-auto mr-auto"
+          loading="lazy"
         />
         <div className="">
           {static_data_list}

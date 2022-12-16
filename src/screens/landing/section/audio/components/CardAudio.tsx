@@ -13,8 +13,9 @@ const CardAudio = (props: {
       <div className=" border-solid rounded-xl cursor-pointer bg-lime-500 m-2 p-2 h-auto  hover:sm:drop-shadow-none text-center hover:md:shadow-lg hover:md:shadow-lime-800">
         <img
           src={props.src}
-          alt="icons"
+          alt="picture to topic words card"
           className="md:mt-auto md:mb-auto ml-auto mr-auto"
+          loading="lazy"
         />
         <H2
           fontsizesecondary="h2-font-size-secondary"

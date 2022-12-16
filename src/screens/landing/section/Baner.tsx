@@ -14,6 +14,7 @@ const pictureItem = converstation.baner.map((item) => (
       src={item.src}
       className="md:mt-auto md:mb-auto w-64 ml-auto mr-auto pt-10"
       alt="icon promoution listen, practice, understand"
+      loading="lazy"
     />
     <p className="text-xl text-stone-500 font-semibold   pt-10">{item.text}</p>
   </div>
