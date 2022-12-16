@@ -11,7 +11,7 @@ To use it, just launch the application.
 Free resource for learning Vietnamese.
 VinLingua believe that a foreign language can be learned in an informal setting, anywhere, spending as much time as possible, relying on modern materials and current life situations.\
 The first iteration of the application includes the study of the elementary level of Vietnamese language proficiency.\
-When writing the application, VinLingua were guided by the idea of minimal use of third-party libraries and the application should not interact with third-party Internet resources.\
+When writing the application, VinLingua were guided by the idea of minimal use of third-party libraries and the application should not interact with third-party Internet resources.
 
 ## School resources include next parts:
 
