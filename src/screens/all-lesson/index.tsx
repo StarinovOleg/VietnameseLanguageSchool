@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { converstation } from "../../store/static";
 //import { cardItemLesson } from "../landing/section/words/components/Lists";
 import ListSound from "../landing/section/audio/components/Lists";
-import { cardItemPracticeTranslated } from "../landing/section/translate/components/List";
+import ListTranslate from "../landing/section/translate/components/List";
 import H1 from "../../ui-library/H1";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
@@ -21,8 +21,8 @@ function ListLessons() {
         return <Lists />;
       case converstation.audio.title:
         return <ListSound />;
-      case converstation.practice_translate.title:
-        return <>{cardItemPracticeTranslated}</>;
+      case converstation.translate.title:
+        return <ListTranslate />;
     }
   };
   return (
