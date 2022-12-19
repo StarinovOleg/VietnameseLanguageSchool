@@ -111,6 +111,10 @@ import audio_animation_terminal from '../assets/demo-audio/terminal.png'
 import negative from "../assets/sounds/noncorrect.mp3";
 import positive from "../assets/sounds/correct.mp3";
 
+/**TRANSLATED DATA */
+
+import {trans_1,trans_2,} from "../dictionary/unit-1/translated";
+
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
@@ -465,28 +469,35 @@ export const converstation={
         },
 
     },
-    practice_translate:{
+    translate:{
       'title':'Chose translate these sentences',
       'section_img':support_translate,
       'icon_correct':icon_correct,
       'icon_notcorrect':icon_notcorrect,
+      'subtitle_vietnamese':'Translate the sentences into Vietnamese:',
+      'subtitle_english':'Translate the sentences into English:',
       'item':[{
         'id':1,
         'to': '/translated',
         'title':'Hello! My name is David',
+        'array_data':trans_1,
+        'array_data_vietnamese':trans_2
       },{
         'id':2,
         'to': '/translated',
         'title':'Your Nationality?',
+        'array_data':''
       },
       {
         'id':3,
         'to': '/translated',
         'title':'I am a doctor',
+        'array_data':''
       },      {
         'id':4,
         'to': '/translated',
         'title':'How old is she?',
+        'array_data':''
       },
     ]
     },

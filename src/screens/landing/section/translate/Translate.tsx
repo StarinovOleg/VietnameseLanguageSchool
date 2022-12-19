@@ -1,15 +1,14 @@
-import React, { useState } from "react";
 import { useToggle } from "../../../../hooks/useToggle";
 import { converstation } from "../../../../store/static";
 import GridSection from "../../../main/section/GridSection";
 import Link from "../../../../ui-library/Link";
-import { cardItemPracticeTranslated } from "./components/List";
 import SupportWindow from "../../../../components/SupportWindow";
 import Section from "../../../main/section/Section";
+import List from "./components/List";
 
 const children_header = (
   <img
-    src={converstation.practice_translate.section_img}
+    src={converstation.translate.section_img}
     alt="logo"
     className="w-12 h-12 ml-4 mr-4 mt-4 mb-4"
   />
@@ -19,7 +18,7 @@ function Translate(props: { id?: string }) {
   return (
     <Section>
       <GridSection
-        title={converstation.practice_translate.title}
+        title={converstation.translate.title}
         fontcolorsecondary="text-rose-700"
         id={props.id}
         children_header={children_header}
@@ -36,7 +35,7 @@ function Translate(props: { id?: string }) {
               onClick={setHover}
             />
           )}
-          {cardItemPracticeTranslated.slice(0, 8)}
+          <List />
         </div>
 
         <Link
@@ -44,7 +43,7 @@ function Translate(props: { id?: string }) {
           align="text-right pt-10"
           secondary_color="text-rose-700"
           state={{
-            title: `${converstation.practice_translate.title}`,
+            title: `${converstation.translate.title}`,
           }}
         />
       </GridSection>
