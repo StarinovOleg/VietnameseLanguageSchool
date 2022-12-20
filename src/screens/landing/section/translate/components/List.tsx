@@ -6,7 +6,6 @@ const List = () => {
   const cardItemPracticeTranslated = converstation.translate.item.map(
     (item) => (
       <CardpracticeTranslated
-        to={item.to}
         title={item.title}
         key={item.id}
         state={{
@@ -19,7 +18,7 @@ const List = () => {
       />
     )
   );
-  const listItems = useLocationDisplayList(cardItemPracticeTranslated, 6);
+  const listItems = useLocationDisplayList(cardItemPracticeTranslated, 8);
   return <>{listItems}</>;
 };
 
