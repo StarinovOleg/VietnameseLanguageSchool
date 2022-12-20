@@ -18,7 +18,7 @@ function Header() {
           <Link to="/landing#audio">
             <Logo />
           </Link>
-        ) : location.pathname === "/translate" ? (
+        ) : location.pathname === "/translated" ? (
           <Link to="/landing#translate">
             <Logo />
           </Link>

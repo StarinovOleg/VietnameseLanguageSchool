@@ -114,6 +114,12 @@ import positive from "../assets/sounds/correct.mp3";
 /**TRANSLATED DATA */
 
 import {trans_1,trans_2,} from "../dictionary/unit-1/translated";
+import {trans_2_2,} from "../dictionary/unit-2/translated_2";
+import {trans_3_1,trans_3_2,} from "../dictionary/unit-3/translated_3";
+import {trans_4_2,} from "../dictionary/unit-4/translated_4";
+import {trans_5_1,trans_5_2,} from "../dictionary/unit-5/translated_5";
+import {trans_6_1,trans_6_2,} from "../dictionary/unit-6/translated_6";
+import {trans_7_2,} from "../dictionary/unit-7/translated_7";
 
 export const converstation={
     promo:{
@@ -185,7 +191,7 @@ export const converstation={
            },{
             'id':7,
             'title':'Unit 7',
-            'subtitle': 'Where were you born?',
+            'subtitle': 'When were you born?',
             'img':img7,
             'array_data':unit_7
            },{
@@ -478,26 +484,44 @@ export const converstation={
       'subtitle_english':'Translate the sentences into English:',
       'item':[{
         'id':1,
-        'to': '/translated',
         'title':'Hello! My name is David',
         'array_data':trans_1,
         'array_data_vietnamese':trans_2
       },{
         'id':2,
-        'to': '/translated',
         'title':'Your Nationality?',
-        'array_data':''
+        'array_data':'',
+        'array_data_vietnamese':trans_2_2
       },
       {
         'id':3,
-        'to': '/translated',
         'title':'I am a doctor',
-        'array_data':''
-      },      {
+        'array_data':trans_3_1,
+        'array_data_vietnamese':trans_3_2
+      },
+      {
         'id':4,
-        'to': '/translated',
         'title':'How old is she?',
-        'array_data':''
+        'array_data':'',
+        'array_data_vietnamese':trans_4_2
+      },
+      {
+        'id':5,
+        'title':'How much is it?',
+        'array_data':trans_5_1,
+        'array_data_vietnamese':trans_5_2
+      },
+      {
+        'id':6,
+        'title':'We meet',
+        'array_data':trans_6_1,
+        'array_data_vietnamese':trans_6_2
+      },
+      {
+        'id':7,
+        'title':'When were you born?',
+        'array_data':'',
+        'array_data_vietnamese':trans_7_2
       },
     ]
     },

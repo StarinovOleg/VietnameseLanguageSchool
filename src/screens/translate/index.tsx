@@ -43,7 +43,8 @@ function TranslateIndex() {
 
   return (
     <>
-      {values?.length !== 0 && state?.title ? (
+      {values?.length !== 0 ||
+      (valuesVietnamese?.length !== 0 && state?.title) ? (
         <BodyPractice>
           <H1 children={state?.title} />
           <ButtonTraining
@@ -55,85 +56,96 @@ function TranslateIndex() {
             disabled={loading}
           />
           <div className="text-4xl my-4 p-10 text-left">
-            <H2
-              children={converstation.translate.subtitle_vietnamese}
-              fontsizeprimary="lg:text-2xl md:text-2xl text-xl mt-10 mb-10"
-            />
-            {values?.map((display, index) => (
-              <Fragment key={display.id}>
-                <Input
-                  onChange={(e) => changeHandler(e, index)}
-                  value={display.user_message}
-                  sentence={display.english}
-                  name="user_message"
-                  disabled={disabledInput}
-                />
+            <>
+              {values?.length !== 0 ? (
                 <>
-                  {displayanswer ? (
-                    <div>
-                      {display.user_message === display.vietnamese ? (
-                        <img
-                          src={converstation.translate.icon_correct}
-                          className=" w-4 h-4 "
-                          alt="icon correct"
-                        />
-                      ) : (
-                        <div className="flex justify-start flex-wrap">
-                          <img
-                            src={converstation.translate.icon_notcorrect}
-                            className=" w-4 h-4 "
-                            alt="icon not correct"
-                          />
-                          <p className="text-xs text-rose-800">
-                            {display.vietnamese}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  ) : null}
+                  <H2
+                    children={converstation.translate.subtitle_vietnamese}
+                    fontsizeprimary="lg:text-2xl md:text-2xl text-xl mt-10 mb-10"
+                  />
+                  {values?.map((display, index) => (
+                    <Fragment key={display.id}>
+                      <Input
+                        onChange={(e) => changeHandler(e, index)}
+                        value={display.user_message}
+                        sentence={display.english}
+                        name="user_message"
+                        disabled={disabledInput}
+                      />
+                      <>
+                        {displayanswer ? (
+                          <div>
+                            {display.user_message === display.vietnamese ? (
+                              <img
+                                src={converstation.translate.icon_correct}
+                                className=" w-4 h-4 "
+                                alt="icon correct"
+                              />
+                            ) : (
+                              <div className="flex justify-start flex-wrap">
+                                <img
+                                  src={converstation.translate.icon_notcorrect}
+                                  className=" w-4 h-4 "
+                                  alt="icon not correct"
+                                />
+                                <p className="text-xs text-rose-800">
+                                  {display.vietnamese}
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                        ) : null}
+                      </>
+                    </Fragment>
+                  ))}
                 </>
-              </Fragment>
-            ))}
-
-            <H2
-              children={converstation.translate.subtitle_english}
-              fontsizeprimary="lg:text-2xl md:text-2xl text-xl mt-10 mb-10"
-            />
-            {valuesVietnamese?.map((display, index) => (
-              <Fragment key={display.id}>
-                <Input
-                  onChange={(e) => changeHandlerVietnamese(e, index)}
-                  value={display.user_message}
-                  sentence={display.vietnamese}
-                  name="user_message"
-                  disabled={disabledInput}
-                />
+              ) : null}
+            </>
+            <>
+              {valuesVietnamese?.length !== 0 ? (
                 <>
-                  {displayanswer ? (
-                    <div>
-                      {display.user_message === display.english ? (
-                        <img
-                          src={converstation.translate.icon_correct}
-                          className="md:w-4 w-4 h-4  "
-                          alt="icon correct"
-                        />
-                      ) : (
-                        <div className="flex justify-start flex-wrap">
-                          <img
-                            src={converstation.translate.icon_notcorrect}
-                            className=" w-4 h-4 "
-                            alt="icon not correct"
-                          />
-                          <p className="text-xs text-rose-800">
-                            {display.english}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  ) : null}
+                  <H2
+                    children={converstation.translate.subtitle_english}
+                    fontsizeprimary="lg:text-2xl md:text-2xl text-xl mt-10 mb-10"
+                  />
+                  {valuesVietnamese?.map((display, index) => (
+                    <Fragment key={display.id}>
+                      <Input
+                        onChange={(e) => changeHandlerVietnamese(e, index)}
+                        value={display.user_message}
+                        sentence={display.vietnamese}
+                        name="user_message"
+                        disabled={disabledInput}
+                      />
+                      <>
+                        {displayanswer ? (
+                          <div>
+                            {display.user_message === display.english ? (
+                              <img
+                                src={converstation.translate.icon_correct}
+                                className="md:w-4 w-4 h-4  "
+                                alt="icon correct"
+                              />
+                            ) : (
+                              <div className="flex justify-start flex-wrap">
+                                <img
+                                  src={converstation.translate.icon_notcorrect}
+                                  className=" w-4 h-4 "
+                                  alt="icon not correct"
+                                />
+                                <p className="text-xs text-rose-800">
+                                  {display.english}
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                        ) : null}
+                      </>
+                    </Fragment>
+                  ))}
                 </>
-              </Fragment>
-            ))}
+              ) : null}
+            </>
           </div>
         </BodyPractice>
       ) : (
