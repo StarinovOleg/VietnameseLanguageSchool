@@ -50,9 +50,6 @@ function TranslateIndex() {
           <ButtonTraining
             onClick={check}
             children="CHECK WORDS"
-            btndisabledclass={`${
-              loading ? "cursor-no-drop border-stone-500 text-stone-500 " : null
-            } `}
             disabled={loading}
           />
           <div className="text-4xl my-4 p-10 text-left">
