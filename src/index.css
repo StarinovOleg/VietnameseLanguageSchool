@@ -21,13 +21,14 @@ body {
     @apply text-left;
 }
 .h2-font-size-secondary {
-    @apply text-xl
+    @apply text-[1.25rem]
 }
 .align-right-side{
     @apply md:right-0 sm:right-auto
 }
 .h2-font-size-primary {
-    @apply text-3xl
+    @apply text-[1.875rem];
+    
 }
 @font-face {
     font-family: 'Mochiy';
