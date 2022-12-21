@@ -120,7 +120,14 @@ import {trans_4_2,} from "../dictionary/unit-4/translated_4";
 import {trans_5_1,trans_5_2,} from "../dictionary/unit-5/translated_5";
 import {trans_6_1,trans_6_2,} from "../dictionary/unit-6/translated_6";
 import {trans_7_2,} from "../dictionary/unit-7/translated_7";
-
+import {trans_8_1,trans_8_2,} from "../dictionary/unit-8/translated_8";
+import {trans_9_1,trans_9_2,} from "../dictionary/unit-9/translated_9";
+import {trans_10_1,trans_10_2,} from "../dictionary/unit-10/translated_10";
+import {trans_11_1,trans_11_2,} from "../dictionary/unit-11/translated_11";
+import {trans_12_2,} from "../dictionary/unit-12/translated_12";
+import {trans_13_1,trans_13_2,} from "../dictionary/unit-13/translated_13";
+import {trans_14_1,trans_14_2,} from "../dictionary/unit-14/translated_14";
+import {trans_15_1,trans_15_2,} from "../dictionary/unit-15/translated_15";
 export const converstation={
     promo:{
         'title':'Let’s make learning <span style="color: rgb(63 98 18)" > Vietnamese language </span><span style="color:#ba4e4a" class="span_promo">fun</span> and <span style="color:#ba4e4a" class="span_promo">accessible</span>!',
@@ -522,6 +529,54 @@ export const converstation={
         'title':'When were you born?',
         'array_data':'',
         'array_data_vietnamese':trans_7_2
+      },
+      {
+        'id':8,
+        'title':'Do you like food?',
+        'array_data':trans_8_1,
+        'array_data_vietnamese':trans_8_2
+      },      
+      {
+        'id':9,
+        'title':'Weather today',
+        'array_data':trans_9_1,
+        'array_data_vietnamese':trans_9_2
+      },      
+      {
+        'id':10,
+        'title':'What is Vietnam like?',
+        'array_data':trans_10_1,
+        'array_data_vietnamese':trans_10_2
+      },      
+      {
+        'id':11,
+        'title':'Winter in Dalat and Hanoi',
+        'array_data':trans_11_1,
+        'array_data_vietnamese':trans_11_2
+      },      
+      {
+        'id':12,
+        'title':'You live in Vietnam',
+        'array_data':'',
+        'array_data_vietnamese':trans_12_2
+      },      
+      {
+        'id':13,
+        'title':'Get to Hoan Kiem',
+        'array_data':trans_13_1,
+        'array_data_vietnamese':trans_13_2
+      },      
+      {
+        'id':14,
+        'title':'You can sit here',
+        'array_data':trans_14_1,
+        'array_data_vietnamese':trans_14_2
+      },      
+      {
+        'id':15,
+        'title':'You study vietnamese',
+        'array_data':trans_15_1,
+        'array_data_vietnamese':trans_15_2
       },
     ]
     },
