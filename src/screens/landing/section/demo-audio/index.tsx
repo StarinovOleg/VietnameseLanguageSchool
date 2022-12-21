@@ -18,7 +18,7 @@ const DemoAudio = (props: { id?: string }) => {
 
   return (
     <Section>
-      <div className="text-center" id={props.id}>
+      <div className="text-center pt-20" id={props.id}>
         <H2
           children={converstation.demo_audio.title}
           fontsizeprimary="lg:h2-font-size-primary sm:h2-font-size-secondary"
@@ -26,7 +26,7 @@ const DemoAudio = (props: { id?: string }) => {
         />
         <H2
           children={converstation.demo_audio.subtitle}
-          fontsizeprimary="lg:leading-[10rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
+          fontsizeprimary="leading-[3rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
           fontcolorsecondary="text-lime-800"
           fontfamilysecondary="font-['KGLifeisMessy']"
         />

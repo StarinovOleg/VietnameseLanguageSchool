@@ -49,65 +49,63 @@ const DemoTest = (props: { id?: string }) => {
         />
         <H2
           children={converstation.demo_test.subtitle}
-          fontsizeprimary="lg:leading-[10rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
+          fontsizeprimary="lg:leading-[3rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
           fontcolorsecondary="text-sky-800"
           fontfamilysecondary="font-['KGLifeisMessy']"
         />
       </div>
-      <div className="bg-[#fdfdef]">
-        <div className="text-center p-4 xl mx-4 ">
-          <div className="bg-white border-solid rounded-xl ">
-            {context.countTestTotal !== 10 ? (
-              <>
-                {random_words.slice(step - 1, step).map((display, index) => (
-                  <Fragment key={index}>
-                    <H1 children={display.vietnamese} key={index} />
-                    <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
-                      <CorrectAnswer children={context.countTestPositive} />
-                      <NotCorrectAnswer children={context.countTestNegative} />
-                    </div>
-                    <>
-                      {shuffle(
-                        random_words
-                          .slice(step - 1, step + 3)
-                          .concat(random_words)
-                          .filter((item, index) => index < 4)
-                          .map((item, index) => (
-                            <ButtonTraining
-                              key={index}
-                              onClick={() => check(item, display)}
-                              children={item.english}
-                            />
-                          ))
-                      )}
-                    </>
-                  </Fragment>
-                ))}
-              </>
-            ) : (
-              <>
-                <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
-                  <CorrectAnswer children={context.countTestPositive} />
-                  <NotCorrectAnswer children={context.countTestNegative} />
-                </div>
-                <Link
-                  children={converstation.landing.continue}
-                  align="text-center p-10"
-                  secondary_color="text-sky-800"
-                  state={{
-                    title: `${converstation.words.title}`,
-                  }}
-                />
+      <div className="text-center p-4 pt-10 xl mx-4 ">
+        <div className="bg-white border-solid rounded-xl ">
+          {context.countTestTotal !== 10 ? (
+            <>
+              {random_words.slice(step - 1, step).map((display, index) => (
+                <Fragment key={index}>
+                  <H1 children={display.vietnamese} key={index} />
+                  <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
+                    <CorrectAnswer children={context.countTestPositive} />
+                    <NotCorrectAnswer children={context.countTestNegative} />
+                  </div>
+                  <>
+                    {shuffle(
+                      random_words
+                        .slice(step - 1, step + 3)
+                        .concat(random_words)
+                        .filter((item, index) => index < 4)
+                        .map((item, index) => (
+                          <ButtonTraining
+                            key={index}
+                            onClick={() => check(item, display)}
+                            children={item.english}
+                          />
+                        ))
+                    )}
+                  </>
+                </Fragment>
+              ))}
+            </>
+          ) : (
+            <>
+              <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
+                <CorrectAnswer children={context.countTestPositive} />
+                <NotCorrectAnswer children={context.countTestNegative} />
+              </div>
+              <Link
+                children={converstation.landing.continue}
+                align="text-center p-10"
+                secondary_color="text-sky-800"
+                state={{
+                  title: `${converstation.words.title}`,
+                }}
+              />
 
-                <div
-                  onClick={refreshPage}
-                  className=" inline-block cursor-pointer border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy'] "
-                >
-                  repeat
-                </div>
-              </>
-            )}
-          </div>
+              <div
+                onClick={refreshPage}
+                className=" inline-block cursor-pointer border-2 border-sky-500 hover:border-sky-800 rounded-lg m-5 p-2 text-xl text-sky-500  hover:text-sky-800 font-['KGLifeisMessy'] "
+              >
+                repeat
+              </div>
+            </>
+          )}
         </div>
       </div>
     </Section>
