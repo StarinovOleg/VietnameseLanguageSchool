@@ -28,8 +28,11 @@ function About() {
         <div className="">
           {static_data_list}
           <div className="md:flex">
+            
             <div className="md:mt-auto md:mb-auto ">
+
               <NavLink
+
                  to="https://play.google.com/store/apps/details?id=com.language_shool_app"
                  <img
                   src={converstation.about.googlestore}
