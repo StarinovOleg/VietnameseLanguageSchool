@@ -1,6 +1,7 @@
 import React from "react";
 import { converstation } from "../../../store/static";
 import Section from "../../main/section/Section";
+import { NavLink } from "react-router-dom";
 
 const static_data_list = converstation.about.about.map(
   (item: { title: string; body: string; id: number; img: string }) => (
