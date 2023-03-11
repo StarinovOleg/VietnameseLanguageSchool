@@ -29,18 +29,14 @@ function About() {
           {static_data_list}
           <div className="md:flex">
             <div className="md:mt-auto md:mb-auto ">
-              <img
-                src={converstation.about.appstore}
-                className="w-64 p-10"
-                alt="button appstore"
-              />
-            </div>
-            <div className="md:mt-auto md:mb-auto ">
-              <img
-                src={converstation.about.googlestore}
-                className="w-64 p-4"
-                alt="button googlestore"
-              />
+              <NavLink
+                 to="https://play.google.com/store/apps/details?id=com.language_shool_app"
+                 <img
+                  src={converstation.about.googlestore}
+                  className="w-64 p-4"
+                  alt="button googlestore"
+                />
+              </NavLink>
             </div>
           </div>
         </div>
