@@ -30,7 +30,9 @@ function About() {
           <div className="md:flex">
             
             <div className="md:mt-auto md:mb-auto ">
-               <NavLink
+
+              <NavLink
+
                  to="https://play.google.com/store/apps/details?id=com.language_shool_app"
                  <img
                   src={converstation.about.googlestore}
