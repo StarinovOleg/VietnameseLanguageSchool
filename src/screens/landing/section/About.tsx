@@ -31,15 +31,12 @@ function About() {
           <div className="md:flex">
             
             <div className="md:mt-auto md:mb-auto ">
-
-              <NavLink
-                 to={{pathname: "https://play.google.com/store/apps/details?id=com.language_shool_app"}}>
-                 <img
+              <a href="https://play.google.com/store/apps/details?id=com.language_shool_app"><img
                   src={converstation.about.googlestore}
                   className="w-64 p-4"
                   alt="button googlestore"
                 />
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>
