@@ -1,6 +1,6 @@
 import React from "react";
 
-function PrivacyPolice() {
+function PrivacyPolicy() {
   return (
    
       <div className="text-white text-xl flex gap-6 flex-wrap">
@@ -10,4 +10,4 @@ function PrivacyPolice() {
   );
 }
 
-export default PrivacyPolice;
+export default PrivacyPolicy;
