@@ -636,8 +636,8 @@ export const converstation={
       'subtitle':'words'
     },
     footer:{
-      'company_name':'©Vietnamese for foreigner',
-      'web_app_name':'VinLingua(Vietnamese lingua) - Vietnamese Language school for foreigner'
+      'company_name':'©VinLingua(Vietnamese lingua) ',
+      'web_app_name':'Vietnamese Language school for foreigner'
     },
     header:{
       'words_training':'words',
