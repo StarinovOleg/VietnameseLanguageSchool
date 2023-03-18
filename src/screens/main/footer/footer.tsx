@@ -10,7 +10,7 @@ function Footer() {
         {converstation.footer.company_name} {new Date().getFullYear()}{" "}
         {converstation.footer.web_app_name}
         </div>
-        <NavLink to="#" onClick={() => ScrollToTop}>
+        <NavLink to="/privacy_policy" onClick={() => ScrollToTop}>
             Privacy Policy
         </NavLink>
       </div>
