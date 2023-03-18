@@ -12,6 +12,7 @@ const TranslateIndex = lazy(() => import("./screens/translate/index"));
 const Error = lazy(() => import("./screens/main/error/Error"));
 const EndScreen = lazy(() => import("./screens/end-screen/EndScreen"));
 const ListLessons = lazy(() => import("./screens/all-lesson"));
+const PrivacyPolicy = lazy(() => import("./screens/PrivacyPolicy"));
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
               <Route path="/audio" element={<AudioIndex />} />
               <Route path="/translated" element={<TranslateIndex />} />
               <Route path="/endtest" element={<EndScreen />} />
+              <Route path="/privacy_policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<Error />} />
             </Route>
           </Routes>
