@@ -1,12 +1,11 @@
 import React from "react";
-import H1 from "../../../ui-library/H1";
-import P from "../../../ui-library/P";
+
 function PrivacyPolicy() {
   return (
    
       <div className="text-white text-xl">
-        <H1 children="Privacy-Police" />
-        <P children="Privacy Policy"/>
+        <h1>Privacy Policy</h1?
+          <p className="text-xl font-semibold">Privacy Policy</p>
           <p>Jack Bean Software built the Tu Lingua app as a Free app. This SERVICE is provided by Jack Bean Software at no cost and is intended for use as is.</p>
           <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
           <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
@@ -15,21 +14,29 @@ function PrivacyPolicy() {
       <p></p> 
       <p></p> 
       <p></p>
-        <P children="Log Data"/>
+        
+      <p className="text-xl font-semibold">Log Data</p>
       <p></p>
-        <P children="Cookies"/>
+       
+      <p className="text-xl font-semibold">Cookies</p>
       <p></p>
-        <P children="Service Providers"/>
+        
+      <p className="text-xl font-semibold">Service Providers</p>
       <p></p>
-        <P children="Security"/>
+        
+      <p className="text-xl font-semibold">Security</p>
       <p></p>
-        <P children="Links to Other Sites"/>
+      
+      <p className="text-xl font-semibold">Links to Other Sites</p>
       <p></p>
-        <P children="Children’s Privacy"/>
+       
+      <p className="text-xl font-semibold">Children’s Privacy</p>
       <p></p>
-        <P children="Changes to This Privacy Policy"/>
+        
+      <p className="text-xl font-semibold">Changes to This Privacy Policy</p>
       <p></p>
-        <P children="Contact Us"/>
+        
+      <p className="text-xl font-semibold">Contact Us</p>
       <p></p>
       </div>
     
