@@ -636,7 +636,7 @@ export const converstation={
       'subtitle':'words'
     },
     footer:{
-      'company_name':'© Starinov Production',
+      'company_name':'©Vietnamese for foreigner',
       'web_app_name':'VinLingua(Vietnamese lingua) - Vietnamese Language school for foreigner'
     },
     header:{
