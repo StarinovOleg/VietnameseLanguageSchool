@@ -3,7 +3,7 @@ import React from "react";
 function PrivacyPolicy() {
   return (
    
-      <div className="text-white text-xl">
+      <div className="text-white text-xl text-black">
       <h1>Privacy Policy</h1>
           <p className="text-xl font-semibold">Privacy Policy</p>
           <p>Jack Bean Software built the Tu Lingua app as a Free app. This SERVICE is provided by Jack Bean Software at no cost and is intended for use as is.</p>
