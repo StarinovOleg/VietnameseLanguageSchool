@@ -15,7 +15,7 @@ function PrivacyPolicy() {
           <p className="pt-10">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to I do not collect data. The information that we request will be retained by us and used as described in this privacy policy.</p> 
           <p className="pt-10">The app does use third-party services that may collect information used to identify you.</p> 
           <p className="pt-10">Link to the privacy policy of third-party service providers used by the app</p>
-          <a href="https://www.google.com/policies/privacy/" className="text-sky-500 text-2xl pt-10">* Google Play Services</a>
+          <a href="https://policies.google.com/privacy" className="text-sky-500 text-2xl pt-10">* Google Play Services</a>
         
       <p className="text-xl font-semibold pt-20">Log Data</p>
       <p className="pt-10">We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
@@ -49,7 +49,7 @@ function PrivacyPolicy() {
       
       <p className="text-xl font-semibold pt-20">Contact Us</p>
       <p className="pt-10">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at </p>
-      <a href="jackbeancode@gmail.com" className="text-sky-500 pt-20">jackbeancode@gmail.com</a>
+      <a href="mailto:jackbeancode@gmail.com" className="text-sky-500 pt-20">jackbeancode@gmail.com</a>
       </div>
     
   );
