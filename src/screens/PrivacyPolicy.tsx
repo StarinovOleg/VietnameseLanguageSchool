@@ -4,7 +4,7 @@ function PrivacyPolicy() {
   return (
    
       <div className="text-white text-xl">
-        <h1>Privacy Policy</h1?
+      <h1>Privacy Policy</h1>
           <p className="text-xl font-semibold">Privacy Policy</p>
           <p>Jack Bean Software built the Tu Lingua app as a Free app. This SERVICE is provided by Jack Bean Software at no cost and is intended for use as is.</p>
           <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
