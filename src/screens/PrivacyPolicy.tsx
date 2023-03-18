@@ -3,7 +3,7 @@ import React from "react";
 function PrivacyPolicy() {
   return (
    
-      <div className="text-white text-xl text-black">
+      <div className="text-xl">
       <h1>Privacy Policy</h1>
           <p className="text-xl font-semibold">Privacy Policy</p>
           <p>Jack Bean Software built the Tu Lingua app as a Free app. This SERVICE is provided by Jack Bean Software at no cost and is intended for use as is.</p>
@@ -18,7 +18,7 @@ function PrivacyPolicy() {
           <a href="https://www.google.com/policies/privacy/">* Google Play Services</a>
         
       <p className="text-xl font-semibold">Log Data</p>
-      <p></p>
+      <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
        
       <p className="text-xl font-semibold">Cookies</p>
       <p></p>
