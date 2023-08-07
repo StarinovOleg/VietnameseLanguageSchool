@@ -142,7 +142,7 @@ export const converstation={
         src:listening,
         title:"Listen",
         text: "Practice pronunciation by listening to dialogues and texts",
-        color:'text-yellow-500'
+        color:"text-lime-500"
       },{
         id:2,
         src:practice,
@@ -152,9 +152,9 @@ export const converstation={
       },{
         id:3,
         src:grammar,
-        title:"Understand",
+        title:"Grammar",
         text: "Learn about grammar and doing grammar exercises",
-        color:'text-[#B018C8]'
+        color:'text-rose-500'
       }],
     words:{
         'title':'Chose group words for training',

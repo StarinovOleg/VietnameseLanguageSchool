@@ -2,7 +2,6 @@ import React from "react";
 import H2 from "../../../../ui-library/H2";
 import { converstation } from "../../../../store/static";
 import CardDemoAudio from "./CardDemoAudio";
-import AudioAnimation from "./AudioAnimation";
 import Link from "../../../../ui-library/Link";
 import Section from "../../../main/section/Section";
 
@@ -31,7 +30,6 @@ const DemoAudio = (props: { id?: string }) => {
           fontfamilysecondary="font-['KGLifeisMessy']"
         />
 
-        <AudioAnimation />
         <div className="flex flex-wrap justify-center">{cardItem}</div>
 
         <Link

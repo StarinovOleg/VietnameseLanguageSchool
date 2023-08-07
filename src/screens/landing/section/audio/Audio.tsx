@@ -10,7 +10,7 @@ const children_header = (
   <img
     src={converstation.audio.section_img}
     alt="icon support"
-    className="w-12 h-12 ml-4 mr-4 mt-4 mb-4"
+    className="w-6 h-6 ml-4 mr-4  mt-[65%] mb-4"
   />
 );
 function Audio(props: { id?: string }) {
