@@ -60,6 +60,7 @@ import appstore from '../assets/app-store-badge.png';
 import googlestore from '../assets/google-play-badge.png';
 import img_error from '../assets/error/error.png';
 import end_screen from '../assets/end-screen/end-screen.png';
+import promo_method from '../assets/promo-method/promo_method.png';
 
 /**SOUND FOR AUDIO TEST LANDING PAGE */
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
@@ -605,7 +606,6 @@ export const converstation={
       'text_translate':window_translate_gif
     },
     demo_audio:{
-      'title':'Listen and learn your ',
       'subtitle':'Letter Sounds',
       'audio_animation_note1':audio_animation_note1,
       'audio_animation_note2':audio_animation_note2,
@@ -630,6 +630,11 @@ export const converstation={
           audio:b4
       }
   ]
+    },
+    promo_method:{
+      title:'Enjoy learning',
+      text:"To learn the Vietnamese language, original modern texts and dialogues, sound recordings are used, and in the mobile application a mixture of the original text and translation",
+      img:promo_method
     },
     demo_test:{
       'title':'Practice and memorise your',

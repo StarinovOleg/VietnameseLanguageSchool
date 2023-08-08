@@ -8,11 +8,13 @@ import Baner from "./section/Baner";
 import Translate from "./section/translate/Translate";
 import DemoAudio from "./section/demo-audio";
 import DemoTest from "./section/demo-test";
+import PromoMethod from "./section/PromoMethod";
 function Landing() {
   return (
     <>
       <Promo />
       <Baner />
+      <PromoMethod />
       <DemoAudio id="demo_audio" />
       <Method />
       <Words id="words" />
