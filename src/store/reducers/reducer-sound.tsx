@@ -10,7 +10,8 @@ export const reducerSound = (
 ) => {
   switch (action.type) {
     case SOUND_NEGATIVE:
-      return { sound: sound(converstation.words_sounds.negative) };
+      //return { sound: sound(converstation.words_sounds.negative) };
+      return { sound: "" };
     case SOUND_POSITIVE:
       return { sound: sound(converstation.words_sounds.positive) };
     case RESET:

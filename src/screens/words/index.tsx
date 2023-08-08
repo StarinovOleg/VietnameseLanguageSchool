@@ -26,23 +26,27 @@ function WordsIndex() {
   const state = location.state as location;
   const context = useContext(SchoolContext);
   const arr = useDisplayWords(state);
-
+  const [disabled, setDisabled] = useState(false);
+  const [checkWord, setCheckWord] = useState(false);
   //checking answer
   const check = (
     item: { [key: string]: string },
     display: { [key: string]: string }
   ) => {
-    setStep(step + 1);
     context.timerDecrement();
-    console.log(step);
-    console.log(item.vietnamese);
-    console.log(display.vietnamese);
+    context.incrementTotal();
     if (item.vietnamese === display.vietnamese) {
       context.incrementPositive();
-      context.incrementTotal();
+      setStep(step + 1);
     } else {
       context.incrementNegative();
-      context.incrementTotal();
+      setCheckWord(!checkWord);
+      setDisabled(true);
+      setTimeout(() => {
+        setStep(step + 1);
+        setDisabled(false);
+        setCheckWord(checkWord);
+      }, 1000);
     }
   };
 
@@ -64,6 +68,7 @@ function WordsIndex() {
               <Fragment key={display.id}>
                 <DisplayWordBlock
                   word={display.vietnamese}
+                  wordCheck={checkWord ? display.english : null}
                   key={index}
                   picture={display.picture}
                   example={display.example}
@@ -89,6 +94,7 @@ function WordsIndex() {
                           key={index}
                           onClick={() => check(item, display)}
                           children={item.english}
+                          disabled={disabled}
                         />
                       ))
                   )}
