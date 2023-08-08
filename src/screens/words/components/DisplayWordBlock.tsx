@@ -4,12 +4,16 @@ import ButtonSound from "../../../ui-library/buttons/ButtonSound";
 function DisplayWordBlock(props: {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   word?: string;
+  wordCheck: string;
   picture?: string;
   example?: string;
 }) {
   return (
     <>
       <div className="leading-[3rem] text-4xl">{props.word}</div>
+      <div className="leading-[3rem] text-2xl text-rose-800">
+        {props.wordCheck}
+      </div>
       <div className="inline-block pt-10 hidden lg:block md:block">
         <img
           src={props.picture}
