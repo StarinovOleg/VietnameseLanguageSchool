@@ -9,6 +9,7 @@ import Translate from "./section/translate/Translate";
 import DemoAudio from "./section/demo-audio";
 import DemoTest from "./section/demo-test";
 import PromoMethod from "./section/PromoMethod";
+import Dictionary from "./section/Dictionary";
 function Landing() {
   return (
     <>
@@ -16,6 +17,7 @@ function Landing() {
       <Baner />
       <PromoMethod />
       <DemoAudio id="demo_audio" />
+      <Dictionary />
       <Method />
       <Words id="words" />
       <Audio id="audio" />

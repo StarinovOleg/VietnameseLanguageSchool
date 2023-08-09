@@ -61,6 +61,7 @@ import googlestore from '../assets/google-play-badge.png';
 import img_error from '../assets/error/error.png';
 import end_screen from '../assets/end-screen/end-screen.png';
 import promo_method from '../assets/promo-method/promo_method.png';
+import dictionary from '../assets/dictionary/dictionary.png';
 
 /**SOUND FOR AUDIO TEST LANDING PAGE */
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
@@ -471,6 +472,11 @@ export const converstation={
           }
         ]
         
+    },
+    dictionary:{
+        'title':'Course Dictionary', 
+        'words_count':'The Course Dictionary includes ',
+        'img':dictionary 
     },
     method:{
         'img':icon_foot,
