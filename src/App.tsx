@@ -5,6 +5,7 @@ import Home from "./screens/main/home";
 import Landing from "./screens/landing";
 import GlobalState from "./store/Globalstate";
 import ScrollToTop from "./services/scroll-top.service";
+import DictionaryIndex from "./screens/dictionary";
 
 const WordsIndex = lazy(() => import("./screens/words/index"));
 const AudioIndex = lazy(() => import("./screens/audio/index"));
@@ -27,6 +28,7 @@ function App() {
               <Route path="/words" element={<WordsIndex />} />
               <Route path="/listlessons" element={<ListLessons />} />
               <Route path="/audio" element={<AudioIndex />} />
+              <Route path="/dictionary" element={<DictionaryIndex />} />
               <Route path="/translated" element={<TranslateIndex />} />
               <Route path="/endtest" element={<EndScreen />} />
               <Route path="/privacy_policy" element={<PrivacyPolicy />} />
