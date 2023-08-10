@@ -62,6 +62,7 @@ import img_error from '../assets/error/error.png';
 import end_screen from '../assets/end-screen/end-screen.png';
 import promo_method from '../assets/promo-method/promo_method.png';
 import dictionary from '../assets/dictionary/dictionary.png';
+import mobile_advise from '../assets/mobile-advise/mobile_advise.png';
 
 /**SOUND FOR AUDIO TEST LANDING PAGE */
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
@@ -489,6 +490,17 @@ export const converstation={
         },
 
     },
+    mobile_advise:{
+      'img':mobile_advise,
+      'group1':{
+      'title':'Mobile application:',
+      'item':[{text:'Regular updates of training modules, vocabulary and training'},
+              {text:'Don not need internet connection to use'},
+              {text:'Absolutely free to use'},
+            ]
+      },
+
+  },
     translate:{
       'title':'Chose translate these sentences',
       'section_img':support_translate,
