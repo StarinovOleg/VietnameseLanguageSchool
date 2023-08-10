@@ -10,6 +10,7 @@ import DemoAudio from "./section/demo-audio";
 import DemoTest from "./section/demo-test";
 import PromoMethod from "./section/PromoMethod";
 import Dictionary from "./section/Dictionary";
+import MobileAdvise from "./section/MobileAdvise";
 function Landing() {
   return (
     <>
@@ -23,6 +24,7 @@ function Landing() {
       <Audio id="audio" />
       <Translate id="translate" />
       <DemoTest id="demo_test" />
+      <MobileAdvise />
       <About />
     </>
   );
