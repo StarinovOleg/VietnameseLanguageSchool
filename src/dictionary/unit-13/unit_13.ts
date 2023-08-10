@@ -1,4 +1,3 @@
-import about from "../../../src/assets/sounds/lesson13/about.mp3"
 import advice from "../../../src/assets/sounds/lesson13/advice.mp3"
 import ask from "../../../src/assets/sounds/lesson13/ask.mp3"
 import can from "../../../src/assets/sounds/lesson13/can.mp3"
@@ -19,7 +18,6 @@ import turn_left from "../../../src/assets/sounds/lesson13/turn_left.mp3"
 import turn_right from "../../../src/assets/sounds/lesson13/turn_right.mp3"
 import way from "../../../src/assets/sounds/lesson13/way.mp3"
 
-import about_pic from "../../../src/assets/lesson13/about_pic.png"
 import advice_pic from "../../../src/assets/lesson13/advice_pic.png"
 import ask_pic from "../../../src/assets/lesson13/ask_pic.png"
 import can_pic from "../../../src/assets/lesson13/can_pic.png"
@@ -45,7 +43,7 @@ export const unit_13=[
     {id: 1, english: "Go straight", vietnamese: "Đi thẳng", example:"Đi thẳng", audio:go_straight, picture:go_straight_pic},
     {id: 2, english: "Turn right", vietnamese: "Rẽ/ phải", example:"Rẽ/ phải", audio:turn_right, picture:turn_right_pic},
     {id: 3, english: "Turn left", vietnamese: "Rẽ /trái", example:"Rẽ /trái", audio:turn_left, picture:turn_left_pic},
-    {id: 4, english: "About", vietnamese: "Khoảng", example:"Khoảng", audio:about, picture:about_pic},
+    {id: 4, english: "Difficult math", vietnamese: "Bài toán khó", example:"Bài toán khó", audio:difficult, picture:difficult_pic},
     {id: 5, english: "Way", vietnamese: "Đường / cách", example:"Đúng cách", audio:way, picture:way_pic},
     {id: 6, english: "Little ", vietnamese: "Một chút", example:"Một chút", audio:little, picture:little_pic},
     {id: 7, english: "Ask", vietnamese: "Hỏi", example:"Tự hỏi bản thân minh", audio:ask, picture:ask_pic},
@@ -60,5 +58,4 @@ export const unit_13=[
     {id: 16, english: "First", vietnamese: "Trước", example:"Trước", audio:first, picture:first_pic},
     {id: 17, english: "Really", vietnamese: "Vậy sao /thật à", excample:"Thật buồn cười", audio:really, picture:really_pic},
     {id: 18, english: "Suggest", vietnamese: "Gợi ý", example:"Gợi ý", audio:suggest, picture:suggest_pic},
-    {id: 19, english: "Difficult math", vietnamese: "Bài toán khó", example:"Bài toán khó", audio:difficult, picture:difficult_pic},
 ]

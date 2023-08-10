@@ -3,7 +3,6 @@ import apple from "../../../src/assets/sounds/lesson11/apple.mp3"
 import arrange from "../../../src/assets/sounds/lesson11/arrange.mp3"
 import belly from "../../../src/assets/sounds/lesson11/belly.mp3"
 import bring from "../../../src/assets/sounds/lesson11/bring.mp3"
-import buy from "../../../src/assets/sounds/lesson11/buy.mp3"
 import churish from "../../../src/assets/sounds/lesson11/churish.mp3"
 import clatter from "../../../src/assets/sounds/lesson11/clatter.mp3"
 import coddle from "../../../src/assets/sounds/lesson11/coddle.mp3"
@@ -47,7 +46,6 @@ import reiterate from "../../../src/assets/sounds/lesson11/reiterate.mp3"
 import repent from "../../../src/assets/sounds/lesson11/repent.mp3"
 import rude from "../../../src/assets/sounds/lesson11/rude.mp3"
 import scowl from "../../../src/assets/sounds/lesson11/scowl.mp3"
-import should from "../../../src/assets/sounds/lesson11/should.mp3"
 import slowly from "../../../src/assets/sounds/lesson11/slowly.mp3"
 import solicit from "../../../src/assets/sounds/lesson11/solicit.mp3"
 import south_central_region from "../../../src/assets/sounds/lesson11/south_central_region.mp3"
@@ -60,7 +58,6 @@ import telling_tales from "../../../src/assets/sounds/lesson11/telling_tales.mp3
 import thailand from "../../../src/assets/sounds/lesson11/thailand.mp3"
 import this_time from "../../../src/assets/sounds/lesson11/this_time.mp3"
 import toddling from "../../../src/assets/sounds/lesson11/toddling.mp3"
-import twilight from "../../../src/assets/sounds/lesson11/twilight.mp3"
 import uneasy from "../../../src/assets/sounds/lesson11/uneasy.mp3"
 import visit from "../../../src/assets/sounds/lesson11/visit.mp3"
 import warm from "../../../src/assets/sounds/lesson11/warm.mp3"
@@ -72,7 +69,6 @@ import apple_pic from "../../../src/assets/lesson11/apple_pic.png"
 import arrange_pic from "../../../src/assets/lesson11/arrange_pic.png"
 import belly_pic from "../../../src/assets/lesson11/belly_pic.png"
 import bring_pic from "../../../src/assets/lesson11/bring_pic.png"
-import buy_pic from "../../../src/assets/lesson11/buy_pic.png"
 import churish_pic from "../../../src/assets/lesson11/churish_pic.png"
 import clatter_pic from "../../../src/assets//lesson11/clatter_pic.png"
 import coddle_pic from "../../../src/assets/lesson11/coddle_pic.png"
@@ -116,7 +112,6 @@ import reiterate_pic from "../../../src/assets/lesson11/reiterate_pic.png"
 import repent_pic from "../../../src/assets/lesson11/repent_pic.png"
 import rude_pic from "../../../src/assets/lesson11/irritate_pic.png"
 import scowl_pic from "../../../src/assets/lesson11/irritate_pic.png"
-import should_pic from "../../../src/assets/lesson11/should_pic.png"
 import slowly_pic from "../../../src/assets/lesson11/slowly_pic.png"
 import solicit_pic from "../../../src/assets/lesson11/solicit_pic.png"
 import south_central_region_pic from "../../../src/assets/lesson11/compas_pic.png"
@@ -129,7 +124,6 @@ import telling_tales_pic from "../../../src/assets/lesson11/telling_tales_pic.pn
 import thailand_pic from "../../../src/assets/lesson11/thailand_pic.png"
 import this_time_pic from "../../../src/assets/lesson11/this_time_pic.png"
 import toddling_pic from "../../../src/assets/lesson11/toddling_pic.png"
-import twilight_pic from "../../../src/assets/lesson11/twilight_pic.png"
 import uneasy_pic from "../../../src/assets/lesson11/uneasy_pic.png"
 import visit_pic from "../../../src/assets/lesson11/visit_pic.png"
 import warm_pic from "../../../src/assets/lesson11/warmer_pic.png"
@@ -143,7 +137,7 @@ export const unit_11=[
     {id: 3, english: "Almost", vietnamese: "Hầu như", example:"Hầu như", audio:almost, picture:almost_pic},
     {id: 4, english: "More", vietnamese: "Hơn", example:"Hơn bạn", audio:more, picture:more_pic},
     {id: 5, english: "In this time", vietnamese: "Vào thời điểm này", example:"Vào thời điểm này", audio:this_time, picture:this_time_pic},
-    {id: 6, english: "Should", vietnamese: "Nên", example:"Bạn nên", audio:should, picture:should_pic},
+    {id: 6, english: "Reiterate", vietnamese: "Ngờ ngợ", example:"Ngờ ngợ", audio:reiterate, picture:reiterate_pic},
     {id: 7, english: "Enough", vietnamese: "Đủ", example:"Đủ từ bạn", audio:enought, picture:enought_pic},
     {id: 8, english: "Mid-region", vietnamese: "Miền Trung", example:"Miền Trung", audio:mid_region, picture:mid_region_pic},
     {id: 9, english: "Bring", vietnamese: "Mang", example:"Mang cho tôi", audio:bring, picture:bring_pic},
@@ -156,7 +150,7 @@ export const unit_11=[
     {id: 16, english: "Nothern", vietnamese: "Miền Bắc", example:"Miền Bắc", audio:nothern, picture:nothern_pic},
     {id: 17, english: "North central region", vietnamese: "Miền Bắc Trung Bộ", example:"Miền Bắc Trung Bộ", audio:north_central_region, picture:north_central_region_pic},
     {id: 18, english: "South central region", vietnamese: "Nam Trung Bộ", example:"Nam Trung Bộ", audio:south_central_region, picture:south_central_region_pic},
-    {id: 19, english: "Buy", vietnamese: "Mua", example:"Mua sách", audio:buy, picture:buy_pic},
+    {id:19, english: "Churish", vietnamese: "Cắ́t gỏng", example:"Cắ́t gỏng", audio:churish, picture:churish_pic},
     {id: 20, english: "Orange", vietnamese: "Cam", example:"Cam", audio:orange, picture:orange_pic},
     {id: 21, english: "Apple", vietnamese: "Táo", example:"Táo", audio:apple, picture:apple_pic},
     {id: 22, english: "Only", vietnamese: "Chỉ", example:"Chỉ có bạn", audio:only, picture:only_pic},
@@ -166,7 +160,6 @@ export const unit_11=[
     {id: 26, english: "Most", vietnamese: "Nhất", example:"Đẹp nhất", audio:most, picture:most_pic},
     {id: 27, english: "Thailand", vietnamese: "Thái", example:"Tôi yêu Thái", audio:thailand, picture:thailand_pic},
     {id: 28, english: "Glimmering", vietnamese: "Anh ánh", example:"Anh ánh", audio:glimmering, picture:glimmering_pic},
-
     {id: 29, english: "Impetuous", vietnamese: "Ào ào", example:"Ào ào", audio:impetuous, picture:impetuous_pic},
     {id: 30, english: "Uneasy", vietnamese: "Áy náy", example:"Áy náy", audio:uneasy, picture:uneasy_pic},
     {id: 31, english: "Repent", vietnamese: "Ăn năn", example:"Ăn năn", audio:repent, picture:repent_pic},
@@ -186,7 +179,7 @@ export const unit_11=[
     {id: 45, english: "Irritate", vietnamese: "Cau nhàu", example:"bạn chọc tức tôi", audio:irritate, picture:irritate_pic},
     {id: 46, english: "Clatter", vietnamese: "Cầm cập", example:"Cầm cập", audio:clatter, picture:clatter_pic},
     {id: 47, english: "Grumble", vietnamese: "Cằn nhằn", example:"Cằn nhằn bố", audio:grumble, picture:grumble_pic},
-    {id: 48, english: "Twilight", vietnamese: "Ấm hơn", example:"Ấm hơn", audio:twilight, picture:twilight_pic},
+    {id: 48, english: "Easy going", vietnamese: "Cần gũì", example:"Cần gũì", audio:easy_going, picture:easy_going_pic},
     {id: 49, english: "Sure", vietnamese: "Chắc chắn", example:"Tôi chắc chắn", audio:sure, picture:sure_pic},
     {id: 50, english: "Suffuse", vietnamese: "Chan chứa", example:"Chan chứa", audio:suffuse, picture:suffuse_pic},
     {id: 51, english: "Solicit", vietnamese: "Chạy chọt", eample:"Chạy chọt", audio:solicit, picture:solicit_pic},
@@ -203,7 +196,4 @@ export const unit_11=[
     {id: 62, english: "Interminable", vietnamese: "Dằng dặc", example:"Dằng dặc", audio:interminable, picture:interminable_pic},
     {id: 63, english: "Pleasant", vietnamese: "Êm dềm", example:"Êm dềm", audio:pleasant, picture:pleasant_pic},
     {id: 64, english: "Persistent", vietnamese: "Gan góc", example:"Gan góc", audio:persistent, picture:persistent_pic},
-    {id: 65, english: "Reiterate", vietnamese: "Ngờ ngợ", example:"Ngờ ngợ", audio:reiterate, picture:reiterate_pic},
-    {id: 66, english: "Churish", vietnamese: "Cắ́t gỏng", example:"Cắ́t gỏng", audio:churish, picture:churish_pic},
-    {id: 67, english: "Easy going", vietnamese: "Cần gũì", example:"Cần gũì", audio:easy_going, picture:easy_going_pic},
 ]

@@ -8,7 +8,6 @@ import culture from "../../../src/assets/sounds/lesson15/culture.mp3"
 import directly from "../../../src/assets/sounds/lesson15/directly.mp3"
 import discover from "../../../src/assets/sounds/lesson15/discover.mp3"
 import english_america from "../../../src/assets/sounds/lesson15/english_america.mp3"
-import exciting from "../../../src/assets/sounds/lesson15/exciting.mp3"
 import family from "../../../src/assets/sounds/lesson15/family.mp3"
 import feel from "../../../src/assets/sounds/lesson15/feel.mp3"
 import firework from "../../../src/assets/sounds/lesson15/firework.mp3"
@@ -43,7 +42,6 @@ import culture_pic from "../../../src/assets/lesson15/culture_pic.png"
 import directly_pic from "../../../src/assets/lesson15/directly_pic.png"
 import discover_pic from "../../../src/assets/lesson15/discover_pic.png"
 import english_america_pic from "../../../src/assets/lesson15/english_america_pic.png"
-import exciting_pic from "../../../src/assets/lesson15/exciting_pic.png"
 import family_pic from "../../../src/assets/lesson15/family_pic.png"
 import feel_pic from "../../../src/assets/lesson15/feel_pic.png"
 import firework_pic from "../../../src/assets/lesson15/firework_pic.png"
@@ -100,7 +98,6 @@ export const unit_15=[
     {id: 28, english: "The moment", vietnamese: "Khoảnh khac", example:"Khoảnh khắc thật tuyệt", audio:moment, picture:moment_pic},
     {id: 29, english: "Spirit", vietnamese: "Thiêng liêng", example:"Thiêng liêng", audio:spirit, picture:spirit_pic},
     {id: 30, english: "Firework", vietnamese: "Pháo hoà", example:"Pháo hoa đẹp", audio:firework, picture:firework_pic},
-    {id: 31, english: "Exciting", vietnamese: "Thú vị", example:"Tôi thú vị", audio:exciting, picture:exciting_pic},
+    {id: 31, english: "Branch", vietnamese: "Thậ", example:"Git thậ", audio:branch, picture:branch_pic},   
     {id: 32, english: "State", vietnamese: "Bang", example:"Bang", audio:state, picture:state_pic},
-    {id: 33, english: "Branch", vietnamese: " Thậ", example:"Git thậ", audio:branch, picture:branch_pic},
 ]
