@@ -21,7 +21,6 @@ import real_feelings from "../../../src/assets/sounds/lesson10/real_feelings.mp3
 import should from "../../../src/assets/sounds/lesson10/should.mp3"
 import socialist from "../../../src/assets/sounds/lesson10/socialist.mp3"
 import something_about from "../../../src/assets/sounds/lesson10/something_about.mp3"
-import some_regions from "../../../src/assets/sounds/lesson10/some_regions.mp3"
 import stuffy from "../../../src/assets/sounds/lesson10/stuffy.mp3"
 import that_idea from "../../../src/assets/sounds/lesson10/that_idea.mp3"
 import that_is_right from "../../../src/assets/sounds/lesson10/that_is_right.mp3"
@@ -54,7 +53,6 @@ import real_feelings_pic from "../../../src/assets/lesson10/real_feelings_pic.pn
 import should_pic from "../../../src/assets/lesson10/should_pic.png"
 import socialist_pic from "../../../src/assets/lesson10/socialist_pic.png"
 import something_about_pic from "../../../src/assets/lesson10/that_idea_pic.png"
-import some_regions_pic from "../../../src/assets/lesson10/some_regions_pic.png"
 import stuffy_pic from "../../../src/assets/lesson10/stuffy_pic.png"
 import that_idea_pic from "../../../src/assets/lesson10/that_idea_pic.png"
 import that_is_right_pic from "../../../src/assets/lesson10/that_is_right_pic.png"
@@ -70,7 +68,7 @@ export const unit_10=[
     {id: 2, english: "That is right", vietnamese: "Đúng rồi", example:"Đúng rồi", audio:that_is_right, picture:that_is_right_pic},
     {id: 3, english: "Visiting/travelling", vietnamese: "Đang đi thăm/ du lịch", example:"Du lịch việt nam", audio:visiting, picture:visiting_pic},
     {id: 4, english: "Friendly", vietnamese: "Thân thiện", example:"Nhân viên thân thiện", audio:friendly, picture:friendly_pic},
-    {id: 5, english: "Funny/interesting", vietnamese: "Vui tính", example:"Cầu trượt vui vẻ", audio:funny, picture:funny_pic},
+    {id: 5, english: "Can you let me know", vietnamese: "Có thể cho anh biết", example:"Có thể cho anh biết", audio:can_you_let_me_know, picture:can_you_let_me_know_pic},
     {id: 6, english: "Warm hearted/kind-hearted", vietnamese: "Tốt bụng", example:"", audio:warm_hearted, picture:warm_hearted_pic},
     {id: 7, english: "Hope", vietnamese: "Hi vọng", example:"Anh ấy có một trái tim nhân hậu", audio:hope, picture:hope_pic},
     {id: 8, english: "Country", vietnamese: "Đất nước", example:"Đây là quê hương tôi", audio:country, picture:country_pic},
@@ -88,13 +86,11 @@ export const unit_10=[
     {id: 20, english: "Noisy", vietnamese: "Nhộn nhịp", example:"đường phố ồn ào", audio:noisy, picture:noisy_pic},
     {id: 21, english: "Stuffy", vietnamese: "Không trong lành lãm", example:"Hôm nay ngột ngạt", audio:stuffy, picture:stuffy_pic},
     {id: 22, english: "Quite cool", vietnamese: "Khát mát mẻ", example:"Khát mát mẻ", audio:quite_cool, picture:quite_cool_pic},
-    {id: 23, english: "Some regions", vietnamese: "Một số vùng", example:"Một số vùng", audio:some_regions, picture:some_regions_pic},
+    {id: 23, english: "Something about", vietnamese: "Một số điều về", example:"điều gì đó về bạn", audio:something_about, picture:something_about_pic},
     {id: 24, english: "I heard", vietnamese: "Nghe nói", example:"Nghe nói", audio:i_heard, picture:i_heard_pic},
     {id: 25, english: "The socialist republic", vietnamese: "Xã hội chủ nghĩa", example:"Xã hội chủ nghĩa", audio:socialist, picture:socialist_pic},
     {id: 26, english: "Answer", vietnamese: "Trả lời", example:"Câu trả lời của tôi", audio:answer, picture:answer_pic},
     {id: 27, english: "Be ready", vietnamese: "Sẵn lòng/sẵn sàng", example:"Sẵn lòng", audio:be_ready, picture:be_ready_pic},
     {id: 28, english: "Group", vietnamese: "Tập đoàn", example:"Tập đoàn", audio:group, picture:group_pic},
     {id: 29, english: "Real estate", vietnamese: "Bất động sản", example:"Bất động sản", audio:real_estate, picture:real_estate_pic},
-    {id: 30, english: "Can you let me know", vietnamese: "Có thể cho anh biết", example:"Có thể cho anh biết", audio:can_you_let_me_know, picture:can_you_let_me_know_pic},
-    {id: 31, english: "Something about", vietnamese: "Một số điều về", example:"điều gì đó về bạn", audio:something_about, picture:something_about_pic},
 ]

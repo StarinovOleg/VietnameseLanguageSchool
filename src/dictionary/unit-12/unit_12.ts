@@ -13,7 +13,6 @@ import fall from "../../../src/assets/sounds/lesson12/fall.mp3"
 import graduate from "../../../src/assets/sounds/lesson12/graduate.mp3"
 import great from "../../../src/assets/sounds/lesson12/great.mp3"
 import however from "../../../src/assets/sounds/lesson12/however.mp3"
-import intention from "../../../src/assets/sounds/lesson12/intention.mp3"
 import interesting from "../../../src/assets/sounds/lesson12/interesting.mp3"
 import join from "../../../src/assets/sounds/lesson12/join.mp3"
 import know from "../../../src/assets/sounds/lesson12/know.mp3"
@@ -53,7 +52,6 @@ import fall_pic from "../../../src/assets/lesson12/fall_pic.png"
 import graduate_pic from "../../../src/assets/lesson12/graduate_pic.png"
 import great_pic from "../../../src/assets/lesson12/great_pic.png"
 import however_pic from "../../../src/assets/lesson12/however_pic.png"
-import intention_pic from "../../../src/assets/lesson12/intention_pic.png"
 import interesting_pic from "../../../src/assets/lesson12/interesting_pic.png"
 import join_pic from "../../../src/assets/lesson12/join_pic.png"
 import know_pic from "../../../src/assets/lesson12/know_pic.png"
@@ -107,7 +105,8 @@ export const unit_12=[
     {id: 25, english: "Already", vietnamese: "Đã", example:"Xong rồi", audio:already, picture:already_pic},
     {id: 26, english: "Already finished", vietnamese: "Đã-rồi", example:"Đã-rồi", audio:already_finished, picture:already_finished_pic},
     {id: 27, english: "Yeasterday", vietnamese: "Ngày hôm qua", example:"Hôm qua trời mưa", audio:yeasterday, picture:yeasterday_pic},
-    {id: 28, english: "Intention /plan", vietnamese: "Dự địng / kế hoạch", example:"Kế hoạch", audio:intention, picture:intention_pic},
+    {id: 28, english: "Some regions", vietnamese: "Một số vùng", example:"Một số vùng", audio:some_regions, picture:some_regions_pic},   
+   
     {id: 29, english: "Graduate from", vietnamese: "Tốt nghiệp", example:"Tốt nghiệp Hà Nội", audio:graduate, picture:graduate_pic},
     {id: 30, english: "Volunteer", vietnamese: "Tình nguyện", example:"Tình nguyện", audio:volunteer, picture:volunteer_pic},
     {id: 31, english: "Join", vietnamese: "Tham gia", example:"Tham gia với chúng tôi", audio:join, picture:join_pic},
@@ -117,6 +116,5 @@ export const unit_12=[
     {id: 35, english: "With", vietnamese: "Cùng", example:"Cùng", audio:with_us, picture:with_us_pic},
     {id: 36, english: "It is great", vietnamese: "Thật tuyệt", example:"Thật tuyệt", audio:great, picture:great_pic},
     {id: 37, english: "Therefore", vietnamese: "Chíng vì vậy", example:"Vì vậy ngày mai", audio:therefore, picture:therefore_pic},
-    {id: 38, english: "Some regions", vietnamese: "Một số vùng", example:"Một số vùng", audio:some_regions, picture:some_regions_pic},
 
 ]

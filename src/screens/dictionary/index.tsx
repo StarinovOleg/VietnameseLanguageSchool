@@ -15,7 +15,7 @@ function DictionaryIndex() {
       .map((item, index) => {
         return (
           <tr
-            key={index}
+            key={item.vietnamese}
             className="border  border-slate-400 lg:text-xl md:text-xl sm:text-auto text-auto"
           >
             <td className="pl-[1%]">{item.vietnamese}</td>

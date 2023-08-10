@@ -14,7 +14,6 @@ import thatisaudio from "../../../src/assets/sounds/lesson_2/thatis.mp3"
 import whoaudio from "../../../src/assets/sounds/lesson_2/who.mp3"
 import comefromaudio from "../../../src/assets/sounds/lesson_2/comefrom.mp3"
 import andyouaudio from "../../../src/assets/sounds/lesson_2/andyou.mp3"
-import meetaudio from "../../../src/assets/sounds/lesson_2/meet.mp3"
 import whataudio from "../../../src/assets/sounds/lesson_2/what.mp3"
 import animalaudio from "../../../src/assets/sounds/lesson_2/animal.mp3"
 import penaudio from "../../../src/assets/sounds/lesson_2/pen.mp3"
@@ -30,24 +29,21 @@ import yes from "../../../src/assets/lesson_2_3/yes.png";
 import you from "../../../src/assets/lesson_2_3/you.png";
 import maleteacher from "../../../src/assets/lesson_2_2/maleteacher.png";
 import femaleteacher from "../../../src/assets/lesson_2_2/femaleteacher.png";
-import happy from "../../../src/assets/lesson_2_2/happy.png";
+
 import england from "../../../src/assets/lesson_2_2/england.png";
 import vietnamese from "../../../src/assets/lesson_2_2/vietnamese.png";
 import my from "../../../src/assets/lesson_2_2/my.png";
 import youngbrother from "../../../src/assets/lesson_2_2/youngbrother.png";
 import thankyou from "../../../src/assets/lesson_2_2/thankyou.png";
-import sir from "../../../src/assets/lesson_2_2/sir.png";
 
 import maleteacheraudio  from "../../../src/assets/sounds/lesson_2_2/maleteacher.mp3"
 import femaleteacheraudio from "../../../src/assets/sounds/lesson_2_2/femaleteacher.mp3"
 import gap from "../../../src/assets/sounds/lesson_2_2/meet.mp3"
-import happyaudio from "../../../src/assets/sounds/lesson_2_2/happy.mp3"
 import englandaudio  from "../../../src/assets/sounds/lesson_2_2/england.mp3"
 import vietnameseaudio  from "../../../src/assets/sounds/lesson_2_2/vietnamese.mp3"
 import myaudio  from "../../../src/assets/sounds/lesson_2_2/my.mp3"
 import youngbrotheraudio  from "../../../src/assets/sounds/lesson_2_2/youngbrother.mp3"
 import thankyouaudio  from "../../../src/assets/sounds/lesson_2_2/thankyou.mp3"
-import siraudio  from "../../../src/assets/sounds/lesson_2_2/sir.mp3"
 import longtimeaudio from "../../../src/assets/sounds/lesson_2_3/longtime.mp3"
 import headacheaudio from "../../../src/assets/sounds/lesson_2_3/headache.mp3"
 import notbadaudio  from "../../../src/assets/sounds/lesson_2_3/notbad.mp3"
@@ -65,7 +61,7 @@ import howareyouaudio  from "../../../src/assets/sounds/lesson_2_3/howareyou.mp3
     {id: 2, english:"Who", vietnamese:"Ai","audio":whoaudio,"example":"Kia là ai", "picture":who},
     {id: 3, english:"Come from", vietnamese:"Đến từ","audio":comefromaudio,"example":"Đến từ Moscow", "picture":come},
     {id: 4, english:"And you", vietnamese:"Thế còn bạn","audio":andyouaudio,"example":"Tôi và tình yêu và bạn", "picture":andyou},
-    {id: 5, english:"Meet", vietnamese:"Gặp gỡ","audio":meetaudio,"example":"Hôm nay gặp", "picture":meet},
+    {id: 5, english: "Headache", vietnamese:"Đau đầu","audio":headacheaudio,"example":"Tôi bị đau đầu", "picture":headache},  
     {id: 6, english:"What", vietnamese:"Cái gì","audio":whataudio,"example":"Là gì", "picture":what},
     {id: 7, english:"Animal", vietnamese:"Con gi","audio":animalaudio,"example":"Kia là con gì", "picture":animal},
     {id: 8, english:"Pen", vietnamese:"Cái bút bi","audio":penaudio,"example":"Đây là một cây bút", "picture":pen},
@@ -73,13 +69,13 @@ import howareyouaudio  from "../../../src/assets/sounds/lesson_2_3/howareyou.mp3
     {id: 10, english:"Male teacher", vietnamese:"Thầy giáo","audio":maleteacheraudio,"example":"Anh ấy làm giáo viên", "picture":maleteacher},
     {id: 11, english:"Female teacher", vietnamese:"Cô giáo","audio":femaleteacheraudio,"example":"Cô ấy làm việc như một giáo viên", "picture":femaleteacher},
     {id: 12, english: "Meet", vietnamese:"Gặp","audio":gap,"example":"Chúng ta gặp nhau hôm nay", "picture":meet},
-    {id: 13, english:"Happy", vietnamese:"Vue ve","audio":happyaudio,"example":"Vui mừng", "picture":happy},
+    {id: 13, english: "Yes", vietnamese:"Vàng","audio":yesaudio,"example":"Vâng, tôi đến hôm nay", "picture":yes},
     {id: 14, english:"England", vietnamese:"Nước Anh","audio":englandaudio,"example":"Chúng tôi sẽ đến Anh", "picture":england},
     {id: 15, english:"Vietnamese", vietnamese:"Tiếng Việt","audio":vietnameseaudio,"example":"Học tiếng việt", "picture":vietnamese},
     {id: 16, english:"My", vietnamese:"Của tôi","audio":myaudio,"example":"Tình yêu của tô", "picture":my},
     {id: 17, english:"Youger brother", vietnamese:"Em trai","audio":youngbrotheraudio,"example":"Em trai tôi thích chơi", "picture":youngbrother},
     {id: 18, english:"Thank you", vietnamese:"Cảm ơn","audio":thankyouaudio,"example":"Cám ơn vì đã mua hàng", "picture":thankyou},
-    {id: 19, english:"Sir", vietnamese:"Thưa thầy","audio":siraudio,"example":"Cố lên thưa ngài", "picture":sir},
+    {id: 19, english: "Sick", vietnamese:"Ốm","audio":sickaudio,"example":"Tôi bị ốm", "picture":sick},
     {id: 20, english: "Long time not see", vietnamese:"Lâu rồi không gặp","audio":longtimeaudio,"example":"Đã được một thời gian dài", "picture":longtime},
     {id: 21, english: "Recently", vietnamese:"Dạo này","audio":recentlyaudio,"example":"", "picture":recently},
     {id: 22, english: "How are you", vietnamese:"Có khỏe không?","audio":howareyouaudio,"example":"", "picture":you},
@@ -87,8 +83,5 @@ import howareyouaudio  from "../../../src/assets/sounds/lesson_2_3/howareyou.mp3
     {id: 24, english: "Not bad", vietnamese:"Không được khỏe lắm","audio":notbadaudio,"example":"Không tệ", "picture":notbad},
     {id: 25, english: "Are you", vietnamese:"Thế a","audio":youaudio,"example":"Bạn ổn chứ? bạn tôi", "picture":you},
     {id: 26, english: "Please take care of yourself", vietnamese:"Giữ gìn sức khỏe nhé/ nha","audio":takecareaudio,"example":"", "picture":takecare},
-    {id: 27, english: "Yes", vietnamese:"Vàng","audio":yesaudio,"example":"Vâng, tôi đến hôm nay", "picture":yes},
-    {id: 28, english: "Sick", vietnamese:"Ốm","audio":sickaudio,"example":"Tôi bị ốm", "picture":sick},
-    {id: 29, english: "Headache", vietnamese:"Đau đầu","audio":headacheaudio,"example":"Tôi bị đau đầu", "picture":headache},  
 
 ]
