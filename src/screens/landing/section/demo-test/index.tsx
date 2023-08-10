@@ -16,6 +16,8 @@ let random_words = chooseRandom(common_10_words, 10);
 
 const DemoTest = (props: { id?: string }) => {
   const [step, setStep] = useState(1);
+  const [disabled, setDisabled] = useState(false);
+  const [checkWord, setCheckWord] = useState(false);
   const context = useContext(SchoolContext);
   //refresh page
   const refreshPage = () => {
@@ -24,13 +26,20 @@ const DemoTest = (props: { id?: string }) => {
   };
   //checking answer
   const check = (item: any, display: any) => {
-    setStep(step + 1);
     if (item.vietnamese === display.vietnamese) {
       context.incrementTestPositive();
       context.incrementTestTotal();
+      setStep(step + 1);
     } else {
       context.incrementTestNegative();
       context.incrementTestTotal();
+      setCheckWord(!checkWord);
+      setDisabled(true);
+      setTimeout(() => {
+        setStep(step + 1);
+        setDisabled(false);
+        setCheckWord(checkWord);
+      }, 1000);
     }
   };
   useEffect(() => {
@@ -60,10 +69,18 @@ const DemoTest = (props: { id?: string }) => {
             <>
               {random_words.slice(step - 1, step).map((display, index) => (
                 <Fragment key={index}>
-                  <H1 children={display.vietnamese} key={index} />
-                  <div className="flex lg:justify-center md:justify-center  text-left  flex-wrap">
-                    <CorrectAnswer children={context.countTestPositive} />
-                    <NotCorrectAnswer children={context.countTestNegative} />
+                  <div className="h-[15rem]">
+                    <div className="h-[10%]"></div>
+                    <H1 children={display.vietnamese} key={index} />
+
+                    <div className="h-[15%] leading-[3rem] text-2xl text-rose-800">
+                      {checkWord ? display.english : null}
+                    </div>
+
+                    <div className="h-[10%] flex lg:justify-center md:justify-center  text-left  flex-wrap">
+                      <CorrectAnswer children={context.countTestPositive} />
+                      <NotCorrectAnswer children={context.countTestNegative} />
+                    </div>
                   </div>
                   <>
                     {shuffle(
@@ -75,6 +92,7 @@ const DemoTest = (props: { id?: string }) => {
                           <ButtonTraining
                             key={index}
                             onClick={() => check(item, display)}
+                            disabled={disabled}
                             children={item.english}
                           />
                         ))

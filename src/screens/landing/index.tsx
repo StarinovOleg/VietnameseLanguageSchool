@@ -8,17 +8,23 @@ import Baner from "./section/Baner";
 import Translate from "./section/translate/Translate";
 import DemoAudio from "./section/demo-audio";
 import DemoTest from "./section/demo-test";
+import PromoMethod from "./section/PromoMethod";
+import Dictionary from "./section/Dictionary";
+import MobileAdvise from "./section/MobileAdvise";
 function Landing() {
   return (
     <>
       <Promo />
       <Baner />
+      <PromoMethod />
       <DemoAudio id="demo_audio" />
+      <Dictionary />
       <Method />
       <Words id="words" />
       <Audio id="audio" />
       <Translate id="translate" />
       <DemoTest id="demo_test" />
+      <MobileAdvise />
       <About />
     </>
   );

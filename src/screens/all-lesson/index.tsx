@@ -8,6 +8,7 @@ import H1 from "../../ui-library/H1";
 import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 import Lists from "../landing/section/words/components/Lists";
+import DictionaryIndex from "../dictionary";
 interface location {
   title: string;
 }
@@ -23,15 +24,19 @@ function ListLessons() {
         return <ListSound />;
       case converstation.translate.title:
         return <ListTranslate />;
+      case converstation.dictionary.title:
+        return <DictionaryIndex />;
     }
   };
   return (
     <BodyPractice>
       <H1 children={state?.title} />
-      {state?.title ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
+      {state?.title !== converstation.dictionary.title ? (
+        <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
           {displayWords()}
         </div>
+      ) : state.title === converstation.dictionary.title ? (
+        <div>{displayWords()}</div>
       ) : (
         <Error />
       )}

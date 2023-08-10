@@ -60,6 +60,9 @@ import appstore from '../assets/app-store-badge.png';
 import googlestore from '../assets/google-play-badge.png';
 import img_error from '../assets/error/error.png';
 import end_screen from '../assets/end-screen/end-screen.png';
+import promo_method from '../assets/promo-method/promo_method.png';
+import dictionary from '../assets/dictionary/dictionary.png';
+import mobile_advise from '../assets/mobile-advise/mobile_advise.png';
 
 /**SOUND FOR AUDIO TEST LANDING PAGE */
 import b2 from "../assets/sounds/pronunciation/Bà.mp3";
@@ -471,6 +474,11 @@ export const converstation={
         ]
         
     },
+    dictionary:{
+        'title':'Course Dictionary', 
+        'words_count':'The Course Dictionary includes ',
+        'img':dictionary 
+    },
     method:{
         'img':icon_foot,
         'group1':{
@@ -482,6 +490,17 @@ export const converstation={
         },
 
     },
+    mobile_advise:{
+      'img':mobile_advise,
+      'group1':{
+      'title':'Mobile application:',
+      'item':[{text:'Regular updates of training modules, vocabulary and training'},
+              {text:'Don not need internet connection to use'},
+              {text:'Absolutely free to use'},
+            ]
+      },
+
+  },
     translate:{
       'title':'Chose translate these sentences',
       'section_img':support_translate,
@@ -605,7 +624,6 @@ export const converstation={
       'text_translate':window_translate_gif
     },
     demo_audio:{
-      'title':'Listen and learn your ',
       'subtitle':'Letter Sounds',
       'audio_animation_note1':audio_animation_note1,
       'audio_animation_note2':audio_animation_note2,
@@ -630,6 +648,11 @@ export const converstation={
           audio:b4
       }
   ]
+    },
+    promo_method:{
+      title:'Enjoy learning',
+      text:"To learn the Vietnamese language, original modern texts and dialogues, sound recordings are used, and in the mobile application a mixture of the original text and translation",
+      img:promo_method
     },
     demo_test:{
       'title':'Practice and memorise your',

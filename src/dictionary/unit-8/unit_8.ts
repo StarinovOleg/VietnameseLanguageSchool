@@ -1,4 +1,3 @@
-import all_right from "../../../src/assets/sounds/lesson8/all_right.mp3"
 import bread from "../../../src/assets/sounds/lesson8/bread.mp3"
 import chicken_noodle from "../../../src/assets/sounds/lesson8/chicken_noodle.mp3"
 import chiken_meat from "../../../src/assets/sounds/lesson8/chiken_meat.mp3"
@@ -27,8 +26,6 @@ import small_party from "../../../src/assets/sounds/lesson8/small_party.mp3"
 import sugar from "../../../src/assets/sounds/lesson8/sugar.mp3"
 import this_morning from "../../../src/assets/sounds/lesson8/this_morning.mp3"
 import welcome_to from "../../../src/assets/sounds/lesson8/welcome_to.mp3"
-
-import all_right_pic from "../../../src/assets/lesson8/of_course_pic.png"
 import bread_pic from "../../../src/assets/lesson8/bread_pic.png"
 import chicken_noodle_pic from "../../../src/assets/lesson8/chicken_noodle_pic.png"
 import chiken_meat_pic from "../../../src/assets/lesson8/chiken_meat_pic.png"
@@ -80,12 +77,12 @@ export const unit_8=[
     {id: 18, english: "Bread", vietnamese: "Bánh mì", example:"Bánh mì cho bữa sáng", audio:bread, picture:bread_pic},
     {id: 19, english: "Salty", vietnamese: "Mặn", example:"Món này mặn", audio:salty, picture:salty_pic},
     {id: 20, english: "Milk", vietnamese: "Sữa", example:"Tôi yêu sữa", audio:milk, picture:milk_pic},
-    {id: 21, english: "All right", vietnamese: "Được rồi", example:"Được rồi", audio:all_right, picture:all_right_pic},
+    {id: 21, english: "Let is eat", vietnamese: "Xin mời", example:"Xin mời", audio:let_is_eat, picture:let_is_eat_pic}, 
     {id: 22, english: "Chicken noodle", vietnamese: "Phở gà", example:"Mì gà phổ biến ở Việt Nam", audio:chicken_noodle, picture:chicken_noodle_pic},
     {id: 23, english: "Coffee", vietnamese: "Cà phê", example:"Cà phê việt nam", audio:coffee, picture:coffee_pic},
     {id: 24, english: "Here you are", vietnamese: "Của con đây", example:"Của con đây", audio:here_you_are, picture:here_you_are_pic},
     {id: 25, english: "How", vietnamese: "Như thế nào", example:"Bạn cảm thấy thế nào?", audio:how, picture:how_pic},
     {id: 26, english: "Feel", vietnamese: "Cảm thấy", example:"Bạn cảm thấy thế nào?", audio:feel, picture:feel_pic},
     {id: 27, english: "Delicious", vietnamese: "Rất ngon", example:"Nó rất ngon", audio:delicious, picture:delicious_pic},
-    {id: 28, english: "Let is eat", vietnamese: "Xin mời", example:"Xin mời", audio:let_is_eat, picture:let_is_eat_pic},
+   
 ]

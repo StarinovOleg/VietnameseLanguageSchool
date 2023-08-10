@@ -1,8 +1,6 @@
-import a_bit from "../../../src/assets/sounds/lesson6/a_bit.mp3"
 import at_by_in from "../../../src/assets/sounds/lesson6/at_by_in.mp3"
 import carefully from "../../../src/assets/sounds/lesson6/carefully.mp3"
 import cinema from "../../../src/assets/sounds/lesson6/cinema.mp3"
-import come from "../../../src/assets/sounds/lesson6/come.mp3"
 import day_month from "../../../src/assets/sounds/lesson6/day_month.mp3"
 import early_earlier from "../../../src/assets/sounds/lesson6/early_earlier.mp3"
 import free_time from "../../../src/assets/sounds/lesson6/free_time.mp3"
@@ -27,13 +25,9 @@ import what_time from "../../../src/assets/sounds/lesson6/what_time.mp3"
 import will_hold from "../../../src/assets/sounds/lesson6/will_hold.mp3"
 import wou_are_welcome from "../../../src/assets/sounds/lesson6/wou_are_welcome.mp3"
 import year from "../../../src/assets/sounds/lesson6/year.mp3"
-
-
-import a_bit_pic from "../../../src/assets/lesson6/a_bit_pic.png"
 import at_by_in_pic from "../../../src/assets/lesson6/at_by_in_pic.png"
 import carefully_pic from "../../../src/assets/lesson6/carefully_pic.png"
 import cinema_pic from "../../../src/assets/lesson6/cinema_pic.png"
-import come_pic from "../../../src/assets/lesson6/come_pic.png"
 import day_month_pic from "../../../src/assets/lesson6/data.png"
 import early_earlier_pic from "../../../src/assets/lesson6/early_earlier_pic.png"
 import free_time_pic from "../../../src/assets/lesson6/free_time_pic.png"
@@ -78,7 +72,8 @@ export const unit_6=[
     {id: 15, english: "Cinema", vietnamese: "Rạp chiếu phim", example:"Chúng tôi đang đi đến rạp chiếu phim", audio:cinema, picture:cinema_pic},
     {id: 16, english: "Watch movie", vietnamese: "Xam phim", example:"Chúng tôi đang xem phim", audio:watch_movie, picture:watch_movie_pic},
     {id: 17, english: "See you later", vietnamese: "Gặp anh sau nhé", example:"Gặp anh sau nhé", audio:see_you_later, picture:see_you_later_pic},
-    {id: 18, english: "Come", vietnamese: "Đến", example:"Đến với tôi", audio:come, picture:come_pic},
+    {id: 18, english: "Early/earlier", vietnamese: "Sớm/sớm hơn", excample:"Hôm nay bạn đến sớm", audio:early_earlier, picture:early_earlier_pic},
+
     {id: 19, english: "Hour", vietnamese: "Giờ", example:"Giờ để ngủ", audio:time_hour, picture:time_hour_pic},
     {id: 20, english: "Minutes", vietnamese: "Phút", example:"Vài phút", audio:minutes, picture:minutes_pic},
     {id: 21, english: "Secound", vietnamese: "Giây", example:"Vài giây", audio:second, picture:second_pic},
@@ -87,6 +82,4 @@ export const unit_6=[
     {id: 24, english: "On time", vietnamese: "Đúng giờ", example:"Đúng giờ", audio:on_time, picture:on_time_pic},
     {id: 25, english: "In time", vietnamese: "Kịp giờ", example:"Kịp giờ", audio:in_time, picture:in_time_pic},
     {id: 26, english: "Late", vietnamese: "Muộn/trễ", example:"Hẹn gặp lại", audio:late, picture:late_pic},
-    {id: 27, english: "Early/earlier", vietnamese: "Sớm/sớm hơn", excample:"Hôm nay bạn đến sớm", audio:early_earlier, picture:early_earlier_pic},
-    {id: 28, english: "A bit", vietnamese: "Một chút", example:"Một chút lạnh", audio:a_bit, picture:a_bit_pic},
 ]
