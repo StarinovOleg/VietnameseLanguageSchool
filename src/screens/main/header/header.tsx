@@ -32,7 +32,7 @@ function Header() {
           </NavLink>
         )}
 
-        <div className="sm:text-center">
+        <div className="sm:text-center flex flex-wrap justify-center">
           <Link
             to="/landing#words"
             className="mr-4  text-2xl text-sky-500 hover:text-sky-800 "
