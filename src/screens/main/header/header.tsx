@@ -22,6 +22,10 @@ function Header() {
           <Link to="/landing#translate">
             <Logo />
           </Link>
+        ) : location.pathname === "/grammar" ? (
+          <Link to="/landing#grammar">
+            <Logo />
+          </Link>
         ) : (
           <NavLink to="/landing" onClick={() => ScrollToTop}>
             <Logo />
@@ -46,6 +50,12 @@ function Header() {
             className="pr-4 text-2xl text-[#DA0C0C] hover:text-rose-800 "
           >
             {converstation.header.translate_training}
+          </Link>
+          <Link
+            to="/landing#grammar"
+            className="pr-4 text-2xl text-orange-500 hover:text-orange-800 "
+          >
+            {converstation.header.grammar_training}
           </Link>
         </div>
       </div>
