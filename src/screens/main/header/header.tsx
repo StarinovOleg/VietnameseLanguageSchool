@@ -22,6 +22,10 @@ function Header() {
           <Link to="/landing#translate">
             <Logo />
           </Link>
+        ) : location.pathname === "/grammar" ? (
+          <Link to="/landing#grammar">
+            <Logo />
+          </Link>
         ) : (
           <NavLink to="/landing" onClick={() => ScrollToTop}>
             <Logo />
