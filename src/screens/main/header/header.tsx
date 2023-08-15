@@ -47,6 +47,12 @@ function Header() {
           >
             {converstation.header.translate_training}
           </Link>
+          <Link
+            to="/landing#grammar"
+            className="pr-4 text-2xl text-orange-500 hover:text-orange-800 "
+          >
+            {converstation.header.grammar_training}
+          </Link>
         </div>
       </div>
     </header>
