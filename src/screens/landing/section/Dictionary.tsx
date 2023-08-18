@@ -29,10 +29,11 @@ function Dictionary() {
 
               <Link
                 children={converstation.landing.continue}
+                identificator="dictionary"
                 align=""
                 secondary_color="text-yellow-800"
                 state={{
-                  title: `${converstation.dictionary.title}`,
+                  title: "dictionary",
                 }}
               />
             </div>

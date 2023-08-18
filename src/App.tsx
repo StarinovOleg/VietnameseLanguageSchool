@@ -41,7 +41,10 @@ function App() {
               <Route path="/" element={<Landing />} />
               <Route path="/landing" element={<Landing />} />
               <Route path="/words" element={<WordsIndex />} />
-              <Route path="/listlessons" element={<ListLessons />} />
+              <Route
+                path="/listlessons/:identificator"
+                element={<ListLessons />}
+              />
               <Route path="/audio" element={<AudioIndex />} />
               <Route path="/dictionary" element={<DictionaryIndex />} />
 

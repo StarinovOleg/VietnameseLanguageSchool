@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { converstation } from "../../store/static";
 //import { cardItemLesson } from "../landing/section/words/components/Lists";
 import { store_grammar } from "../../modules/module-grammar/store/store-grammar";
@@ -17,34 +17,86 @@ interface location {
 
 function ListLessons() {
   const location = useLocation();
+  let { identificator } = useParams();
   const state = location.state as location;
+
   const displayWords = () => {
-    switch (state.title) {
-      case converstation.words.title:
-        return <Lists />;
-      case converstation.audio.title:
-        return <ListSound />;
-      case converstation.translate.title:
-        return <ListTranslate />;
-      case converstation.dictionary.title:
+    switch (identificator) {
+      case "words":
+        return (
+          <Block>
+            <Lists />
+          </Block>
+        );
+      case "audio":
+        return (
+          <Block>
+            <ListSound />
+          </Block>
+        );
+      case "translate":
+        return (
+          <Block>
+            <ListTranslate />
+          </Block>
+        );
+      case "dictionary":
         return <DictionaryIndex />;
-      case store_grammar.main.grammar.block.textTitle:
-        return <ListsGrammar />;
+      case "grammar":
+        return (
+          <Block>
+            <ListsGrammar />
+          </Block>
+        );
+      default:
+        return <Error />;
     }
   };
-  return (
-    <BodyPractice>
-      <H1 children={state?.title} />
-      {state?.title !== converstation.dictionary.title ? (
+  const Block = (props: {
+    children:
+      | string
+      | number
+      | boolean
+      | React.ReactFragment
+      | React.ReactPortal
+      | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+      | null
+      | undefined;
+  }) => {
+    return (
+      <>
+        <H1
+          children={
+            state?.title
+              ? state.title
+              : `Chose group ${identificator} for training`
+          }
+        />
         <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6  m-10">
-          {displayWords()}
+          {props.children}
         </div>
-      ) : state.title === converstation.dictionary.title ? (
-        <div>{displayWords()}</div>
-      ) : (
+      </>
+    );
+  };
+  return (
+    <>
+      {!identificator ? (
         <Error />
+      ) : (
+        <BodyPractice>
+          {identificator !== "dictionary" ? (
+            <>{displayWords()}</>
+          ) : identificator === "dictionary" ? (
+            <>
+              <H1 children={identificator} />
+              <div>{displayWords()}</div>
+            </>
+          ) : (
+            <Error />
+          )}
+        </BodyPractice>
       )}
-    </BodyPractice>
+    </>
   );
 }
 
