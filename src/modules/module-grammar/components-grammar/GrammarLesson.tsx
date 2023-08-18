@@ -22,6 +22,7 @@ function GrammarLesson(props: { id?: string }) {
           children={converstation.landing.continue}
           align="text-right"
           secondary_color="text-orange-800"
+          identificator="grammar"
           state={{
             title: `${store_grammar.main.grammar.block.textTitle}`,
           }}

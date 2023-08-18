@@ -282,7 +282,7 @@ export const converstation={
         },
       ]},
     audio:{
-        'title':'Chose listen to the conversation',
+        'title':'Chose audio to the conversation',
         'section_img':support_audio,
         'lessons':[{
             'id':1,
