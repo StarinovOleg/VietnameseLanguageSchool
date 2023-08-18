@@ -665,8 +665,7 @@ export const converstation={
     header:{
       'words_training':'words',
       'audio_training':'audio',
-      'translate_training':'translations',
-      'grammar_training':'grammar',
+      'translate_training':'translations'
     },
     words_sounds:{
       'negative':negative,
