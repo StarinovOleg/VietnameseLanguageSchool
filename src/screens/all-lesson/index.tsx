@@ -19,7 +19,6 @@ function ListLessons() {
   const location = useLocation();
   let { identificator } = useParams();
   const state = location.state as location;
-
   const displayWords = () => {
     switch (identificator) {
       case "words":
