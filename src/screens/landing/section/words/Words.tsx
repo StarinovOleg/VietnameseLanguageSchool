@@ -44,7 +44,6 @@ function Words(props: { id?: string }) {
           children={converstation.landing.continue}
           align="text-right"
           secondary_color="text-sky-800"
-          identificator="words"
           state={{
             title: `${converstation.words.title}`,
           }}

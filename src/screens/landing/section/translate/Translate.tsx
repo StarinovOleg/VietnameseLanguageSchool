@@ -42,7 +42,6 @@ function Translate(props: { id?: string }) {
           children={converstation.landing.continue}
           align="text-right pt-10"
           secondary_color="text-rose-700"
-          identificator="translate"
           state={{
             title: `${converstation.translate.title}`,
           }}

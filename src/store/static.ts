@@ -282,7 +282,7 @@ export const converstation={
         },
       ]},
     audio:{
-        'title':'Chose audio to the conversation',
+        'title':'Chose listen to the conversation',
         'section_img':support_audio,
         'lessons':[{
             'id':1,
@@ -665,8 +665,7 @@ export const converstation={
     header:{
       'words_training':'words',
       'audio_training':'audio',
-      'translate_training':'translations',
-      'grammar_training':'grammar',
+      'translate_training':'translations'
     },
     words_sounds:{
       'negative':negative,
