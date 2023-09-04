@@ -1,0 +1,52 @@
+export const o_o=[
+    {
+        id:1,
+        text:'Tô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:2,
+        text:'Đô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:3,
+        text:'Lô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:4,
+        text:'Nhô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:5,
+        text:'Khô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:6,
+        text:'Nô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },    
+    
+
+]

@@ -1,0 +1,52 @@
+export const kh=[
+    {
+        id:1,
+        text:'Khi',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:2,
+        text:'Khu',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:3,
+        text:'Khư',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:4,
+        text:'Khe',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:5,
+        text:'Khê',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:6,
+        text:'Khô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },    
+    
+
+]

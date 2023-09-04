@@ -1,0 +1,52 @@
+export const o=[
+    {
+        id:1,
+        text:'To',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:2,
+        text:'Đo',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:3,
+        text:'Lo',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:4,
+        text:'Nho',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:5,
+        text:'Kho',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:6,
+        text:'No',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },    
+    
+
+]

@@ -1,0 +1,52 @@
+export const h=[
+    {
+        id:1,
+        text:'Hi',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:2,
+        text:'Hu',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:3,
+        text:'Hư',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:4,
+        text:'He',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:5,
+        text:'Hê',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },
+    {
+        id:6,
+        text:'Hô',
+        audio:'',
+        phonetics:'',
+        vietnamese:'',
+        english:''
+    },    
+    
+
+]
