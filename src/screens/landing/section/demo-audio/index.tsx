@@ -21,7 +21,7 @@ const DemoAudio = (props: { id?: string }) => {
         <H2
           children={converstation.demo_audio.subtitle}
           fontsizeprimary="leading-[3rem] lg:h2-font-size-primary  sm:h2-font-size-secondary"
-          fontcolorsecondary="text-lime-800"
+          fontcolorsecondary="text-[#00AA88]"
           fontfamilysecondary="font-['KGLifeisMessy']"
         />
 
@@ -30,10 +30,8 @@ const DemoAudio = (props: { id?: string }) => {
         <Link
           children={converstation.landing.continue}
           align="text-right"
-          secondary_color="text-[#800000]"
-          state={{
-            title: `${converstation.audio.title}`,
-          }}
+          identificator="phonetics"
+          secondary_color="text-[#00AA88]"
         />
       </div>
     </Section>

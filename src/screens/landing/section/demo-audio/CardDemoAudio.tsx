@@ -11,14 +11,14 @@ const CardDemoAudio = (props: {
   const [play] = useSound(props.item);
   return (
     <div
-      className={`${props.shadowcolor} w-44 border-solid rounded-xl bg-[#fdfdef]  m-4 text-center group `}
+      className={`${props.shadowcolor} w-44 border-solid rounded-xl bg-[#E2FFEF]  m-4 text-center group `}
     >
       <div className="p-10">
         <p className={`text-6xl ${props.color} font-['DancingScript']`}>
           {props.text}
         </p>
       </div>
-      <div className="bg-[#800000] border-solid rounded-b-lg p-10 relative">
+      <div className="bg-[#00AA88] border-solid rounded-b-lg p-10 relative">
         <ButtonSound
           onClick={play}
           hover="group-hover:p-6"
