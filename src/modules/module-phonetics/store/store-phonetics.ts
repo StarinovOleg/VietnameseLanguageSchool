@@ -95,7 +95,7 @@ export const store_phonetics = {
       },
       {
         id: 9,
-        title: e_e,
+        title: 'Ê',
         array_data: array_e_e,
         img: e_e,
       },
