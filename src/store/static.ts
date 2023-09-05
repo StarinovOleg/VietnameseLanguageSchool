@@ -632,19 +632,19 @@ export const converstation={
       'item': [ {
           id:1, 
           name: 'Bà',
-          color:'text-[#276f74]',
+          color:'text-[#529312]',
           audio:b2
       },
       {
           id:2, 
           name:'Bá',
-          color:'text-[#ba4e4a]',
+          color:'text-[#EC9616]',
           audio:b3
       },   
       {
           id:3, 
           name:'Bã',
-          color:'text-[#7fa73e]',
+          color:'text-[#06B6D4]',
           audio:b4
       }
   ]

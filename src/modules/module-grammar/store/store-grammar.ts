@@ -34,8 +34,8 @@ export const store_grammar = {
       },
       {
         id: 2,
-        title: 'Phonetics',
-        link: 'Phonetics',
+        title: 'Phonetics:Tone',
+        link: 'Phonetics_Tone',
         img: phonetics,
       },
       {
