@@ -10,6 +10,7 @@ import Error from "../main/error/Error";
 import BodyPractice from "../main/body/body_practice";
 import Lists from "../landing/section/words/components/Lists";
 import DictionaryIndex from "../dictionary";
+import PhoneticsIndex from "../../modules/module-phonetics/components-phonetics/item-component/Lists";
 import ListsGrammar from "../../modules/module-grammar/components-grammar/item-component/Lists";
 interface location {
   title: string;
@@ -31,6 +32,12 @@ function ListLessons() {
         return (
           <Block>
             <ListSound />
+          </Block>
+        );
+      case "phonetics":
+        return (
+          <Block>
+            <PhoneticsIndex />
           </Block>
         );
       case "translate":

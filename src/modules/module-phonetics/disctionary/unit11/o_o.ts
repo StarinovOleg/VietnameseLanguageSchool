@@ -1,4 +1,4 @@
-export const o_o=[
+export const array_o_o=[
     {
         id:1,
         text:'Tô',

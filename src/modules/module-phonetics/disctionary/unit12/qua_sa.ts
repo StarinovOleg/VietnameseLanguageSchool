@@ -1,4 +1,4 @@
-export const qua_sa=[
+export const array_qua_sa=[
     {
         id:1,
         text:'Qua',

@@ -1,8 +1,9 @@
-export const b_x_m=[
+import chineseaudio from "../../../../assets/sounds/lesson_1_1/chinese.mp3"
+export const array_b_x_m=[
     {
         id:1,
         text:'Bam',
-        audio:'',
+        audio:chineseaudio,
         phonetics:'',
         vietnamese:'',
         english:''

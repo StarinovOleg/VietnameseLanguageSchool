@@ -1,4 +1,4 @@
-export const kh=[
+export const array_kh=[
     {
         id:1,
         text:'Khi',

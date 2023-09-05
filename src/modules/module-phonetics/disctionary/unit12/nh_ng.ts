@@ -1,4 +1,4 @@
-export const m_n=[
+export const array_nh_ng=[
     {
         id:1,
         text:'Nha',

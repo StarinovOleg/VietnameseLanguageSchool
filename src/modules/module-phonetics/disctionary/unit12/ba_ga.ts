@@ -1,4 +1,4 @@
-export const ba_ga=[
+export const array_ba_ga=[
     {
         id:1,
         text:'Ba',

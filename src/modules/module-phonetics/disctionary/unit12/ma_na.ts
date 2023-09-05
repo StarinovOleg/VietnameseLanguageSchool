@@ -1,4 +1,4 @@
-export const ma_na=[
+export const array_ma_na=[
     {
         id:1,
         text:'Ma',

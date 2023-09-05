@@ -21,6 +21,7 @@ import Verbs from "./modules/module-grammar/lesson-grammar/verbs";
 import WhoIsIt from "./modules/module-grammar/lesson-grammar/who_is_it ";
 import SimpleSentenceAndQuestions from "./modules/module-grammar/lesson-grammar/simple_sentence_and_questions";
 import ThePersonalPronouns from "./modules/module-grammar/lesson-grammar/the_personal_pronouns";
+import PhoneticsIndex from "./modules/module-phonetics";
 
 const WordsIndex = lazy(() => import("./screens/words/index"));
 const AudioIndex = lazy(() => import("./screens/audio/index"));
@@ -47,6 +48,7 @@ function App() {
               />
               <Route path="/audio" element={<AudioIndex />} />
               <Route path="/dictionary" element={<DictionaryIndex />} />
+              <Route path="/phonetics" element={<PhoneticsIndex />} />
 
               <Route path="/Alphabet" element={<Alphabet />} />
               <Route path="/Numerals" element={<Numerals />} />
@@ -58,7 +60,7 @@ function App() {
               <Route path="/Comparison" element={<Comparison />} />
               <Route path="/Adverbs" element={<Adverbs />} />
               <Route path="/FromYearToDay" element={<FromYearToDay />} />
-              <Route path="/Phonetics" element={<Phonetics />} />
+              <Route path="/Phonetics_Tone" element={<Phonetics />} />
               <Route path="/Time" element={<Time />} />
               <Route path="/Verbs" element={<Verbs />} />
               <Route

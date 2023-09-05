@@ -1,4 +1,4 @@
-export const ban_can=[
+export const array_quan_van=[
     {
         id:1,
         text:'Van',

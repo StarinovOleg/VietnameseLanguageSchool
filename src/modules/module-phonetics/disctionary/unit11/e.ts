@@ -1,4 +1,4 @@
-export const e=[
+export const array_e=[
     {
         id:1,
         text:'Te',
