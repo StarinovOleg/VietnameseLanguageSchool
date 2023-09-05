@@ -1,9 +1,42 @@
-import chineseaudio from "../../../../assets/sounds/lesson_1_1/chinese.mp3"
+import bam from "../../audio-assets/unit6/bam.mp3"
+import baam from "../../audio-assets/unit6/baam.mp3"
+import cam from "../../audio-assets/unit6/cam.mp3"
+import caam from "../../audio-assets/unit6/caam.mp3"  
+import ca_m from "../../audio-assets/unit6/ca_m.mp3" 
+import ham from "../../audio-assets/unit6/ham.mp3" 
+import h_am from "../../audio-assets/unit6/h_am.mp3" 
+import ca__m from "../../audio-assets/unit6/ca__m.mp3" 
+import ha_m from "../../audio-assets/unit6/ha_m.mp3" 
+import h__am from "../../audio-assets/unit6/h__am.mp3" 
+import lam from "../../audio-assets/unit6/lam.mp3" 
+import l_am from "../../audio-assets/unit6/l_am.mp3" 
+import l_coma_am from "../../audio-assets/unit6/l_coma_am.mp3" 
+import nam from "../../audio-assets/unit6/nam.mp3" 
+import n_right_am from "../../audio-assets/unit6/n_right_am.mp3" 
+import n_point_am from "../../audio-assets/unit6/n_point_am.mp3" 
+import sam from "../../audio-assets/unit6/sam.mp3" 
+import sam_right_am from "../../audio-assets/unit6/sam_right_am.mp3" 
+import sam_left_am from "../../audio-assets/unit6/sam_left_am.mp3" 
+import sam_coma_am from "../../audio-assets/unit6/sam_coma_am.mp3" 
+import tam from "../../audio-assets/unit6/tam.mp3" 
+import tam_right_am from "../../audio-assets/unit6/tam_right_am.mp3" 
+import tam_left_am from "../../audio-assets/unit6/tam_left_am.mp3" 
+import tam_coma_am from "../../audio-assets/unit6/tam_coma_am.mp3" 
+import xam from "../../audio-assets/unit6/xam.mp3" 
+import xam_right_am from "../../audio-assets/unit6/xam_right_am.mp3" 
+import xam_left_am from "../../audio-assets/unit6/xam_left_am.mp3" 
+import xam_coma_am from "../../audio-assets/unit6/xam_coma_am.mp3" 
+
+
+
+
+
+
 export const array_b_x_m=[
     {
         id:1,
         text:'Bam',
-        audio:chineseaudio,
+        audio:bam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -11,7 +44,7 @@ export const array_b_x_m=[
     {
         id:2,
         text:'Bám',
-        audio:'',
+        audio:baam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -19,7 +52,7 @@ export const array_b_x_m=[
     {
         id:3,
         text:'Cam',
-        audio:'',
+        audio:cam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -27,7 +60,7 @@ export const array_b_x_m=[
     {
         id:4,
         text:'Cám',
-        audio:'',
+        audio:caam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -35,7 +68,7 @@ export const array_b_x_m=[
     {
         id:5,
         text:'Cảm',
-        audio:'',
+        audio:ca_m,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -43,7 +76,7 @@ export const array_b_x_m=[
     {
         id:6,
         text:'Cạm',
-        audio:'',
+        audio:ca__m,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -51,7 +84,7 @@ export const array_b_x_m=[
     {
         id:7,
         text:'Ham',
-        audio:'',
+        audio:ham,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -59,7 +92,7 @@ export const array_b_x_m=[
     {
         id:8,
         text:'Hám',
-        audio:'',
+        audio:ha_m,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -67,7 +100,7 @@ export const array_b_x_m=[
     {
         id:9,
         text:'Hàm',
-        audio:'',
+        audio:h_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -75,7 +108,7 @@ export const array_b_x_m=[
     {
         id:10,
         text:'Hãm',
-        audio:'',
+        audio:h__am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -83,7 +116,7 @@ export const array_b_x_m=[
     {
         id:11,
         text:'Lam',
-        audio:'',
+        audio:lam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -91,7 +124,7 @@ export const array_b_x_m=[
     {
         id:12,
         text:'Làm',
-        audio:'',
+        audio:l_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -99,7 +132,7 @@ export const array_b_x_m=[
     {
         id:13,
         text:'Lạm',
-        audio:'',
+        audio:l_coma_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -107,7 +140,7 @@ export const array_b_x_m=[
     {
         id:14,
         text:'Nam',
-        audio:'',
+        audio:nam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -115,7 +148,7 @@ export const array_b_x_m=[
     {
         id:15,
         text:'Nám',
-        audio:'',
+        audio:n_right_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -123,7 +156,7 @@ export const array_b_x_m=[
     {
         id:16,
         text:'Nạm',
-        audio:'',
+        audio:n_point_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -131,7 +164,7 @@ export const array_b_x_m=[
     {
         id:17,
         text:'Sam',
-        audio:'',
+        audio:sam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -139,7 +172,7 @@ export const array_b_x_m=[
     {
         id:18,
         text:'Sám',
-        audio:'',
+        audio:sam_right_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -147,7 +180,7 @@ export const array_b_x_m=[
     {
         id:19,
         text:'Sàm',
-        audio:'',
+        audio:sam_left_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -155,7 +188,7 @@ export const array_b_x_m=[
     {
         id:20,
         text:'Sạm',
-        audio:'',
+        audio:sam_coma_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -163,7 +196,7 @@ export const array_b_x_m=[
     {
         id:21,
         text:'Tam',
-        audio:'',
+        audio:tam,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -171,7 +204,7 @@ export const array_b_x_m=[
     {
         id:22,
         text:'Tám',
-        audio:'',
+        audio:tam_right_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -179,7 +212,7 @@ export const array_b_x_m=[
     {
         id:23,
         text:'Tàm',
-        audio:'',
+        audio:tam_left_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -187,7 +220,7 @@ export const array_b_x_m=[
     {
         id:24,
         text:'Tạm',
-        audio:'',
+        audio:tam_coma_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -195,14 +228,14 @@ export const array_b_x_m=[
     {
         id:25,
         text:'Xam',
-        audio:'',
+        audio:xam,
         phonetics:'',
         translate:''
     },
     {
         id:26,
         text:'Xám',
-        audio:'',
+        audio:xam_right_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -210,7 +243,7 @@ export const array_b_x_m=[
     {
         id:27,
         text:'Xàm',
-        audio:'',
+        audio:xam_left_am,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -218,7 +251,7 @@ export const array_b_x_m=[
     {
         id:28,
         text:'Xạm',
-        audio:'',
+        audio:xam_coma_am,
         phonetics:'',
         vietnamese:'',
         english:''

@@ -1,8 +1,15 @@
+import qua from '../../audio-assets/unit12/qua_sa/qua.mp3'
+import quay from '../../audio-assets/unit12/qua_sa/quay.mp3'
+import quai from '../../audio-assets/unit12/qua_sa/quai.mp3'
+import sa from '../../audio-assets/unit12/qua_sa/sa.mp3'
+import say from '../../audio-assets/unit12/qua_sa/say.mp3'
+import sai from '../../audio-assets/unit12/qua_sa/sai.mp3'
+
 export const array_qua_sa=[
     {
         id:1,
         text:'Qua',
-        audio:'',
+        audio:qua,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +17,7 @@ export const array_qua_sa=[
     {
         id:2,
         text:'Quay',
-        audio:'',
+        audio:quay,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +25,7 @@ export const array_qua_sa=[
     {
         id:3,
         text:'Quai',
-        audio:'',
+        audio:quai,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +33,7 @@ export const array_qua_sa=[
     {
         id:4,
         text:'Sa',
-        audio:'',
+        audio:sa,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +41,7 @@ export const array_qua_sa=[
     {
         id:5,
         text:'Say',
-        audio:'',
+        audio:say,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +49,7 @@ export const array_qua_sa=[
     {
         id:6,
         text:'Sai',
-        audio:'',
+        audio:sai,
         phonetics:'',
         vietnamese:'',
         english:''

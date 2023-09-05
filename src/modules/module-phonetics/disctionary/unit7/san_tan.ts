@@ -1,8 +1,22 @@
+import san from '../../audio-assets/unit7/san_tan/san.mp3'
+import san_right from '../../audio-assets/unit7/san_tan/san_right.mp3'
+import san_left from '../../audio-assets/unit7/san_tan/san_left.mp3'
+import san_continue from '../../audio-assets/unit7/san_tan/san_continue.mp3'
+import san_question from '../../audio-assets/unit7/san_tan/san_question.mp3'
+import san_coma from '../../audio-assets/unit7/san_tan/san_coma.mp3'
+import tan from '../../audio-assets/unit7/san_tan/tan.mp3'
+import tan_right from '../../audio-assets/unit7/san_tan/tan_right.mp3'
+import tan_left from '../../audio-assets/unit7/san_tan/tan_left.mp3'
+import tan_question from '../../audio-assets/unit7/san_tan/tan_question.mp3'
+import tan_coma from '../../audio-assets/unit7/san_tan/tan_coma.mp3'
+
+
+
 export const array_san_tan=[
     {
         id:1,
         text:'San',
-        audio:'',
+        audio:san,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +24,7 @@ export const array_san_tan=[
     {
         id:2,
         text:'Sán',
-        audio:'',
+        audio:san_right,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +32,7 @@ export const array_san_tan=[
     {
         id:3,
         text:'Sàn',
-        audio:'',
+        audio:san_left,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +40,7 @@ export const array_san_tan=[
     {
         id:4,
         text:'Sãn',
-        audio:'',
+        audio:san_continue,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +48,7 @@ export const array_san_tan=[
     {
         id:5,
         text:'Sản',
-        audio:'',
+        audio:san_question,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +56,7 @@ export const array_san_tan=[
     {
         id:6,
         text:'Sạn',
-        audio:'',
+        audio:san_coma,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -50,7 +64,7 @@ export const array_san_tan=[
     {
         id:7,
         text:'Tan',
-        audio:'',
+        audio:tan,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -58,7 +72,7 @@ export const array_san_tan=[
     {
         id:8,
         text:'Tán',
-        audio:'',
+        audio:tan_right,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -66,7 +80,7 @@ export const array_san_tan=[
     {
         id:9,
         text:'Tàn',
-        audio:'',
+        audio:tan_left,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -74,7 +88,7 @@ export const array_san_tan=[
     {
         id:10,
         text:'Tản',
-        audio:'',
+        audio:tan_question,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -82,7 +96,7 @@ export const array_san_tan=[
     {
         id:11,
         text:'Tạn',
-        audio:'',
+        audio:tan_coma,
         phonetics:'',
         vietnamese:'',
         english:''

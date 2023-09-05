@@ -1,8 +1,17 @@
+import nha from '../../audio-assets/unit12/nh_ng/nha.mp3'
+import nho from '../../audio-assets/unit12/nh_ng/nho.mp3'
+import nho_up from '../../audio-assets/unit12/nh_ng/nho_up.mp3'
+import nhu from '../../audio-assets/unit12/nh_ng/nhu.mp3'
+import nga from '../../audio-assets/unit12/nh_ng/nga.mp3'
+import ngo from '../../audio-assets/unit12/nh_ng/ngo.mp3'
+import ngo_up from '../../audio-assets/unit12/nh_ng/ngo_up.mp3'
+import ngu from '../../audio-assets/unit12/nh_ng/ngu.mp3'
+
 export const array_nh_ng=[
     {
         id:1,
         text:'Nha',
-        audio:'',
+        audio:nha,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +19,7 @@ export const array_nh_ng=[
     {
         id:2,
         text:'Nho',
-        audio:'',
+        audio:nho,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +27,7 @@ export const array_nh_ng=[
     {
         id:3,
         text:'Nhô',
-        audio:'',
+        audio:nho_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +35,7 @@ export const array_nh_ng=[
     {
         id:4,
         text:'Nhu',
-        audio:'',
+        audio:nhu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +43,7 @@ export const array_nh_ng=[
     {
         id:5,
         text:'Nga',
-        audio:'',
+        audio:nga,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +51,7 @@ export const array_nh_ng=[
     {
         id:6,
         text:'Ngo',
-        audio:'',
+        audio:ngo,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -50,7 +59,7 @@ export const array_nh_ng=[
     {
         id:7,
         text:'Ngô',
-        audio:'',
+        audio:ngo_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -58,7 +67,7 @@ export const array_nh_ng=[
     {
         id:8,
         text:'Ngu',
-        audio:'',
+        audio:ngu,
         phonetics:'',
         vietnamese:'',
         english:''

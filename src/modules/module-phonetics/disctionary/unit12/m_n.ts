@@ -1,8 +1,19 @@
+import ma from '../../audio-assets/unit12/m_n/ma.mp3'
+import mo from '../../audio-assets/unit12/m_n/mo.mp3'
+import mo_up from '../../audio-assets/unit12/m_n/mo_up.mp3'
+import mu from '../../audio-assets/unit12/m_n/mu.mp3'
+import na from '../../audio-assets/unit12/m_n/na.mp3'
+import no from '../../audio-assets/unit12/m_n/no.mp3'
+import no_up from '../../audio-assets/unit12/m_n/no_up.mp3'
+import nu from '../../audio-assets/unit12/m_n/nu.mp3'
+
+
+
 export const array_m_n=[
     {
         id:1,
         text:'Ma',
-        audio:'',
+        audio:ma,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +21,7 @@ export const array_m_n=[
     {
         id:2,
         text:'Mo',
-        audio:'',
+        audio:mo,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +29,7 @@ export const array_m_n=[
     {
         id:3,
         text:'Mô',
-        audio:'',
+        audio:mo_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +37,7 @@ export const array_m_n=[
     {
         id:4,
         text:'Mu',
-        audio:'',
+        audio:mu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +45,7 @@ export const array_m_n=[
     {
         id:5,
         text:'Na',
-        audio:'',
+        audio:na,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +53,7 @@ export const array_m_n=[
     {
         id:6,
         text:'No',
-        audio:'',
+        audio:no,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -50,7 +61,7 @@ export const array_m_n=[
     {
         id:7,
         text:'Nô',
-        audio:'',
+        audio:no_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -58,7 +69,7 @@ export const array_m_n=[
     {
         id:8,
         text:'Nu',
-        audio:'',
+        audio:nu,
         phonetics:'',
         vietnamese:'',
         english:''

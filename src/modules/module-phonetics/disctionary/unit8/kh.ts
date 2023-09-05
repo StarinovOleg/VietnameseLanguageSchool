@@ -1,8 +1,16 @@
+import khi from '../../audio-assets/unit8/kh/khi.mp3'
+import khu from '../../audio-assets/unit8/kh/khu.mp3'
+import khuu from '../../audio-assets/unit8/kh/khuu.mp3'
+import khe from '../../audio-assets/unit8/kh/khe.mp3'
+import khe_up from '../../audio-assets/unit8/kh/khe_up.mp3'
+import kho_up from '../../audio-assets/unit8/kh/kho_up.mp3'
+
+
 export const array_kh=[
     {
         id:1,
         text:'Khi',
-        audio:'',
+        audio:khi,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +18,7 @@ export const array_kh=[
     {
         id:2,
         text:'Khu',
-        audio:'',
+        audio:khu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +26,7 @@ export const array_kh=[
     {
         id:3,
         text:'Khư',
-        audio:'',
+        audio:khuu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +34,7 @@ export const array_kh=[
     {
         id:4,
         text:'Khe',
-        audio:'',
+        audio:khe,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +42,7 @@ export const array_kh=[
     {
         id:5,
         text:'Khê',
-        audio:'',
+        audio:khe_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +50,7 @@ export const array_kh=[
     {
         id:6,
         text:'Khô',
-        audio:'',
+        audio:kho_up,
         phonetics:'',
         vietnamese:'',
         english:''

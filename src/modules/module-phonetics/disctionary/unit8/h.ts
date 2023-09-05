@@ -1,8 +1,14 @@
+import hi from '../../audio-assets/unit8/h/hi.mp3'
+import hu from '../../audio-assets/unit8/h/hu.mp3'
+import huu from '../../audio-assets/unit8/h/huu.mp3'
+import he from '../../audio-assets/unit8/h/he.mp3'
+import he_up from '../../audio-assets/unit8/h/he_up.mp3'
+import ho_up from '../../audio-assets/unit8/h/ho_up.mp3'
 export const array_h=[
     {
         id:1,
         text:'Hi',
-        audio:'',
+        audio:hi,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -10,7 +16,7 @@ export const array_h=[
     {
         id:2,
         text:'Hu',
-        audio:'',
+        audio:hu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -18,7 +24,7 @@ export const array_h=[
     {
         id:3,
         text:'Hư',
-        audio:'',
+        audio:huu,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -26,7 +32,7 @@ export const array_h=[
     {
         id:4,
         text:'He',
-        audio:'',
+        audio:he,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -34,7 +40,7 @@ export const array_h=[
     {
         id:5,
         text:'Hê',
-        audio:'',
+        audio:he_up,
         phonetics:'',
         vietnamese:'',
         english:''
@@ -42,7 +48,7 @@ export const array_h=[
     {
         id:6,
         text:'Hô',
-        audio:'',
+        audio:ho_up,
         phonetics:'',
         vietnamese:'',
         english:''
